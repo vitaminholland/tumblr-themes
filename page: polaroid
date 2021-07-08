@@ -414,6 +414,8 @@ z-index: -1;
 <div class="links">
 <a href="/">#Home<br><font style="color: #77aabb;
 font-size: 0.8rem;text-transform: uppercase;">Go back home.</font></a>
+<a href="/">#Ask<br><font style="color: #77aabb;
+font-size: 0.8rem;text-transform: uppercase;">Send a message.</font></a>
 <a href="/">#Link One<br><font style="color: #77aabb;
 font-size: 0.8rem;text-transform: uppercase;">Custom link one.</font></a>
 <a href="/">#Link Two<br><font style="color: #77aabb;
@@ -532,3 +534,5 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 </body>
 
 </html>
+
+
