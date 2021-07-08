@@ -470,11 +470,11 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <div class="about-left">
 
-<li><i class="fas fa-user-circle" style="color: #77aabb; margin-right: 10px;"></i>Name<br>Your Name.</li>
-<li><i class="fas fa-birthday-cake" style="color: #77aabb; margin-right: 10px;"></i>Age<br>Your Age.</li>
-<li><i class="fas fa-map-pin" style="color: #77aabb; margin-right: 10px;"></i>Location<br>Your Location.</li>
-<li><i class="fas fa-heart" style="color: #77aabb; margin-right: 10px;"></i>Likes<br>List your Likes.</li>
-<li><i class="fas fa-thumbs-down" style="color: #77aabb; margin-right: 10px;"></i>Dislikes<br>List your Dislikes.</li>
+<li><b><i class="fas fa-user-circle" style="color: #77aabb; margin-right: 10px;"></i>Name</b><br>Your Name.</li>
+<li><b><i class="fas fa-birthday-cake" style="color: #77aabb; margin-right: 10px;"></i>Age</b><br>Your Age.</li>
+<li><b><i class="fas fa-map-pin" style="color: #77aabb; margin-right: 10px;"></i>Location</b><br>Your Location.</li>
+<li><b><i class="fas fa-heart" style="color: #77aabb; margin-right: 10px;"></i>Likes</b><br>List your Likes.</li>
+<li><b><i class="fas fa-thumbs-down" style="color: #77aabb; margin-right: 10px;"></i>Dislikes</b><br>List your Dislikes.</li>
 
 <div class="border"></div>
 
@@ -534,5 +534,6 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 </body>
 
 </html>
+
 
 
