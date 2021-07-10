@@ -14,7 +14,7 @@
 
 <!-- Google Fonts Script -->
  
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <!-- Styled Tooltips Script -->
  
@@ -97,7 +97,7 @@ body {
 background: #f8f8f8;
 color: #555555;
 cursor: url(https://i.imgur.com/lhPqll6.png), progress;
-font-family: 'Quicksand', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
@@ -534,6 +534,3 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 </body>
 
 </html>
-
-
-
