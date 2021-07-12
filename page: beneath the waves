@@ -279,8 +279,10 @@ width: 250px;
 
 .socials-content {
 border-top: 1px solid #eeeeee;
+font-size: 0.8rem;
 margin: 20px;
 padding-top: 20px;
+text-transform: uppercase;
 }
 
 .socials-content a {
