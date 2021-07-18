@@ -680,7 +680,7 @@ width: 100%;
 .asker-question {
 border: 1px solid {color:Border};
 border-radius: 5px;
-font-size: 0.9rem;
+font-size: {select:Uppercase Font Size};
 padding: 20px;
 padding-bottom: 37.195px;
 text-transform: uppercase;
