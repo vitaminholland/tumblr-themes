@@ -148,6 +148,40 @@ margin: 5px;
 padding-left: 5px;
 }
 
+#header {
+align-items: center;
+background: #000000;
+display: flex;
+height: 18px;
+justify-content: space-between;
+padding: 20px;
+position: fixed;
+top: 0px;
+width: calc(100% - 40px);
+z-index: 1;
+}
+
+.title {
+color: #ffffff;
+font-size: 0.8rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.links {
+font-size: 0.8rem;
+text-transform: uppercase;
+}
+
+.links a {
+color: #ffffff;
+margin-left: 10px;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
 #container {
 margin-bottom: 70px;
 margin-left: auto;
@@ -411,40 +445,6 @@ z-index: -1;
 -webkit-transition: all 0.9s ease;
 -moz-transition: all 0.9s ease;
 -o-transition: all 0.9s ease;
-}
-
-#header {
-align-items: center;
-background: #000000;
-display: flex;
-height: 18px;
-justify-content: space-between;
-padding: 20px;
-position: fixed;
-top: 0px;
-width: calc(100% - 40px);
-z-index: 1;
-}
-
-.title {
-color: #ffffff;
-font-size: 0.8rem;
-font-weight: bold;
-text-transform: uppercase;
-}
-
-.links {
-font-size: 0.8rem;
-text-transform: uppercase;
-}
-
-.links a {
-color: #ffffff;
-margin-left: 10px;
-}
-
-.links a:hover {
-color: #cfcfcf;
 }
 
 {CustomCSS}
