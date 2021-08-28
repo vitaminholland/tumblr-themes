@@ -50,8 +50,8 @@
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 
 <meta name="image:Popup Background" content="https://i.imgur.com/JYaCY8U.jpg"/>
-<meta name="image:Sidebar Image" content="https://i.imgur.com/kLtLYaR.png"/>
-<meta name="image:Links Image" content="https://i.imgur.com/xobG9ZL.png"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/C871IrJ.png"/>
+<meta name="image:Links Image" content="https://i.imgur.com/AMKGt15.png"/>
 
 <meta name="text:Title" content="Dreamscape"/>
 
@@ -426,6 +426,32 @@ top: calc(50% - 271px);
 width: 894px;
 }
 
+.close-modal {
+background: {color:Main Color};
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+color: {color:Post Background};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 894px;
+margin-top: 242.805px;
+padding: 20px;
+position: absolute;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.close-modal:hover {
+color: {color:Link Hover};
+}
+
 @keyframes animatetop {
  
 from {
@@ -561,6 +587,32 @@ padding-bottom: 0px;
 .trivia-content {
 font-size: 0.8rem;
 text-transform: uppercase;
+}
+
+.socials {
+align-items: stretch;
+background: rgba(255, 255, 255, 0.7);
+border: 1px solid {color:Border};
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+font-size: {select:Uppercase Font Size};
+margin-top: 20px;
+padding: 20px;
+text-transform: uppercase;
+}
+ 
+.socials a {
+border-bottom: 1px solid {color:Border};
+display: block;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.socials a:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
 }
 
 .ri-right{
@@ -1124,13 +1176,15 @@ z-index: -1;
 
 </div>
 
-<div class="bottom-bar"><a id="navigation" title="Portfolio"><i class="fas fa-list-ul"></i></a></div>
+<div class="bottom-bar"><a class="open-modal" id="navigation" title="Portfolio"><i class="fas fa-list-ul"></i></a></div>
 
 </div>
 
-<div id="modal-popup" class="modal">
- 
+<div class="modal modal_multi">
+
 <div class="modal-content">
+
+<div class="close-modal close_modal"><i class="far fa-times-circle"></i></div>
 
 <div class="left">
 
@@ -1165,6 +1219,13 @@ z-index: -1;
 <div class="trivia"><i class="fas fa-heart" style="background: {color:Main Color};border-radius: 5px;color: white;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><div class="trivia-content">{text:Likes}</div></div>
 <div class="trivia"><i class="fas fa-thumbs-down" style="background: {color:Main Color};border-radius: 5px;color: white;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><div class="trivia-content">{text:Dislikes}</div></div>
 
+</div>
+
+<div class="socials">
+<a href="/"><i class="fab fa-facebook-square" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/"><i class="fab fa-twitter" style="margin-right: 10px;"></i>Twitter</a>
+<a href="/"><i class="fab fa-instagram" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/"><i class="fab fa-discord" style="margin-right: 10px;"></i>Discord</a>
 </div>
 
 </div>
@@ -1495,15 +1556,47 @@ Lorem ipsum dolor sit amet.
 <!-- Modal Script -->
 
 <script>
-var modal = document.getElementById("modal-popup");
-var btn = document.getElementById("navigation");
+var modalparent = document.getElementsByClassName("modal_multi");
+var modal_btn_multi = document.getElementsByClassName("open-modal");
+var span_close_multi = document.getElementsByClassName("close_modal");
+function setDataIndex() {
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].setAttribute('data-index', i);
+modalparent[i].setAttribute('data-index', i);
+span_close_multi[i].setAttribute('data-index', i);
+}
+}
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "block";
+};
+span_close_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "none";
+};
+}
+window.onload = function() {
+setDataIndex();
+};
+window.onclick = function(event) {
+if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+modalparent[event.target.getAttribute('data-index')].style.display = "none";
+}
+if (event.target === modal) {
+modal.style.display = "none";
+}
+};
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("open-modal");
+var span = modal.getElementsByClassName("close-modal")[0]; 
 btn.onclick = function() {
 modal.style.display = "block";
 }
-window.onclick = function(event) {
-if (event.target == modal) {
+span.onclick = function() {
 modal.style.display = "none";
-}
 }
 </script>
 
