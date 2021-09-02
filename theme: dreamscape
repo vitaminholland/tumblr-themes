@@ -1196,9 +1196,6 @@ z-index: -1;
 {block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
 </div>
 
 </div>
