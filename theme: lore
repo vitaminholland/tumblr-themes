@@ -62,6 +62,8 @@
 
 <meta name="if:Submit Link" content="1"/>
 
+<meta name="if:Sideblogs And Networks" content="1"/>
+
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
 
@@ -337,7 +339,10 @@ margin-right: auto;
 margin-top: 127px;
 width: 492px;
 {block:IndexPage}
+width: 794px;
+{block:IfSideblogsAndNetworks}
 width: 1096px;
+{/block:IfSideblogsAndNetworks}
 {/block:IndexPage}
 }
 
@@ -971,6 +976,7 @@ z-index: -1;
 
 </div>
 
+{block:IfSideblogsAndNetworks}
 <div id="sbn-wrapper">
 
 <!-- Start of Box -->
@@ -1070,6 +1076,7 @@ Lorem ipsum dolor sit amet.
 <!-- End of Box -->
 
 </div>
+{/block:IfSideblogsAndNetworks}
 {/block:IndexPage}
 
 <div id="posts">
