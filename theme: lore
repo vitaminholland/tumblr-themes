@@ -1137,7 +1137,8 @@ Lorem ipsum dolor sit amet.
 {block:Thumbnail}
 <img src="{Thumbnail}" style="border-radius: 5px;margin-bottom: 10px;"/>
 {/block:Thumbnail}
-<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}</a></div>
+<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}<br><br>{block:Excerpt}{Excerpt}{/block:Excerpt}
+</a></div>
 {block:Description}
 <div class="caption">
 {Description}
