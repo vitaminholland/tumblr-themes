@@ -1113,7 +1113,7 @@ z-index: -1;
 {block:Thumbnail}
 <img src="{Thumbnail}" style="border-radius: 5px;margin-bottom: 10px;"/>
 {/block:Thumbnail}
-<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}<br><br>{block:Excerpt}{Excerpt}{/block:Excerpt}
+<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
 </a></div>
 {block:Description}
 <div class="caption">
