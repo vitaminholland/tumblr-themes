@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 'Daybreak' by vitaminholland -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Scroll To Top Script -->
+ 
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #cac4b1;
+color: white;
+}
+ 
+::-moz-selection {
+background: #cac4b1;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Poppins', sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration:  none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+width: 620px;
+}
+
+.main-wrapper {
+background: gray;
+align-items: stretch;
+display: flex;
+width: 620px;
+}
+
+.border {
+background: #000000;
+width: 20px;
+}
+
+.everything-else {
+background: #ffffff;
+width: 600px;
+}
+
+.header {
+align-items: center;
+border-bottom: 1px solid #eeeeee;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+}
+
+.title {
+font-size: 0.8rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.links {
+font-size: 0.8rem;
+text-transform: uppercase;
+}
+
+.links a {
+display: inline-block;
+margin-left: 10px;
+}
+
+.ee-inner-wrapper {
+margin-bottom: 20px;
+margin-left: 20px;
+margin-top: 20px;
+width: 560px;
+}
+
+.about-outer {
+display: flex;
+width: 560px;
+}
+
+.about-image {
+height: 180px;
+width: 180px;
+}
+
+.about-image img {
+height: 180px;
+width: 180px;
+}
+
+.box-outer {
+background: #ffffff;
+border: 1px solid #eeeeee;
+align-items: center;
+display: flex;
+height: 178px;
+margin-right: 10px;
+width: 178px;
+}
+
+.box-outer:last-of-type {
+margin-left: 0px;
+}
+
+.box-inner {
+font-size: 0.8rem;
+padding: 20px;
+max-height: 138px;
+overflow-y: scroll;
+text-align: center;
+text-transform: uppercase;
+width: 138px;
+}
+
+.info-outer {
+display: flex;
+margin-top: 20px;
+width: 560px;
+}
+
+.info li {
+list-style: none;
+}
+
+.more-links {
+font-size: 0.8rem;
+margin: -5px;
+text-transform: uppercase;
+}
+
+.more-links a {
+border: 1px solid #eeeeee;
+border-radius: 5px;
+display: inline-block;
+margin: 5px;
+padding: 10px;
+}
+
+.navigation-wrapper {
+background: #ffffff;
+border: 1px solid #eeeeee;
+margin-top: 20px;
+padding: 20px;
+}
+
+.navigation-title {
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 10px;
+text-transform: lowercase;
+}
+
+#top {
+background: #cac4b1;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 66px; 
+color: #ffffff;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+#top:hover {
+background: #ffffff;
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+ 
+#credit a {
+background: #cac4b1;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+ 
+#credit a:hover  {
+background: #ffffff;
+color: #cfcfcf;
+}
+ 
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+ 
+.credit-name {
+background: #333333;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="main-wrapper">
+
+<div class="border"></div>
+
+<div class="everything-else">
+
+<!-- Start of Header -->
+
+<div class="header">
+
+<div class="title">Daybreak</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+<!-- End of Header -->
+
+<div class="ee-inner-wrapper">
+    
+
+<div class="about-outer">
+
+<!-- Start of About Image -->
+
+<div class="about-image"><img src="https://i.imgur.com/lGTmATo.png"/></div>
+
+<!-- End of About Image -->
+
+<!-- Start of Box -->
+
+<div class="box-outer" style="margin-left: 10px;margin-right: 0px;width: 368px;">
+
+<div class="box-inner" style="width: 328px;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. 
+</div>
+
+</div>
+
+<!-- End of Box -->
+
+</div>
+
+<div class="info-outer">
+
+<!-- Start of Box -->
+
+<div class="box-outer">
+
+<div class="box-inner">
+
+<div class="info">
+<li><i class="fas fa-user-circle" style="color:#cac4b1;margin-right: 10px;"></i>Name</li>
+<li><i class="far fa-question-circle" style="color:#cac4b1;margin-right: 10px;"></i>Age</li>
+<li><i class="far fa-map" style="color:#cac4b1;margin-right: 10px;"></i>Location</li>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Box -->
+
+<!-- Start of Box -->
+
+<div class="box-outer">
+
+<div class="box-inner">
+
+<div class="more-links">
+<a href="/"><i class="fab fa-facebook-square" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/"><i class="fab fa-twitter" style="margin-right: 10px;"></i>Twitter</a>
+<a href="/"><i class="fab fa-instagram" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/"><i class="fab fa-discord" style="margin-right: 10px;"></i>Discord</a>    
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Box -->
+
+<!-- Start of About Image -->
+
+<div class="about-image"><img src="https://i.imgur.com/apZujVY.png"/></div>
+
+<!-- End of About Image -->
+
+</div>
+
+<!-- Start of Navigation Section -->
+
+<div class="navigation-wrapper">
+
+<div class="navigation-title">Navigation</div>
+
+<div class="more-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Navigation Section -->
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="top"><i class="fas fa-arrow-circle-up"></i></div>
+
+<!-- Start of Theme Credit -->
+ 
+<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+ 
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
