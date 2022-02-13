@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 'Honey' by vitaminholland -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #bb9966;
+color: white;
+}
+ 
+::-moz-selection {
+background: #bb9966;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Quicksand', sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration:  none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+left: calc(50% - 425.5px);
+position: fixed;
+top: calc(50% - 250px);
+width: 871px;
+}
+
+.main-wrapper {
+align-items: stretch;
+display: flex;
+width: 871px;
+}
+
+#links-wrapper {
+background: #ffffff;
+border-right: 1px solid #eeeeee;
+align-items: baseline;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 500px;
+width: 70px;
+}
+
+.links {
+margin-left: auto;
+margin-right: auto;
+margin-top: 16.805px;
+width: 36.39px;
+}
+
+.links a {
+background: #bb9966;
+border-radius: 5px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-bottom: 10px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+.links a:last-of-type {
+margin-bottom: 0px;
+}
+
+.avatar-image {
+height: 40px;
+margin-bottom: 16.805px;
+margin-left: auto;
+margin-right: auto;
+width: 40px;
+}
+
+.avatar-image img {
+border-radius: 5px;
+height: 40px;
+width: 40px;
+}
+
+.box-outer {
+background: #ffffff;
+align-items: center;
+display: flex;
+height: 500px;
+width: 400px;
+}
+
+.box-inner {
+padding: 50px;
+max-height: 400px;
+overflow-y: scroll;
+width: 300px;
+}
+
+.about-icon-image {
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 100px;
+}
+
+.about-icon-image img {
+border-radius: 5px;
+height: 100px;
+width: 100px;
+}
+
+.about-title {
+font-weight: bold;
+margin-top: 30px;
+text-align: center;
+text-transform: lowercase;
+}
+
+.about-content {
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.likes-dislikes-wrapper {
+align-items: stretch;
+border-top: 1px solid #eeeeee;
+display: flex;
+margin-top: 15px;
+padding-top: 15px;
+width: 300px;
+}
+
+.likes-wrapper {
+text-transform: lowercase;
+width: 140px;
+}
+
+.dislikes-wrapper {
+margin-left: 20px;
+text-transform: lowercase;
+width: 140px;
+}
+
+.about-image {
+background-image: url("https://i.imgur.com/XYv0b7M.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+width: 400px;
+}
+
+.info {
+background: rgba(255, 255, 255, 0.7);
+border-radius: 5px;
+bottom: 25px;
+font-size: 0.9rem;
+margin-left: 25px;
+padding: 15px;
+position: absolute;
+text-transform: uppercase;
+width: 320px;
+}
+ 
+.info li {
+border-bottom: 1px solid #eeeeee;
+list-style-type: none;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+ 
+.info li:first-child {
+padding-top: 0px;
+}
+ 
+.info li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+
+#top {
+background: #bb9966;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 66px; 
+color: #ffffff;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+#top:hover {
+background: #ffffff;
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+ 
+#credit a {
+background: #bb9966;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+ 
+#credit a:hover  {
+background: #ffffff;
+color: #cfcfcf;
+}
+ 
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+ 
+.credit-name {
+background: #333333;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="main-wrapper">
+
+<!-- Start of Links and Avatar -->
+
+<div id="links-wrapper">
+
+<div class="links">
+<a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
+<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>
+<a href="/" title="Link One"><i class="fas fa-cookie-bite"></i></a>
+<a href="/" title="Link Two"><i class="fas fa-paint-brush"></i></a>
+<a href="/" title="Link Three"><i class="far fa-moon"></i></a>
+<a href="/archive" title="Archive"><i class="fas fa-server"></i></a>
+</div>
+
+<div class="avatar-image"><img src="{PortraitURL-40}"/></div>
+
+</div>
+
+<!-- End of Links and Avatar -->
+
+<!-- Start of Box -->
+
+<div class="box-outer">
+
+<div class="box-inner">
+
+<div class="about-icon-image"><img src="https://i.imgur.com/lWism8x.png"/></div>
+
+<div class="about-title">Honey</div>
+
+<div class="about-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- Start of Likes and Dislikes -->
+
+<div class="likes-dislikes-wrapper">
+
+<div class="likes-wrapper">
+<b>Likes</b>
+<br><br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. 
+</div>
+
+<div class="dislikes-wrapper">
+<b>Dislikes</b>
+<br><br>
+Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta.
+</div>
+
+</div>
+
+<!-- End of Likes and Dislikes -->
+
+</div>
+
+</div>
+
+<!-- End of Box -->
+
+<!-- Start of About Image -->
+
+<div class="about-image">
+
+<div class="info">
+<li><i class="far fa-smile"></i><font style="float: right;">Name</font></li>
+<li><i class="fas fa-check"></i><font style="float: right;">Pronouns</font></li>
+<li><i class="fas fa-birthday-cake"></i><font style="float: right;">Age</font></li>
+<li><i class="fas fa-globe-americas"></i><font style="float: right;">Location</font></li>
+</div>
+
+</div>
+
+<!-- End of About Image -->
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+ 
+<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+ 
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
