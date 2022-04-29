@@ -291,33 +291,6 @@ border-bottom: none;
 padding-bottom: 0px;
 }
 
-#top {
-background: #bb9966;
-border: 1px solid #eeeeee;
-border-radius: 100px;
-bottom: 66px; 
-color: #ffffff;
-display: none;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 10px;
-position: fixed;
-right: 20px;
-text-rendering: auto;
-width: 0.9rem;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
- 
-#top:hover {
-background: #ffffff;
-color: #cfcfcf;
-}
-
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
