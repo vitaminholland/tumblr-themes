@@ -943,7 +943,7 @@ width: 250px;
 .about-info li {
 display: block;
 border-bottom: 1px solid {color:Border};
-font-size: 0.9rem;
+font-size: {select:Uppercase Font Size};
 list-style-type: none;
 margin: 0px;
 margin-bottom: 10px;
