@@ -297,6 +297,7 @@ display: flex;
 }
 
 .icon-image {
+border-right: 1px solid {color:Border};
 height: 70px;
 width: 70px;
 }
@@ -310,7 +311,7 @@ width: 70px;
 align-items: center;
 display: flex;
 height: 70px;
-width: calc(100% - 70px);
+width: calc(100% - 71px);
 }
 
 .title {
