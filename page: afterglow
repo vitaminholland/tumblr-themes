@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Afterglow by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Overpass+Mono:400,600|Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #64abb7;
+color: white;
+}
+ 
+::-moz-selection {
+background: #64abb7;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#header-image {
+height: 300px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 1101px;
+}
+
+#header-image img {
+height: 300px;
+width: 1101px;
+}
+
+#container {
+background: #ffffff;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+padding: 100px;
+width: 901px;
+}
+
+#user-information {
+border-left: 1px solid #eeeeee;
+margin-left: 0px;
+padding-left: 50px;
+position: absolute;
+width: 300px;
+}
+
+.icon-image {
+height: 90px;
+width: 90px;
+}
+
+.icon-image img {
+border-radius: 100px;
+height: 90px;
+width: 90px;
+}
+
+.title {
+color: #000000;
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+margin-top: 30px;
+text-transform: lowercase;
+}
+
+.title:first-letter {
+color: #64abb7;
+}
+
+.description {
+font-family: 'Playfair Display', serif;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.links {
+font-family: 'Playfair Display', serif;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.links a {
+display: inline-block;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+
+#aio-wrapper {
+margin-left: 401px;
+width: 500px;
+}
+
+#wrapper {
+border-left: 1px solid #eeeeee;
+margin-bottom: 50px;
+padding-left: 50px;
+width: 449px;
+}
+
+.wrapper-title {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+margin-bottom: 20px;
+text-transform: lowercase;
+}
+
+.about-content {
+margin-bottom: 15px;
+}
+
+.quotes {
+background: #f5f5f5;
+font-family: 'Overpass Mono', monospace;
+padding: 20px;
+}
+
+.qa-wrapper {
+margin-top: 15px;
+}
+ 
+.qa-icon {
+background: #64abb7;
+border-radius: 5px;
+color: #ffffff;
+display: inline-block;
+padding: 10px;
+position: absolute;
+}
+ 
+.qa {
+margin-left: 51px;
+position: relative;
+}
+ 
+.question {
+font-family: 'Playfair Display', serif;
+}
+ 
+.answer {
+margin-top: 10px;
+}
+
+.navigation {
+margin-bottom: 15px;
+}
+
+.navigation-image {
+height: 70px;
+position: absolute;
+width: 70px;
+}
+
+.navigation-image img {
+border-radius: 100px;
+height: 70px;
+width: 70px;
+}
+
+.ntal-wrapper {
+margin-left: 90px;
+position: relative;
+}
+
+.navigation-title {
+font-family: 'Playfair Display', serif;
+margin-bottom: 10px;
+text-transform: lowercase;
+}
+
+.navigation-links {
+font-family: 'Playfair Display', serif;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.navigation-links a {
+display: inline-block;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+
+.blogroll {
+margin: -10px;
+overflow: hidden;
+width: 459px;
+}
+ 
+.following-details {
+border-bottom: 1px solid #eeeeee;
+font-family: 'Playfair Display', serif;
+display: inline-block;
+margin: 10px;
+padding-bottom: 10px;
+text-transform: lowercase;
+width: 207px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+ 
+#credit a {
+color: {color:Link};
+}
+ 
+#credit a:hover {
+color: {color:Link Hover};
+}
+
+@media only screen and (max-width: 1000px) {
+    
+#header-image {
+height: 191px;
+width: 700px;
+}
+
+#header-image img {
+height: 191px;
+width: 700px;
+}
+
+#container {
+width: 500px;
+}
+
+#user-information {
+margin-bottom: 65px;
+position: relative;
+width: 450px;
+}
+
+#aio-wrapper {
+margin-left: 0px;
+width: 501px;
+}
+
+#wrapper {
+width: 450px;
+}
+
+.blogroll {
+width: 460px;
+}
+
+.following-details {
+width: 207px;
+}
+
+}
+ 
+@media only screen and (max-width: 500px) {
+
+#header-image {
+height: auto;
+margin-left: none;
+margin-right: none;
+overflow: hidden;
+width: 100%;
+}
+
+#header-image img {
+height: auto;
+width: 100%;
+}
+
+#container {
+padding: 0px;
+padding-bottom: 100px;
+padding-top: 100px;
+width: 100%;
+}
+
+#user-information {
+margin-bottom: 65px;
+margin-left: auto;
+margin-right: auto;
+position: none;
+width: 199px;
+}
+
+#aio-wrapper {
+margin-left: auto;
+margin-right: auto;
+width: 250px;
+}
+
+#wrapper {
+width: 199px;
+}
+
+.blogroll {
+width: 209px;
+}
+
+.following-details {
+width: 100%;
+}
+
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="header-image"><img src="https://i.imgur.com/yJhFGnB.png"/></div>
+
+<div id="container">
+
+<div id="user-information">
+
+<div class="icon-image"><img src="https://i.imgur.com/pVcabZo.png"/></div>
+
+<div class="title">Afterglow</div>
+
+<div class="description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+<div id="aio-wrapper">
+
+<div id="wrapper">
+
+<div class="wrapper-title">About Me</div>
+
+<div class="about-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<div class="quotes">Afterglow — The color left in the sky after the sun has set or good feelings that remain after a seccessful or pleasurable experience.</div>
+
+</div>
+
+<div id="wrapper">
+
+<div class="wrapper-title">Ask Me Anything</div>
+
+<!-- Start of Q&A -->
+ 
+<div class="qa-wrapper">
+ 
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+ 
+<div class="qa">
+ 
+<div class="question">Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</div>
+ 
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- End of Q&A -->
+ 
+<!-- Start of Q&A -->
+ 
+<div class="qa-wrapper">
+ 
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+ 
+<div class="qa">
+ 
+<div class="question">Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?</div>
+ 
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- End of Q&A -->
+ 
+<!-- Start of Q&A -->
+ 
+<div class="qa-wrapper">
+ 
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+ 
+<div class="qa">
+ 
+<div class="question">Aliquam mattis porta urna?</div>
+ 
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<!-- End of Q&A -->
+ 
+<iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" style="margin-top: 25px;" width="100%"></iframe>
+
+</div>
+
+<div id="wrapper">
+
+<div class="wrapper-title">Navigation</div>
+
+<!-- Start of Navigation -->
+
+<div class="navigation">
+
+<div class="navigation-image"><img src="https://i.imgur.com/pDgRAm6.png"/></div>
+
+<div class="ntal-wrapper">
+
+<div class="navigation-title">Category Title</div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div class="navigation">
+
+<div class="navigation-image"><img src="https://i.imgur.com/T8ts3hw.png"/></div>
+
+<div class="ntal-wrapper">
+
+<div class="navigation-title">Category Title</div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div class="navigation">
+
+<div class="navigation-image"><img src="https://i.imgur.com/PTjLGqX.png"/></div>
+
+<div class="ntal-wrapper">
+
+<div class="navigation-title">Category Title</div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+</div>
+
+<div id="wrapper">
+
+<div class="wrapper-title">Blogroll</div>
+
+<div class="blogroll">
+
+{block:Following}
+{block:Followed}
+<div class="following-details">
+<a href="{FollowedURL}">{FollowedName}</a>
+</div>
+{/block:Followed}
+{/block:Following}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+</html>
