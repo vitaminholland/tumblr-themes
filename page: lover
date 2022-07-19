@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Lover by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Script -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ecc0bd;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ecc0bd;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f9f9f9;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: bold;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 570px;
+}
+
+#about {
+background: #ffffff;
+padding: 35px;
+width: 500px;
+}
+
+.home {
+background: #ecc0bd;
+border-left: none;
+border-top: none;
+display: inline-block;
+margin: -35px;
+padding: 17.5px;
+position: absolute;
+text-align: center;
+}
+
+.home a {
+color: #ffffff;
+}
+
+.home a:hover {
+color: #cfcfcf;
+}
+
+.header-image {
+height: 200px;
+margin: -35px;
+width: 570px;
+}
+
+.header-image img {
+height: 200px;
+width: 570px;
+}
+
+.icon-image {
+height: 70px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+width: 70px;
+}
+
+.icon-image img {
+border-radius: 100%;
+height: 70px;
+width: 70px;
+}
+
+.about-title {
+font-weight: bold;
+text-align: center;
+}
+
+#box {
+background: #ffffff;
+margin-top: 20px;
+padding: 35px;
+width: 500px;
+}
+
+.box-title {
+font-weight: bold;
+}
+
+.box-border {
+background: #ecc0bd;
+height: 3px;
+margin-bottom: 18px;
+margin-top: 18px;
+width: 30px;
+}
+
+.skill {
+align-items: center;
+border-bottom: 1px solid #eeeeee;
+display: flex;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.skill-type {
+font-size: 0.9rem;
+text-transform: uppercase;
+width: 100px;
+}
+
+.progress-wrapper {
+background: #f0f0f0;
+margin-left: 20px;
+padding: 3px;
+width: calc(100% - 126px);
+}
+
+.progress {
+background: #ecc0bd;
+height: 3px;
+}
+
+.links {
+font-size: 0.9rem;
+margin: -5px;
+text-transform: uppercase;
+}
+
+.links a {
+display: inline-block;
+margin: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+#container {
+width: 470px;
+}
+
+#about {
+width: 400px;
+}
+
+.header-image {
+height: 165px;
+width: 470px;
+}
+
+.header-image img {
+height: 165px;
+width: 470px;
+}
+
+#box {
+width: 400px;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+#container {
+width: 320px;
+}
+
+#about {
+width: 250px;
+}
+
+.header-image {
+height: 112px;
+margin: -35px;
+width: 320px;
+}
+
+.header-image img {
+height: 112px;
+width: 320px;
+}
+
+#box {
+width: 250px;
+}
+
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="about">
+
+<div class="home">
+<a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
+</div>
+
+<div class="header-image"><img src="https://i.imgur.com/YYDsXry.png"/></div>
+
+<div class="icon-image"><img src="https://i.imgur.com/KXuLZdA.png"/></div>
+
+<div class="about-title">About Me</div>
+
+<div class="box-border" style="margin-left: auto;margin-right: auto;"></div>
+
+<center>
+<i class="far fa-user-circle" style="margin-right: 10px;"></i>Franchesca
+<font style="margin-left: 10px;margin-right: 10px;">|</font>
+<i class="fas fa-birthday-cake" style="margin-right: 10px;"></i>Twenty-Two 
+<font style="margin-left: 10px;margin-right: 10px;">|</font>
+<i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Philippines
+</center>
+
+<br>
+
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</p>
+
+<p>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu. 
+</p>
+
+<p>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</p>
+
+</div>
+
+<div id="box">
+
+<div class="box-title">Skills</div>
+
+<div class="box-border"></div>
+
+<div class="skill">
+
+<div class="skill-type">Skill 1</div>
+
+<div class="progress-wrapper">
+<div class="progress" style="width: 75%;"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-type">Skill 2</div>
+
+<div class="progress-wrapper">
+<div class="progress" style="width: 100%;"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-type">Skill 3</div>
+
+<div class="progress-wrapper">
+<div class="progress" style="width: 25%;"></div>
+</div>
+
+</div>
+
+<div class="skill" style="border-bottom: none;margin-bottom: 0px;padding-bottom: 0px;">
+
+<div class="skill-type">Skill 4</div>
+
+<div class="progress-wrapper">
+<div class="progress" style="width: 50%;"></div>
+</div>
+
+</div>
+
+</div>
+
+<div id="box">
+
+<div class="box-title">Elsewhere</div>
+
+<div class="box-border"></div>
+
+<div class="links">
+<a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link One</a>
+<a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Two</a>
+<a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Three</a>
+<a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Four</a>
+<a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Five</a>
+<a href="https://extasisthemes.tumblr.com/" title="extasisthemes"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Theme</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
