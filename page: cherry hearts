@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Cherry Hearts by Franchesca (extasisthemes) -->
+ 
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #99bbcc;
+color: white;
+}
+ 
+::-moz-selection {
+background: #99bbcc;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #99bbcc;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+#home {
+font-size: 0.9rem;
+left: 20px;
+position: fixed;
+text-align: left;
+text-transform: uppercase;
+top: 20px;
+}
+
+#home a {
+color: #000000;
+}
+
+#home a:hover {
+color: #cfcfcf;
+}
+ 
+#container {
+margin-bottom: 65px;
+background: #ffffff;
+margin-left: auto;
+margin-right: auto;
+margin-top: 75px;
+width: 650px;
+}
+
+#icon-image {
+background: #ffffff;
+border: 1px solid #eeeeee;
+height: 64px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+width: 64px;
+}
+ 
+#icon-image img {
+height: 64px;
+width: 64px;
+}
+
+#blogroll-title {
+border-bottom: 1px solid #eeeeee;
+color: #99bbcc;
+font-size: 15px;
+margin-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+text-transform: lowercase;
+width: 650px;
+}
+
+#line {
+background: #99bbcc;
+height: 3px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -2px;
+width: 80px;
+}
+
+#blogroll {
+margin: -10px;
+margin-top: 75px;
+overflow: hidden;
+width: 670px;
+}
+ 
+.following-wrapper {
+align-items: center;
+border: 1px solid #eeeeee;
+display: flex;
+float: left;
+height: 48px;
+margin: 10px;
+padding: 10px;
+width: 293px;
+}
+ 
+.following-image {
+height: 48px;
+width: 48px;
+}
+ 
+.following-image img {
+height: 48px;
+width: 48px;
+}
+ 
+.following-details {
+font-size: 0.9rem;
+margin-left: 20px;  
+overflow: hidden;
+text-align: left;
+text-overflow: ellipsis;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+ 
+#credit a {
+color: #000000;
+}
+ 
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="home"><a href="/"><i class="far fa-circle" style="color: #99bbcc;margin-right: 10px;"></i>Back To Blog</a></div>
+
+<div id="container">
+
+<div id="icon-image"><img src="{PortraitURL-64}"/></div>
+
+<div id="blogroll-title">{Name}'s Blogroll</div>
+
+<div id="line"></div>
+
+<div id="blogroll">
+ 
+{block:Following}
+{block:Followed}
+<a href="{FollowedURL}">
+<div class="following-wrapper">
+<div class="following-image">
+<img src="{FollowedPortraitURL-48}"/>
+</div>
+<div class="following-details">
+{FollowedName}
+<br>
+<font style="color: #555555;">{FollowedTitle}</font>
+</div>
+</div>
+</a>
+{/block:Followed}
+{/block:Following}
+ 
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+ 
+</body>
+
+</html>
