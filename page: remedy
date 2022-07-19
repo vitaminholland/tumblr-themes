@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Remedy by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ccaaaa;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ccaaaa;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+height: 80%;
+left: calc(50% - 350px);
+position: absolute;
+top: 10%;
+width: 700px;
+}
+
+#left {
+height: 100%;
+position: absolute;
+width: 100px;
+}
+
+.left-image {
+height: 100px;
+margin-bottom: 10px;
+position: relative;
+width: 100px;
+}
+
+.left-image img {
+height: 100px;
+width: 100px;
+}
+
+.link-icon {
+bottom: 0px;
+font-size: 1rem;
+position: absolute;
+right: 0px;
+text-align: center;
+width: 32px;
+}
+
+.link-icon a {
+background: #ccaaaa;
+border: 1px solid #ccaaaa;
+color: #ffffff;
+display: inline-block;
+padding: 7px;
+width: 1rem;
+}
+
+.link-icon a:hover {
+background: #ffffff;
+color: #ccaaaa;
+}
+
+#askbox {
+background: #ccaaaa;
+border: 1px solid #ccaaaa;
+bottom: 0px;
+color: #ffffff;
+display: inline-block;
+font-size: 1rem;
+right: 0px;
+outline: none;
+padding: 7px;
+position: absolute;
+width: 32px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#askbox:hover {
+background: #ffffff;
+color: #ccaaaa;
+}
+
+.modal {
+animation-duration: 0.5s;
+animation-name: animatetop;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+height: 100%;
+left: 0px;
+overflow: auto;
+position: fixed; 
+top: 0px;
+width: 100%;
+z-index: 1; 
+}
+
+.modal-content {
+background: #ffffff;
+font-size: 0.9rem;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+padding: 25px;
+text-transform: uppercase;
+width: 500px;
+}
+
+.modal-title {
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.modal-border {
+background: #ccaaaa;
+height: 3px;
+margin-bottom: 15px;
+margin-top: 15px;
+width: 30px;
+}
+
+@keyframes animatetop {
+
+from {
+opacity: 0;
+}
+
+to {
+top: 0px; 
+opacity: 1;
+}
+
+}
+
+#center {
+height: 100%;
+margin-left: 125px;
+position: absolute;
+width: 450px;
+}
+
+#header {
+height: 67px;
+position: absolute;
+width: 450px;
+}
+
+.links {
+background: #ccaaaa;
+font-size: 0.9rem;
+padding: 25px;
+text-transform: uppercase;
+}
+
+.links a {
+color: #ffffff;
+display: inline-block;
+margin-right: 10px;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+.title {
+color: #ffffff;
+display: inline-block;
+font-weight: bold;
+margin-right: 10px;
+}
+
+#about {
+background: #f9f9f9;
+height: calc(100% - 142px);
+margin-top: 92px;
+overflow: scroll;
+padding: 25px;
+width: 400px;
+}
+
+.about-content {
+font-size: 0.9rem;
+margin-left: auto;
+margin-right: auto;
+text-transform: uppercase;
+width: 400px;
+}
+
+.info {
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 25px;
+padding-bottom: 25px;
+overflow: hidden;
+}
+ 
+.info-column {
+display: inline-block;
+float: left;
+width: 50%;
+}
+
+#right {
+height: 100%;
+margin-left: 600px;
+position: absolute;
+width: 100px;
+}
+
+.social-image-wrapper {
+bottom: 0px;
+position: absolute;
+}
+
+.social-image {
+height: 100px;
+margin-top: 10px;
+position: relative;
+width: 100px;
+}
+
+.social-image img {
+height: 100px;
+width: 100px;
+}
+
+.social-icon {
+bottom: 0px;
+font-size: 1rem;
+position: absolute;
+right: 0px;
+text-align: center;
+}
+
+.social-icon a {
+background: #ccaaaa;
+border: 1px solid #ccaaaa;
+color: #ffffff;
+display: inline-block;
+padding: 7px;
+width: 1rem;
+}
+
+.social-icon a:hover {
+background: #ffffff;
+color: #ccaaaa;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="left">
+
+<div class="left-image">
+
+<img src="https://i.imgur.com/InWhUGy.png"/>
+
+<div class="link-icon"><a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a></div>
+
+</div>
+
+<div class="left-image">
+
+<img src="https://i.imgur.com/Vl1Lbqm.png"/>
+
+<div class="link-icon"><button id="askbox" title="Ask"><i class="far fa-envelope"></i></button></div>
+
+</div>
+
+<div class="left-image">
+
+<img src="https://i.imgur.com/OkdrW1e.png"/>
+    
+<div class="link-icon"><a href="/" title="Archive"><i class="far fa-calendar-plus"></i></a></div>
+
+</div>
+
+<div id="modal-popup" class="modal">
+
+<div class="modal-content">
+
+<div class="modal-title">Contact</div>
+
+<div class="modal-border"></div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+<iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="center">
+
+<div id="header">
+
+<div class="links">
+<div class="title">Remedy</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+</div>
+
+</div>
+
+<div id="about">
+
+<div class="about-content">
+<div class="info">
+ 
+<div class="info-column">
+<font style="color: #ccaaaa;margin-right: 5px;">Name</font> Franchesca
+</div>
+<div class="info-column">
+<font style="color: #ccaaaa;margin-right: 5px;">Age</font> 22 years old
+</div>
+<div class="info-column">
+<font style="color: #ccaaaa;margin-right: 5px;">DOB</font> March 8, 1997
+</div>
+<div class="info-column">
+<font style="color: #ccaaaa;margin-right: 5px;">Occupation</font> Student
+</div>
+<div class="info-column">
+<font style="color: #ccaaaa;margin-right: 5px;">Location</font> Philippines
+</div>
+ 
+</div>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+<div id="right">
+
+<div class="social-image-wrapper">
+
+<div class="social-image">
+
+<img src="https://i.imgur.com/1arEgft.png"/>
+
+<div class="social-icon"><a href="/" title="username"><i class="fab fa-facebook-f"></i></a></div>
+
+</div>
+
+<div class="social-image">
+
+<img src="https://i.imgur.com/D2qJOeA.png"/>
+
+<div class="social-icon"><a href="/" title="username"><i class="fab fa-twitter"></i></a></div>
+
+</div>
+
+<div class="social-image">
+
+<img src="https://i.imgur.com/sqU8GOy.png"/>
+
+<div class="social-icon"><a href="/" title="username"><i class="fab fa-instagram"></i></a></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+<!-- Modal Script -->
+
+<script>
+var modal = document.getElementById("modal-popup");
+var btn = document.getElementById("askbox");
+btn.onclick = function() {
+modal.style.display = "block";
+}
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+</html>
