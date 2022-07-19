@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- (Your) Sweetheart by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ddaabb;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ddaabb;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 800px;
+}
+
+.main-wrapper {
+align-items: flex-start;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+width: 800px;
+}
+
+#line {
+background: #eeeeee;
+height: 1px;
+margin-top: 50px;
+position: absolute;
+width: 800px;
+}
+
+#image-info-wrapper {
+margin-bottom: 95px;
+margin-left: 100px;
+position: absolute;
+width: 170px;
+}
+
+.image {
+background: #ffffff;
+border: 1px solid #eeeeee;
+height: 230px;
+padding: 15px;
+position: relative;
+width: 170px;
+}
+ 
+.image img {
+height: 230px;
+width: 170px;
+}
+
+.info-wrapper {
+margin-top: 20px;
+width: 170px;
+}
+
+.info li {
+align-items: center;
+display: flex;
+list-style: none;
+margin-bottom: 10px;
+}
+
+#about-wrapper {
+margin-left: 354px;
+margin-top: 101px;
+width: 346px;
+}
+
+.title-links-wrapper {
+margin-bottom: 30px;
+width: 346px;
+}
+ 
+.title {
+color: #aaccdd;
+font-family: 'Playfair Display', serif;
+font-weight: bold;
+font-size: 30px;
+}
+ 
+.links {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.links a {
+display: inline-block;
+margin-right: 10px;
+}
+
+#navigation-wrapper {
+border-top: 1px solid #eeeeee;
+margin-top: 30px;
+padding-top: 30px;
+}
+
+.navigation-links {
+font-size: 0.9rem;
+margin: -5px;
+margin-top: 10px;
+text-transform: uppercase;
+}
+
+.navigation-links a {
+display: inline-block;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="line"></div>
+
+<div class="main-wrapper">
+
+<div id="image-info-wrapper">
+
+<div class="image"><img src="https://i.imgur.com/IaoA8c3.png"/></div>
+
+<div class="info-wrapper">
+
+<div class="info">
+<li><i class="far fa-user" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Franchesca</li>
+<li><i class="fas fa-question" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>22 y/o</li>
+<li><i class="fas fa-map-marker-alt" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Philippines</li>
+</div>
+
+</div>
+
+</div>
+
+<div id="about-wrapper">
+
+<div class="title-links-wrapper">
+
+<div class="title">(Your) Sweetheart<font style="color: #000000;">.</font></div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+
+<div id="navigation-wrapper">
+
+<div class="title" style="font-size: 1rem;">Elsewhere</div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Two</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Three</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Four</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Five</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Six</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Seven</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Eight</a>
+<font style="color: #ddaabb;">•</font>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+</html>
