@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!-- Insufferable by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Hide & Show Script -->
+ 
+<script type="text/javascript" src="https://pastebin.com/raw/0QibYDaZ"></script>
+ 
+<script>
+$(document).ready(function(){
+$(".links").hide();
+$(".links-icon").click(function(){
+$(this).next(".links").slideToggle('fast');
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ccaa99;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ccaa99;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f5f5f5;
+background-attachment: fixed;
+background-image: url(https://i.imgur.com/99xknqX.jpg);
+background-position: center;
+background-size: cover;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#links-wrapper {
+left: 30px;
+position: fixed;
+top: 30px;
+}
+
+.links-icon {
+background: #ccaa99;
+border: 1px solid #ccaa99;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+height: 14.4px;
+padding: 10px;
+text-align: center;
+width: 14.4px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.links-icon:hover {
+background: #ffffff;
+color: #ccaa99;
+}
+
+#title {
+background: #ccaa99;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+left: 80px;
+padding: 9.5px;
+position: fixed;
+text-transform: uppercase;
+top: 30px;
+z-index: 1;
+}
+
+.links {
+font-size: 0.9rem;
+margin-top: 15px;
+text-transform: uppercase;
+}
+
+.links a {
+display: block;
+margin-bottom: 5px;
+}
+
+.panel {
+background: rgba(255, 255, 255, 0.5);
+float: left;
+height: auto;
+overflow: hidden;
+top: 0px;
+width: 100%;
+}
+
+#container {
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 540px;
+}
+
+#about {
+background: #f9f9f9;
+padding: 35px;
+}
+
+.about-title {
+border-bottom: 1px solid #eeeeee;
+color: #ccaa99;
+font-size: 0.9rem;
+padding-bottom: 25px;
+text-transform: uppercase;
+}
+
+.about-image-content {
+margin-top: 25px;
+}
+
+.about-image {
+height: 120px;
+position: absolute;
+width: 120px;
+}
+
+.about-image img {
+height: 120px;
+width: 120px;
+}
+
+.about-content {
+margin-left: 145px;
+position: relative;
+}
+
+#faq-title {
+background: #f9f9f9;
+color: #ccaa99;
+font-size: 0.9rem;
+padding: 35px;
+text-transform: uppercase;
+}
+
+.faq {
+margin-top: 25px;
+}
+
+.qa-wrapper {
+margin-top: 25px;
+}
+
+.qa-icon {
+background: #ccaa99;
+border: 1px solid #ccaa99;
+color: #ffffff;
+display: inline-block;
+padding: 10px;
+position: absolute;
+}
+
+.qa {
+margin-left: 61px;
+position: relative;
+}
+
+.question {
+background: #ccaa99;
+color: #ffffff;
+padding: 35px;
+}
+
+.answer {
+background: #f9f9f9;
+padding: 35px;
+}
+
+#navigation {
+height: auto;
+overflow: hidden;
+margin-bottom: 24px;
+width: 540px;
+}
+
+.navigation-title {
+background: #f9f9f9;
+color: #ccaa99;
+font-size: 0.9rem;
+padding: 35px;
+text-transform: uppercase;
+}
+
+.navigation-links {
+font-size: 0.9rem;
+margin: -1px;
+margin-top: 1px;
+text-transform: uppercase;
+width: 543px;
+}
+
+.navigation-links a {
+background: #f9f9f9;
+float: left;
+margin: 1px;
+padding: 10px;
+width: 249px;
+}
+
+#blogroll-title {
+font-size: 0.9rem;
+background: #f9f9f9;
+color: #ccaa99;
+margin-bottom: 25px;
+padding: 35px;
+text-transform: uppercase;
+}
+
+#blogroll {
+margin: -10px;
+overflow: hidden;
+width: 560px;
+}
+ 
+.following-wrapper {
+align-items: center;
+background: #f9f9f9;
+display: flex;
+float: left;
+height: 48px;
+margin: 10px;
+padding: 10px;
+width: 240px;
+}
+ 
+.following-image {
+height: 48px;
+width: 48px;
+}
+ 
+.following-image img {
+height: 48px;
+width: 48px;
+}
+ 
+.following-details {
+font-size: 0.9rem;
+margin-left: 20px;  
+overflow: hidden;
+text-overflow: ellipsis;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="links-wrapper">
+
+<a class="links-icon"><i class="fas fa-bars"></i></a>
+
+<div class="links">
+<a href="/">Back To Blog</a>
+<a href="#one">About</a>
+<a href="#two">Message</a>
+<a href="#three">Navigation</a>
+<a href="#four">Blogroll</a>
+</div>
+
+</div>
+
+<div id="title">Insufferable</div>
+
+<div class="panel" style="border-bottom: 1px solid #eeeeee;" id="one">
+
+<div id="container">
+
+<div id="about">
+
+<div class="about-title">About Me <i class="far fa-user-circle" style="float: right;"></i></div>
+
+<div class="about-image-content">
+
+<div class="about-image"><img src="https://i.imgur.com/1lbDt4k.png"/></div>
+
+<div class="about-content">
+<u style="margin-right: 5px;">Name</u> Franchesca
+<br>
+<u style="margin-right: 5px;">Age</u> 22 years old
+<br>
+<u style="margin-right: 5px;">Date of Birth</u> March 8, 1997
+<br>
+<u style="margin-right: 5px;">Occupation</u> Student
+<br>
+<u style="margin-right: 5px;">Location</u> Philippines
+<br><br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="panel" style="border-bottom: 1px solid #eeeeee;" id="two">
+
+<div id="container">
+
+<div id="faq-title">Ask Me Anything<i class="far fa-envelope" style="float: right;"></i></div>
+
+<div class="faq">
+
+<!-- Start of Q&A -->
+
+<div class="qa-wrapper">
+
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+
+<div class="qa">
+
+<div class="question">Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Q&A -->
+
+<!-- Start of Q&A -->
+
+<div class="qa-wrapper">
+
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+
+<div class="qa">
+
+<div class="question">Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?</div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Q&A -->
+
+<!-- Start of Q&A -->
+
+<div class="qa-wrapper">
+
+<div class="qa-icon"><i class="far fa-question-circle"></i></div>
+
+<div class="qa">
+
+<div class="question">Aliquam mattis porta urna?</div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Q&A -->
+
+</div>
+
+<iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" style="margin-top: 25px;" width="100%"></iframe>
+
+</div>
+
+</div>
+
+<div class="panel" style="border-bottom: 1px solid #eeeeee;" id="three">
+
+<div id="container">
+
+<!-- Start of Navigation -->
+
+<div id="navigation">
+
+<div class="navigation-title">Navigation Title <i class="far fa-heart" style="float: right;"></i></div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div id="navigation">
+
+<div class="navigation-title">Navigation Title <i class="far fa-heart" style="float: right;"></i></div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation (Make sure to include margin-bottom: -1px; on your last navigation category so that the margin-top and margin-bottom of this panel is the same.) -->
+
+<div id="navigation" style="margin-bottom: -1px;">
+
+<div class="navigation-title">Navigation Title <i class="far fa-heart" style="float: right;"></i></div>
+
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+</div>
+
+</div>
+
+<div class="panel" id="four">
+
+<div id="container">
+
+<div id="blogroll-title">People I Follow <i class="far fa-star" style="float: right;"></i></div>
+
+<div id="blogroll">
+ 
+{block:Following}
+{block:Followed}
+<a href="{FollowedURL}">
+<div class="following-wrapper">
+<div class="following-image">
+<img src="{FollowedPortraitURL-48}"/>
+</div>
+<div class="following-details">
+{FollowedName}
+<br>
+<font style="color: #555555;">{FollowedTitle}</font>
+</div>
+</div>
+</a>
+{/block:Followed}
+{/block:Following}
+ 
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+<!-- Smooth Scroll Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script>
+$(document).ready(function () {
+$('a[href^="#"]').on('click', function (e) {
+e.preventDefault();
+var target = this.hash;
+var $target = $(target);
+$('html, body').stop().animate({
+'scrollTop': $target.offset().top
+}, 900, 'swing', function () {
+window.location.hash = target;
+});
+});
+});
+</script>
+
+</html>
