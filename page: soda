@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Soda by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Hide & Show Script -->
+ 
+<script type="text/javascript" src="https://pastebin.com/raw/0QibYDaZ"></script>
+ 
+<script>
+$(document).ready(function(){
+$(".answerb").hide();
+$(".questionb").click(function(){
+$(this).next(".answerb").slideToggle('fast');
+});
+});
+</script>
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #669999;
+color: white;
+}
+ 
+::-moz-selection {
+background: #669999;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #ffffff;
+background-attachment: fixed;
+background-image: url(https://i.imgur.com/JYaCY8U.jpg);
+background-repeat: repeat;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #99bbcc;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 700px;
+}
+
+.tab {
+background: #ffffff;
+border: 1px solid #eeeeee;
+font-size: 0.9rem;
+padding: 25px;
+text-transform: uppercase;
+}
+
+.tab a {
+background: #f5f5f5;
+border: 1px solid #669999;
+border-radius: 5px;
+color: #555555;
+margin-right: 10px;
+padding: 5px 10px 5px 10px;
+transition: 0.3s;
+}
+
+.tab a:hover {
+background: #669999;
+color: #ffffff;
+}
+
+.tab a.active {
+background: #669999;
+color: #ffffff;
+}
+
+.tab-content {
+animation: fadeEffect 1s; 
+border: 1px solid #eeeeee;
+border-top: none;
+display: none;
+padding: 25px;
+}
+
+@-webkit-keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+#image-title-wrapper {
+height: 65px;
+width: 630px;
+}
+
+.icon-image {
+height: 65px;
+position: absolute;
+width: 65px ;
+}
+
+.icon-image img {
+border-radius: 100px;
+height: 65px;
+width: 65px;
+}
+
+.title {
+font-weight: bold;
+font-size: 0.9rem;
+margin-left: 95px;
+position: relative;
+text-transform: uppercase;
+top: 25.3px;
+}
+
+.info {
+margin-bottom: 15px;
+margin-top: 25px;
+overflow: hidden;
+}
+
+.info-column {
+display: inline-block;
+float: left;
+width: 33.33%;
+}
+
+.social {
+border-top: 1px solid #eeeeee;
+margin-top: 25px;
+padding-top: 25px;
+text-transform: uppercase;
+}
+
+.social a {
+background: #f5f5f5;
+border: 1px solid #669999;
+border-radius: 5px;
+color: #555555;
+display: inline-block;
+font-size: 0.9rem;
+margin-right: 10px;
+padding: 5px 10px 5px 10px;
+}
+
+.social a:hover {
+background: #669999;
+color: #ffffff;
+}
+
+.important {
+background: #f0f0f0;
+padding: 10px;
+}
+
+.question-wrapper {
+margin-top: 10px;
+}
+
+.questiona {
+background: #669999;
+color: #ffffff;
+padding: 10px;
+}
+
+.answera {
+margin-top: 10px;
+}
+
+.questionb {
+background: #669999;
+color: #ffffff;
+padding: 10px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.questionb:hover {
+background: #f8f8f8;
+color: #555555;
+}
+ 
+.answerb {
+margin-top: 10px;
+}
+
+.navigation-wrapper {
+border-bottom: 1px solid #eeeeee;
+margin-top: 25px;
+padding-bottom: 25px;
+}
+
+.navigation-links {
+font-size: 0.9rem;
+margin: -5px;
+text-transform: uppercase;
+}
+
+.navigation-links a {
+display: inline-block;
+margin: 5px;
+}
+
+.navigation-title {
+font-weight: bold;
+display: inline-block;
+margin: 5px;
+}
+
+#blogroll {
+margin: -10px;
+overflow: hidden;
+width: 670px;
+}
+
+.following-wrapper {
+align-items: center;
+border: 1px solid #eeeeee;
+display: flex;
+float: left;
+height: 48px;
+margin: 10px;
+padding: 10px;
+width: 293px;
+}
+
+.following-image {
+height: 48px;
+width: 48px;
+}
+
+.following-image img {
+height: 48px;
+width: 48px;
+}
+
+.following-details {
+font-size: 0.9rem;
+margin-left: 20px;  
+overflow: hidden;
+text-align: left;
+text-overflow: ellipsis;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9em;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="tab">
+<a href="/">Back To Blog</a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen">About</a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen">Message</a>
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen">Navigation</a>
+<a class="tab-links" onclick="openPanel(event, 'four')" id="defaultOpen">Blogroll</a>
+</div>
+
+<div id="one" class="tab-content">
+
+<div id="image-title-wrapper">
+
+<div class="icon-image"><img src="https://i.imgur.com/K3F7MCS.png"/></div>
+
+<div class="title">About The Blogger</div>
+
+</div>
+
+<div class="info">
+
+<div class="info-column">
+<u style="margin-right: 5px;">Name</u> Franchesca
+</div>
+<div class="info-column">
+<u style="margin-right: 5px;">Age</u> 22 years old
+</div>
+<div class="info-column">
+<u style="margin-right: 5px;">B-Day</u> March 8, 1997
+</div>
+<div class="info-column">
+<u style="margin-right: 5px;">Occupation</u> Student
+</div>
+<div class="info-column">
+<u style="margin-right: 5px;">Location</u> Philippines
+</div>
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+
+<div class="social">
+<a href="/" title="username"><i class="fab fa-facebook-square" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/" title="username"><i class="fab fa-twitter" style="margin-right: 10px;"></i>Twitter</a>
+<a href="/" title="username"><i class="fab fa-youtube" style="margin-right: 10px;"></i>Youtube</a>
+<a href="/" title="username"><i class="fab fa-instagram" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/" title="username"><i class="fab fa-weibo" style="margin-right: 10px;"></i>Weibo</a>
+</div>
+
+</div>
+
+<div id="two" class="tab-content">
+
+<div class="title" style="margin-bottom: 25px;margin-left: 0px;top: 0px;">Ask Me Anything</div>
+
+<div class="important">
+<b>Please Read The Following:</b> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna.
+</div>
+
+<div class="question-wrapper">
+
+<div class="questiona">Lorem ipsum dolor sit amet, consectetuer adipiscing elit?</div>
+
+<div class="answera">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<div class="question-wrapper">
+
+<p class="questionb" style="margin-bottom: 0px;margin-top: 0px;">Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris? (click for the answer)</p>
+ 
+<div class="answerb">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<div class="question-wrapper">
+
+<div class="questiona">Aliquam mattis porta urna?</div>
+
+<div class="answera">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<p><iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe></p>
+
+</div>
+
+<div id="three" class="tab-content">
+
+<div class="title" style="margin-bottom: 0px;margin-left: 0px;top: 0px;">Things I Post</div>
+
+<div class="navigation-wrapper">
+
+<div class="navigation-links">
+<div class="navigation-title">Navigation Title</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<div class="navigation-wrapper">
+
+<div class="navigation-links">
+<div class="navigation-title">Navigation Title</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<div class="navigation-wrapper">
+
+<div class="navigation-links">
+<div class="navigation-title">Navigation Title</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<div class="navigation-wrapper">
+
+<div class="navigation-links">
+<div class="navigation-title">Navigation Title</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<div class="navigation-wrapper" style="border-bottom: none;padding-bottom: 0px;">
+
+<div class="navigation-links">
+<div class="navigation-title">Navigation Title</div>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+</div>
+
+<div id="four" class="tab-content">
+
+<div class="title" style="margin-bottom: 25px;margin-left: 0px;top: 0px;">People I Follow</div>
+
+<div id="blogroll">
+
+{block:Following}
+{block:Followed}
+<a href="{FollowedURL}">
+<div class="following-wrapper">
+<div class="following-image">
+<img src="{FollowedPortraitURL-48}"/>
+</div>
+<div class="following-details">
+{FollowedName}
+<br>
+<font style="color: #555555;">{FollowedTitle}</font>
+</div>
+</div>
+</a>
+{/block:Followed}
+{/block:Following}
+
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+<!-- Tabs Script -->
+
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
