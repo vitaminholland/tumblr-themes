@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Portrait by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #000000;
+color: white;
+}
+ 
+::-moz-selection {
+background: #000000;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-family: 'Rubik', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+height: 481px;
+left: calc(50% - 420.5px);
+position: fixed;
+top: calc(50% - 240.5px);
+width: 841px;
+}
+
+#header {
+background: #ffffff;
+overflow: auto;
+padding: 20px;
+width: 801px;
+}
+
+.title {
+display: inline-block;
+font-family: 'Playfair Display', serif;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.links {
+float: right;
+font-size: 0.9rem;
+text-align: right;
+text-transform: uppercase;
+}
+
+.links a {
+margin-left: 10px;
+}
+
+#tabs-wrapper {
+margin-top: 20px;
+width: 841px;
+}
+
+.tab {
+background: #ffffff;
+height: 400px;
+overflow-y: scroll;
+position: absolute;
+width: 300px;
+}
+ 
+.tab a {
+align-items: center;
+border-bottom: 1px solid #eeeeee;
+display: flex;
+margin-left: 0px;
+margin-right: 0px;
+padding: 20px;
+transition: 0.3s;
+}
+ 
+.tab a:hover {
+background: #000000;
+color: #ffffff;
+}
+
+.tab a:last-child {
+border-bottom: none;
+}
+ 
+.tab a.active {
+background: #000000;
+color: #ffffff;
+}
+ 
+.character-icon {
+height: 80px;
+width: 80px;
+}
+
+.character-icon img {
+border-radius: 100px;
+height: 80px;
+width: 80px;
+}
+
+.ni-wrapper {
+margin-left: 20px;
+}
+
+.name {
+font-family: 'Playfair Display', serif;
+font-size: 0.9rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.info {
+font-size: 0.9rem;
+font-style: italic;
+text-transform: uppercase;
+}
+
+.tab-content {
+animation: fadeEffect 1s; 
+background: #ffffff;
+border-left: 1px solid #eeeeee;
+display: none;
+height: 360px;
+margin-left: 300px;
+overflow-y: scroll;
+padding: 20px;
+width: 500px;
+}
+ 
+@-webkit-keyframes fadeEffect {
+    
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+ 
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+
+.character-image {
+height: 200px;
+width: 500px;
+}
+
+.character-image img {
+height: 200px;
+width: 500px;
+}
+
+.character-info {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -10px;
+margin-top: 20px;
+width: 520px;
+}
+
+.character-info li {
+border-bottom: 1px solid #eeeeee;
+font-size: 0.9rem;
+list-style-type: none;
+margin: 10px;
+padding-bottom: 10px;
+text-transform: uppercase;
+width: 240px;
+}
+
+.character-about {
+font-size: 0.9rem;
+margin-top: 20px;
+text-transform: uppercase;
+}
+
+.character-links {
+border-top: 1px solid #eeeeee;
+font-size: 0.9rem;
+margin: -5px;
+margin-top: 20px;
+padding-top: 20px;
+text-transform: uppercase;
+width: calc(100% + 10px);
+}
+
+.character-links a {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+display: inline-block;
+margin: 5px;
+padding: 5px;
+}
+ 
+.character-links a:hover {
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+ 
+#credit a {
+color: #000000;
+}
+ 
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+
+<div class="title">Portrait</div>
+
+<div class="links">
+<a href="/">Back To Blog</a>
+<a href="/ask">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+<div id="tabs-wrapper">
+
+<!-- Start of Characters List -->
+
+<div class="tab">
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/ytnlQJO.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/CWskHja.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/pTaLJwU.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'four')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/VaeSRcY.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'five')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/BkVeE02.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'six')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/OGBiJdu.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+<!-- Start of Character -->
+
+<a class="tab-links" onclick="openPanel(event, 'seven')" id="defaultOpen">
+
+<div class="character-icon"><img src="https://i.imgur.com/UGaYBpd.png"/></div>
+
+<div class="ni-wrapper">
+
+<div class="name">Name of Character</div>
+
+<div class="info">Faceclaim / Age / Status</div>
+
+</div>
+
+</a>
+
+<!-- End of Character -->
+
+</div>
+
+<!-- End of Characters List -->
+
+<!-- Start of Character Tab -->
+
+<div id="one" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/6huXbwy.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="two" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/OWDck8Q.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="three" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/GeiYkE5.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="four" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/XKjYHvg.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="five" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/9tiopaE.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="six" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/vK4jUZk.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+<!-- Start of Character Tab -->
+
+<div id="seven" class="tab-content">
+
+<!-- Start of Character Image -->
+
+<div class="character-image"><img src="https://i.imgur.com/zGwA4n0.png"/></div>
+
+<!-- End of Character Image -->
+
+<!-- Start of Character Info -->
+
+<div class="character-info">
+<li>Trivia No. 1</li>
+<li>Trivia No. 2</li>
+<li>Trivia No. 3</li>
+<li>Trivia No. 4</li>
+<li>Trivia No. 5</li>
+<li>Trivia No. 6</li>
+</div>
+
+<!-- End of Character Info -->
+
+<!-- Start of Character About -->
+
+<div class="character-about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of Character About -->
+
+<!-- Start of Character Links -->
+
+<div class="character-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+<!-- End of Character Links -->
+
+</div>
+
+<!-- End of Character Tab -->
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
