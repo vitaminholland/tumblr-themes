@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Colors by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Font Awesome Script -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #eeccdd;
+color: white;
+}
+ 
+::-moz-selection {
+background: #eeccdd;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #ffffff;
+background-attachment: fixed;
+background-image: url('https://i.imgur.com/OwFNaXO.png');
+background-repeat: repeat;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+ 
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 300px;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #eeeeee;
+padding-left: 5px;
+}
+
+#links {
+background: #000000;
+border-bottom: 3px solid #eeccdd;
+font-size: 0.9rem;
+padding-bottom: 13px;
+padding-top: 13px;
+position: fixed;
+text-transform: uppercase;
+top: 0px;
+width: 100%;
+z-index: 1;
+}
+ 
+.title {
+background: #ffffff;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+margin-left: 10px;
+margin-right: 20px;
+padding-right: 10px;
+text-align: center;
+}
+
+.ln-wrapper {
+display: inline-block;
+}
+
+.navigation {
+display: inline-block;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.navigation-title {
+background: none;
+color: #ffffff;
+border: none;
+display: inline-block;
+font-family: 'Karla', sans-serif;
+font-size: 0.9rem;
+letter-spacing: 1px;
+margin-right: 10px;
+padding: 0px;
+text-align: center;
+text-transform: uppercase;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.navigation:hover .navigation-content {
+display: block;
+}
+ 
+.navigation:hover .navigation-title {
+color: #cfcfcf;
+}
+ 
+.navigation-content {
+display: none;
+position: absolute;
+width: 170px;
+z-index: 1;
+}
+ 
+.navigation-content a {
+background: #ffffff;
+color: #000000!important;
+display: block;
+padding: 10px;
+width: 150px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.navigation-content a:hover {
+color: #cfcfcf!important;
+}
+
+#links a {
+color: #ffffff;
+margin-right: 10px;
+}
+
+#links a:hover {
+color: #cfcfcf;
+}
+
+#panels-wrapper {
+float: left;
+margin-top: 61px;
+width: 100%;
+}
+
+#panel {
+background: rgb(255, 255, 255, 0.7);
+border-bottom: 1px solid #eeeeee;
+float: left;
+height: auto;
+top: 0px;
+width: 100%;
+}
+
+#panel:last-of-type {
+border-bottom: none;
+}
+
+.panel-container {
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 790px;
+}
+
+.panel-title {
+font-size: 0.9rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.panel-border {
+background: #eeccdd;
+height: 3px;
+margin-bottom: 18px;
+margin-top: 18px;
+width: 30px;
+}
+
+.panel-content {
+text-transform: none;
+}
+
+.image {
+height: 350px;
+width: 350px;
+}
+
+.image img {
+height: 350px;
+width: 350px;
+}
+
+.intro {
+background: #ffffff;
+border-left: 3px solid #eeccdd;
+height: 280px;
+margin-left: 350px;
+margin-top: -350px;
+padding: 35px;
+width: 367px;
+}
+
+.projects {
+margin: -10px;
+overflow: hidden;
+width: 840px;
+}
+ 
+.projects-wrapper {
+float: left;
+height: 250px;
+margin: 10px;
+width: 250px;
+}
+ 
+.projects-image img {
+border: 1px solid #eeccdd;
+height: 248px;
+position: absolute;
+width: 248px;
+}
+ 
+.projects-name {
+font-size: 0.9rem;
+position: absolute;
+text-transform: uppercase;
+}
+ 
+.projects-name a {
+background: #eeccdd;
+border: 1px solid #eeccdd;
+color: #ffffff;
+display: inline-block;
+padding: 10px;
+}
+ 
+.projects-name a:hover {
+background: #ffffff;
+color: #eeccdd;
+}
+
+.commission-wrapper {
+margin: -10px;
+overflow: hidden;
+padding-bottom: 22px;
+width: 840px;
+}
+
+.commission-status {
+border-bottom: 1px solid #eeeeee;
+float: left;
+margin: 10px;
+padding-bottom: 10px;
+text-transform: none;
+width: 385px;
+}
+
+.more-links {
+font-size: 0.9em;
+text-transform: uppercase;
+}
+ 
+.more-links a {
+display: inline-block;
+margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+body {
+background-image: none;
+}
+
+.panel-container {
+width: 470px;
+}
+
+.image {
+height: 470px;
+width: 470px;
+}
+
+.image img {
+height: 470px;
+width: 470px;
+}
+
+.intro {
+background: #f8f8f8;
+height: auto;
+margin-left: 0px;
+margin-top: 0px;
+width: 397px;
+}
+
+.projects {
+margin: 0px;
+width: 470px;
+}
+
+.projects-wrapper {
+height: 470px;
+margin: 0px;
+margin-bottom: 10px;
+width: 470px;
+}
+
+.projects-image img {
+height: 468px;
+width: 468px;
+}
+
+.commission-wrapper {
+margin: 0px;
+width: 470px;
+}
+
+.commission-status {
+margin: 0px;
+margin-bottom: 10px;
+width: 470px;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+.ln-wrapper {
+margin-left: 10px;
+margin-top: 10px;
+}
+
+#panels-wrapper {
+margin-top: 88px;
+}
+
+.panel-container {
+width: 320px;
+}
+
+.image {
+height: 320px;
+width: 320px;
+}
+
+.image img {
+height: 320px;
+width: 320px;
+}
+
+.intro {
+height: auto;
+margin-left: 0px;
+margin-top: 0px;
+width: 247px;
+}
+
+.projects {
+margin: 0px;
+width: 320px;
+}
+
+.projects-wrapper {
+height: 320px;
+margin: 0px;
+margin-bottom: 10px;
+width: 320px;
+}
+
+.projects-image img {
+height: 318px;
+width: 318px;
+}
+
+.commission-wrapper {
+margin: 0px;
+width: 320px;
+}
+
+.commission-status {
+margin: 0px;
+margin-bottom: 10px;
+width: 320px;
+}
+
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="links">
+<div class="title"><i class="far fa-heart"style="background: #eeccdd;border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;margin-left: -1px;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>My Portfolio</div>
+<div class="ln-wrapper">
+<a href="/">Home</a>
+<div class="navigation">
+<button class="navigation-title">Navigation</button>
+<div class="navigation-content">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+</div>
+</div>
+<a href="/">Archive</a>
+</div>
+</div>
+
+<div id="panels-wrapper">
+
+<!-- Start of About Panel -->
+
+<div id="panel">
+
+<div class="panel-container">
+
+<div class="image"><img src="https://i.imgur.com/ztbook3.png"/></div>
+
+<div class="intro">
+
+<div class="panel-title">About Me</div>
+
+<div class="panel-border"></div>
+
+<div class="panel-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of About Panel -->
+
+<!-- Start of Gallery Panel -->
+
+<div id="panel">
+
+<div class="panel-container">
+
+<div class="panel-title">Sample Works</div>
+
+<div class="panel-border"></div>
+
+<div class="panel-content" style="margin-bottom: 22px;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="projects">
+
+<!-- Start of Project -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/T5zo6XN.png"/>
+<div class="projects-name">
+<a href="/">Lorem Ipsum</a>
+</div>
+</div>
+ 
+</div>
+
+<!-- End of Project -->
+
+<!-- Start of Project -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/NiSa2gt.png"/>
+<div class="projects-name">
+<a href="/">Lorem Ipsum</a>
+</div>
+</div>
+ 
+</div>
+
+<!-- End of Project -->
+
+<!-- Start of Project -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/v8lmIf6.png"/>
+<div class="projects-name">
+<a href="/">Lorem Ipsum</a>
+</div>
+</div>
+ 
+</div>
+
+<!-- End of Project -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Gallery Panel -->
+
+<!-- Start of Contact Panel -->
+
+<div id="panel">
+
+<div class="panel-container">
+
+<div class="panel-title">Commission</div>
+
+<div class="panel-border"></div>
+
+<div class="commission-wrapper">
+
+<div class="commission-status"><i class="far fa-check-circle" style="color: #eeccdd;margin-right: 10px;"></i> Accepting Commissions</div>
+ 
+<div class="commission-status"><i class="far fa-times-circle" style="margin-right: 10px;"></i> Not Accepting Commissions</div>
+
+</div>
+
+<div class="panel-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<p><iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe></p>
+
+</div>
+
+</div>
+
+<!-- End of Contact Panel -->
+
+<!-- Start of Photography Panel -->
+
+<div id="panel">
+
+<div class="panel-container">
+
+<div class="panel-title">Photography</div>
+
+<div class="panel-border"></div>
+
+<div class="projects">
+
+<!-- Start of Photography -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/CdTTvOd.png"/>
+</div>
+ 
+</div>
+
+<!-- End of Photography -->
+
+<!-- Start of Photography -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/XjV6Osb.png"/>
+</div>
+ 
+</div>
+
+<!-- End of Photography -->
+
+<!-- Start of Photography -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/i1Bf2ry.png"/>
+</div>
+ 
+</div>
+
+<!-- End of Photography -->
+
+<!-- Start of Photography -->
+
+<div class="projects-wrapper">
+ 
+<div class="projects-image">
+<img src="https://i.imgur.com/dsPfcZF.png"/>
+</div>
+ 
+</div>
+
+<!-- End of Photography -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Photography Panel -->
+
+<!-- Start of Explore Panel -->
+
+<div id="panel">
+
+<div class="panel-container">
+
+<div class="panel-title">Elsewhere</div>
+
+<div class="panel-border"></div>
+
+<div class="more-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="https://extasisthemes.tumblr.com">Theme</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Elsewhere Panel -->
+
+</div>
+
+</body>
+
+</html>
