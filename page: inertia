@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Inertia by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Font Awesome Script -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ddaa99;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ddaa99;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+background-attachment: fixed;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+
+#links {
+background: #ffffff;
+border-bottom: 3px solid #ddaa99;
+font-size: 0.9rem;
+padding-bottom: 13px;
+padding-top: 13px;
+position: fixed;
+text-transform: uppercase;
+top: 0px;
+width: 100%;
+z-index: 1;
+}
+ 
+.title {
+background: #000000;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+margin-left: 10px;
+margin-right: 20px;
+padding-right: 10px;
+text-align: center;
+}
+ 
+.ln-wrapper {
+display: inline-block;
+}
+ 
+.minor-links {
+display: inline-block;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.minor-links-title {
+background: none;
+color: #555555;
+border: none;
+display: inline-block;
+font-family: 'Karla', sans-serif;
+font-size: 0.9rem;
+margin-right: 10px;
+padding: 0px;
+text-align: center;
+text-transform: uppercase;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.minor-links:hover .minor-links-content {
+display: block;
+}
+ 
+.minor-links:hover .minor-links-title {
+color: #cfcfcf;
+}
+ 
+.minor-links-content {
+display: none;
+position: absolute;
+width: 170px;
+z-index: 1;
+}
+ 
+.minor-links-content a {
+background: #ffffff;
+color: #000000!important;
+display: block;
+padding: 10px;
+width: 150px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.minor-links-content a:hover {
+color: #cfcfcf!important;
+}
+ 
+#links a {
+color: #555555;
+margin-right: 10px;
+}
+ 
+#links a:hover {
+color: #cfcfcf;
+}
+
+#container {
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 161px;
+width: 493px;
+}
+
+#navigation-container {
+background: #ffffff;
+border: 1px solid #eeeeee;
+margin-bottom: 50px;
+width: 493px;
+}
+
+.navigation-title {
+border-bottom: 1px solid #eeeeee;
+color: #ddaa99;
+font-size: 0.9rem;
+font-weight: bold;
+padding: 10px;
+text-transform: uppercase;
+width: calc(100% - 20px);
+}
+
+.nin-wrapper {
+align-items: stretch;
+display: flex;
+}
+
+.navigation-icon {
+margin: 12.5px;
+width: 100px;
+}
+
+.navigation-icon img {
+border-radius: 100px;
+height: 75px;
+width: 75px;
+}
+
+.navigation {
+border-left: 1px solid #eeeeee;
+margin-left: -12.5px;
+padding: 20px;
+width: 392px;
+}
+ 
+.navigation-wrapper {
+margin: -10px;
+}
+ 
+.navigation-links {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+ 
+.navigation-links a {
+border-bottom: 1px solid #eeeeee;
+display: inline-block;
+padding-bottom: 10px;
+margin: 10px;
+width: 162.5px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="links">
+<div class="title"><i class="far fa-heart" style="background: #ddaa99;border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;margin-left: -1px;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Inertia</div>
+<div class="ln-wrapper">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<div class="minor-links">
+<button class="minor-links-title">Navigation</button>
+<div class="minor-links-content">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+</div>
+</div>
+<a href="/">Archive</a>
+</div>
+</div>
+
+<div id="container">
+
+<!-- Start of Navigation -->
+
+<div id="navigation-container">
+
+<div class="navigation-title">Navigation One Title</div>
+
+<div class="nin-wrapper">
+
+<div class="navigation-icon"><img src="https://i.imgur.com/ga0gIdx.png"/></div>
+
+<div class="navigation">
+ 
+<div class="navigation-wrapper">
+ 
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+</div>
+ 
+</div>
+ 
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div id="navigation-container">
+
+<div class="navigation-title">Navigation Two Title</div>
+
+<div class="nin-wrapper">
+
+<div class="navigation-icon"><img src="https://i.imgur.com/P5m3vhw.png"/></div>
+
+<div class="navigation">
+ 
+<div class="navigation-wrapper">
+ 
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+</div>
+ 
+</div>
+ 
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div id="navigation-container">
+
+<div class="navigation-title">Navigation Three</div>
+
+<div class="nin-wrapper">
+
+<div class="navigation-icon"><img src="https://i.imgur.com/V6S259u.png"/></div>
+
+<div class="navigation">
+ 
+<div class="navigation-wrapper">
+ 
+<div class="navigation-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+</div>
+ 
+</div>
+ 
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+</html>
