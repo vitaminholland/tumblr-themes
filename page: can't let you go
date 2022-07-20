@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Can't Let You Go by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ddaaaa;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ddaaaa;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+height: 500px;
+left: calc(50% - 351px);
+position: fixed;
+top: calc(50% - 251px);
+width: 700px;
+}
+
+.header {
+align-items: center;
+display: flex;
+height: -12px;
+justify-content: center;
+padding: 40px;
+padding-bottom: 0px;
+position: absolute;
+width: calc(100% - 80px);
+}
+
+.line {
+background: #eeeeee;
+height: 1px;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+.title-icon {
+color: #ddaaaa;
+font-size: 2rem;
+}
+
+.title {
+color: #000000;
+font-family: 'Playfair Display', sans-serif;
+font-size: 1.2rem;
+font-weight: 700;
+margin-left: -10px;
+text-transform: lowercase;
+z-index: 1;
+}
+
+.links {
+font-size: 0.8rem;
+margin-left: 5px;
+margin-right: 5px;
+position: absolute;
+margin-top: 88px;
+text-align: center;
+text-transform: uppercase;
+}
+ 
+.links a {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-variant: normal;
+height: 0.8rem;
+line-height: 1;
+margin: 5px;
+padding: 10px;
+text-rendering: auto;
+width: 0.8rem;
+}
+ 
+.links a:hover {
+background: #ddaaaa;
+color: #ffffff;
+}
+
+.content-wrapper {
+height: 323px;
+margin-left: 40px;
+margin-top: 157px;
+position: absolute;
+width: 620px;
+}
+
+.tab {
+height: 303px;
+overflow-y: scroll;
+position: absolute;
+width: 250px;
+}
+ 
+.tab a {
+background: #f8f8f8;
+align-items: center;
+border-radius: 5px;
+border-bottom-right-radius: 0px;
+border-top-right-radius: 0px;
+display: flex;
+margin-bottom: 10px;
+padding: 10px;
+transition: 0.3s;
+}
+ 
+.tab a:hover {
+background: #000000;
+color: #ffffff;
+}
+ 
+.tab a:last-child {
+margin-bottom: 0px;
+}
+ 
+.tab a.active {
+background: #000000;
+color: #ffffff;
+}
+ 
+.faq-icon {
+height: 34px;
+width: 34.39px;
+}
+
+.faq-section {
+font-size: 0.9rem;
+font-weight: 700;
+margin-left: 10px;
+text-align: center;
+text-transform: uppercase;
+width: 100%;
+}
+
+.tabs-wrapper {
+background: #f8f8f8;
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+height: 283px;
+margin-left: 250px;
+overflow-y: scroll;
+padding: 10px;
+width: 350px;
+}
+ 
+.tab-content {
+animation: fadeEffect 1s; 
+border-bottom: 1px solid #eeeeee;
+display: none;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+ 
+@-webkit-keyframes fadeEffect {
+    
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+ 
+}
+ 
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+ 
+}
+
+.qa-wrapper {
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.qa-wrapper:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.question-wrapper {
+align-items: center;
+display: flex;
+}
+
+.question-icon {
+height: 70px;
+width: 70px;
+}
+
+.question-icon img {
+border-radius: 100px;
+height: 70px;
+width: 70px;
+}
+
+.question {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+font-size: 0.9rem;
+margin-left: 10px;
+padding: 10px;
+text-transform: uppercase;
+width: calc(100% - 80px);
+}
+
+.answer-wrapper {
+align-items: center;
+display: flex;
+margin-top: 10px;
+}
+
+.answer {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+font-size: 0.9rem;
+padding: 10px;
+text-transform: uppercase;
+width: calc(100% - 80px);
+}
+
+.answer-icon {
+height: 70px;
+margin-left: 10px;
+width: 70px;
+}
+
+.answer-icon img {
+border-radius: 100px;
+height: 70px;
+width: 70px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header">
+
+<div class="line"></div>
+
+<div class="title-icon"><i class="fas fa-feather"></i></div>
+
+<div class="title">Can't Let You Go</div>
+
+<div class="links">
+<a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
+<a href="/" title="Ask"><i class="far fa-envelope"></i></a>
+<a href="/" title="Link One"><i class="fas fa-link"></i></a>
+<a href="/" title="Link Two"><i class="fas fa-link"></i></a>
+<a href="/" title="Link Three"><i class="fas fa-link"></i></a>
+<a href="/archive" title="Archive"><i class="far fa-calendar-plus"></i></a>
+</div>
+
+</div>
+
+<div class="content-wrapper">
+
+<!-- Start of FAQ Section List -->
+ 
+<div class="tab">
+ 
+<!-- Start of FAQ Section -->
+ 
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen">
+ 
+<div class="faq-icon"><i class="fas fa-info-circle" style="background: #ddaaaa;border-radius: 100px;color: #ffffff;;font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i></div>
+ 
+<div class="faq-section">Basic Information</div>
+ 
+</a>
+
+<!-- End of FAQ Section -->
+
+<!-- Start of FAQ Section -->
+ 
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen">
+ 
+<div class="faq-icon"><i class="fas fa-cookie-bite" style="background: #ddaaaa;border-radius: 100px;color: #ffffff;;font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i></div>
+ 
+<div class="faq-section">Baking For Novices</div>
+ 
+</a>
+
+<!-- End of FAQ Section -->
+
+<!-- Start of FAQ Section -->
+ 
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen">
+ 
+<div class="faq-icon"><i class="fas fa-leaf" style="background: #ddaaaa;border-radius: 100px;color: #ffffff;;font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i></div>
+ 
+<div class="faq-section">All About Plants</div>
+ 
+</a>
+
+<!-- End of FAQ Section -->
+
+</div>
+
+<!-- End of FAQ Section List -->
+
+<!-- Start of FAQ Section Tabs -->
+
+<div class="tabs-wrapper">
+
+<!-- Start of FAQ Section Tab -->
+ 
+<div id="one" class="tab-content">
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam mattis porta urna?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+</div>
+ 
+<!-- End of FAQ Section Tab -->
+
+<!-- Start of FAQ Section Tab -->
+ 
+<div id="two" class="tab-content">
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam mattis porta urna?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+</div>
+ 
+<!-- End of FAQ Section Tab -->
+
+<!-- Start of FAQ Section Tab -->
+ 
+<div id="three" class="tab-content">
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+<!-- Start of Q&A -->
+
+<!-- Start of Question -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/nGmN2xs.png"/></div>
+
+<div class="question">
+Aliquam mattis porta urna?
+</div>
+
+</div>
+
+<!-- End of Question -->
+
+<!-- Start of Answer -->
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/unjFPTM.png"/></div>
+
+</div>
+
+<!-- End of Answer -->
+
+</div>
+
+<!-- End Of Q&A -->
+
+</div>
+ 
+<!-- End of FAQ Section Tab -->
+
+<iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe>
+
+</div>
+
+<!-- End of FAQ Section Tabs -->
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
