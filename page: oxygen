@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Oxygen by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Font Awesome Script -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ee9999;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ee9999;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+background: #f8f8f8;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 700px;
+}
+
+.header-image {
+height: 300px;
+width: 700px;
+}
+
+.header-image img {
+height: 300px;
+width: 700px;
+}
+
+.avatar {
+background: #f8f8f8;
+border-radius: 100px;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -60px;
+padding: 10px;
+position: relative;
+width: 100px;
+}
+
+.avatar img {
+border-radius: 100px;
+height: 100px;
+width: 100px;
+}
+
+#wrapper {
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+padding-bottom: 20px;
+width: 660px;
+}
+
+#about-title {
+display: block;
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 30px;
+text-align: center;
+text-transform: lowercase;
+}
+
+#sidebar {
+position: absolute;
+width: 268px;
+}
+
+.sidebar-image {
+height: 138px;
+width: 268px;
+}
+
+.sidebar-image img {
+height: 138px;
+width: 268px;
+}
+
+.links {
+font-size: 0.9rem;
+margin-top: 20px;
+text-transform: uppercase;
+}
+ 
+.links a {
+display: block;
+margin-bottom: 10px;
+}
+
+#about {
+background: #ffffff;
+font-size: 0.9rem;
+margin-left: 288px;
+padding: 20px;
+text-transform: uppercase;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header-image"><img src="https://i.imgur.com/b4DjMyH.jpg"/></div>
+
+<div class="avatar"><img src="https://i.imgur.com/5Vq9NXD.png"/></div>
+
+<div id="wrapper">
+
+<div id="about-title">Oxygen</div>
+
+<div id="sidebar">
+
+<div class="sidebar-image"><img src="https://i.imgur.com/epaCvAl.png"/></div>
+
+<div class="links">
+<a href="/"><i class="far fa-arrow-alt-circle-left" style="background: #ee9999;border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Home</a>
+<a href="/ask"><i class="far fa-envelope" style="background: #ee9999;border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Ask</a>
+<a href="/"><i class="fas fa-link" style="background: #ee9999;border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Link One</a>
+</div>
+
+</div>
+
+<div id="about">
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+</html>
