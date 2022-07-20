@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- Tears Of Gold by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #ccddee;
+color: white;
+}
+ 
+::-moz-selection {
+background: #ccddee;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+height: 500px;
+left: calc(50% - 351px);
+position: fixed;
+top: calc(50% - 251px);
+width: 700px;
+}
+
+.header {
+align-items: center;
+display: flex;
+height: -12px;
+justify-content: center;
+padding: 40px;
+position: absolute;
+width: calc(100% - 80px);
+}
+
+.line {
+background: #eeeeee;
+height: 1px;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+.title-icon {
+color: #ccddee;
+font-size: 2rem;
+}
+
+.title {
+color: #000000;
+font-family: 'Playfair Display', sans-serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-left: -10px;
+text-transform: lowercase;
+z-index: 1;
+}
+
+.content-wrapper {
+height: 348px;
+margin-left: 40px;
+margin-top: 112px;
+position: absolute;
+width: 620px;
+}
+
+.links-wrapper {
+height: 348px;
+position: absolute;
+width: 34.8px;
+}
+ 
+.links {
+align-items: center;
+display: flex;
+flex-direction: column;
+font-size: 0.8rem;
+height: 348px;
+justify-content: center;
+text-align: center;
+text-transform: uppercase;
+}
+ 
+.links a {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-variant: normal;
+height: 0.8rem;
+line-height: 1;
+margin: 5px;
+padding: 10px;
+text-rendering: auto;
+width: 0.8rem;
+}
+ 
+.links a:hover {
+background: #ccddee;
+color: #ffffff;
+}
+
+.sii-wrapper {
+align-items: center;
+display: flex;
+flex-direction: column;
+height: 348px;
+margin-left: 74.8px;
+justify-content: center;
+position: absolute;
+width: 250px;
+}
+
+.subtitle {
+color: #000000;
+font-family: 'Playfair Display', sans-serif;
+font-size: 2.2rem;
+font-weight: bold;
+hyphens: none;
+text-transform: lowercase;
+width: 250px;
+word-wrap: break-word;
+}
+
+.ii-wrapper {
+align-items: center;
+display: flex;
+margin-top: 20px;
+width: 250px;
+}
+
+.icon-image {
+height: 50px;
+width: 50px;
+}
+
+.icon-image img {
+border-radius: 100px;
+height: 50px;
+width: 50px;
+}
+
+.info {
+font-size: 0.9rem;
+margin-left: 20px;
+text-align: center;
+text-transform: uppercase;
+width: 180px;
+}
+
+.about {
+font-size: 0.9rem;
+height: 348px;
+margin-left: 345px;
+overflow-y: scroll;
+padding-right: 20px;
+position: absolute;
+text-transform: uppercase;
+width: 255px;
+}
+
+#credit {
+bottom: 15px;
+font-size: 0.9rem;
+position: fixed;
+right: 15px;
+text-transform: uppercase;
+}
+
+#credit a {
+color: #000000;
+}
+
+#credit a:hover {
+color: #cfcfcf;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header">
+
+<div class="line"></div>
+
+<div class="title-icon"><i class="fas fa-splotch"></i></div>
+
+<div class="title">Tears Of Gold</div>
+
+</div>
+
+<div class="content-wrapper">
+
+<div class="links-wrapper">
+ 
+<div class="links">
+<a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
+<a href="/" title="Ask"><i class="far fa-envelope"></i></a>
+<a href="/" title="Link One"><i class="fas fa-link"></i></a>
+<a href="/" title="Link Two"><i class="fas fa-link"></i></a>
+<a href="/" title="Link Three"><i class="fas fa-link"></i></a>
+<a href="/archive" title="Archive"><i class="far fa-calendar-plus"></i></a>
+</div>
+ 
+</div>
+
+<div class="sii-wrapper">
+
+<div class="subtitle">You Can Make Me Cry, Thousand Times</div>
+
+<div class="ii-wrapper">
+
+<div class="icon-image"><img src="https://i.imgur.com/1ElJAq6.png"/></div>
+
+<div class="info">Name. Age. Timezone.</div>
+
+</div>
+    
+</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+
+</body>
+
+</html>
