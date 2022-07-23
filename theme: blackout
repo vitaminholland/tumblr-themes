@@ -461,6 +461,7 @@ width: 260px;
 .description {
 background: {color:Post Background};
 border: 1px solid {color:Border};
+border-radius: 5px;
 margin-top: 15px;
 padding: 20px;
 }
