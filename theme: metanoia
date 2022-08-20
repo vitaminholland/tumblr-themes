@@ -10,6 +10,8 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
+<link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
+
 <!-- 'Metanoia' by vitaminholland -->
 
 <!-- Metadata -->
