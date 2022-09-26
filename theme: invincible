@@ -332,7 +332,7 @@ height: 250px;
 width: 200px;
 }
 
-.description-wrapper{
+.description-wrapper {
 background: {color:Post Background};
 border: 1px solid {color:Border};
 border-left: none;
