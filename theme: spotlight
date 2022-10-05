@@ -470,16 +470,18 @@ padding: 20px;
  
 .links {
 font-size: {select:Uppercase Font Size};
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 margin: -5px;
 text-transform: uppercase;
 }
 
 .links a {
 border-bottom: 1px solid {color:Border};
-display: inline-block;
 margin: 5px;
 padding-bottom: 10px;
-width: 121px;
+width: 124px;
 }
 
 .box-wrapper {
