@@ -1171,8 +1171,15 @@ z-index: -1;
 
 <div class="eie-wrapper">
 
-{block:Date}
 <div class="entries-info-wrapper">
+
+{block:PermalinkPage}
+<div class="ei-image">
+<img src="{PortraitURL-30}" title="By {Name}" href="{BlogURL}"/>
+</div>
+{/block:PermalinkPage}
+
+{block:Date}
 
 <div class="pinned-dei-wrapper">
 {block:PinnedPostLabel}<div class="pinned-post">
@@ -1195,8 +1202,9 @@ z-index: -1;
 <a class="reblog-b" href="{ReblogURL}" target="_blank"><i class="fas fa-undo-alt"></i></a>
 </div>
 
-</div>
 {/block:Date}
+
+</div>
 
 <div class="entries-wrapper">
 
