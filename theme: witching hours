@@ -1175,7 +1175,7 @@ z-index: -1;
 
 {block:PermalinkPage}
 <div class="ei-image">
-<img src="{PortraitURL-30}" title="By {Name}" href="{BlogURL}"/>
+<a href="{BlogURL}"><img src="{PortraitURL-30}" title="By {Name}"/></a>
 </div>
 {/block:PermalinkPage}
 
