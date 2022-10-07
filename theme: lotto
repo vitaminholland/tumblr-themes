@@ -265,6 +265,7 @@ white-space: pre-wrap;
 
 #header {
 align-items: baseline;
+background: {color:Post Background};
 border-bottom: 1px solid {color:Border};
 display: flex;
 height: 54px;
@@ -909,6 +910,7 @@ padding: 5px;
 }
 
 #about-container {
+background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
 display: flex;
