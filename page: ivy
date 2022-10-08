@@ -73,12 +73,12 @@ width: 1px;
 }
  
 ::selection {
-background: #aabb88;
+background: #d64b52;
 color: white;
 }
  
 ::-moz-selection {
-background: #aabb88;
+background: #d64b52;
 color: white;
 }
  
@@ -328,7 +328,7 @@ text-transform: uppercase;
 }
 
 #top {
-background: #aabb88;
+background: #d64b52;
 border: 1px solid #eeeeee;
 border-radius: 100px;
 bottom: 66px; 
@@ -366,7 +366,7 @@ width: auto;
 }
  
 #credit a {
-background: #aabb88;
+background: #d64b52;
 border: 1px solid #eeeeee;
 border-radius: 100px;
 color: #ffffff;
