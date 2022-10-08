@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 'Ivy' by vitaminholland -->
+
+<!-- Google Fonts Script -->
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Scroll To Top Script -->
+ 
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #aabb88;
+color: white;
+}
+ 
+::-moz-selection {
+background: #aabb88;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'ABeeZee', sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration:  none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #eeeeee;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 70px;
+width: 700px;
+}
+
+.header {
+border-bottom: 1px solid #eeeeee;
+padding: 20px;
+width: calc(100% - 40px);
+}
+
+.icon-image {
+height: 100px;
+width: 100px;
+}
+
+.icon-image img {
+border-radius: 5px;
+height: 100px;
+width: 100px;
+}
+
+.title {
+font-family: 'Playfair Display', serif;
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.links {
+margin: -5px;
+margin-top: 15px;
+}
+
+.links a {
+border-radius: 100px;
+border: 1px solid #eeeeee;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin: 5px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+ 
+.links a:hover {
+color: #cfcfcf;
+}
+
+.lr-wrapper {
+align-items: stretch;
+display: flex;
+width: 700px;
+}
+
+.left {
+border-right: 1px solid #eeeeee;
+padding: 20px;
+width: 200px;
+}
+
+.section-title {
+border-bottom: 1px solid #eeeeee;
+font-family: 'Playfair Display', serif;
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 20px;
+padding-bottom: 20px;
+text-transform: lowercase;
+}
+
+.about-info li {
+display: block;
+border-bottom: 1px solid #eeeeee;
+font-size: 0.9rem;
+list-style-type: none;
+margin: 0px;
+margin-bottom: 10px;
+padding-bottom: 10px;
+text-transform: uppercase;
+}
+
+.right {
+width: 459px;
+}
+
+.about-content {
+padding: 20px;
+}
+
+.quote {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+font-family: 'Playfair Display', serif;
+font-size: 1rem;
+margin-bottom: 20px;
+padding: 20px;
+}
+
+.bottom-bar {
+border-top: 1px solid #eeeeee;
+display: flex;
+padding: 20px;
+width: 660px;
+}
+
+.column-one {
+width: 207px;
+}
+
+.column-two {
+margin-left: 20px;
+width: 207px;
+}
+
+.column-three {
+margin-right: 20px;
+width: 207px;
+}
+
+.socials {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.socials a {
+border-bottom: 1px solid #eeeeee;
+display: block;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.socials a:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.sideblog {
+align-items: center;
+display: flex;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.sideblog:first-of-type {
+margin-top: 0px;
+}
+
+.sideblog:last-of-type {
+margin-bottom: 0px;
+}
+
+.sideblog-image {
+height: 50px;
+width: 50px;
+}
+
+.sideblog-image img {
+border-radius: 5px;
+height: 50px;
+width: 50px;
+}
+
+.sideblog-name {
+font-size: 0.9rem;
+font-weight: bold;
+margin-left: 20px;
+text-transform: uppercase;
+}
+
+#top {
+background: #aabb88;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 66px; 
+color: #ffffff;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+#top:hover {
+background: #ffffff;
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+ 
+#credit a {
+background: #aabb88;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+ 
+#credit a:hover  {
+background: #ffffff;
+color: #cfcfcf;
+}
+ 
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+ 
+.credit-name {
+background: #333333;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+#container {
+width: 560px;
+}
+
+.lr-wrapper {
+display: block;
+width: 100%;
+}
+
+.left {
+border-bottom: 1px solid #eeeeee;
+border-right: none;
+width: calc(100% - 40px);
+}
+
+.right {
+width: 100%;
+}
+
+.bottom-bar {
+display: block;
+width: calc(100% - 40px);
+}
+
+.column-one {
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 20px;
+padding-bottom: 20px;
+width: 100%;
+}
+
+.column-two {
+border-bottom: 1px solid #eeeeee;
+margin-bottom: 20px;
+margin-left: 0px;
+padding-bottom: 20px;
+width: 100%;
+}
+
+.column-three {
+margin-left: 0px;
+width: 100%;
+}
+
+}
+ 
+@media only screen and (max-width: 500px) {
+    
+#container {
+width: 300px;
+}
+ 
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- Start of Header -->
+
+<div class="header">
+    
+<div class="icon-image"><img src="https://i.imgur.com/1cLc4Ns.png"/></div>
+ 
+<div class="title">Ivy</div>
+
+<div class="links">
+<a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
+<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>
+<a href="/" title="Link One"><i class="fas fa-cookie-bite"></i></a>
+<a href="/" title="Link Two"><i class="fas fa-paint-brush"></i></a>
+<a href="/" title="Link Three"><i class="far fa-moon"></i></a>
+<a href="/archive" title="Archive"><i class="fas fa-server"></i></a>
+</div>
+    
+</div>   
+    
+<!-- End of Header -->
+
+<!-- Start of About -->
+
+<div class="lr-wrapper">
+
+<!-- Start of Info -->
+
+<div class="left">
+
+<div class="section-title">Quick Info</div>
+
+<div class="about-info">
+<li><i class="far fa-user-circle"></i><font style="float: right">Name of Blogger</font></li>
+<li><i class="far fa-calendar-alt"></i><font style="float: right">Age</font></li>
+<li><i class="fas fa-globe-americas"></i><font style="float: right">Location</font></li>
+<li><i class="fas fa-question-circle"></i><font style="float: right">Sexuality</font></li>
+<li><i class="far fa-star"></i><font style="float: right">Star Sign</font></li>
+</div>
+
+</div>
+
+<!-- End of Info -->
+
+<!-- Start of About Content -->
+
+<div class="right">
+
+<!-- Start of Bio -->
+
+<div class="about-content">
+
+<div class="section-title">About The Blogger</div>
+
+<div class="quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. 
+</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Lorem ipsum dolor sit amet. Consectetuer adipiscing elit. Nam at tortor quis ipsum tempor aliquet.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+
+</div>
+
+<!-- End of Bio -->
+
+</div>
+
+<!-- End of About Content -->
+
+</div>
+    
+<!-- End of About -->
+
+<!-- Start of Social Media, Sideblogs and Currently -->
+
+<div class="bottom-bar">
+
+<!-- Start of Social Media -->
+
+<div class="column-one">
+
+<div class="section-title">Social Media</div>
+
+<div class="socials">
+<a href="/"><i class="fab fa-facebook-square" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/"><i class="fab fa-twitter" style="margin-right: 10px;"></i>Twitter</a>
+<a href="/"><i class="fab fa-instagram" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/"><i class="fab fa-discord" style="margin-right: 10px;"></i>Discord</a>
+</div>
+
+</div>
+
+<!-- End of Social Media -->
+
+<!-- Start of Sideblogs -->
+
+<div class="column-two">
+
+<div class="section-title">Sideblogs</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/c140DDQ.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/mBYTZar.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/qhPJ9FF.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+</div>
+
+<!-- End of Sideblogs -->
+
+<!-- Start of Currently -->
+
+<div class="column-three">
+
+<div class="section-title">Currently</div>
+
+Currently Watching - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec placerat mauris commodo dolor.
+<br><br>
+Currently Reading - Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Nulla tincidunt. Nulla vitae augue.
+
+</div>
+
+<!-- End of Currently -->
+
+</div>
+
+<!-- End of Social Media, Sideblogs and Currently -->
+    
+</div>
+
+<div id="top"><i class="fas fa-arrow-circle-up"></i></div>
+
+<!-- Start of Theme Credit -->
+ 
+<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+ 
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
