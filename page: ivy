@@ -237,6 +237,10 @@ padding-bottom: 10px;
 text-transform: uppercase;
 }
 
+.about-info li:last-of-type {
+margin-bottom: 0px;
+}
+
 .right {
 width: 459px;
 }
