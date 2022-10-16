@@ -1119,7 +1119,6 @@ z-index: -1;
 <div class="links">
 <a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
-<a onclick="openNav()" title="Explore"><i class="fa-solid fa-list-ul"></i></a>
 </div>
 
 <div class="search-bar">
