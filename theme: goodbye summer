@@ -1308,7 +1308,7 @@ z-index: -1;
 {block:RebloggedFrom}<li><i class="fa-solid fa-retweet" style="margin-right: 5px;"></i><a  href="{ReblogParentURL}">Reblogged Via {ReblogParentName}</a></li>{/block:RebloggedFrom}
 {block:RebloggedFrom}<li><i class="fas fa-edit" style="margin-right: 5px;"></i><a href="{ReblogRootURL}">Originally Posted By {ReblogRootName}</a></li>{/block:RebloggedFrom}
 {block:NoteCount}<li><i class="fas fa-comment" style="margin-right: 5px;"></i>With <a href="{Permalink}">{NoteCountWithLabel}</a></li>{/block:NoteCount}
-</div>
+{block:ContentSource}<li><i class="fa-solid fa-share-from-square" style="margin-right: 5px;"></i>Sourced From <a href="{SourceURL}">{SourceTitle}</a></li>{/block:ContentSource}</div>
 {/block:Permalink}
 </div>
 {/block:Date}
