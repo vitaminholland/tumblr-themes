@@ -128,25 +128,10 @@ $('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-a
 });  
 </script>
  
-<!-- PXU Script -->
 
-<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
-
-<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
-
-<script>
-$(document).ready(function(){
-$('.photo-slideshow').pxuPhotoset({
-lightbox: true,
-rounded: false,
-gutter: ‘1px',
-borderRadius: '0px',
-photoset: '.photo-slideshow',
-photoWrap: '.photo-data',
-photo: '.pxu-photo'
-});
-});
-</script>
+<!-- Photosets CSS Script -->
+ 
+<link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet">
  
 <!-- Responsive Tumblr Videos Script -->
  
@@ -450,14 +435,12 @@ height: auto;
 max-width: 100%;
 }
 
-.npf_row img {
-width: 100%;
+[photoset-layout] {
+grid-column-gap: 3px;
+grid-gap: 3px;
+grid-row-gap: 3px;
 }
-
-.tmblr-full {
-margin-bottom: 20px;
-}
-
+ 
 .read_more {
 background: {color:Main Color};
 border: 1px solid {color:Border};
@@ -940,7 +923,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {/block:Photo}
  
 {block:Photoset}
-<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
+<a href="#" onclick="Tumblr.Lightbox.init([/*{block:Photos}, /**/ { width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }{/block:Photos}]); $('body').toggleClass('tumblr_lightbox_active'); return false"><div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div></a>
 {block:Caption}
 <div class="caption">{Caption}</div>
 {/block:Caption}
