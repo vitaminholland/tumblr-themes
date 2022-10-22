@@ -233,7 +233,7 @@ color: {color:Link Hover};
 }
 
 .tmblr-iframe-compact .tmblr-iframe {
-right: 10px;
+right: 0px;
 top: 56.39px;
 opacity: 0;
 visibility: hidden;
