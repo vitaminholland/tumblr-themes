@@ -373,13 +373,13 @@ z-index: 1;
 
 .more-links {
 font-size: {select:Uppercase Font Size};
-margin-left: 20px;
 text-transform: uppercase;
 }
  
 .more-links a {
 display: inline-block;
-margin-right: 10px;
+margin-left: 5px;
+margin-right: 5px;
 }
 
 #container {
