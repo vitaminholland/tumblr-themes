@@ -1120,7 +1120,7 @@ z-index: -1;
 
 <div class="tab">
 <a href="/" title="Home"><i class="fa-regular fa-circle-left"></i></a>
-{block:AskEnabled}<a href="/contact" title="Ask"><i class="fa-regular fa-envelope"></i></a>{/block:AskEnabled}
+{block:AskEnabled}<a href="/ask" title="Ask"><i class="fa-regular fa-envelope"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit"><i class="fa-solid fa-upload"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen" title="Blog Posts"><i class="fa-solid fa-pen-to-square"></i></a>
 <a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen" title="Navigation"><i class="fa-solid fa-list-ul"></i></a>
