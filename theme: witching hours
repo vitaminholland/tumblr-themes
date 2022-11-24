@@ -1190,7 +1190,7 @@ z-index: -1;
 </div>
 
 <div class="ei-image">
-{block:RebloggedFrom}<a  href="{ReblogParentURL}" title="Reblogged From"><img src="{ReblogParentPortraitURL-30}"/></a>{/block:RebloggedFrom}
+{block:RebloggedFrom}<a href="{ReblogParentURL}" title="Reblogged From"><img src="{ReblogParentPortraitURL-30}"/></a>{/block:RebloggedFrom}
 
 {block:RebloggedFrom}<a href="{ReblogRootURL}" title="Original Post"><img src="{ReblogRootPortraitURL-30}"/></a>{/block:RebloggedFrom}
 </div>
