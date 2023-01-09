@@ -1014,7 +1014,7 @@ width: calc({select:Post Width} + 380px);
 }
  
 .more-links li {
-font-size: 0.9rem;
+font-size: {select:Uppercase Font Size};
 list-style-type: none;
 margin: 10px;
 text-transform: uppercase;
