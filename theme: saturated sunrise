@@ -1128,8 +1128,6 @@ z-index: -1;
 {block:Description}<div class="description">{Description}</div>{/block:Description}
 
 <div class="links">
-<a href="/">Home</a>
-{block:AskEnabled}<a href="/ask">Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink1URL}<a href="{text:Link 1 URL}">{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
