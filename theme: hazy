@@ -523,6 +523,7 @@ text-transform: uppercase;
 background: none;
 border: none;
 display: inline-block;
+font-size: {select:Uppercase Font Size};
 height: auto;
 margin: 2.5px;
 padding: 0px;
