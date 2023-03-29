@@ -117,6 +117,20 @@ $('body').toggleClass('controls-click');
 });
 });
 </script>
+
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 5px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
  
 <!-- Unnest Captions Script -->
 
@@ -695,6 +709,18 @@ width: 100%;
 
 .tmblr-full {
 margin-bottom: 10px;
+}
+
+.npf_inst {
+margin-bottom: 20px;
+}
+
+.npf-wrapper {
+margin: 20px;
+}
+
+.npf-wrapper .tmblr-full {
+display: flex;
 }
 
 .text-wrapper {
@@ -1341,6 +1367,15 @@ z-index: -1;
 <div class="entries-wrapper">
 
 {block:Text}
+{block:NotReblog}
+<div class="npf-wrapper">
+{block:Title}
+<h1>{Title}</h1>
+{/block:Title}
+{Body}
+</div>
+{/block:NotReblog}
+{block:RebloggedFrom}
 <div class="text-wrapper">
 {block:Title}
 <h1>{Title}</h1>
@@ -1349,6 +1384,7 @@ z-index: -1;
 {Body}
 </div>
 </div>
+{/block:RebloggedFrom}
 {/block:Text}
 
 {block:Answer}
