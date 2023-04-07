@@ -63,10 +63,6 @@ $('body,html').animate({scrollTop:0},600);
 display: none!important;
 }
 
-iframe.tmblr-iframe {
-top: 58px!important;
-}
- 
 ::-webkit-scrollbar-thumb:vertical {
 background: #000000;
 }
@@ -76,12 +72,12 @@ width: 1px;
 }
  
 ::selection {
-background: #aabb88;
+background: #000000;
 color: white;
 }
  
 ::-moz-selection {
-background: #aabb88;
+background: #000000;
 color: white;
 }
  
@@ -520,7 +516,7 @@ width: 202px;
 }
 
 #top {
-background: #aabb88;
+background: #000000;
 border: 1px solid #eeeeee;
 border-radius: 100px;
 bottom: 66px; 
@@ -558,7 +554,7 @@ width: auto;
 }
  
 #credit a {
-background: #aabb88;
+background: #000000;
 border: 1px solid #eeeeee;
 border-radius: 100px;
 color: #ffffff;
