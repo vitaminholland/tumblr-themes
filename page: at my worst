@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 'At My Worst' by vitaminholland -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<script src="https://kit.fontawesome.com/880d7a6556.js" crossorigin="anonymous"></script>
+
+<!-- Scroll To Top Script -->
+ 
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+iframe.tmblr-iframe {
+top: 58px!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #aabb88;
+color: white;
+}
+ 
+::-moz-selection {
+background: #aabb88;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Noto Sans', sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration:  none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #eeeeee;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 70px;
+padding: 20px;
+width: 772px;
+}
+
+#header {
+width: 772px;
+}
+
+.iitn-wrapper {
+align-items: center;
+border-bottom: 1px solid #eeeeee;
+display: flex;
+margin-bottom: 20px;
+padding-bottom: 20px;
+width: 100%;
+}
+ 
+.icon-image {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+height: 70px;
+padding: 10px;
+width: 70px;
+}
+ 
+.icon-image img {
+border-radius: 5px;
+height: 70px;
+width: 70px;
+}
+ 
+.title-name-wrapper {
+margin-left: 20px;
+}
+ 
+.title {
+font-weight: bold;
+}
+ 
+.name {
+font-style: italic;
+}
+
+.tab {
+font-size: 0.9rem;
+margin: -2.5px;
+text-transform: uppercase;
+}
+ 
+.tab a {
+background: #000000;
+border-radius: 6px;
+border: 1px solid #eeeeee;
+color: #ffffff;
+display: inline-block;
+margin: 2.5px;
+padding: 10px;
+}
+ 
+.tab a:hover {
+background: #ffffff;
+color: #000000;
+}
+
+.tab a.active {
+background: #ffffff;
+color: #000000;
+}
+
+.tab-content {
+animation: fadeEffect 1s;
+display: none;
+margin-top: 50px;
+width: 772px;
+}
+ 
+@-webkit-keyframes fadeEffect {
+    
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+ 
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+
+.information-wrapper {
+align-items: stretch;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 772px;
+}
+
+.ist-wrapper {
+align-items: center;
+display: flex;
+margin-bottom: 20px;
+}
+
+.icon {
+background: #000000;
+border-radius: 5px;
+border: 1px solid #000000;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.section-title {
+align-items: center;
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+display: flex;
+height: 34.39px;
+padding-left: 10px;
+padding-right: 10px;
+text-transform: uppercase;
+width: 100%;
+}
+
+.information-a {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+padding: 20px;
+width: 334px;
+}
+
+.about-info li {
+border-bottom: 1px solid #eeeeee;
+font-size: 0.9rem;
+list-style-type: none;
+padding-bottom: 20px;
+padding-top: 20px;
+text-transform: uppercase;
+}
+
+.about-info li:first-child {
+padding-top: 0px;
+}
+
+.about-info li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+
+.information-b {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+margin-left: 20px;
+padding: 20px;
+width: 334px;
+}
+
+.skill {
+align-items: center;
+border-bottom: 1px solid #eeeeee;
+display: flex;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.skill:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+ 
+.skill-type {
+font-size: 0.9rem;
+text-transform: uppercase;
+width: 100px;
+}
+ 
+.progress-wrapper {
+background: #f8f8f8;
+margin-left: 20px;
+padding: 3px;
+width: calc(100% - 126px);
+}
+ 
+.progress {
+background: #000000;
+height: 3px;
+}
+
+.about-sideblogs-wrapper {
+align-items: flex-start;
+display:flex;
+margin-top: 20px;
+}
+
+.about {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+padding: 20px;
+width: 400px;
+}
+
+.sideblogs {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+margin-left: 20px;
+padding: 20px;
+width: 267px;
+}
+
+.sideblog {
+align-items: center;
+display: flex;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.sideblog:first-of-type {
+margin-top: 0px;
+}
+
+.sideblog:last-of-type {
+margin-bottom: 0px;
+}
+
+.sideblog-image {
+height: 50px;
+width: 50px;
+}
+
+.sideblog-image img {
+border-radius: 5px;
+height: 50px;
+width: 50px;
+}
+
+.sideblog-name {
+font-size: 0.9rem;
+font-weight: bold;
+margin-left: 20px;
+text-transform: uppercase;
+}
+
+.gallery-wrapper {
+align-items: stretch;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -10px;
+width: 792px;
+}
+
+.item {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+margin: 10px;
+padding: 20px;
+position: relative;
+width: 202px;
+}
+
+.item-image {
+height: 242px;
+margin: -20px;
+width: 242px;
+}
+
+.item-image img {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+height: 242px;
+width: 242px;
+}
+
+.item-details {
+margin-top: 15px;
+text-align: center;
+}
+
+.item-title {
+font-size: 0.9rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.item-subtitle {
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.item-link {
+margin-top: -18.195px;
+position: relative;
+text-align: center;
+z-index: 1;
+}
+ 
+.item-link a {
+background: #000000;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+ 
+.item-link a:hover {
+background: #ffffff;
+color: #cfcfcf;
+}
+
+.item:hover .item-description {
+opacity: 1;
+}
+
+.item-description {
+background: #ffffff;
+border-bottom: 1px solid #eeeeee;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+height: 201px;
+margin-top: 0px;
+margin-left: -20px;
+opacity: 0;
+overflow-y: scroll;
+padding: 20px;
+position: absolute;
+text-align: center;
+top: 0px;
+width: 202px;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+#top {
+background: #aabb88;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 66px; 
+color: #ffffff;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+#top:hover {
+background: #ffffff;
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+ 
+#credit a {
+background: #aabb88;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+ 
+#credit a:hover  {
+background: #ffffff;
+color: #cfcfcf;
+}
+ 
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+ 
+.credit-name {
+background: #333333;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+
+<div class="iitn-wrapper">
+ 
+<div class="icon-image"><img src="https://i.imgur.com/vigOuFn.png"/></div>
+ 
+<div class="title-name-wrapper">
+ 
+<div class="title">At My Worst</div>
+ 
+<div class="name">@{Name}</div>
+ 
+</div>
+
+</div>
+
+<div class="tab">
+<a href="/">Home</a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen">About</a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen">#blorbos</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+</div>
+
+</div>
+
+<!-- Start of First Tab -->
+
+<div id="one" class="tab-content">
+
+<!-- Start of Information and Skills -->
+
+<div class="information-wrapper">
+
+<!-- Start of Info --->
+
+<div class="information-a">
+    
+<div class="ist-wrapper">
+
+<div class="icon"><i class="fa-regular fa-circle-user"></i></div>
+
+<div class="section-title">Information</div>
+
+</div>
+    
+<div class="about-info">
+<li><i class="far fa-smile"></i><font style="float: right;">Name</font></li>
+<li><i class="fas fa-check"></i><font style="float: right;">Pronouns</font></li>
+<li><i class="fas fa-birthday-cake"></i><font style="float: right;">Age</font></li>
+<li><i class="fas fa-globe-americas"></i><font style="float: right;">Location</font></li>
+</div>    
+
+</div>
+
+<!-- End of Info -->
+
+<!-- Start of Skills -->
+
+<div class="information-b">
+
+<div class="ist-wrapper">
+
+<div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+
+<div class="section-title">Skills</div>
+
+</div>
+
+<!-- Start of Skills -->
+
+<!-- Start of Skill -->
+
+<div class="skill">
+ 
+<div class="skill-type">Skill 1</div>
+ 
+<div class="progress-wrapper">
+<div class="progress" style="width: 50%;"></div>
+</div>
+ 
+</div>
+
+<!-- End of Skill -->
+
+<!-- Start of Skill -->
+ 
+<div class="skill">
+ 
+<div class="skill-type">Skill 2</div>
+ 
+<div class="progress-wrapper">
+<div class="progress" style="width: 100%;"></div>
+</div>
+ 
+</div>
+ 
+<!-- End of Skill -->
+
+<!-- Start of Skill -->
+
+<div class="skill">
+ 
+<div class="skill-type">Skill 3</div>
+ 
+<div class="progress-wrapper">
+<div class="progress" style="width: 25%;"></div>
+</div>
+ 
+</div>
+
+<!-- End of Skill -->
+
+<!-- Start of Skill -->
+ 
+<div class="skill">
+ 
+<div class="skill-type">Skill 4</div>
+ 
+<div class="progress-wrapper">
+<div class="progress" style="width: 70%;"></div>
+</div>
+ 
+</div>
+
+<!-- End of Skill -->
+
+</div>
+
+<!-- End of Skills -->
+
+</div>
+
+<!-- End of Information and Skills -->
+
+<!-- Start of About and Sideblogs -->
+
+<div class="about-sideblogs-wrapper">
+
+<!-- Start of About -->
+
+<div class="about">
+
+<div class="ist-wrapper">
+
+<div class="icon"><i class="fa-solid fa-bookmark"></i></div>
+
+<div class="section-title">Biography</div>
+
+</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+
+</div>
+
+<!-- End of About -->
+
+<!-- Start of Sideblogs -->
+
+<div class="sideblogs">
+
+<div class="ist-wrapper">
+
+<div class="icon"><i class="fa-solid fa-users"></i></div>
+
+<div class="section-title">Sideblogs</div>
+
+</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/6fAiGbv.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/iOsGzPC.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/Qf6CYHS.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+</div>
+
+<!-- End of Sideblogs -->
+
+</div>
+
+<!-- End of About and Sideblogs -->
+
+</div>
+
+<!-- End of First Tab -->
+
+<!-- Start of Second Tab -->
+
+<div id="two" class="tab-content">
+
+<div class="gallery-wrapper">
+
+<div class="ist-wrapper" style="margin: 10px;width: 100%">
+
+<div class="icon"><i class="fa-solid fa-heart"></i></div>
+
+<div class="section-title">Favorite Characters</div>
+
+</div>
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/kqvz3gI.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/S1EnT4p.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/jQUYSm6.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/s1gyboe.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/uRZleo1.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/u0iPMVJ.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/tV0hpST.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+<!-- Start of Item -->
+
+<div class="item">
+
+<div class="item-image"><img src="https://i.imgur.com/pPok1Gk.png"/></div>
+
+<div class="item-link"><a href="/"><i class="fa-solid fa-circle-info"></i></a></div>
+
+<div class="item-details">
+
+<div class="item-title">Name of Blorbo</div>
+
+</div>
+
+<div class="item-description">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<!-- End of Item -->
+
+</div>
+
+</div>
+
+<!-- End of Second Tab -->
+
+</div>
+
+<div id="top"><i class="fas fa-arrow-circle-up"></i></div>
+
+<!-- Start of Theme Credit -->
+ 
+<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+ 
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
