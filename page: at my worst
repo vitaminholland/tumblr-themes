@@ -518,7 +518,7 @@ width: 202px;
 #top {
 background: #000000;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 bottom: 66px; 
 color: #ffffff;
 display: none;
@@ -556,7 +556,7 @@ width: auto;
 #credit a {
 background: #000000;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 color: #ffffff;
 display: inline-block;
 font-size: 0.9rem;
@@ -580,7 +580,7 @@ opacity: 1;
 .credit-name {
 background: #333333;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 bottom: 20px;
 color: #ffffff;
 display: inline-block;
