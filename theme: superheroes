@@ -452,6 +452,19 @@ display: block;
 margin-top: 10px;
 }
 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+top: 0px;
+opacity: 1;
+}
+ 
+}
+
 #ps-wrapper {
 align-items: flex-start;
 display: flex;
