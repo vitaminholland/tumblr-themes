@@ -1326,6 +1326,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {/block:Audio}
  
 {block:Photo}
+<div class="entries-icon"><i class="fas fa-image"></i></div>
 <a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-HighRes}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false"><img src="{PhotoURL-HighRes}"></a>
 {block:Caption}
 <div class="text-wrapper">
@@ -1335,6 +1336,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {/block:Photo}
 
 {block:Photoset}
+<div class="entries-icon"><i class="fas fa-images"></i></div>
 <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
 {block:Caption}
 <div class="text-wrapper">
