@@ -419,6 +419,7 @@ margin-bottom: 20px;
 
 .npf-wrapper {
 margin: 0px;
+margin-bottom: -20px;
 }
 
 .npf-wrapper .tmblr-full {
@@ -427,6 +428,7 @@ display: flex;
 
 .text-wrapper {
 margin: 0px;
+margin-bottom: -20px;
 }
 
 .read_more {
@@ -476,6 +478,7 @@ margin-top: 20px;
 }
  
 .caption p {
+margin-bottom: -20px;
 margin-top: 0px;
 }
  
