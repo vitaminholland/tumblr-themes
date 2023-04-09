@@ -123,12 +123,26 @@ location.replace('http://{Name}.tumblr.com/tagged/' + value);
 
 <script>
 function opennavigation() {
-document.getElementById("mobile-navigation").style.width = "200px";
+document.getElementById("mobile-navigation").style.width = "250px";
 }
 function closenavigation() {
 document.getElementById("mobile-navigation").style.width = "0";
 }
 </script>
+
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 5px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
  
 <!-- Unnest Captions Script -->
  
@@ -163,10 +177,26 @@ $('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-a
 }
 });  
 </script>
- 
-<!-- Photosets CSS Script -->
- 
-<link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet">
+
+<!-- PXU Script -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.photo-slideshow').pxuPhotoset({
+lightbox: true,
+rounded: false,
+gutter: '1px',
+borderRadius: '0px',
+photoset: '.photo-slideshow',
+photoWrap: '.photo-data',
+photo: '.pxu-photo'
+});
+});
+</script>
  
 <!-- Responsive Tumblr Videos Script -->
  
@@ -460,7 +490,7 @@ color: {color:Link Hover};
 }
 
 .mobile-navigation-content {
-background: {color:Asker Background};
+background: #f8f8f8;
 border-right: 1px solid {color:Border};
 display: none;
 height: 100%;
@@ -472,26 +502,18 @@ width: 0px;
 z-index: 1;
 }
 
+.wrapper {
+height: 100%;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
 .close {
-align-items: center;
-background: {color:Entries Icon Background};
-display: flex;
 float: right;
 font-size: {select:Uppercase Font Size};
-height: 21px;
-padding: 5px;
+margin-right: 15px;
+margin-top: 15px;
 text-transform: uppercase;
-}
-
-.mobile-sidebar-image img {
-height: 150px;
-width: 200px;
-}
-
-.wrapper {
-float: right;
-height: calc(100% - 181px);
-overflow-x: hidden;
 }
 
 .mobile-description {
@@ -546,10 +568,28 @@ height: auto;
 max-width: 100%;
 }
 
-[photoset-layout] {
-grid-column-gap: 3px;
-grid-gap: 3px;
-grid-row-gap: 3px;
+.npf_row img {
+width: 100%;
+}
+
+.tmblr-full {
+margin-bottom: 10px;
+}
+
+.npf_inst {
+margin-bottom: 20px;
+}
+
+.npf-wrapper {
+margin: 0px;
+}
+
+.npf-wrapper .tmblr-full {
+display: flex;
+}
+
+.text-wrapper {
+margin: 0px;
 }
 
 .read_more {
@@ -1008,11 +1048,9 @@ width: 250px;
 
 <div id="mobile-navigation" class="mobile-navigation-content">
 
-<div class="close"><a href="javascript:void(0)" onclick="closenavigation()">Close</a></div>
-
-<div class="mobile-sidebar-image"><img src="{image:Sidebar Image}"/></div>
-
 <div class="wrapper">
+
+<div class="close"><a href="javascript:void(0)" onclick="closenavigation()"><i class="far fa-times-circle"></i></div>
 
 {block:Description}<div class="mobile-description">{Description}</div>{/block:Description}
 
@@ -1087,13 +1125,26 @@ width: 250px;
 <div class="entries" id="{PostID}">
  
 {block:Text}
+{block:NotReblog}
 <div class="entries-icon"><i class="far fa-file-alt"></i></div>
+<div class="npf-wrapper">
+{block:Title}
+<h1>{Title}</h1>
+{/block:Title}
+{Body}
+</div>
+{/block:NotReblog}
+{block:RebloggedFrom}
+<div class="entries-icon"><i class="far fa-file-alt"></i></div>
+<div class="text-wrapper">
 {block:Title}
 <h1>{Title}</h1>
 {/block:Title}
 <div class="text">
 {Body}
 </div>
+</div>
+{/block:RebloggedFrom}
 {/block:Text}
  
 {block:Answer}
@@ -1162,23 +1213,27 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 <div class="caption">{Caption}</div>
 {/block:Caption}
 {/block:Audio}
- 
+
 {block:Photo}
 <div class="entries-icon"><i class="fas fa-image"></i></div>
-<a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false"><img src="{PhotoURL-500}"></a>
+<a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-HighRes}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false"><img src="{PhotoURL-HighRes}"></a>
 {block:Caption}
+<div class="text-wrapper">
 <div class="caption">{Caption}</div>
+</div>
 {/block:Caption}
 {/block:Photo}
- 
+
 {block:Photoset}
 <div class="entries-icon"><i class="fas fa-images"></i></div>
-<a href="#" onclick="Tumblr.Lightbox.init([/*{block:Photos}, /**/ { width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }{/block:Photos}]); $('body').toggleClass('tumblr_lightbox_active'); return false"><div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div></a>
+<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
 {block:Caption}
+<div class="text-wrapper">
 <div class="caption">{Caption}</div>
+</div>
 {/block:Caption}
 {/block:Photoset}
- 
+
 {block:Video}
 <div class="entries-icon"><i class="fas fa-video"></i></div>
 <div class="video">
