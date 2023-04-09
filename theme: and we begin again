@@ -398,7 +398,6 @@ width: 440px;
 .entry-wrapper {
 background: {color:Post Background};
 padding: 20px;
-padding-bottom: 0px;
 }
 
 .entries img {
@@ -420,6 +419,10 @@ margin-bottom: 20px;
 
 .npf-wrapper {
 margin: 0px;
+}
+
+.npf-wrapper p {
+margin-bottom: 0px;
 }
 
 .npf-wrapper .tmblr-full {
