@@ -97,6 +97,20 @@ attribute:"title"
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 5px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -131,9 +145,25 @@ $('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-a
 });  
 </script>
  
-<!-- Photosets CSS Script -->
- 
-<link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet">
+<!-- PXU Script -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.photo-slideshow').pxuPhotoset({
+lightbox: true,
+rounded: false,
+gutter: '1px',
+borderRadius: '0px',
+photoset: '.photo-slideshow',
+photoWrap: '.photo-data',
+photo: '.pxu-photo'
+});
+});
+</script>
  
 <!-- Responsive Tumblr Videos Script -->
  
@@ -307,6 +337,8 @@ text-transform: uppercase;
 }
 
 #container {
+align-items: flex-start;
+display: flex;
 margin-bottom: 100px;
 margin-left: auto;
 margin-right: auto;
@@ -315,8 +347,6 @@ width: 1042px;
 }
 
 #user-information-left {
-margin-bottom: 100px;
-position: absolute;
 width: 250px;
 }
 
@@ -377,9 +407,7 @@ text-transform: uppercase;
 }
  
 #user-information-right {
-margin-left: 792px;
-margin-bottom: 100px;
-position: absolute;
+margin-left: 50px;
 width: 250px;
 }
 
@@ -439,7 +467,7 @@ text-transform: uppercase;
 }
 
 #posts {
-margin-left: 300px;
+margin-left: 50px;
 width: 442px;
 }
  
@@ -457,10 +485,28 @@ height: auto;
 max-width: 100%;
 }
 
-[photoset-layout] {
-grid-column-gap: 3px;
-grid-gap: 3px;
-grid-row-gap: 3px;
+.npf_row img {
+width: 100%;
+}
+
+.tmblr-full {
+margin-bottom: 10px;
+}
+
+.npf_inst {
+margin-bottom: 20px;
+}
+
+.npf-wrapper {
+margin: 0px;
+}
+
+.npf-wrapper .tmblr-full {
+display: flex;
+}
+
+.text-wrapper {
+margin: 0px;
 }
 
 .read_more {
@@ -827,41 +873,6 @@ color: {color:Link Hover};
 
 </div>
 
-<div id="user-information-right">
-
-<div class="subtitle">{text:Subtitle}</div>
-
-<div class="links">
-<div class="bt-wrapper"><div class="box-title">Navigation</div></div>
-<a href="/"><i class="far fa-arrow-alt-circle-left" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Home</a>
-{block:AskEnabled}<a href="/contact"><i class="far fa-envelope" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
-{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-<a href="/archive"><i class="far fa-calendar-plus" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
-</div>
-
-{block:ifAltOneLinkURL}
-<div class="alt-one-link-wrapper">
-<a href="{text:Alt One Link URL}"><i class="fas fa-cloud" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
-</div>
-{/block:ifAltOneLinkURL}
-
-{block:ifAltTwoLinkURL}
-<div class="alt-two-link-wrapper">
-<a href="{text:Alt Two Link URL}"><i class="fas fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
-</div>
-{/block:ifAltTwoLinkURL}
-
-{block:ifAltThreeLinkURL}
-<div class="alt-three-link-wrapper">
-<a href="{text:Alt Three Link URL}"><i class="fas fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
-</div>
-{/block:ifAltThreeLinkURL}
-
-</div>
-
 <div id="posts">
 
 {block:Posts}
@@ -871,12 +882,24 @@ color: {color:Link Hover};
 {block:NoteCount}<div class="notes-wrapper"><i class="far fa-chart-bar" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a></div>{/block:NoteCount}
 
 {block:Text}
+{block:NotReblog}
+<div class="npf-wrapper">
+{block:Title}
+<h1>{Title}</h1>
+{/block:Title}
+{Body}
+</div>
+{/block:NotReblog}
+{block:RebloggedFrom}
+<div class="text-wrapper">
 {block:Title}
 <h1>{Title}</h1>
 {/block:Title}
 <div class="text">
 {Body}
 </div>
+</div>
+{/block:RebloggedFrom}
 {/block:Text}
 
 {block:Answer}
@@ -942,16 +965,20 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {/block:Audio}
 
 {block:Photo}
-<a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false"><img src="{PhotoURL-500}"></a>
+<a href="#" onclick="Tumblr.Lightbox.init([{ width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-HighRes}', high_res: '{PhotoURL-HighRes}' }]); $('body').toggleClass('tumblr_lightbox_active'); return false"><img src="{PhotoURL-HighRes}"></a>
 {block:Caption}
+<div class="text-wrapper">
 <div class="caption">{Caption}</div>
+</div>
 {/block:Caption}
 {/block:Photo}
 
 {block:Photoset}
-<a href="#" onclick="Tumblr.Lightbox.init([/*{block:Photos}, /**/ { width: {PhotoWidth-HighRes}, height: {PhotoHeight-HighRes}, low_res: '{PhotoURL-500}', high_res: '{PhotoURL-HighRes}' }{/block:Photos}]); $('body').toggleClass('tumblr_lightbox_active'); return false"><div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div></a>
+<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>{/block:Photos}</div>
 {block:Caption}
+<div class="text-wrapper">
 <div class="caption">{Caption}</div>
+</div>
 {/block:Caption}
 {/block:Photoset}
 
@@ -1024,6 +1051,41 @@ Or <a href="{NextPage}">Next</a>
 </font>
 </div>
 {/block:Pagination}
+
+</div>
+
+<div id="user-information-right">
+
+<div class="subtitle">{text:Subtitle}</div>
+
+<div class="links">
+<div class="bt-wrapper"><div class="box-title">Navigation</div></div>
+<a href="/"><i class="far fa-arrow-alt-circle-left" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Home</a>
+{block:AskEnabled}<a href="/contact"><i class="far fa-envelope" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
+{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+<a href="/archive"><i class="far fa-calendar-plus" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
+</div>
+
+{block:ifAltOneLinkURL}
+<div class="alt-one-link-wrapper">
+<a href="{text:Alt One Link URL}"><i class="fas fa-cloud" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
+</div>
+{/block:ifAltOneLinkURL}
+
+{block:ifAltTwoLinkURL}
+<div class="alt-two-link-wrapper">
+<a href="{text:Alt Two Link URL}"><i class="fas fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
+</div>
+{/block:ifAltTwoLinkURL}
+
+{block:ifAltThreeLinkURL}
+<div class="alt-three-link-wrapper">
+<a href="{text:Alt Three Link URL}"><i class="fas fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
+</div>
+{/block:ifAltThreeLinkURL}
 
 </div>
 
