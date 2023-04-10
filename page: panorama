@@ -10,7 +10,7 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Panorama' by Franchesca (extasisthemes) -->
+<!-- 'Panorama' by vitaminholland -->
 
 <!-- Google Fonts Script -->
  
@@ -72,12 +72,12 @@ width: 1px;
 }
  
 ::selection {
-background: #cc3333;
+background: #000000;
 color: white;
 }
  
 ::-moz-selection {
-background: #cc3333;
+background: #000000;
 color: white;
 }
  
@@ -334,9 +334,9 @@ display: block;
 }
 
 #top {
-background: #cc3333;
+background: #000000;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 bottom: 66px; 
 color: #ffffff;
 display: none;
@@ -372,9 +372,9 @@ width: auto;
 }
 
 #credit a {
-background: #cc3333;
+background: #000000;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 color: #ffffff;
 display: inline-block;
 font-size: 0.9rem;
@@ -398,7 +398,7 @@ opacity: 1;
 .credit-name {
 background: #333333;
 border: 1px solid #eeeeee;
-border-radius: 100px;
+border-radius: 5px;
 bottom: 20px;
 color: #ffffff;
 display: inline-block;
@@ -597,7 +597,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://extasisthemes.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">EXT</div></div>
+<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
 
 <!-- End of Theme Credit --> 
 
