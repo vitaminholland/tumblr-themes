@@ -88,24 +88,19 @@ attribute:"title"
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- Unnest Captions Script -->
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
 
-<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="//npf-images-v3.github.io/script.js"></script>
 
-<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 5px;
+}
+</style>
 
-<script> 
-$(function(){  $('.entries').unnest({
-yourCaption: ".text, .caption", 
-wrapName: ".tumblr_parent", 
-newCaptionUsername: false, 
-originalPostCaptionUsername: false,
-tumblrAvatars: true, 
-tumblrAvatarClass: ".tumblr_avatar", 
-usernameColon: false
-}); 
-}); 
-</script>
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Unnest Captions Script -->
  
