@@ -881,23 +881,7 @@ display: none;
 } 
 
 #outer {
-border-bottom: 1px solid {color:Border};
-border-right: none;
-height: 100px;
-margin-left: 0px;
-position: absolute;
-width: 100%;
-}
-
-.avatar {
-margin-left: 20px;
-position: absolute;
-}
-
-.title {
-margin-left: 104px;
-position: relative;
-top: 21px;
+display: none;
 }
 
 #inner {
@@ -906,7 +890,6 @@ width: 100%;
 }
  
 #container {
-margin-top: 201px;
 width: 442px;
 }
 
