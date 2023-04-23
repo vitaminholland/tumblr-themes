@@ -405,16 +405,18 @@ text-transform: lowercase;
 }
 
 .more-links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 margin: -5px;
 text-transform: lowercase;
 }
  
 .more-links a {
 border-bottom: 1px solid {color:Border};
-display: inline-block;
 margin: 5px;
 padding-bottom: 10px;
-width: 142px;
+width: 145px;
 }
 
 .search-wrapper {
