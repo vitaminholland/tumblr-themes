@@ -69,9 +69,6 @@
 <meta name="text:Link 5 URL" content="/"/>
 <meta name="text:Link 5 Name" content="Link Five"/>
 
-<meta name="select:Post Width" content="450px" title="450px"/>
-<meta name="select:Post Width" content="500px" title="500px"/>
-
 <meta name="if:Submit Link" content="1"/>
 
 <meta name="if:Hide Tags" content="0"/>
