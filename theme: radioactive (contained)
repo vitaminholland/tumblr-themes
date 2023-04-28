@@ -74,8 +74,6 @@
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
 
-<meta name="if:Back To Top" content="1"/>
-
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -198,24 +196,6 @@ $(document).ready(function(){
 $(".tags").hide();
 $(".tags-title").click(function(){
 $(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
@@ -1096,33 +1076,6 @@ padding: 10px;
 text-transform: uppercase;
 }
 
-#top {
-background: {color:Main Color};
-border: 1px solid {color:Border};
-border-radius: 5px;
-bottom: 66px; 
-color: {color:Post Background};
-display: none;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 10px;
-position: fixed;
-right: 20px;
-text-rendering: auto;
-width: 0.9rem;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
-
-#top:hover {
-background: {color:Post Background};
-color: {color:Link Hover};
-}
-
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
@@ -1477,8 +1430,6 @@ z-index: -1;
 </div>
 
 </div>
-
-{block:IfBackToTop}<div id="top"><i class="fas fa-arrow-circle-up"></i></div>{/block:IfBackToTop}
 
 <!-- Start of Theme Credit -->
 
