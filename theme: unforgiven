@@ -1103,7 +1103,7 @@ width: 442px;
 }
  
 .entries-wrapper {
-width: 442px;
+width: 440px;
 }
  
 .entries img {
