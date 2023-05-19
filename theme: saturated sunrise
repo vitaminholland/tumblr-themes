@@ -454,6 +454,7 @@ display: flex;
 }
 
 .main-links a {
+background: {color:Post Background};
 border-radius: 100px;
 border: 1px solid {color:Border};
 color: {color:Link};
@@ -469,7 +470,6 @@ width: 0.9rem;
 }
  
 .main-links a:hover {
-background: {color:Post Background};
 color: {color:Link Hover};
 }
 
