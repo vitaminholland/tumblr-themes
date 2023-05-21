@@ -425,8 +425,8 @@ width: 30px;
 height: 30px;
 width: 30px;
 }
- 
-.title {
+
+.title-wrapper {
 align-items: center;
 display: flex;
 border: 1px solid {color:Border};
@@ -439,11 +439,15 @@ margin-left: 10px;
 padding-left: 15px;
 padding-right: 15px;
 text-transform: uppercase;
+width: calc(100% - 84px);
+}
+ 
+.title {
 overflow: hidden;
 text-overflow: ellipsis;
 text-transform: uppercase;
 white-space: nowrap;
-width: calc(100% - 30px);
+width: 100%;
 }
 
 .sid-wrapper {
@@ -1164,7 +1168,11 @@ width: 350px;
 
 <div class="avatar-image"><img src="{PortraitURL-30}"/></div>
 
+<div class="title-wrapper">
+
 <div class="title">{text:Title}</div>
+
+</div>
 
 </div>
 
