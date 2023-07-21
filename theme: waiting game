@@ -409,7 +409,7 @@ height: auto;
 width: 300px;
 }
 
-.avatar {
+.avatar-image {
 border: 1px solid {color:Border};
 height: 64px;
 margin-left: 20px;
@@ -417,7 +417,7 @@ margin-top: -33px;
 width: 64px;
 }
  
-.avatar img {
+.avatar-image img {
 height: 64px;
 width: 64px;
 }
@@ -1013,7 +1013,7 @@ z-index: -1;
 
 <div class="sidebar-image"><img src="{image:Sidebar Image}"/></div>
 
-<div class="avatar"><img src="{PortraitURL-64}"/></div>
+<div class="avatar-image"><img src="{PortraitURL-64}"/></div>
 
 <div class="title">{text:Title}</div>
 
