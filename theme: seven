@@ -604,6 +604,20 @@ height: 300px;
 width: 250px;
 }
 
+.bio-wrapper {
+align-items: center;
+display: flex;
+height: 300px;
+width: 350px;
+}
+
+.bio {
+max-height: 260px;
+padding: 20px;
+overflow-y: scroll;
+width: 310px;
+}
+
 .about {
 margin-top: 20px;
 }
@@ -1243,12 +1257,16 @@ z-index: -1;
 
 <div class="about-image"><img src="https://i.imgur.com/WppoIfd.png"/></div>
 
-<div class="box">
+<div class="bio-wrapper">
+
+<div class="bio">
  
 <div class="box-title">About The Blogger</div>
 
 <div class="about">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
 </div>
 
 </div>
