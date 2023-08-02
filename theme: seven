@@ -933,9 +933,7 @@ text-transform: uppercase;
 }
 
 .date {
-border: 1px solid {color:Border};
-margin-right: 10px;
-padding: 10px;
+font-weight: bold;
 }
 
 .post-info {
@@ -1420,7 +1418,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 {block:Date}
 <div class="post-info">
 <div class="pslr">
-<div class="pslr-a">{block:IndexPage}{block:Date}<div class="date"><a href="{Permalink}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}</a></div>{/block:Date}{block:NoteCount}<a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{/block:IndexPage}
+<div class="pslr-a">{block:IndexPage}{block:Date}<div class="date"><a href="{Permalink}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}</a></div>{/block:Date}{block:NoteCount}<div style="margin-left: 3px;margin-right: 3px;">|</div><a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{/block:IndexPage}
 </div>
 <div class="pslr-b">
 <a class="like-b" href="#">{LikeButton}<div class="b"><i class="far fa-heart"></i></div></a>
