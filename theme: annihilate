@@ -33,7 +33,7 @@
 
 <meta name="select:Heading Font" content="Playfair Display" title="Playfair Display"/>
 <meta name="select:Heading Font" content="Lora" title="Lora"/>
-<meta name="select:Heading Font" content="Source Serif Pro" title="Source Serif Pro"/>
+<meta name="select:Heading Font" content="Noto Serif Display" title="Noto Serif Display"/>
 
 <meta name="select:Body Font" content="Noto Sans" title="Noto Sans"/>
 <meta name="select:Body Font" content="DM Sans" title="DM Sans"/>
@@ -74,6 +74,8 @@ meta name="select:Post Width" content="450px" title="450px"/>
 <meta name="if:Back To Top" content="1"/>
 
 <!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
