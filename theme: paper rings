@@ -32,15 +32,15 @@
 
 <meta name="select:Heading Font" content="Playfair Display" title="Playfair Display"/>
 <meta name="select:Heading Font" content="Lora" title="Lora"/>
-<meta name="select:Heading Font" content="Source Serif Pro" title="Source Serif Pro"/>
+<meta name="select:Heading Font" content="Noto Serif Display" title="Noto Serif Display"/>
 
-<meta name="select:Body Font" content="Nunito" title="Nunito"/>
+<meta name="select:Body Font" content="Noto Sans" title="Noto Sans"/>
+<meta name="select:Body Font" content="DM Sans" title="DM Sans"/>
+<meta name="select:Body Font" content="Golos Text" title="Golos Text"/>
 <meta name="select:Body Font" content="Karla" title="Karla"/>
-<meta name="select:Body Font" content="Montserrat" title="Montserrat"/>
-<meta name="select:Body Font" content="Overpass" title="Overpass"/>
-<meta name="select:Body Font" content="Poppins" title="Poppins"/>
-<meta name="select:Body Font" content="Raleway" title="Raleway"/>
-<meta name="select:Body Font" content="Quicksand" title="Quicksand"/>
+<meta name="select:Body Font" content="Nunito Sans" title="Nunito Sans"/>
+<meta name="select:Body Font" content="Open Sans" title="Open Sans"/>
+<meta name="select:Body Font" content="Work Sans" title="Work Sans"/>
 
 <meta name="select:Body Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Body Font Size" content="1rem" title="1rem"/>
@@ -70,7 +70,9 @@
 
 <!-- Google Fonts Script -->
 
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <!-- Styled Tooltips Script -->
 
@@ -108,7 +110,24 @@ attribute:"title"
 </style>
 
 <link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
- 
+
+<!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
+
+<link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+
+<script>
+tumblr_npf_audio({
+emptyTitleText: "",
+emptyArtistText: "",
+emptyAlbumText: "",
+titleLabel: "",    
+artistLabel: "",
+albumLabel: "",
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -685,6 +704,32 @@ padding: 10px;
 .audio iframe {
 height: 85px;
 width: 450px;
+}
+
+figure {
+display: flex;
+width: 100%;
+}
+
+figcaption.npf-audio-wrapper {
+width: 100%;
+}
+
+.npf-audio-wrapper {
+--NPF-Audio-Buttons-Size: 1.4rem;
+--NPF-Audio-Buttons-Color: #555555; 
+--NPF-Audio-Buttons-Spacing: 1.3rem; 
+--NPF-Audio-Image-Size: 85px;
+--NPF-Audio-Image-Spacing: 0px; 
+}
+
+span.npf-audio-title {
+font-weight: bold;
+}
+
+.npf-audio-background {
+background-color: #f2f2f2; 
+padding: 1.5rem;
 }
 
 video {
