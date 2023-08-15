@@ -152,6 +152,23 @@ document.getElementById("panel").style.width = "0";
 
 <link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
+<!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
+
+<link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+
+<script>
+tumblr_npf_audio({
+emptyTitleText: "",
+emptyArtistText: "",
+emptyAlbumText: "",
+titleLabel: "",    
+artistLabel: "",
+albumLabel: "",
+});
+</script>
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -894,6 +911,32 @@ padding: 10px;
 .audio iframe {
 height: 85px;
 width: 500px;
+}
+
+figure {
+display: flex;
+width: 100%;
+}
+
+figcaption.npf-audio-wrapper {
+width: 500px;
+}
+
+.npf-audio-wrapper {
+--NPF-Audio-Buttons-Size: 1.4rem;
+--NPF-Audio-Buttons-Color: #555555; 
+--NPF-Audio-Buttons-Spacing: 1.3rem; 
+--NPF-Audio-Image-Size: 85px;
+--NPF-Audio-Image-Spacing: 0px; 
+}
+
+span.npf-audio-title {
+font-weight: bold;
+}
+
+.npf-audio-background {
+background-color: #f2f2f2; 
+padding: 1.5rem;
 }
 
 video {
