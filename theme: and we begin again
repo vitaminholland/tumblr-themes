@@ -662,7 +662,7 @@ width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-width: 440px;
+width: 400px;
 }
 
 .npf-audio-wrapper {
