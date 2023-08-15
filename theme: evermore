@@ -953,7 +953,7 @@ width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-width: {select:Post Width};
+width: 100%;
 }
 
 .npf-audio-wrapper {
