@@ -1266,7 +1266,7 @@ z-index: -1;
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit"><i class="fas fa-file-import"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <a class="tablinks" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="fas fa-user-circle"></i></a>
-<a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Navigation"><i class="fas fa-list-ul"></i></a>
+<a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Muses"><i class="fas fa-list-ul"></i></a>
 <a href="/archive" title="Archive"><i class="fas fa-server"></i></a>
 </div>
 
