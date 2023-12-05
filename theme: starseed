@@ -1517,6 +1517,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="box-title">Explore</div>
 
 <div class="more-links">
+{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink1URL}<a href="{text:Link 1 URL}">{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
