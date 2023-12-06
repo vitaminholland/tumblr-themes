@@ -583,6 +583,7 @@ font-weight: bold;
 .tab-content {
 animation: fadeEffect 1s;
 display: none;
+margin-bottom: 20px;
 margin-top: 20px;
 }
  
@@ -721,7 +722,12 @@ margin-top: 15px;
 }
 
 .tags-wrapper {
+margin-bottom: 15px;
 text-transform: lowercase;
+}
+
+.tags-wrapper:last-of-type {
+margin-bottom: 0px;
 }
 
 .category-title {
