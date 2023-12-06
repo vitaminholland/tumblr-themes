@@ -721,8 +721,6 @@ margin-top: 15px;
 }
 
 .tags-wrapper {
-margin-bottom: 15px;
-padding-bottom: 15px;
 text-transform: lowercase;
 }
 
