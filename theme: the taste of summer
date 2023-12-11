@@ -1083,7 +1083,6 @@ width: 250px;
 
 <div class="links">
 <a href="/">Home</a>
-{block:AskEnabled}<a href="/ask">Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <button id="explore">Explore</button>
 <a href="/archive">Archive</a>
