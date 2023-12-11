@@ -426,7 +426,7 @@ background-image: url("{image:Sidebar Image}");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: calc(100% - 70px);
+height: calc(100% - 71px);
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
