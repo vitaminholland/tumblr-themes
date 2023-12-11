@@ -433,6 +433,8 @@ color: {color:Main Color};
 }
 
 #container {
+display: flex;
+align-items: flex-start;
 margin-bottom: 100px;
 margin-left: auto;
 margin-right: auto;
@@ -447,8 +449,6 @@ width: 942px;
 }
 
 #sidebar {
-margin-bottom: 100px;
-position: absolute;
 width: 300px;
 }
 
@@ -537,7 +537,7 @@ color: {color:Main Color};
 #posts {
 margin-left: 0px;
 {block:IndexPage}
-margin-left: 400px;
+margin-left: 100px;
 {/block:IndexPage}
 width: 542px;
 }
