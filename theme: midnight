@@ -378,16 +378,21 @@ margin-top: 15px;
 text-transform: uppercase;
 }
 
+#pl-wrapper {
+display: flex;
+align-items: flex-start;
+width: 750px;
+}
+
 #links {
 font-size: {select:Uppercase Font Size};
-margin-bottom: 80px;
-margin-left: 500px;
-position: absolute;
+margin-left: 100px;
 text-transform: uppercase;
 width: 250px;
 }
 
 #links a {
+background: white;
 align-items: center;
 border: 1px solid {color:Border};
 border-radius: 100px;
@@ -830,13 +835,7 @@ color: {color:Link Hover};
 
 </div>
 
-<div id="links">
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-</div>
+<div id="pl-wrapper">
 
 <div id="posts">
 
@@ -1016,6 +1015,16 @@ Or <a href="{NextPage}">Next</a>
 </font>
 </div>
 {/block:Pagination}
+
+</div>
+
+<div id="links">
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
+</div>
 
 </div>
 
