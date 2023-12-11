@@ -20,7 +20,7 @@
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#ffde52"/>
+<meta name="color:Main Color" content="#bfc246"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Question Background" content="#ffffff"/>
@@ -350,15 +350,16 @@ text-transform: uppercase;
 }
 
 .links {
-display: inline-block;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 font-size: {select:Uppercase Font Size};
 text-align: right;
 text-transform: uppercase;
 }
 
 .links a {
-display: inline-block;
-margin-left: 10px;
+margin-right: 10px;
 }
 
 #explore {
@@ -367,7 +368,9 @@ border: none;
 color: {color:Link};
 font-family: 'Karla', sans-serif;
 font-size: {select:Uppercase Font Size};
-margin-left: 10px;
+margin-left: 0px;
+margin-right: 10px;
+padding: 0px;
 outline: none;
 text-transform: uppercase;
 -webkit-transition: all 0.5s ease;
@@ -452,15 +455,13 @@ width: 560px;
 .description {
 border-bottom: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
-margin: 30px;
-padding-bottom: 30px;
+padding: 20px;
 }
 
 .askbox {
 border-bottom: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
-margin: 30px;
-padding-bottom: 30px;
+padding: 20px;
 }
 
 .askbox-icon {
@@ -477,18 +478,15 @@ border: 1px solid {color:Main Color};
 border-radius: 5px;
 color: {color:Main Color};
 display: inline-block;
-margin-bottom: 10px;
-margin-left: 5px;
-margin-right: 5px;
+margin: 5px;
 padding: 5px;
 }
 
 .more-links {
 display: inline-block;
 font-size: {select:Uppercase Font Size};
-margin-left: 30px;
-margin-right: 30px;
-margin-bottom: 20px;
+margin: -5px;
+padding: 20px;
 text-align: center;
 text-transform: uppercase;
 }
@@ -499,9 +497,7 @@ border: 1px solid {color:Main Color};
 border-radius: 5px;
 color: {color:Post Background};
 display: inline-block;
-margin-bottom: 10px;
-margin-left: 5px;
-margin-right: 5px;
+margin: 5px;
 padding: 5px;
 }
 
@@ -511,27 +507,29 @@ color: {color:Main Color};
 }
 
 #container {
+display: flex;
+align-items: flex-start;
 margin-bottom: 100px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 159px;
 width: 560px;
 {block:IfSidebar}
-width: 920px;
+width: 950px;
 {/block:IfSidebar}
 }
 
 #sidebar {
+display: flex;
+align-items: flex-start;
 background: {color:Post Background};
-margin-left: 610px;
-padding: 30px;
-position: absolute;
+margin-left: 100px;
+padding: 20px;
 width: 250px;
 }
 
 .icon-image {
 height: 80px;
-position: absolute;
 width: 80px;
 }
 
@@ -543,7 +541,7 @@ width: 80px;
 
 .subtitle {
 font-size: {select:Uppercase Font Size};
-margin-left: 105px;
+margin-left: 20px;
 text-transform: uppercase;
 }
 
@@ -979,16 +977,6 @@ float: none;
 text-align: left;
 }
 
-.links a {
-margin-left: 0px;
-margin-right: 10px;
-}
-
-#explore {
-margin-left: 0px;
-margin-right: 10px;
-}
-
 .modal-content {
 margin-bottom: 176px;
 margin-top: 176px;
@@ -1095,8 +1083,9 @@ width: 250px;
 
 <div class="links">
 <a href="/">Home</a>
+{block:AskEnabled}<a href="/ask">Ask</a>{/block:AskEnabled}
+{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <button id="explore">Explore</button>
-{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit">Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
 <a href="/archive">Archive</a>
 </div>
 
@@ -1147,25 +1136,6 @@ width: 250px;
 </div>
 
 <div id="container">
-
-{block:IfSidebar}
-<div id="sidebar">
-
-{block:IfFruitIcon}
-<div class="fruit-icon-two"><i class="far fa-lemon"></i></div>
-{/block:IfFruitIcon}
-
-<div class="icon-image"><img src="{image:Icon Image}"/></div>
-
-<div class="subtitle">
-<b>@{Name}</b>
-<p>
-<i>{text:Subtitle}</i>
-</p>
-</div>
-
-</div>
-{/block:IfSidebar}
 
 <div id="posts">
 
@@ -1352,6 +1322,25 @@ Or <a href="{NextPage}">Next</a>
 {/block:Pagination}
 
 </div>
+
+{block:IfSidebar}
+<div id="sidebar">
+
+{block:IfFruitIcon}
+<div class="fruit-icon-two"><i class="far fa-lemon"></i></div>
+{/block:IfFruitIcon}
+
+<div class="icon-image"><img src="{image:Icon Image}"/></div>
+
+<div class="subtitle">
+<b>@{Name}</b>
+<p>
+<i>{text:Subtitle}</i>
+</p>
+</div>
+
+</div>
+{/block:IfSidebar}
 
 </div>
 
