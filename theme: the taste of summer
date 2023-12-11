@@ -336,7 +336,7 @@ margin-left: auto;
 margin-right: auto;
 width: 560px;
 {block:IfSidebar}
-width: 920px;
+width: 950px;
 {/block:IfSidebar}
 }
 
