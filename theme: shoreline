@@ -342,6 +342,8 @@ white-space: pre-wrap;
 }
 
 #container {
+display: flex;
+align-items: flex-start;
 background: {color:Entries Icon Background};
 margin-bottom: 100px;
 margin-left: auto;
@@ -352,9 +354,6 @@ width: 761.4px;
 }
 
 #sidebar {
-margin-bottom: 50px;
-margin-left: 0px;
-position: absolute;
 width: 200px;
 }
 
@@ -386,7 +385,7 @@ text-transform: uppercase;
 }
 
 #posts {
-margin-left: 300px;
+margin-left: 100px;
 width: 461.4px;
 }
  
@@ -405,14 +404,14 @@ text-transform: lowercase;
 
 .links {
 font-size: {select:Uppercase Font Size};
+margin: -5px;
 margin-top: 15px;
 text-transform: uppercase;
 }
 
 .links a {
 display: inline-block;
-margin-bottom: 10px;
-margin-right: 10px;
+margin: 5px;
 }
 
 .search-wrapper {
@@ -533,26 +532,26 @@ margin-top: 15px;
 text-transform: uppercase;
 }
 
-.mobile-description {
-border-bottom: 1px solid {color:Main Color};
-float: right;
-font-size: {select:Uppercase Font Size};
-padding: 15px;
-text-transform: uppercase;
+.mdescription {
+border-bottom: 1px solid {color:Border};
+padding: 20px;
 }
 
-.mobile-links {
+.mlinks {
 font-size: {select:Uppercase Font Size};
-float: left;
-margin: 15px;
 text-transform: uppercase;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin: -5px;
+padding: 20px;
 }
 
-.mobile-links a {
-border-left: 1px solid {color:Main Color};
-display: block;
-margin-bottom: 10px;
-padding-left: 15px;
+.mlinks a {
+background: white;
+border: 1px solid {color:Border};
+margin: 5px;
+padding: 10px;
 }
 
 .entries {
@@ -1038,26 +1037,6 @@ padding: 0px;
 width: 311.4px;
 }
 
-#sidebar {
-display: none;
-}
-
-#mobile-header-image {
-display: block;
-}
-
-#mobile-header {
-display: block;
-}
-
-.mobile-icon-image {
-background: {color:Entries Icon Background};
-}
-
-.mobile-navigation-content {
-display: block;
-}
-
 #posts {
 margin-left: 0px;
 width: 311.4px;
@@ -1093,11 +1072,11 @@ width: 250px;
 
 <div class="wrapper">
 
-<div class="close"><a href="javascript:void(0)" onclick="closenavigation()"><i class="far fa-times-circle"></i></div>
+<div class="close"><a href="javascript:void(0)" onclick="closenavigation()"><i class="far fa-times-circle"></i></a></div>
 
-{block:Description}<div class="mobile-description">{Description}</div>{/block:Description}
+{block:Description}<div class="mdescription">{Description}</div>{/block:Description}
 
-<div class="mobile-links">
+<div class="mlinks">
 <a href="/">Home</a>
 {block:AskEnabled}<a href="/ask">Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit">Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
@@ -1105,7 +1084,7 @@ width: 250px;
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
 {block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
-<a href="/archive" style="margin-bottom: 0px;">Archive</a>
+<a href="/archive">Archive</a>
 </div>
 
 </div>
