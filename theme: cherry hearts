@@ -329,15 +329,17 @@ white-space: pre-wrap;
 }
 
 #container {
+display: flex;
+align-items: flex-start;
 margin-bottom: 75px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 75px;
 {block:if400pxTextPost}
-width: 976px;
+width: 980px;
 {/block:if400pxTextPost}
 {block:if500pxTextPost}
-width: 1076px;
+width: 1080px;
 {/block:if500pxTextPost}
 }
 
@@ -346,7 +348,6 @@ background: {color:Post Background};
 border: 1px solid {color:Border};
 border-bottom: none;
 margin-top: 1px;
-position: absolute;
 width: 200px;
 }
 
@@ -424,13 +425,7 @@ border-left: 3px solid {color:Main Color};
 }
 
 #right {
-{block:if400pxTextPost}
-margin-left: 774px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-margin-left: 874px;
-{/block:if500pxTextPost}
-position: absolute;
+margin-left: 67;
 width: 202px;
 }
 
@@ -474,7 +469,7 @@ width: 100%;
 }
 
 #posts {
-margin-left: 267px;
+margin-left: 67px;
 {block:if400pxTextPost}
 width: 442px;
 {/block:if400pxTextPost}
@@ -978,28 +973,6 @@ color: {color:Link Hover};
 
 </div>
 
-<div id="right">
-
-<div class="line"></div>
-
-<div class="more-links">
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
-{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
-</div>
-
-<div class="search-wrapper">
-<form class="search" action="javascript:return false">
-<input type="text" class="query" placeholder="Search This Blog">
-</form>
-</div>
-
-</div>
-
 <div id="posts">
 
 {block:ifHeader}
@@ -1194,6 +1167,28 @@ Or <a href="{NextPage}">Next</a>
 </font>
 </div>
 {/block:Pagination}
+
+</div>
+
+<div id="right">
+
+<div class="line"></div>
+
+<div class="more-links">
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
+{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
+</div>
+
+<div class="search-wrapper">
+<form class="search" action="javascript:return false">
+<input type="text" class="query" placeholder="Search This Blog">
+</form>
+</div>
 
 </div>
 
