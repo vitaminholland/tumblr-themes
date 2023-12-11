@@ -401,15 +401,16 @@ z-index: 1;
 }
 
 #container {
+display: flex;
+align-items: flex-start;
 margin-bottom: 161px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 161px;
-width: 1002px;
+width: 1035px;
 }
 
 #links {
-position: absolute;
 top: 161px;
 width: 32.8px;
 }
@@ -458,7 +459,6 @@ background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
 margin-left: 57.8px;
-position: absolute;
 width: 300px;
 }
 
@@ -507,7 +507,7 @@ margin-right: 5px;
 }
 
 #posts {
-margin-left: 460px;
+margin-left: 100px;
 width: 542px;
 }
  
