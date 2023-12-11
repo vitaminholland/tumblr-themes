@@ -426,7 +426,7 @@ background-image: url("{image:Sidebar Image}");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: calc(100% - 49px);
+height: calc(100% - 70px);
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
@@ -439,7 +439,7 @@ background: {color:Main Color};
 align-items: center;
 display: flex;
 border-top: 1px solid {color:Border};
-height: 49px;
+height: 70px;
 }
 
 .tab {
