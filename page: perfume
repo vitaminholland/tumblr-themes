@@ -515,10 +515,10 @@ z-index: -1;
 <div class="links">
 <div class="title">Perfume</div>
 <a href="/">Home</a>
-<a href="/">Ask</a>
+<a href="/ask">Ask</a>
 <a href="/">Link One</a>
 <a href="/">Link Two</a>
-<a href="/">Archive</a>
+<a href="/archive">Archive</a>
 </div>
 
 <div id="about-wrapper">
