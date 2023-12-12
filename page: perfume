@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 'Starburst' by Franchesca (extasisthemes) -->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-- Font Awesome Script -->
+ 
+<script src="https://kit.fontawesome.com/880d7a6556.js" crossorigin="anonymous"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+.controls-button {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #000000;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+top: 20px;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.controls-button:hover {
+color: #cfcfcf;
+}
+
+.tmblr-iframe-compact .tmblr-iframe {
+right: 10px;
+top: 59px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #c23f68;
+color: white;
+}
+ 
+::-moz-selection {
+background: #c23f68;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Rethink Sans', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-family: 'Rubik', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+.title {
+background: #c23f68;
+font-weight: bold;
+border: 1px solid #eeeeee;
+color: #ffffff;
+padding: 12px;
+margin-right: 10px;
+}
+
+.links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+ 
+.links a {
+background: #ffffff;
+border: 1px solid #eeeeee;
+color: #000000;
+padding: 12px;
+margin-right: 10px;
+transition: 0.3s;
+}
+
+.links a:hover {
+background: #000000;
+color: #ffffff;
+}
+
+#about-wrapper {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+margin-top: 50px;
+width: 800px;
+}
+
+.a-side, .b-side, .c-side {
+background: #ffffff;
+border: 1px solid #eeeeee;
+width: 250px;
+}
+
+.about-image {
+height: auto;
+width: 250px;
+}
+
+.about-image img {
+display: block;
+height: auto;
+width: 250px;
+}
+
+.box {
+border-bottom: 1px solid #eeeeee;
+}
+
+.box:last-of-type {
+border-bottom: none;
+}
+
+.box-title {
+border-bottom: 1px solid #eeeeee;
+font-weight: bold;
+font-size: 0.9rem;
+padding: 12px;
+text-transform: uppercase;
+}
+
+.box-content {
+padding: 12px;
+}
+
+.about-title {
+font-weight: bold;
+font-size: 1rem;
+text-transform: lowercase;
+margin: 12px;
+}
+
+.about-content {
+margin: 12px;
+}
+
+.info {
+text-transform: uppercase;
+font-size: 0.9rem;
+}
+
+.info li {
+border-bottom: 1px solid #eeeeee;
+list-style-type: none;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+ 
+.info li:first-child {
+padding-top: 0px;
+}
+ 
+.info li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+ 
+.task li {
+border-bottom: 1px solid #eeeeee;
+list-style-type: none;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+ 
+.task li:first-child {
+padding-top: 0px;
+}
+ 
+.task li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+ 
+.watchlist li {
+border-bottom: 1px solid #eeeeee;
+list-style-type: none;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+ 
+.watchlist li:first-child {
+padding-top: 0px;
+}
+ 
+.watchlist li:last-child {
+border-bottom: none;
+padding-bottom: 0px;
+}
+ 
+.progress-wrapper {
+background: #f0f0f0;
+border-radius: 100px;
+margin-top: 5px;
+padding: 1px;
+width: calc(100% - 2px);
+}
+ 
+.progress {
+background: #fe90c1;
+border-radius: 100px;
+height: 3px;
+}
+
+.sideblogs {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+text-transform: lowercase;
+}
+
+.sideblog {
+align-items: center;
+border-bottom: 1px solid {color:Border};
+display: flex;
+border-bottom: 1px solid {color:Border};
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+.sideblog:last-of-type {
+border-bottom: none;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+.sideblog-image {
+height: 50px;
+width: 50px;
+}
+
+.sideblog-image img {
+border-radius: 5px;
+height: 50px;
+width: 50px;
+}
+
+.sideblog-name {
+font-size: {select:Uppercase Font Size};
+font-weight: bold;
+margin-left: 20px;
+text-transform: uppercase;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.sideblog-name a {
+border: none;
+padding: 0px;
+}
+
+.sideblog-name a:hover {
+background: none;
+color: {color:Link Hover};
+}
+
+#top {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 66px; 
+color: #000000;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#top:hover {
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #eeeeee;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<a class="controls-button" title="Tumblr Controls"><i class="fas fa-cog"></i></a>
+
+<div id="container">
+
+<div class="links">
+<div class="title">Perfume</div>
+<a href="/">Home</a>
+<a href="/">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Archive</a>
+</div>
+
+<div id="about-wrapper">
+
+<!-- Start of Left Side About -->
+
+<div class="a-side">
+
+<div class="about-image"><img src="https://i.imgur.com/3AcCo1z.png"/></div>
+
+<div class="box">
+
+<div class="box-title"><i class="fa-regular fa-circle-check" style="margin-right: 5px;"></i>Likes</div>
+
+<div class="box-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="box-title"><i class="fa-regular fa-circle-xmark" style="margin-right: 5px;"></i>Disikes</div>
+
+<div class="box-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Left Side About -->
+
+<!-- Start of Center Side About -->
+
+<div class="b-side">
+
+<div class="box">
+
+<div class="box-title"><i class="fa-regular fa-user-circle" style="margin-right: 5px;"></i>Info</div>
+
+<div class="box-content">
+
+<div class="info">
+<li><i class="far fa-smile"></i><font style="float: right;">Name</font></li>
+<li><i class="fas fa-check"></i><font style="float: right;">Pronouns</font></li>
+<li><i class="fas fa-birthday-cake"></i><font style="float: right;">Age</font></li>
+<li><i class="fas fa-globe-americas"></i><font style="float: right;">Location</font></li>
+</div>
+
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="about-title">About The Blogger</div>
+
+<div class="about-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Center Side About -->
+
+<!-- Start of Right Side About -->
+
+<div class="c-side">
+
+<!-- Start of Sideblogs -->
+
+<div class="box">
+
+<div class="box-title"><i class="fas fa-user-plus" style="margin-right: 5px;"></i>Sideblogs</div>
+
+<div class="box-content">
+
+<div class="sideblogs">
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/jUjlXpF.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/2rtSmTc.png"/></div>
+
+<div class="sideblog-name"><a href="/">Sideblog URL</a></div>
+
+</div>
+
+<!-- End of Sideblog -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Sideblogs -->
+
+<!-- Start of To Do List -->
+
+<div class="box">
+
+<div class="box-title"><i class="fa-regular fa-edit" style="margin-right: 5px;"></i>To Do List</div>
+
+<div class="box-content">
+
+<div class="task">
+<li><i class="far fa-check-circle" style="color: #4cbb17"></i> Marathon Disney Movies.</li>
+<li><i class="fas fa-spinner" style="color: #ff7800;"></i> Feed the cat.</li>
+<li><i class="far fa-times-circle" style="color: #e60000"></i> Sweep the front gate.</li>
+</div>
+
+</div>
+
+</div>
+
+<!-- End of To Do List -->
+
+<!-- Start of Watchlist -->
+
+<div class="box">
+
+<div class="box-title"><i class="fas fa-television" style="margin-right: 5px;"></i>Info</div>
+
+<div class="box-content">
+
+<div class="watchlist">
+ 
+<li>
+Julie And The Phantoms: Season One
+<div class="progress-wrapper">
+<div class="progress" style="width: 65%;"></div>
+</div>
+</li>
+ 
+<li>
+Mean Girls
+<div class="progress-wrapper">
+<div class="progress" style="width: 50%;"></div>
+</div>
+</li>
+ 
+<li>
+The Princess Switch Series
+<div class="progress-wrapper">
+<div class="progress" style="width: 85%;"></div>
+</div>
+</li>
+ 
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Watchlist -->
+
+</div>
+
+<!-- End of Right Side About -->
+
+</div>
+
+</div>
+
+<div id="top"><i class="fas fa-arrow-circle-up"></i></div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="fas fa-heart"></i></a><div class="credit-name">tanaka-drew</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
