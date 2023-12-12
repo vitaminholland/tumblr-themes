@@ -374,9 +374,8 @@ text-transform: lowercase;
 
 .sideblog {
 align-items: center;
-border-bottom: 1px solid {color:Border};
+border-bottom: 1px solid #eeeeee;
 display: flex;
-border-bottom: 1px solid {color:Border};
 margin-bottom: 10px;
 padding-bottom: 10px;
 }
@@ -399,7 +398,7 @@ width: 50px;
 }
 
 .sideblog-name {
-font-size: {select:Uppercase Font Size};
+font-size: 0.9rem;
 font-weight: bold;
 margin-left: 20px;
 text-transform: uppercase;
@@ -415,7 +414,7 @@ padding: 0px;
 
 .sideblog-name a:hover {
 background: none;
-color: {color:Link Hover};
+color: #cfcfcf;
 }
 
 #top {
