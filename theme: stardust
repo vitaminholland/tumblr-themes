@@ -384,17 +384,20 @@ text-transform: uppercase;
 }
  
 .navigation {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 font-size: {select:Uppercase Font Size};
 margin: -5px;
 text-transform: uppercase;
+width: 410px;
 }
  
 .navigation a {
 border-bottom: 1px solid {color:Border};
-display: inline-block;
 margin: 5px;
 padding-bottom: 5px;
-width: 192px;
+width: 195px;
 }
  
 @keyframes animatetop {
