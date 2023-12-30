@@ -108,32 +108,6 @@ attribute:"title"
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- Responsive Tumblr Videos Script -->
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
- 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
- 
-<script>
-$(document).ready(function() {
-flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
-
-<script src="//npf-images-v3.github.io/script.js"></script>
-
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
-:root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 5px;
-}
-</style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
-
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
 <script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
@@ -169,7 +143,21 @@ usernameColon: false
 }); 
 }); 
 </script>
- 
+
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 1px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
+
 <!-- Inline Images Resizing Script -->
  
 <script>
@@ -1035,7 +1023,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 {block:Posts}
 
-<div class="entries" id="{PostID}">
+<div class="entries" id="{PostID}" post-type="{PostType}">
 
 {block:NoteCount}<div class="notes-wrapper"><i class="far fa-chart-bar" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a></div>{/block:NoteCount}
 
