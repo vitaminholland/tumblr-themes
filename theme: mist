@@ -133,20 +133,6 @@ document.getElementById("canvas").style.marginLeft = "0";
 }
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
-
-<script src="//npf-images-v3.github.io/script.js"></script>
-
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
-:root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 5px;
-}
-</style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
-
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
 <script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
@@ -182,6 +168,20 @@ usernameColon: false
 }); 
 }); 
 </script>
+
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 1px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -1461,7 +1461,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 {block:Posts}
 
-<div class="entries" id="{PostID}">
+<div class="entries" id="{PostID}" post-type="{PostType}">
 
 <div class="entries-wrapper">
 
