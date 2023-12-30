@@ -1324,15 +1324,19 @@ text-transform: lowercase;
 }
 
 .about-images {
+align-items: flex-start;
 display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 height: 166px;
 margin-top: 20px;
-justify-content: space-between;
-width: 500px;
+margin: -1;
+width: 504px;
 }
 
 .about-image {
 height: 166px;
+margin: 1;
 width: 166px;
 }
 
