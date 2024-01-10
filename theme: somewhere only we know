@@ -462,6 +462,7 @@ width: 250px;
 color: {color:Main Color};
 font-weight: bold;
 text-transform: lowercase;
+text-shadow: 2px 2px white;
 }
 
 .main-links {
