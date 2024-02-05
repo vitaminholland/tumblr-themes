@@ -361,6 +361,8 @@ text-transform: uppercase;
 
 .hns-wrapper {
 margin-top: 30px;
+display: flex;
+align-items: center;
 width: 280px;
 }
 
@@ -437,8 +439,7 @@ opacity: 1;
 background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 100px;
-margin-left: 89.6px;
-margin-top: -34px;
+margin-left: 10px;
 width: 188px;
 }
 
