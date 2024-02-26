@@ -422,6 +422,9 @@ text-transform: uppercase;
 }
  
 .links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 font-size: {select:Uppercase Font Size};
 margin: -5px;
 margin-top: 15px;
@@ -430,10 +433,9 @@ text-transform: uppercase;
 
 .links a {
 border-bottom: 1px solid {color:Border};
-display: inline-block;
 margin: 5px;
 padding-bottom: 10px;
-width: 191px;
+width: 194.5px;
 }
 
 @keyframes animatetop {
