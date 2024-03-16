@@ -63,7 +63,7 @@
 <meta name="text:Link 3 Name" content="Link Three"/>
 
 <meta name="select:Post Width" content="540px" title="540px"/>
-meta name="select:Post Width" content="450px" title="450px"/>
+<meta name="select:Post Width" content="450px" title="450px"/>
 <meta name="select:Post Width" content="500px" title="500px"/>
 
 <meta name="if:Submit Link" content="1"/>
