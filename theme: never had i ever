@@ -472,7 +472,7 @@ background: white;
 height: 550px;
 left: calc(50% - 199px);
 position: absolute;
-top: calc(50% - 248.5px);
+top: calc(50% - 249.5px);
 overflow-x: hidden;
 overflow-y: scroll;
 width: 700px;
