@@ -615,6 +615,10 @@ justify-content: space-between;
 margin-bottom: 10px;
 }
 
+.more-links a:last-of-type {
+margin-bottom: 0px!important;
+}
+
 .updates {
 border-top: 1px solid {color:Border};
 display: flex;
@@ -661,7 +665,11 @@ text-transform: uppercase;
 }
 
 .links a {
-margin: 5px;
+margin-bottom: 10px;
+}
+ 
+.links a:last-of-type {
+margin-bottom: 0px!important;
 }
  
 .td-wrapper {
