@@ -28,7 +28,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#325d3C"/>
+<meta name="color:Main Color" content="#9e1F1c"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Pre Background" content="#f0f0f0"/>
@@ -57,7 +57,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="image:Sidebar Image" content="https://i.imgur.com/pzTIqoA.jpeg"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/qt630yY.jpeg"/>
 
 <meta name="text:Title" content="Never Had I Ever"/>
 
@@ -98,7 +98,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 <script>
 (function($){
 $(document).ready(function(){
-$("a[title]").style_my_tooltips({
+$("a[title], div[title]").style_my_tooltips({
 tip_follows_cursor:true,
 tip_delay_time:90,
 tip_fade_speed:600,
@@ -523,11 +523,11 @@ margin-top: 70px;
 width: 600px;
 }
 
-.ml-title-wrapper, .about-title-wrapper {
+.ml-title-wrapper, .about-title-wrapper, .muses-title-wrapper {
 display: flex;
 }
 
-.ml-title, .about-title {
+.ml-title, .about-title, .muses-title {
 display: flex;
 align-items: center;
 background: {color:Main Color};
@@ -564,7 +564,7 @@ width: calc(33.33% - 20px);
 margin-left: auto;
 margin-right: auto;
 margin-top: 50px;
-margin-bottom: 70px;
+margin-bottom: 50px;
 width: 600px;
 }
 
@@ -584,6 +584,59 @@ width: 70px;
 .about-image img {
 height: 70px;
 width: 70px;
+}
+
+.muses-wrapper {
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 70px;
+width: 600px;
+}
+
+.gallery {
+align-items: flex-start;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -10px;
+margin-top: 20px;
+width: 620px;
+}
+
+.mimi-wrapper {
+display: flex;
+height: 135px;
+margin: 10px;
+width: 135px;
+}
+
+.muse-image {
+height: 135px;
+width: 135px;
+}
+
+.muse-image img {
+height: 135px;
+width: 135px;
+}
+
+.muse-icon {
+background: {color:Main Color};
+border-radius: 100px;
+color: {color:Post Background};
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+margin-top: 90.61px;
+margin-left: -44.39px;
+width: 0.9rem;
+}
+
+.muses-description {
+margin-top: 20px;
 }
 
 #posts-wrapper {
@@ -1230,6 +1283,8 @@ z-index: -1;
 
 </div>
 
+<!-- Start of About -->
+
 <div class="about-wrapper">
 
 <div class="about-title-wrapper">
@@ -1251,6 +1306,112 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 </div>
 
 </div>
+
+<!-- End of About -->
+
+<!-- Start of Muses -->
+
+<div class="muses-wrapper">
+
+<div class="muses-title-wrapper">
+
+<div class="muses-title">My Muses</div>
+
+</div>
+
+<div class="gallery">
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/qukHy8h.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-wind"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/jn7oOj6.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-anchor-simple"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/8nFbFrQ.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-ghost"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/CBDRomV.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-lightning-a"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/ww1X5gJ.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-music-notes"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="mimi-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/a7MFXnl.png"/></div>
+
+<div class="muse-icon" title="Name of Muse"><i class="ph-bold ph-orange-slice"></i></div>
+
+</div>
+
+<!-- End of Muse -->
+
+</div>
+
+<div class="muses-description">
+<i class="ph-bold ph-wind" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<br><br>
+<i class="ph-bold ph-anchor-simple" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<br><br>
+<i class="ph-bold ph-ghost" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<br><br>
+<i class="ph-bold ph-lightning-a" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<br><br>
+<i class="ph-bold ph-music-notes" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<br><bR>
+<i class="ph-bold ph-orange-slice" style="color: {color:Main Color};"></i> <b>Name of Muse</b> : Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+</div>
+
+</div>
+
+<!-- End of Muses -->
 
 </div>
 
