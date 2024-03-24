@@ -543,7 +543,7 @@ opacity: 1;
 .left {
 height: 550px;
 border-right: 1px solid {color:Border};
-width: 300px;
+width: 400px;
 align-items: center;
 display: flex;
 flex-direction: column;
@@ -553,7 +553,7 @@ justify-content: space-between;
 .more-links {
 margin-top: 50px;
 text-transform: lowercase;
-width: 200px;
+width: 300px;
 }
 
 .more-links a {
@@ -563,7 +563,7 @@ margin-bottom: 10px;
 
 .socials {
 margin-bottom: 50px;
-width: 200px;
+width: 300px;
 }
 
 .socials-links {
@@ -587,7 +587,7 @@ width: 0.9rem;
 
 .right {
 height: 550px;
-width: 700px;
+width: 650px;
 }
 
 .right-wrapper {
@@ -596,7 +596,7 @@ height: 492px;
 display: flex;
 margin-top: 29px;
 margin-left: 30px;
-width: 640px;
+width: 590px;
 }
 
 .aitb-wrapper {
@@ -671,12 +671,12 @@ margin-top: 20px;
 height: 454px;
 margin-top: 20px;
 margin-left: 280px;
-width: 350px;
+width: 310px;
 }
 
 .big-about-image img {
 height: 454px;
-width: 350px;
+width: 310px;
 }
 
 .box-wrapper {
