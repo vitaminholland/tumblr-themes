@@ -1,0 +1,900 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+theme: plastic hearts
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+.controls-button {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+top: 20px;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.controls-button:hover {
+color: #cfcfcf;
+}
+
+.tmblr-iframe-compact .tmblr-iframe {
+right: 10px;
+top: 59px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #f5ba89;
+color: white;
+}
+ 
+::-moz-selection {
+background: #f5ba89;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Onest', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: bold;
+}
+
+h1 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+height: 550px;
+position: fixed;
+top: calc(50% - 276px);
+left: calc(50% - 361.5px);
+width: 721px;
+}
+
+#links-wrapper {
+background: #000000;
+border-right: 1px solid #d2d2d2;
+height: 550px;
+position: absolute;
+width: 70px;
+}
+
+.tab {
+background: #ffffff;
+font-size: 0.9rem;
+padding: 10px;
+width: 20px;
+margin-right: auto;
+margin-left: auto;
+align-items: center;
+display: flex;
+margin-top: 10px;
+flex-direction: column; 
+flex-wrap: wrap;
+border-radius: 5px;
+}
+
+.tab a {
+margin-bottom: 10px;
+}
+
+.tab a:last-of-type {
+margin-bottom: 0px;
+}
+
+.tab a.active {
+color: #f5ba89;
+}
+
+.tab a:hover {
+color: #cfcfcf;
+}
+
+.iit-wrapper {
+margin-top: 10px;
+background: #ffffff;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+border-radius: 5px;
+padding: 5px;
+padding-bottom: 10px;
+width: 30px;
+}
+
+.icon-image {
+height: 30px;
+width: 30px;
+}
+
+.icon-image img {
+height: 30px;
+width: 30px;
+}
+
+.title {
+align-items: center;
+display: flex;
+flex-grow: 2;
+font-weight: bold;
+font-size: 0.9rem;
+text-transform: uppercase;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+white-space: nowrap;
+margin-top: 10px;
+-webkit-writing-mode: vertical-rl;
+writing-mode: vertical-rl;
+text-align: center;
+text-transform: uppercase;
+}
+
+.tab-content {
+height: 550px;
+animation: fadeEffect 1s; 
+display: none;
+margin-left: 71px;
+overflow-y: scroll;
+overflow-x: hidden;
+width: 650px;
+}
+ 
+@-webkit-keyframes fadeEffect {
+    
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+
+.one-wrapper {
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+width: 570px;
+}
+
+.ua-wrapper {
+display: flex;
+width: 560px;
+}
+
+.left {
+width: 350px;
+}
+
+.about-image-horizontal {
+height: 200px;
+width: 350px;
+}
+
+.about-image-horizontal img {
+height: 200px;
+width: 350px;
+}
+
+.ld-wrapper {
+margin-top: 20px;
+display: flex;
+width: 350px;
+}
+
+.likes-wrapper {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+align-items: center;
+display: flex;
+height: 198px;
+width: 163px;
+}
+
+.likes {
+max-height: 158px;
+padding: 20px;
+overflow-y: scroll;
+width: 123px;
+}
+
+.dislikes-wrapper {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+align-items: center;
+display: flex;
+height: 198px;
+margin-left: 20px;
+width: 163px;
+}
+
+.dislikes {
+max-height: 158px;
+padding: 20px;
+overflow-y: scroll;
+width: 123px;
+}
+
+.right {
+height: 420px;
+margin-left: 20px;
+width: 200px;
+}
+
+.right img {
+height: 420px;
+width: 200px;
+}
+
+.about-wrapper {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+margin-top: 20px;
+padding: 20px;
+width: 528px;
+}
+
+.about-title {
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.about {
+margin-top: 20px;
+}
+
+.two-wrapper {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+margin-top: 50px;
+width: 600px;
+}
+
+.muse-wrapper {
+border: 1px solid #d2d2d2;
+max-width: 180px;
+}
+
+.muse-image {
+height: auto;
+width: 180px;
+}
+
+.muse-image img {
+display: block;
+height: auto;
+width: 180px;
+}
+
+.muse-details {
+background: #ffffff;
+padding: 20px;
+width: 140px;
+}
+
+.muse-link {
+font-size: 0.9rem;
+text-align: center;
+width: 180px;
+text-transform: uppercase;
+}
+
+.muse-link a {
+background: #000000;
+color: #ffffff;
+padding: 10px;
+display: block;
+}
+
+.muse-link a:hover {
+color: #cfcfcf;
+}
+
+/* grid column spacing */
+[griddery-id=".muse-wrapper"]
+[griddery-col] + [griddery-col]{
+padding-left: 15px;
+}
+
+/* grid row spacing */
+[griddery-id=".muse-wrapper"]
+[griddery-item] + [griddery-item]{
+margin-top: 15px;
+}
+
+.three-wrapper {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+margin-top: 50px;
+width: 500px;
+}
+
+.qa-wrapper {
+border-bottom: 1px solid #d2d2d2;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.qa-wrapper:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.q-wrapper {
+align-items: flex-start;
+display: flex;
+}
+
+.question-icon {
+height: 70px;
+width: 70px;
+}
+
+.question-icon img {
+height: 70px;
+width: 70px;
+}
+
+.question {
+background: #000000;
+color: #ffffff;
+margin-left: 20px;
+padding: 20px;
+width: 370px;
+}
+
+.a-wrapper {
+align-items: flex-start;
+margin-top: 20px;
+display: flex;
+}
+
+.answer-icon {
+margin-left: 20px;
+height: 70px;
+width: 70px;
+}
+
+.answer-icon img {
+height: 70px;
+width: 70px;
+}
+
+.answer {
+background: #f0f0f0;
+padding: 20px;
+width: 370px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #333333;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
+
+<div id="container">
+
+<!-- Start of Links, Icon + Title -->
+
+<div id="links-wrapper">
+
+<div class="tab">
+<a href="/" title="Home"><i class="ph-bold ph-house"></i></a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen" title="Biography"><i class="ph-bold ph-acorn"></i></a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen" title="Muses"><i class="ph-bold ph-cake"></i></a>
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen" title="Message"><i class="ph-bold ph-mailbox"></i></a>
+<a href="/archive" title="Archive"><i class="ph-bold ph-archive"></i></a>
+</div>
+
+<div class="iit-wrapper"><div class="icon-image"><img src="https://i.imgur.com/fYD8ee2.png"/></div><div class="title">Plastic Hearts</div>
+</div>
+
+</div>
+
+<!-- End of Links, Icon + Title -->
+
+<!-- Start of Tab One -->
+
+<div id="one" class="tab-content">
+
+<div class="one-wrapper">
+
+<div class="ua-wrapper">
+
+<div class="left">
+
+<div class="about-image-horizontal"><img src="https://i.imgur.com/71C5YlP.jpeg"/></div>
+
+<div class="ld-wrapper">
+
+<div class="likes-wrapper">
+<div class="likes">
+<font style="color: green;"><i class="ph-bold ph-thumbs-up"></i> Likes:</font> Rainy days, coffee, cats, fantasy books.
+</div>
+</div>
+
+<div class="dislikes-wrapper">
+<div class="dislikes">
+<font style="color: red;"><i class="ph-bold ph-thumbs-down"></i> Disikes:</font> Wet socks, thunder storms, soggy pasta.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="right"><img src="https://i.imgur.com/d5i8BKq.jpeg"/></div>
+
+</div>
+
+<div class="about-wrapper">
+
+<div class="about-title">hi, my name is *insert name*</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Start of Tab Two -->
+
+<div id="two" class="tab-content">
+
+<div class="two-wrapper">
+
+<!-- Start of Muse -->
+
+<div class="muse-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/o3exl90.png"/></div>
+
+<div class="muse-details">
+<b>Regina George.</b> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+<div class="muse-link"><a href="/">Character Tag</a></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="muse-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/J0wCq2m.jpeg"/></div>
+
+<div class="muse-details">
+<b>Annabeth Chase.</b> Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+</div>
+
+<div class="muse-link"><a href="/">Character Tag</a></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="muse-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/T6NTTqg.jpeg"/></div>
+
+<div class="muse-details">
+<b>Isabela Madrigal.</b>  Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+</div>
+
+<div class="muse-link"><a href="/">Character Tag</a></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="muse-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/86EyNcz.png"/></div>
+
+<div class="muse-details">
+<b>Muse Name.</b> Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="muse-link"><a href="/">Character Tag</a></div>
+
+</div>
+
+<!-- End of Muse -->
+
+<!-- Start of Muse -->
+
+<div class="muse-wrapper">
+
+<div class="muse-image"><img src="https://i.imgur.com/gXs0TNv.png"/></div>
+
+<div class="muse-details">
+<b>Muse Name.</b> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</div>
+
+<div class="muse-link"><a href="/">Character Tag</a></div>
+
+</div>
+
+<!-- End of Muse -->
+
+</div>
+
+</div>
+
+<!-- End of Tab Two -->
+
+<!-- Start of Tab Three -->
+
+<div id="three" class="tab-content">
+
+<div class="three-wrapper">
+
+<!-- Start of Question + Answer -->
+
+<div class="qa-wrapper">
+
+<div class="q-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/v9fiHGk.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<div class="a-wrapper">
+
+<div class="answer">
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/mAawxUH.png"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question + Answer-->
+
+<!-- Start of Question + Answer -->
+
+<div class="qa-wrapper">
+
+<div class="q-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/v9fiHGk.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<div class="a-wrapper">
+
+<div class="answer">
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/mAawxUH.png"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question + Answer-->
+
+<!-- Start of Question + Answer -->
+
+<div class="qa-wrapper">
+
+<div class="q-wrapper">
+
+<div class="question-icon"><img src="https://i.imgur.com/v9fiHGk.png"/></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<div class="a-wrapper">
+
+<div class="answer">
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+</div>
+
+<div class="answer-icon"><img src="https://i.imgur.com/mAawxUH.png"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question + Answer-->
+
+<p><iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe></p>
+
+</div>
+
+</div>
+
+<!-- End of Tab Three -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//griddery.github.io/grid.js"></script>
+
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".muse-wrapper",
+columns: 3
+})
+})
+</script>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
