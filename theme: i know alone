@@ -1260,6 +1260,7 @@ z-index: -1;
 
 <div class="entries-wrapper">
 
+{block:IndexPage}
 {block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
@@ -1275,6 +1276,7 @@ z-index: -1;
 </div>
 </div>
 {/block:NoteCount}
+{/block:IndexPage}
 
 {block:Text}
 {block:NotReblog}
