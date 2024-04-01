@@ -1264,7 +1264,7 @@ z-index: -1;
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
-{block:NoteCount}<a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}
+<a href="{Permalink}">{NoteCountWithLabel}</a>
 </div>
 <div class="pslr-b">
 <div class="origins-icon">
