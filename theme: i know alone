@@ -1260,7 +1260,7 @@ z-index: -1;
 
 <div class="entries-wrapper">
 
-{block:Date}
+{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
@@ -1274,7 +1274,7 @@ z-index: -1;
 </div>
 </div>
 </div>
-{/block:Date}
+{/block:NoteCount}
 
 {block:Text}
 {block:NotReblog}
