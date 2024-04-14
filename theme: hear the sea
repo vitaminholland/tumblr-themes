@@ -427,7 +427,7 @@ width: calc({select:Post Width} + 2px);
 #user-information {
 background: {color:Post Background};
 border: 1px solid {color:Border};
-margin-bottom: 100px;
+margin-bottom: 70px;
 position: relative;
 padding: 20px;
 width: calc({select:Post Width} - 42px);
