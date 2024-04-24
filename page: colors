@@ -343,6 +343,9 @@ color: #eeccdd;
 .commission-wrapper {
 margin: -10px;
 overflow: hidden;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 padding-bottom: 22px;
 width: 840px;
 }
@@ -353,7 +356,7 @@ float: left;
 margin: 10px;
 padding-bottom: 10px;
 text-transform: none;
-width: 385px;
+width: 400px;
 }
 
 .more-links {
