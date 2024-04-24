@@ -504,7 +504,9 @@ color: {color:Main Color};
 
 .commission-wrapper {
 margin: -10px;
-overflow: hidden;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 padding-bottom: 22px;
 width: 420px;
 }
@@ -516,7 +518,7 @@ font-size: {select:Uppercase Font Size};
 margin: 10px;
 padding-bottom: 10px;
 text-transform: uppercase;
-width: 188px;
+width: 190px;
 }
 
 .faq-wrapper {
