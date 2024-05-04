@@ -452,7 +452,6 @@ width: 310px;
 .description-wrapper {
 background: {color:Post Background};
 border: 1px solid {color:Border};
-border-top-right-radius: 5px;
 align-items: center;
 display: flex;
 height: 208px;
