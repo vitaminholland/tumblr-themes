@@ -651,7 +651,6 @@ width: 30px;
  
 img.tumblr_avatar {
 border-radius: 100px;
-display: inline-block
 height: 30px;
 margin-right: 10px;
 width: 30px;
@@ -659,7 +658,6 @@ width: 30px;
  
 img.user-image {
 border-radius: 100px;
-display: inline-block;
 height: 30px;
 margin-right: 10px;
 width: 30px;
