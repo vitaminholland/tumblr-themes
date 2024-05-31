@@ -985,20 +985,18 @@ width: 30px;
  
 img.tumblr_avatar {
 border-radius: 100px;
-display: inline-block;
-height: 30px!important;
+display: inline-block
+height: 30px;
 margin-right: 10px;
-vertical-align: middle;
-width: 30px!important;
+width: 30px;
 }
  
 img.user-image {
 border-radius: 100px;
 display: inline-block;
-height: 30px!important;
+height: 30px;
 margin-right: 10px;
-vertical-align: middle;
-width: 30px!important;
+width: 30px;
 }
  
 a.tumblr_blog {
