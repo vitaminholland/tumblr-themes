@@ -687,9 +687,9 @@ padding: 0px;
  
 .tumblr_avatar {
 border-radius: 100px;
-height: 30px;
+height: 30px!important;
 margin-bottom: 20px;
-width: 30px;
+width: 30px!important;
 }
  
 .tumblr_avatar img {
