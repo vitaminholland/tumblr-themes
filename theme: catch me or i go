@@ -624,24 +624,19 @@ padding: 0px;
 }
  
 .tumblr_avatar {
+border-radius: 100px;
 height: 30px;
 margin-bottom: 20px;
 width: 30px;
 }
  
-img.tumblr_avatar {
-border-radius: 100px;
-display: inline-block
+.tumblr_avatar img {
 height: 30px;
-margin-right: 10px;
 width: 30px;
 }
  
-img.user-image {
-border-radius: 100px;
-display: inline-block;
+.user-image img {
 height: 30px;
-margin-right: 10px;
 width: 30px;
 }
  
@@ -651,6 +646,7 @@ font-weight: bold;
 margin-top: calc((30px - {select:Body Font Size}) / 4);
 display: inline-block;
 position: absolute;
+margin-left: 10px;
 text-align: center;
 text-transform: lowercase;
 }
