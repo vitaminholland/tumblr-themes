@@ -668,27 +668,20 @@ padding: 0px;
 }
  
 .tumblr_avatar {
+border-radius: 100px;
 height: 30px;
 margin-bottom: 20px;
 width: 30px;
 }
  
-img.tumblr_avatar {
-border-radius: 100px;
-display: inline-block;
-height: 30px!important;
-margin-right: 10px;
-vertical-align: middle;
-width: 30px!important;
+.tumblr_avatar img {
+height: 30px;
+width: 30px;
 }
  
-img.user-image {
-border-radius: 100px;
-display: inline-block;
-height: 30px!important;
-margin-right: 10px;
-vertical-align: middle;
-width: 30px!important;
+.user-image img {
+height: 30px;
+width: 30px;
 }
  
 a.tumblr_blog {
@@ -697,6 +690,7 @@ font-weight: bold;
 margin-top: calc((30px - {select:Body Font Size}) / 4);
 display: inline-block;
 position: absolute;
+margin-left: 10px;
 text-align: center;
 text-transform: lowercase;
 }
