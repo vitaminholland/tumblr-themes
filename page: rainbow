@@ -149,7 +149,7 @@ z-index: 999999999999999999999999999999999999;
 
 body {
 background: #f0f0f0;
-color: {color:Text};
+color: #555555;
 cursor: url(https://i.imgur.com/lhPqll6.png), progress;
 font-family: 'Poppins', sans-serif;
 font-size: 1rem;
@@ -529,7 +529,7 @@ opacity: 1;
 }
 
 .credit-name {
-background: {color:Text};
+background: #555555;
 border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 20px;
