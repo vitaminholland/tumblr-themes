@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
+
+<!-- 
+
+page: rainbow
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+.controls-button {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+top: 20px;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.controls-button:hover {
+color: #cfcfcf;
+}
+
+.tmblr-iframe-compact .tmblr-iframe {
+right: 10px;
+top: 59px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+background: #000000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+height: 1px;
+width: 1px;
+}
+
+::selection {
+background: #000000;
+color: white;
+}
+
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: {color:Text};
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+height: 550px;
+border: 1px solid #d2d2d2;
+top: calc(50% - 276px);
+left: calc(50% - 401px);
+position: absolute;
+width: 800px;
+}
+
+.tab {
+background: #ffffff;
+border-top: 1px solid #d2d2d2;
+height: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+ 
+.tab a {
+border-right: 1px solid #d2d2d2;
+color: #000000;
+display: flex;
+justify-content: center;
+font-size: 0.9rem;
+flex-grow: 2;
+font-variant: normal;
+line-height: 1;
+height: 10px;
+padding: 20px;
+width: 0.9rem;
+}
+
+.tab a:last-of-type {
+border-right: none;
+}
+ 
+.tab a:hover {
+background: #000000;
+color: #ffffff;
+}
+
+.tab a.active {
+background: #000000;
+color: #ffffff;
+}
+
+.tab-content {
+animation: fadeEffect 1s;
+overflow-y: scroll;
+overflow-x: hidden;
+display: none;
+height: 499px;
+}
+
+@-webkit-keyframes fadeEffect {
+    
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+ 
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+ 
+to {
+opacity: 1;
+}
+
+}
+
+.about-wrapper {
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+width: 600px;
+}
+
+.ait-wrapper {
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 600px;
+}
+
+.about-gallery {
+height: 100px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 220px;
+}
+
+.about-image {
+height: 100px;
+width: 100px;
+}
+
+.about-image img {
+height: 100px;
+width: 100px;
+}
+
+.about-title {
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+text-align: right;
+width: 360px;
+}
+
+.ais-wrapper {
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 20px;
+width: 600px;
+}
+
+.socials-links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+width: 360px;
+}
+
+.socials-links a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+margin: 5px;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+.qb-wrapper {
+margin-top: 20px;
+}
+
+.about-quote {
+border: 1px solid #d2d2d2;
+background: #f0f0f0;
+font-weight: 400;
+font-size: 1.2rem;
+padding: 20px;
+font-family: 'Playfair Display', sans-serif;
+}
+
+.about-bio {
+margin-top: 20px;
+}
+
+.faq-wrapper {
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+}
+
+.qa-wrapper {
+border-bottom: 1px solid #d2d2d2;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.question-wrapper {
+display: flex;
+align-items: flex-start;
+border: 1px solid #d2d2d2;
+background: #f0f0f0;
+padding: 20px;
+}
+
+.question-icon {
+color: #000000;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.question {
+margin-left: 20px;
+}
+
+.answer-wrapper {
+align-items: stretch;
+display: flex;
+margin-top: 20px;
+}
+
+.answer {
+align-self: center;
+width: 509px;
+}
+
+.answer-border {
+background: #d2d2d2;
+margin-left: 20px;
+height: auto;
+width: 1px;
+}
+
+.answer-icon-image {
+height: 50px;
+margin-left: 20px;
+width: 50px;
+}
+
+.answer-icon-image img {
+border-radius: 100px;
+height: 50px;
+width: 50px;
+}
+
+.tw-wrapper-wrapper {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+margin-top: 50px;
+width: 700px;
+}
+
+.tw-wrapper {
+margin: 10px;
+max-width: 180px;
+}
+
+.tags-header {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+padding: 20px;
+}
+
+.tags-title {
+font-weight: bold;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.tags-subtitle {
+font-style: italic;
+text-transform: lowercase;
+}
+
+.tags {
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+text-transform: lowercase;
+}
+
+.tags a {
+border-bottom: 1px solid #d2d2d2;
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+.tags a:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: {color:Text};
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
+
+<div id="container">
+
+<!-- Start of About -->
+
+<div id="one" class="tab-content">
+
+<div class="about-wrapper">
+
+<div class="ait-wrapper">
+
+<div class="about-gallery">
+
+<div class="about-image"><img src="https://i.imgur.com/q3gtUUt.jpeg"/></div>
+
+<div class="about-image" style="margin-left: 20px;"><img src="https://i.imgur.com/w7zks9K.jpeg"/></div>
+
+</div>
+
+<div class="about-title">i'll show you the big rainbow in the sky</div>
+
+</div>
+
+<div class="qb-wrapper">
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+</div>
+
+<div class="about-bio">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+<div class="ais-wrapper">
+
+<div class="socials-links">
+<a href="/" title="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+<a href="/" title="Goodreads"><i class="ph-bold ph-goodreads-logo"></i></a>
+<a href="/" title="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+<a href="/" title="Pinterest"><i class="ph-bold ph-pinterest-logo"></i></a>
+<a href="/" title="Twitter"><i class="ph-bold ph-twitter-logo"></i></a>
+</div>
+
+<div class="about-gallery">
+
+<div class="about-image"><img src="https://i.imgur.com/GYbIZbP.png"/></div>
+
+<div class="about-image" style="margin-left: 20px;"><img src="https://i.imgur.com/n1ZpDxR.jpeg"/></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of About -->
+
+<!-- Start of FAQ -->
+
+<div id="two" class="tab-content">
+
+<div class="faq-wrapper">
+
+<!-- Start of Question & Answer -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+</div>
+
+</div>
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+</div>
+
+<div class="answer-border"></div>
+
+<div class="answer-icon-image"><img src="https://i.imgur.com/njCYNME.jpeg"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+</div>
+
+</div>
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+</div>
+
+<div class="answer-border"></div>
+
+<div class="answer-icon-image"><img src="https://i.imgur.com/njCYNME.jpeg"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="qa-wrapper">
+
+<div class="question-wrapper">
+
+<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div>
+
+<div class="question">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+</div>
+
+</div>
+
+<div class="answer-wrapper">
+
+<div class="answer">
+Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+</div>
+
+<div class="answer-border"></div>
+
+<div class="answer-icon-image"><img src="https://i.imgur.com/njCYNME.jpeg"/></div>
+
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<p><iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe></p>
+
+</div>
+
+</div>
+
+<!-- End of FAQ -->
+
+<!-- Start of Navigation -->
+
+<div id="three" class="tab-content">
+
+<div class="tw-wrapper-wrapper">
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+<!-- Start of Tags -->
+
+<div class="tw-wrapper">
+
+<div class="tags-header">
+
+<div class="tags-title">Tags Category Title</div>
+
+<div class="tags-subtitle">put your tags subtitle here</div>
+
+</div>
+
+<div class="tags">
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+</div>
+
+</div>
+
+<!-- End of Tags -->
+
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<div class="tab">
+<a href="/"><i class="ph-bold ph-house" style="margin-right: 10px;"></i>Home</a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen"><i class="ph-bold ph-user-circle-plus" style="margin-right: 10px;"></i>About</a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen"><i class="ph-bold ph-chat-dots" style="margin-right: 10px;"></i>Message</a>
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen"><i class="ph-bold ph-list-plus" style="margin-right: 10px;"></i>Navigation</a>
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//griddery.github.io/grid.js"></script>
+
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".tw-wrapper",
+columns: 3
+})
+})
+</script>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
