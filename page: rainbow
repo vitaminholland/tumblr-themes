@@ -432,6 +432,7 @@ width: 1px;
 }
 
 .answer-icon-image {
+align-self: center;
 height: 50px;
 margin-left: 20px;
 width: 50px;
