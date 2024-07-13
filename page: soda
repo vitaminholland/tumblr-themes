@@ -236,12 +236,12 @@ top: 25.3px;
 .info {
 margin-bottom: 15px;
 margin-top: 25px;
-overflow: hidden;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .info-column {
-display: inline-block;
-float: left;
 width: 33.33%;
 }
 
