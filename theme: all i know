@@ -402,6 +402,69 @@ padding: 10px;
 white-space: pre-wrap;
 }
 
+.modal {
+animation-duration: 0.5s;
+animation-name: animatetop;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+height: 100%;
+left: 0px;
+overflow: auto;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 999999999999999999999999999999999999;
+}
+
+.modal-content {
+align-items: flex-start;
+display: flex;
+background: {color:Container Background};
+border: 1px solid {color:Border};
+height: 550px;
+left: calc(50% - 477.5px);
+position: absolute;
+top: calc(50% - 276px);
+width: 953px;
+}
+ 
+.close-modal {
+border-left: 1px solid {color:Border};
+border-bottom: 1px solid {color:Border};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 917.61px;
+margin-top: 1px;
+padding: 10px;
+position: absolute;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.close-modal:hover {
+color: {color:Link Hover};
+}
+ 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+top: 0px;
+opacity: 1;
+}
+ 
+}
+
 #container {
 background: {color:Container Background};
 border: 1px solid {color:Border};
@@ -596,6 +659,150 @@ white-space: nowrap;
  
 input[type="submit" i] {
 display: none!important;
+}
+
+.left {
+border-right: 1px solid {color:Border};
+height: 510px;
+padding: 20px;
+overflow-x: hidden;
+overflow-y: scroll;
+position: absolute;
+width: 260px;
+}
+
+.box-title {
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.box-content {
+margin-top: 20px;
+}
+
+.right {
+height: 550px;
+position: absolute;
+margin-left: 301px;
+width: 652px;
+}
+
+.ri-wrapper {
+display: flex;
+height: 450px;
+margin-top: 50px;
+margin-left: 50px;
+width: 552px;
+}
+
+.el-wrapper {
+background: {color:Main Color};
+height: 450px;
+margin-left: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 52px;
+}
+
+.extra-links {
+margin: -5px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.extra-links a {
+margin: 5px;
+color: {color:Post Background};
+}
+
+.extra-links a:hover {
+color: {color:Link Hover};
+}
+
+.gallery-wrapper {
+height: 450px;
+width: 480px;
+}
+
+.upper {
+display: flex;
+height: 215px;
+width: 480px;
+}
+
+.upper-image-one {
+height: 215px;
+width: 300px;
+}
+
+.upper-image-one img {
+height: 215px;
+width: 300px;
+}
+
+.uitt-wrapper {
+margin-left: 20px;
+width: 160px;
+}
+
+.upper-image-two {
+height: 97.5px;
+width: 160px;
+}
+
+.upper-image-two img {
+height: 97.5px;
+width: 160px;
+}
+
+.upper-image-three {
+height: 97.5px;
+margin-top: 20px;
+width: 160px;
+}
+
+.upper-image-three img {
+height: 97.5px;
+width: 160px;
+}
+
+.lower {
+display: flex;
+height: 215px;
+margin-top: 20px;
+width: 480px;
+}
+
+.lower-image-one {
+height: 215px;
+width: 160px;
+}
+
+.lower-image-one img {
+height: 215px;
+width: 160px;
+}
+
+.bo-wrapper {
+background: white;
+border: 1px solid {color:Border};
+height: 213px;
+width: 298px;
+margin-left: 20px;
+align-items: center;
+display: flex;
+}
+
+.bi-wrapper {
+max-height: 173px;
+padding: 20px;
+overflow-y: scroll;
+width: 258px;
 }
 
 #posts-wrapper {
@@ -1221,6 +1428,93 @@ z-index: -1;
 
 <a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
 
+<div class="modal modal_multi">
+ 
+<div class="modal-content">
+ 
+<div class="close-modal close_modal"><i class="ph-bold ph-x-circle"></i></div>
+
+<div class="left">
+
+<div class="box-title">A Little Bit About Me</div>
+
+<div class="box-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+<!-- Start of Right Content -->
+
+<div class="right">
+
+<div class="ri-wrapper">
+
+<div class="gallery-wrapper">
+
+<div class="upper">
+
+<div class="upper-image-one"><img src="https://i.imgur.com/pUxsov3.jpeg"/></div>
+
+<div class="uitt-wrapper">
+
+<div class="upper-image-two"><img src="https://i.imgur.com/RwnyyFV.jpeg"/></div>
+
+<div class="upper-image-three"><img src="https://i.imgur.com/2oLzdNB.jpeg"/></div>
+
+</div>
+
+</div>
+
+<div class="lower">
+
+<div class="lower-image-one"><img src="https://i.imgur.com/MNiOUic.jpeg"/></div>
+
+<div class="bo-wrapper">
+
+<div class="bi-wrapper">
+
+<div class="box-title">Extra Space For You</div>
+
+<div class="box-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="el-wrapper">
+
+<div class="extra-links">
+<a href="/" title="Extra Link 1"><i class="ph-bold ph-airplane-tilt"></i></a>
+<a href="/" title="Extra Link 2"><i class="ph-bold ph-butterfly"></i></a>
+<a href="/" title="Extra Link 3"><i class="ph-bold ph-cake"></i></a>
+<a href="/" title="Extra Link 4"><i class="ph-bold ph-crown"></i></a>
+<a href="/" title="Extra Link 5"><i class="ph-bold ph-feather"></i></a>
+<a href="/" title="Extra Link 6"><i class="ph-bold ph-flower"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Right Content -->
+
+</div>
+
+</div>
+
 <div id="container">
 
 <div id="ui-wrapper">
@@ -1253,6 +1547,7 @@ z-index: -1;
 
 <div class="more-links">
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
+<a class="open-modal">Explore</a>
 {block:ifLink1URL}<a href="{text:Link 1 URL}">{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
@@ -1530,5 +1825,52 @@ z-index: -1;
 <!-- End of Theme Credit --> 
 
 </body>
+
+<!-- Modal Script -->
+ 
+<script>
+var modalparent = document.getElementsByClassName("modal_multi");
+var modal_btn_multi = document.getElementsByClassName("open-modal");
+var span_close_multi = document.getElementsByClassName("close_modal");
+function setDataIndex() {
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].setAttribute('data-index', i);
+modalparent[i].setAttribute('data-index', i);
+span_close_multi[i].setAttribute('data-index', i);
+}
+}
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "block";
+};
+span_close_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "none";
+};
+}
+window.onload = function() {
+setDataIndex();
+};
+window.onclick = function(event) {
+if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+modalparent[event.target.getAttribute('data-index')].style.display = "none";
+}
+if (event.target === modal) {
+modal.style.display = "none";
+}
+};
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("open-modal");
+var span = modal.getElementsByClassName("close-modal")[0]; 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+span.onclick = function() {
+modal.style.display = "none";
+}
+</script>
 
 </html>
