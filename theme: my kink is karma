@@ -1640,7 +1640,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <div class="pslr-b">
 <a class="like-b" href="#">{LikeButton}<div class="b"><i class="ph-bold ph-heart"></i></div></a>
 <a class="reblog-b" href="{ReblogURL}" target="_blank"><i class="ph-bold ph-arrows-counter-clockwise"></i></a>
-{block:IfHideTags}<a class="show-tags"><i class="ph-bold ph-hash"></i></a>{/block:IfHideTags}
+{block:IfHideTags}{block:HasTags}<a class="show-tags"><i class="ph-bold ph-hash"></i></a>{/block:HasTags}{/block:IfHideTags}
 </div>
 </div>
 
