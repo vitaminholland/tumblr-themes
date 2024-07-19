@@ -1147,9 +1147,7 @@ border: 1px solid {color:Border};
 margin-top: 20px;
 padding: 10px;
 text-align: left;
-font-size: {select:Uppercase Font Size};
-font-family: "Space Mono", monospace;
-text-transform: uppercase;
+text-transform: lowercase;
 }
 
 ol.notes li {
