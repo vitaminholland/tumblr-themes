@@ -748,6 +748,17 @@ font-family: "Space Mono", monospace;
 text-transform: lowercase;
 }
 
+.about-quote-icon {
+background: {color:Main Color};
+border-radius: 100px;
+color: white;
+font-size: 0.9rem;
+height: 0.9rem;
+margin-bottom: 20px;
+padding: 10px;
+width: 0.9rem;
+}
+
 #posts-wrapper {
 position: absolute;
 overflow-y: scroll;
@@ -1448,6 +1459,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 </div>
 
 <div class="about-quote">
+<div class="about-quote-icon"><i class="ph-bold ph-quotes"></i></div>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 </div>
 
