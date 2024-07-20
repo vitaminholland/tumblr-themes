@@ -570,13 +570,12 @@ z-index: 999999999999999999999999999999999999;
 
 .modal-content {
 background: {color:Container Background};
-height: 479px;
-position: fixed;
-top: calc(50% - 275px);
-left: calc(50% - 450px);
-overflow-y: scroll;
-overflow-x: hidden;
-width: 250px;
+height: 550px;
+top: calc(50% - 276px);
+left: calc(50% - 451.5px);
+position: absolute;
+border: 1px solid {color:Border};
+width: 901px;
 }
  
 .close-modal {
@@ -587,7 +586,7 @@ font-size: 0.9rem;
 font-variant: normal;
 height: 0.9rem;
 line-height: 1;
-margin-left: 195.61px;
+margin-left: 846.61px;
 margin-top: 20px;
 padding: 10px;
 position: fixed;
@@ -616,6 +615,16 @@ opacity: 1;
  
 }
 
+.links-wrapper {
+background: {color:Container Background};
+border-right: 1px solid {color:Border};
+height: 550px;
+position: fixed;
+overflow-y: scroll;
+overflow-x: hidden;
+width: 250px;
+}
+
 .items-wrapper {
 margin: 20px;
 }
@@ -629,6 +638,114 @@ text-transform: lowercase;
 
 .more-links a {
 margin-bottom: 15px;
+}
+
+.about-wrapper {
+background: {color:Container Background};
+height: 550px;
+position: fixed;
+margin-left: 251px;
+overflow-y: scroll;
+overflow-x: hidden;
+width: 650px;
+}
+
+.ai-wrapper {
+height: 450px;
+margin-left: 50px;
+margin-top: 50px;
+width: 550px;
+}
+
+.aw-wrapper {
+display: flex;
+}
+
+.about-outer {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+height: 214px;
+width: 320px;
+align-items: center;
+display: flex;
+}
+
+.about-inner {
+max-height: 174px;
+padding: 20px;
+overflow-y: scroll;
+width: 280px;
+}
+
+.section-title {
+font-weight: bold;
+margin-bottom: 20px;
+text-transform: lowercase;
+font-family: "Space Mono", monospace;
+}
+
+.wid-outer {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+height: 214px;
+position: relative;
+margin-left: 20px;
+width: 210px;
+align-items: center;
+display: flex;
+}
+
+.wid-inner {
+max-height: 174px;
+padding: 20px;
+overflow-y: scroll;
+width: 170px;
+}
+
+.wid li {
+list-style-type: none;
+margin-bottom: 10px;
+}
+
+.wid li:last-of-type {
+margin-bottom: 0px;
+}
+
+.aq-wrapper {
+display: flex;
+margin-top: 20px;
+}
+
+.about-gallery {
+align-items: flex-start;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -1px;
+width: 216px;
+}
+
+.about-image {
+height: 70px;
+margin: 1px;
+width: 70px;
+}
+
+.about-image img {
+height: 70px;
+width: 70px;
+}
+
+.about-quote {
+height: 214px;
+margin-left: 20px;
+width: 300px;
+align-items: center;
+display: flex;
+font-size: 1rem;
+text-align: center;
+font-family: "Space Mono", monospace;
+text-transform: lowercase;
 }
 
 #posts-wrapper {
@@ -1256,6 +1373,8 @@ color: {color:Link Hover};
  
 <div class="close-modal close_modal"><i class="ph-bold ph-x"></i></div>
 
+<div class="links-wrapper">
+
 <div class="items-wrapper">
 
 <div class="more-links">
@@ -1269,6 +1388,88 @@ color: {color:Link Hover};
 {block:ifLink7URL}<a href="{text:Link 7 URL}">{text:Link 7 Name}</a>{/block:ifLink7URL}
 <a href="/archive">Archive</a>
 </div>
+
+</div>
+
+</div>
+
+<div class="about-wrapper">
+
+<div class="ai-wrapper">
+
+<div class="aw-wrapper">
+
+<div class="about-outer">
+
+<div class="about-inner">
+
+<div class="section-title">Know More About Me</div>
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+
+</div>
+
+</div>
+
+<div class="wid-outer">
+
+<div class="wid-inner">
+
+<div class="section-title">What I Have To Do</div>
+
+<div class="wid">
+<li><i class="ph-bold ph-flower-tulip"></i> Pick up some flowers.</li>
+<li><i class="ph-bold ph-clock-countdown"></i> List your tasks here.</li>
+<li><i class="ph-bold ph-code-block"></i> More to do list.</li>
+<li><i class="ph-bold ph-sparkle"></i> Stargazing with the loml.</li>
+<li><i class="ph-bold ph-cooking-pot"></i> Testing out new recipes.</li>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="aq-wrapper">
+
+<div class="about-gallery">
+
+<div class="about-image"><img src="https://i.imgur.com/GTF6BHw.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/0ES6D86.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/ZzHACbo.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/45Pvakc.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/NFh1G6t.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/lFusyMK.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/0ugXZ2X.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/ipVN8Q0.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/elZun7H.png"/></div>
+
+</div>
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 
