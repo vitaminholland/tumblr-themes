@@ -742,6 +742,9 @@ margin-left: 20px;
 width: 300px;
 align-items: center;
 display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
 font-size: 1rem;
 text-align: center;
 font-family: "Space Mono", monospace;
@@ -755,6 +758,7 @@ color: white;
 font-size: 0.9rem;
 height: 0.9rem;
 margin-bottom: 20px;
+text-align: right;
 padding: 10px;
 width: 0.9rem;
 }
