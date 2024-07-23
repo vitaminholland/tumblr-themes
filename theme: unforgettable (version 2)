@@ -1168,7 +1168,9 @@ z-index: -1;
 <div class="pslr">
 <div class="pslr-a">
 {block:PinnedPostLabel}<div class="pinned-post" title="{PinnedPostLabel}"><i class="ph-bold ph-bookmark-simple"></i></div>{/block:PinnedPostLabel}
+<div class="top-notes">
 <a href="{Permalink}">{NoteCountWithLabel}</a>
+</div>
 </div>
 <div class="pslr-b">
 <div class="origins-icon">
