@@ -1593,14 +1593,11 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="entries-wrapper">
 
 {block:IndexPage}
-{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
 {block:PinnedPostLabel}<div class="pinned-post" title="{PinnedPostLabel}"><i class="ph-bold ph-bookmark-simple"></i></div>{/block:PinnedPostLabel}
-<div class="top-notes">
 <a href="{Permalink}">{NoteCountWithLabel}</a>
-</div>
 </div>
 <div class="pslr-b">
 <div class="origins-icon">
@@ -1610,7 +1607,6 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 </div>
 </div>
 </div>
-{/block:NoteCount}
 {/block:IndexPage}
 
 {block:Text}
