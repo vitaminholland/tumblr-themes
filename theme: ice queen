@@ -753,6 +753,7 @@ text-transform: lowercase;
 
 .about-quote-icon {
 background: {color:Main Color};
+border-radius: 100px;
 color: white;
 font-size: 0.9rem;
 font-variant: normal;
