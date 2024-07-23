@@ -1928,10 +1928,14 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <div class="entries-wrapper">
 
 {block:IndexPage}
+{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
+{block:PinnedPostLabel}<div class="pinned-post" title="{PinnedPostLabel}"><i class="ph-bold ph-bookmark-simple"></i></div>{/block:PinnedPostLabel}
+<div class="top-notes">
 <a href="{Permalink}">{NoteCountWithLabel}</a>
+</div>
 </div>
 <div class="pslr-b">
 <div class="origins-icon">
@@ -1941,8 +1945,8 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 </div>
 </div>
 </div>
+{/block:NoteCount}
 {/block:IndexPage}
-
 {block:Text}
 {block:NotReblog}
 <div class="npf-wrapper">
