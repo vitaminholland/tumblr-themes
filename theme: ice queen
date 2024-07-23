@@ -753,13 +753,14 @@ text-transform: lowercase;
 
 .about-quote-icon {
 background: {color:Main Color};
-border-radius: 100px;
 color: white;
 font-size: 0.9rem;
+font-variant: normal;
 height: 0.9rem;
-margin-bottom: 20px;
-text-align: right;
+line-height: 1;
 padding: 10px;
+margin-bottom: 20px;
+text-rendering: auto;
 width: 0.9rem;
 }
 
