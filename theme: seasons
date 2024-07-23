@@ -1551,7 +1551,6 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 <div class="calendar-wrapper">
 
-
 <div class="mt-wrapper">
 
 <div class="mt">
@@ -1929,6 +1928,7 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <div class="entries-wrapper">
 
 {block:IndexPage}
+{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
@@ -1947,6 +1947,7 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 </div>
 </div>
 </div>
+{/block:NoteCount}
 {/block:IndexPage}
 
 {block:Text}
