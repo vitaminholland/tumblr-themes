@@ -1403,25 +1403,6 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 </div>
@@ -1490,7 +1471,6 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <div class="entries-wrapper">
 
 {block:IndexPage}
-{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
@@ -1507,7 +1487,6 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 </div>
 </div>
 </div>
-{/block:NoteCount}
 {/block:IndexPage}
 
 {block:Text}
