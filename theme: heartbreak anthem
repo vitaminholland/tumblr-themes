@@ -1328,7 +1328,6 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 </div>
 
-
 </div>
 
 </div>
@@ -1386,6 +1385,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 <div class="entries-wrapper">
 
 {block:IndexPage}
+{block:NoteCount}
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
@@ -1404,6 +1404,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 </div>
 </div>
 </div>
+{/block:NoteCount}
 {/block:IndexPage}
 
 {block:Text}
