@@ -1260,6 +1260,7 @@ z-index: -1;
 <div class="top-post-info">
 <div class="pslr">
 <div class="pslr-a">
+{block:PinnedPostLabel}<div class="pinned-post" title="{PinnedPostLabel}"><i class="ph-bold ph-bookmark-simple"></i></div>{/block:PinnedPostLabel}
 <a href="{Permalink}">{NoteCountWithLabel}</a>
 </div>
 <div class="pslr-b">
