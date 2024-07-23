@@ -1492,6 +1492,7 @@ z-index: -1;
 
 {block:Permalink}
 <div class="permalink-info">
+{block:PinnedPostLabel}<li><i class="ph-bold ph-push-pin" style="margin-right: 5px;"></i>{PinnedPostLabel}</li>{block:PinnedPostLabel}
 <li><i class="ph-bold ph-calendar" style="margin-right: 5px;"></i>Posted On {Month} {DayOfMonth}, {Year}</li>
 {block:RebloggedFrom}<li><i class="ph-bold ph-arrows-counter-clockwise" style="margin-right: 5px;"></i><a  href="{ReblogParentURL}">Reblogged Via {ReblogParentName}</a></li>{/block:RebloggedFrom}
 {block:RebloggedFrom}<li><i class="ph-bold ph-pen" style="margin-right: 5px;"></i><a href="{ReblogRootURL}">Originally Posted By {ReblogRootName}</a></li>{/block:RebloggedFrom}
