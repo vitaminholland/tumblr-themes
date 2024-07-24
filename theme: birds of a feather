@@ -591,8 +591,6 @@ flex-direction: row;
 flex-wrap: wrap;
 margin: -5px;
 margin-top: 20px;
-border-top: 1px solid {color:Border};
-padding-top: 20px;
 width: 550px;
 }
 
