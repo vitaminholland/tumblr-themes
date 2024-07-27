@@ -502,6 +502,8 @@ opacity: 1;
 
 <body>
 
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
+
 <div id="container">
 
 <div class="header">
