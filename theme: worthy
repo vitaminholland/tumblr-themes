@@ -637,7 +637,7 @@ margin-top: 20px;
 }
 
 .links-border {
-background: #d2d2d2;
+background: {color:Border};
 margin-left: 20px;
 height: auto;
 width: 1px;
