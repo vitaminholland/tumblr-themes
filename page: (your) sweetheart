@@ -10,7 +10,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- (Your) Sweetheart by Franchesca (extasisthemes) -->
+<!--
+
+page: (your) sweetheart
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
@@ -35,9 +41,9 @@ attribute:"title"
 })(jQuery);
 </script>
  
-<!-- Font Awesome Script -->
+<!-- Phosphor Icons Script -->
  
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 <style type="text/css">
  
@@ -121,7 +127,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -143,7 +149,7 @@ width: 800px;
 }
 
 #line {
-background: #eeeeee;
+background: #d2d2d2;
 height: 1px;
 margin-top: 50px;
 position: absolute;
@@ -159,7 +165,7 @@ width: 170px;
 
 .image {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 height: 230px;
 padding: 15px;
 position: relative;
@@ -203,16 +209,19 @@ font-size: 30px;
  
 .links {
 font-size: 0.9rem;
+margin: -5px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 text-transform: uppercase;
 }
 
 .links a {
-display: inline-block;
-margin-right: 10px;
+margin: 5px;
 }
 
 #navigation-wrapper {
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 margin-top: 30px;
 padding-top: 30px;
 }
@@ -220,14 +229,16 @@ padding-top: 30px;
 .navigation-links {
 font-size: 0.9rem;
 margin: -5px;
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 margin-top: 10px;
 text-transform: uppercase;
 }
 
 .navigation-links a {
-display: inline-block;
-margin-left: 5px;
-margin-right: 5px;
+margin: 5px;
 }
 
 #credit {
@@ -267,9 +278,9 @@ color: #cfcfcf;
 <div class="info-wrapper">
 
 <div class="info">
-<li><i class="far fa-user" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Franchesca</li>
-<li><i class="fas fa-question" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>22 y/o</li>
-<li><i class="fas fa-map-marker-alt" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Philippines</li>
+<li><i class="ph-bold ph-user-circle-gear" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.9rem;height: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Name Of User</li>
+<li><i class="ph-bold ph-question" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.9rem;height: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Birthday + Age</li>
+<li><i class="ph-bold ph-map-pin-line" style="background: #ddaabb;border-radius: 5px;color: #ffffff;font-size: 0.9rem;height: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Location</li>
 </div>
 
 </div>
@@ -290,7 +301,7 @@ color: #cfcfcf;
 
 </div>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+Write your about here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <div id="navigation-wrapper">
 
@@ -324,7 +335,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://tanaka-drew.tumblr.com/" title="extasisthemes" target="_blank">TD</a></div>
 
 </body>
 
