@@ -12,13 +12,19 @@
 
 <link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
 
-<!-- Pomegranate by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: pomegranate
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#f5f5f5"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
@@ -67,6 +73,8 @@
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
 
+<meta name="if:Back To Top" content="1"/>
+
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -90,9 +98,9 @@ attribute:"title"
 })(jQuery);
 </script>
 
-<!-- Font Awesome Script -->
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
@@ -196,6 +204,24 @@ $(document).ready(function(){
 $(".sub-links, .tags").hide();
 $(".sub-links-title, .tags-title").click(function(){
 $(this).next(".sub-links, .tags").slideToggle('fast');
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
@@ -322,11 +348,20 @@ width: 200px;
 }
 
 .icon {
-margin-bottom: 10px;
+background: {color:Main Color};
+color: white;
+font-size: 0.9rem;
+font-variant: normal;
+border-radius: 100px;
+height: 0.9rem;
+line-height: 1;
+margin-bottom: 20px;
+margin-top: -37.95px;
 margin-left: auto;
 margin-right: auto;
-margin-top: -32.8px;
-width: 32.8px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
 }
 
 .main-links {
@@ -335,8 +370,8 @@ border-bottom: 1px solid {color:Border};
 border-right: 1px solid {color:Border};
 border-top: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
-margin-top: 28.8px;
-padding: 17.5px;
+margin-top: 34.39px;
+padding: 17.195px;
 text-transform: uppercase;
 }
 
@@ -407,7 +442,7 @@ border-bottom: 1px solid {color:Border};
 border-left: 1px solid {color:Border};
 border-top: 1px solid {color:Border};
 font-family: 'Playfair Display', serif;
-padding: 17.5px;
+padding: 17.195px;
 text-transform: lowercase;
 }
 
@@ -417,8 +452,8 @@ border-bottom: 1px solid {color:Border};
 border-left: 1px solid {color:Border};
 border-top: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
-margin-top: 17.5px;
-padding: 17.5px;
+margin-top: 17.195px;
+padding: 20px;
 text-transform: uppercase;
 }
 
@@ -654,6 +689,7 @@ width: 100%;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
@@ -845,19 +881,56 @@ font-size: {select:Uppercase Font Size};
 text-transform: uppercase;
 }
 
-#credit {
-bottom: 15px;
+#top {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+bottom: 66px; 
+color: {color:Link};
+display: none;
 font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
 position: fixed;
-right: 15px;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#top:hover {
+color: {color:Link Hover};
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
 text-transform: uppercase;
+z-index: 1;
+width: auto;
 }
 
 #credit a {
+background: {color:Post Background};
+border: 1px solid {color:Border};
 color: {color:Link};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
 }
 
-#credit a:hover {
+#credit a:hover  {
 color: {color:Link Hover};
 }
 
@@ -876,7 +949,7 @@ color: {color:Link Hover};
 <div class="main-links">
 
 <div class="icon">
-<i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>
+<i class="ph-bold ph-link-simple"></i>
 </div>
 
 <a href="/">Home</a>
@@ -901,7 +974,7 @@ color: {color:Link Hover};
 
 <div class="subtitle">
 <div class="icon">
-<i class="fas fa-quote-left" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>
+<i class="ph-bold ph-quotes"></i>
 </div>
 {text:Subtitle}
 </div>
@@ -953,7 +1026,7 @@ color: {color:Link Hover};
 <div class="ask-wrapper">
 <div class="asker">
 <div class="asker-url">
-<i class="far fa-question-circle" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
+<i class="ph-bold ph-question" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
 <br><br>
 A Message From <a href="{AskerURL}">{Asker}</a>
 </div>
@@ -969,7 +1042,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
  
 {block:Quote}
 <div class="quote">
-<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+<div class="quote-icon"><i class="ph-bold ph-quotes"></i></div>
 <div class="quote-wrapper">
 "{Quote}</i>" {block:Source}— {Source}{/block:Source}
 </div>
@@ -980,7 +1053,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {block:Thumbnail}
 <img src="{Thumbnail}" style="margin-bottom: 10px;"/>
 {/block:Thumbnail}
-<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
+<div class="website"><i class="ph-bold ph-link-simple-horizontal" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
 </a></div>
 {block:Description}
 <div class="caption">
@@ -1040,14 +1113,14 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 
 {block:ContentSource}
 <div class="source">
-<i class="fas fa-paper-plane" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
+<i class="ph-bold ph-paper-plane-tilt" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
 </div>
 {/block:ContentSource}
 
 {block:Date}
 <div class="entries-information">
 {block:PinnedPostLabel}
-<font style="color: {color:Pin};"><i class="fas fa-thumbtack" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
+<font style="color: {color:Pin};"><i class="ph-bold ph-push-pin-simple" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
 <font style="color: {color:Main Color};margin-left: 5px;margin-right: 5px;">•</font>
 {/block:PinnedPostLabel}
 <a href="{Permalink}">{DayOfMonth} {ShortMonth} {Year}</a>
@@ -1103,7 +1176,13 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+{block:IfBackToTop}<div id="top" title="Back To Top"><i class="ph-bold ph-arrow-line-up"></i></div>{/block:IfBackToTop}
+
+<!-- Start of Theme Credit -->
+
+<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+
+<!-- End of Theme Credit --> 
 
 </body>
 
