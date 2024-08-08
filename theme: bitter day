@@ -714,6 +714,7 @@ width: 100%;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
