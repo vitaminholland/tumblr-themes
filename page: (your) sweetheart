@@ -45,6 +45,24 @@ attribute:"title"
  
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <style type="text/css">
  
 .tmblr-iframe--app-cta-button {
@@ -239,19 +257,56 @@ text-transform: uppercase;
 margin: 5px;
 }
 
-#credit {
-bottom: 15px;
+#top {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+bottom: 66px; 
+color: #000000;
+display: none;
 font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
 position: fixed;
-right: 15px;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#top:hover {
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
 text-transform: uppercase;
+z-index: 1;
+width: auto;
 }
 
 #credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
 color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
 }
 
-#credit a:hover {
+#credit a:hover  {
 color: #cfcfcf;
 }
 
@@ -337,7 +392,13 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 </div>
 
-<div id="credit"><a href="http://tanaka-drew.tumblr.com/" title="extasisthemes" target="_blank">TD</a></div>
+<div id="top" title="Back To Top"><i class="ph-bold ph-arrow-line-up"></i></div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+
+<!-- End of Theme Credit --> 
 
 </body>
 
