@@ -10,13 +10,19 @@
  
 <link rel="shortcut icon" href="{Favicon}">
  
-<!-- Mikrokosmos by Franchesca (extasisthemes) -->
+<!-- 
+ 
+theme: mikrokosmos
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+ 
+-->
  
 <!-- Metadata -->
  
-<meta name="color:Asker Background" content="#f0f0f0"/>
-<meta name="color:Background" content="#f5f5f5"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Asker Background" content="#d2d2d2"/>
+<meta name="color:Background" content="#f0f0f0"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
@@ -88,9 +94,9 @@ attribute:"title"
 })(jQuery);
 </script>
  
-<!-- Font Awesome Script -->
+<!-- Phosphor Icons Script -->
  
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 <!-- Masonry Script -->
 
@@ -274,13 +280,16 @@ text-transform: uppercase;
 .links {
 background: {color:Post Background};
 font-size: {select:Uppercase Font Size};
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
 margin-top: 15px;
 text-transform: uppercase;
 }
  
 .links a {
-display: inline-block;
-margin-right: 10px;
+margin: 5px;
 }
 
 .image {
@@ -482,6 +491,7 @@ width: 100%;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
@@ -678,19 +688,56 @@ text-transform: uppercase;
 width: 400px;
 }
  
-#credit {
-bottom: 15px;
-font-size: 0.9rem;
-position: fixed;
-right: 15px;
-text-transform: uppercase;
-}
- 
-#credit a {
+#top {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+bottom: 66px; 
 color: {color:Link};
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
 }
- 
-#credit a:hover {
+
+#top:hover {
+color: {color:Link Hover};
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+color: {color:Link};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
 color: {color:Link Hover};
 }
 
@@ -734,7 +781,7 @@ color: {color:Link Hover};
  
 <div class="entries" id="{PostID}" post-type="{PostType}">
 
-{block:NoteCount}<div class="notes-wrapper"><i class="far fa-chart-bar" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{block:NoteCount}</div>{/block:NoteCount}
+{block:NoteCount}<div class="notes-wrapper"><i class="ph-bold ph-chart-line" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{block:NoteCount}</div>{/block:NoteCount}
  
 {block:Text}
 {block:NotReblog}
@@ -761,7 +808,7 @@ color: {color:Link Hover};
 <div class="ask-wrapper">
 <div class="asker">
 <div class="asker-url">
-<i class="far fa-question-circle" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
+<i class="ph-bold ph-question" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
 <br><br>
 A Message From <a href="{AskerURL}">{Asker}</a>
 </div>
@@ -777,7 +824,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
  
 {block:Quote}
 <div class="quote">
-<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+<div class="quote-icon"><i class="ph-bold ph-quotes"></i></div>
 <div class="quote-wrapper">
 "{Quote}</i>" {block:Source}— {Source}{/block:Source}
 </div>
@@ -788,7 +835,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {block:Thumbnail}
 <img src="{Thumbnail}" style="margin-bottom: 10px;"/>
 {/block:Thumbnail}
-<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
+<div class="website"><i class="ph-bold ph-link-simple-horizontal" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
 </a></div>
 {block:Description}
 <div class="caption">
@@ -848,14 +895,14 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 
 {block:ContentSource}
 <div class="source">
-<i class="fas fa-paper-plane" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
+<i class="ph-bold ph-paper-plane-tilt" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
 </div>
 {/block:ContentSource}
  
 {block:Date}
 <div class="entries-information">
 {block:PinnedPostLabel}
-<font style="color: {color:Pin};"><i class="fas fa-thumbtack" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
+<font style="color: {color:Pin};"><i class="ph-bold ph-push-pin-simple" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
 <font style="color: {color:Main Color};margin-left: 5px;margin-right: 5px;">•</font>
 {/block:PinnedPostLabel}
 <a href="{Permalink}">{DayOfMonth} {ShortMonth} {Year}</a>
@@ -909,7 +956,13 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+{block:IfBackToTop}<div id="top" title="Back To Top"><i class="ph-bold ph-arrow-line-up"></i></div>{/block:IfBackToTop}
+
+<!-- Start of Theme Credit -->
+
+<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+
+<!-- End of Theme Credit --> 
 
 </body>
 
@@ -1013,6 +1066,24 @@ $(document).ready(function(){
 $(".tags").hide();
 $(".tags-title").click(function(){
 $(this).next(".tags").slideToggle('fast');
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
