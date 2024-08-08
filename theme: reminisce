@@ -407,7 +407,7 @@ margin-bottom: 161px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 161px;
-width: 1035px;
+width: 997px;
 }
 
 #links {
@@ -458,7 +458,7 @@ opacity: 1;
 background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
-margin-left: 57.8px;
+margin-left: 20px;
 width: 300px;
 }
 
