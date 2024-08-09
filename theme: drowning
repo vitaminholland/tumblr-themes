@@ -95,7 +95,7 @@ attribute:"title"
 
 <!-- Font Awesome Script -->
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
@@ -675,6 +675,7 @@ width: 100%;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
