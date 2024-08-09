@@ -703,9 +703,9 @@ width: 30px;
 }
  
 a.tumblr_blog {
-font-size: {select:Uppercase Font Size};
+font-size: {select:Body Font Size};
 font-weight: bold;
-margin-top: calc((30px - {select:Body Font Size}) / 3);
+margin-top: calc((30px - {select:Body Font Size}) / 4);
 display: inline-block;
 position: absolute;
 margin-left: 10px;
@@ -792,6 +792,7 @@ text-align: center;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
