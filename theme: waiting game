@@ -103,7 +103,7 @@ attribute:"title"
 
 <!-- Font Awesome Script -->
  
-<script src="https://kit.fontawesome.com/880d7a6556.js" crossorigin="anonymous"></script>
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 
 <!-- Tumblr Controls Script --->
 
@@ -687,6 +687,7 @@ text-align: center;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
+margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
