@@ -1042,7 +1042,7 @@ width: 250px;
 {/block:Description}
 
 <div class="links">
-<i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>
+<i class="fa-solid fa-list-ul" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>
 <br><br>
 <a href="/">Home</a>
 {block:AskEnabled}<a href="/ask">Ask</a>{/block:AskEnabled}
