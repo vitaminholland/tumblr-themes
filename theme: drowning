@@ -1101,27 +1101,27 @@ Or <a href="{NextPage}">Next</a>
 <a href="/"><i class="far fa-arrow-alt-circle-left" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Home</a>
 {block:AskEnabled}<a href="/contact"><i class="far fa-envelope" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
 <a href="/archive"><i class="far fa-calendar-plus" style="background: {color:Asker Background};border-radius: 100px;color: {color:Main Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
 </div>
 
 {block:ifAltOneLinkURL}
 <div class="alt-one-link-wrapper">
-<a href="{text:Alt One Link URL}"><i class="fas fa-cloud" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
+<a href="{text:Alt One Link URL}"><i class="fa-regular fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
 </div>
 {/block:ifAltOneLinkURL}
 
 {block:ifAltTwoLinkURL}
 <div class="alt-two-link-wrapper">
-<a href="{text:Alt Two Link URL}"><i class="fas fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
+<a href="{text:Alt Two Link URL}"><i class="fa-regular fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
 </div>
 {/block:ifAltTwoLinkURL}
 
 {block:ifAltThreeLinkURL}
 <div class="alt-three-link-wrapper">
-<a href="{text:Alt Three Link URL}"><i class="fas fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
+<a href="{text:Alt Three Link URL}"><i class="fa-solid fa-fan" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
 </div>
 {/block:ifAltThreeLinkURL}
 
