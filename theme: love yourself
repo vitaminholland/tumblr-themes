@@ -1085,13 +1085,13 @@ color: {color:Link Hover};
 <div id="two" class="tabcontent">
 
 <div class="links">
-{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
+{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fa-regular fa-heart" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fa-solid fa-fan" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="fa-solid fa-paw" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
 </div>
 
 </div>
