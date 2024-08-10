@@ -834,7 +834,7 @@ color: {color:Link Hover};
 <a href="/"><i class="far fa-arrow-alt-circle-left" style="color: {color:Link};margin-right: 20px;"></i>Home</a>
 {block:AskEnabled}<a href="/ask"><i class="far fa-envelope" style="color: {color:Link};margin-right: 20px;"></i>Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="color: {color:Link};margin-right: 20px;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="color: {color:Link};margin-right: 20px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="color: {color:Link};margin-right: 20px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
 <a href="/archive"><i class="far fa-calendar-plus" style="color: {color:Link};margin-right: 20px;"></i>Archive</a>
 <a href="http://extasisthemes.tumblr.com/"><i class="far fa-heart" style="color: {color:Link};margin-right: 20px;"></i>Theme</a>
 </div>
