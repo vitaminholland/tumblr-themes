@@ -388,7 +388,8 @@ margin-bottom: 30px;
 background: {color:Quote Icon Color};
 border: 1px solid {color:Border};
 border-radius: 100px;
-display: block;
+display: flex;
+align-items: center;
 font-size: {select:Uppercase Font Size};
 margin-bottom: 20px;
 text-transform: uppercase;
@@ -918,9 +919,9 @@ color: {color:Link Hover};
 <a href="/"><i class="far fa-arrow-alt-circle-left" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Home</a>
 {block:AskEnabled}<a href="/ask"><i class="far fa-envelope" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
 <a href="/archive"><i class="far fa-calendar-plus" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
 </div>
 
