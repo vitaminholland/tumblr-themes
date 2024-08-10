@@ -666,7 +666,7 @@ display: flex;
 margin-bottom: 20px;
 margin-left: 20px;
 margin-top: 10px;
-position: absolute;
+position: relative;
 text-transform: uppercase;
 width: 210px;
 }
