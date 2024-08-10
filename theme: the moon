@@ -1540,9 +1540,9 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="more-links">
 {block:AskEnabled}<a href="/ask"><i class="far fa-envelope" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" ><i class="fas fa-file-import" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
 <a href="/archive"><i class="far fa-calendar-plus" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
 <!-- Start of Search Bar -->
 
