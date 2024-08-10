@@ -944,19 +944,19 @@ color: {color:Link Hover};
 
 {block:ifAltOneLinkURL}
 <div class="alt-one-link-wrapper">
-<a href="{text:Alt One Link URL}"><i class="fas fa-cloud" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
+<a href="{text:Alt One Link URL}"><i class="fa-regular fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt One Link Name}</a>
 </div>
 {/block:ifAltOneLinkURL}
  
 {block:ifAltTwoLinkURL}
 <div class="alt-two-link-wrapper">
-<a href="{text:Alt Two Link URL}"><i class="fas fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
+<a href="{text:Alt Two Link URL}"><i class="fa-regular fa-star" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Two Link Name}</a>
 </div>
 {/block:ifAltTwoLinkURL}
  
 {block:ifAltThreeLinkURL}
 <div class="alt-three-link-wrapper">
-<a href="{text:Alt Three Link URL}"><i class="fas fa-heart" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
+<a href="{text:Alt Three Link URL}"><i class="fa-solid fa-fan" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Alt Three Link Name}</a>
 </div>
 {/block:ifAltThreeLinkURL}
 
