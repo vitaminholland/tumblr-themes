@@ -308,7 +308,7 @@ color: #cfcfcf;
 
 <div class="links">
 <a href="/"><i class="far fa-arrow-alt-circle-left" style="background: #ccaacc; border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Home</a>
-<a href="/"><i class="fas fa-link" style="background: #ccaacc; border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Link One</a>
+<a href="/"><i class="fa-solid fa-dove" style="background: #ccaacc; border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Link One</a>
 <a href="/archive"><i class="far fa-calendar-plus" style="background: #ccaacc; border-radius: 100px;color: #ffffff;font-size: 0.8rem;margin-right: 10px;padding: 10px;width: 0.8rem;"></i>Archive</a>
 </div>
 
