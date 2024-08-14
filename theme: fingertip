@@ -515,6 +515,18 @@ opacity: 1;
  
 }
 
+.about-title {
+font-family: '{select:Heading Font}', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+.about {
+margin-top: 15px;
+}
+
 .search-bar {
 background: #f0f0f0;
 border: 1px solid {color:Border};
@@ -546,18 +558,6 @@ width: 100%;
 .about-wrapper {
 margin: 20px;
 margin-top: 0px;
-}
-
-.about-title {
-font-family: '{select:Heading Font}', serif;
-font-size: 1.2rem;
-font-weight: bold;
-margin-block-start: 0em;
-text-transform: lowercase;
-}
-
-.about {
-margin-top: 15px;
 }
  
 form {
