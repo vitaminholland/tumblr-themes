@@ -450,7 +450,7 @@ height: 34.39px;
 width: 34.39px;
 }
 
-.title {
+.blog-title {
 background: {color:Post Background};
 border-radius: 100px;
 display: flex;
@@ -1159,7 +1159,7 @@ color: {color:Link Hover};
 
 <div class="icon-title-wrapper">
 
-<div class="title">{text:Title}</div>
+<div class="blog-title">{text:Title}</div>
 
 <div class="icon-image"><img src="{image:Icon Image}"/></div>
 
