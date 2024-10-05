@@ -431,7 +431,7 @@ height: 36.39px;
 width: 36.39px;
 }
 
-.title {
+.blog-title {
 background: {color:Post Background};
 border: 1px solid {color:Border};
 margin-left: 20px;
@@ -1225,7 +1225,7 @@ color: {color:Link Hover};
 
 <div class="icon-image-one"><img src="{image:Icon Image One}"/></div>
 
-<div class="title">{text:Title}</div>
+<div class="blog-title">{text:Title}</div>
 
 </div>
 
