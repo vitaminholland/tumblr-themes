@@ -449,7 +449,7 @@ color: {color:Link Hover};
 margin-bottom: 0px;
 }
 
-.title {
+.blog-title {
 color: {color:Post Background};
 font-size: 1rem;
 font-weight: bold;
@@ -1189,7 +1189,7 @@ color: {color:Link Hover};
 <a href="/archive" title="Archive"><i class="ph-bold ph-calendar-star"></i></a>
 </div>
 
-<div class="title">{text:Title}</div>
+<div class="blog-title">{text:Title}</div>
 
 </div>
 
