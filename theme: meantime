@@ -1257,7 +1257,7 @@ color: {color:Link Hover};
 
 <div class="main-links">
 <a href="/" title="Home"><i class="ph-bold ph-house-line"></i></a>
-{block:AskEnabled}<a href="/contact" title="Ask"><i class="ph-bold ph-house-line"></i></a>{/block:AskEnabled}
+{block:AskEnabled}<a href="/contact" title="Ask"><i class="ph-bold ph-envelope"></i></a>{/block:AskEnabled}
 <a class="open-modal" title="Explore"><i class="ph-bold ph-compass"></i></a>
 <a href="/archive" title="Archive"><i class="ph-bold ph-calendar-heart"></i></a>
 </div>
