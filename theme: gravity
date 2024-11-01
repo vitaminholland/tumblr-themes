@@ -22,7 +22,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <!-- Metadata -->
 
-<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Background" content="#f0f0f0"/>
 <meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
 <meta name="color:Link" content="#000000"/>
@@ -33,7 +33,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Pre Background" content="#f0f0f0"/>
 <meta name="color:Scrollbar" content="#000000"/>
-<meta name="color:Sidebar Background" content="#f0f0f0"/>
+<meta name="color:Sidebar Background" content="#ffffff"/>
 <meta name="color:Text" content="#555555"/>
 <meta name="color:Tooltip Background" content="#000000"/>
 <meta name="color:Tooltip Color" content="#ffffff"/>
@@ -58,6 +58,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
+<meta name="image:Sidebar Image" content="https://i.imgur.com/FswCgBB.jpeg"/>
 <meta name="image:Icon Image" content="https://i.imgur.com/ZIPiCEz.png"/>
 
 <meta name="text:Title" content="always coming back to you"/>
@@ -468,20 +469,12 @@ font-weight: bold;
 text-transform: lowercase;
 }
 
-#right {
-margin-left: 70px;
-width: calc(100% - 70px);
-}
-
-#container {
-margin-bottom: 70px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 70px;
-width: calc({select:Post Width} + 352px);
-}
-
 #ui-wrapper {
+border-right: 1px solid {color:Border};
+background-image: url("{image:Sidebar Image}");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 height: 100%;
 display: flex;
 align-items: center;
@@ -490,7 +483,8 @@ flex-wrap: wrap;
 justify-content: center;
 top: 0px;
 position: fixed;
-width: 250px;
+margin-left: 70px;
+width: 380px;
 }
 
 #user-information {
@@ -544,8 +538,16 @@ width: 0.9rem;
 margin-top: 15px;
 }
 
+#container {
+margin-bottom: 70px;
+margin-left: 450px;
+width: calc(100% - 450px);
+margin-top: 70px;
+}
+
 #posts {
-margin-left: 350px;
+margin-left: auto;
+margin-right: auto;
 width: calc({select:Post Width} + 2px);
 }
 
@@ -1167,10 +1169,6 @@ color: {color:Link Hover};
 
 </div>
 
-<div id="right">
-
-<div id="container">
-
 <div id="ui-wrapper">
 
 <div id="user-information">
@@ -1188,6 +1186,8 @@ color: {color:Link Hover};
 </div>
 
 </div>
+
+<div id="container">
 
 <div id="posts">
 
@@ -1415,8 +1415,6 @@ color: {color:Link Hover};
 {/block:NextPage}
 </div>
 {/block:Pagination}
-
-</div>
 
 </div>
 
