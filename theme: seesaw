@@ -466,21 +466,32 @@ width: 45px;
 }
 
 .main-links {
-font-size: 0.9rem;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
 margin: -5px;
 margin-bottom: 15px;
+flex-direction: column;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+width: 0.9rem;
 }
 
 .main-links a {
-margin: 5px;
+display: inline-block;
+font-size: 0.9rem;
+margin-bottom: 10px;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+width: 0.9rem;
 color: {color:Main Color};
 }
 
 .main-links a:hover {
 color: {color:Link Hover};
+}
+
+.main-links a:last-of-type {
+margin-bottom: 0px;
 }
 
 .btd-wrapper {
