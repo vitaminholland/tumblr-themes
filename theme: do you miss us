@@ -22,10 +22,10 @@ see credits @ bevvitching.tumblr.com/credits
 
 <!-- Metadata -->
 
-<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Background" content="#f0f0f0"/>
 <meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
-<meta name="color:Left Sidebar Background" content="#f0f0f0"/>
+<meta name="color:Left Sidebar Background" content="#ffffff"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
@@ -58,7 +58,7 @@ see credits @ bevvitching.tumblr.com/credits
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="image:Sidebar Image" content="https://i.imgur.com/DlcESbp.jpeg"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/tuANlUp.jpeg"/>
 <meta name="image:Icon Image" content="https://i.imgur.com/cHjCzta.jpeg"/>
 
 <meta name="text:Title" content="do you miss us?"/>
