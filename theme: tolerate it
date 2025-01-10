@@ -73,6 +73,11 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="text:Link 5 URL" content="/"/>
 <meta name="text:Link 5 Name" content="Link Five"/>
 
+<meta name="text:Listening To" content="Artist I'm Listening To"/>
+<meta name="text:Currently Reading" content="Book I'm Reading Right Now"/>
+<meta name="text:Currently Watching" content="Film or TV I'm Watching"/>
+<meta name="text:To Do List" content="Tasks I Should Finish"/>
+
 <meta name="select:Post Width" content="540px" title="504px"/>
 <meta name="select:Post Width" content="450px" title="450px"/>
 <meta name="select:Post Width" content="500px" title="500px"/>
