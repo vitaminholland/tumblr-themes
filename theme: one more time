@@ -50,12 +50,12 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="select:Body Font" content="Open Sans" title="Open Sans"/>
 <meta name="select:Body Font" content="Work Sans" title="Work Sans"/>
 
-<meta name="select:Body Font Size" content="1rem" title="1rem"/>
 <meta name="select:Body Font Size" content="0.9rem" title="0.9rem"/>
+<meta name="select:Body Font Size" content="1rem" title="1rem"/>
 <meta name="select:Body Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
+<meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 
 <meta name="image:Avatar Image" content="https://i.imgur.com/NW7vkGB.jpeg"/>
 <meta name="image:Icon Image" content="https://i.imgur.com/IIj4U8w.jpeg"/>
