@@ -79,8 +79,6 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
 
-<meta name="if:Back To Top" content="1"/>
-
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -222,24 +220,6 @@ $(document).ready(function(){
 $(".tags").hide();
 $(".tags-title").click(function(){
 $(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
@@ -1295,31 +1275,6 @@ padding: 10px;
 text-transform: uppercase;
 }
 
-#top {
-background: {color:Post Background};
-border: 1px solid {color:Border};
-bottom: 66px; 
-color: {color:Link};
-display: none;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 10px;
-position: fixed;
-right: 20px;
-text-rendering: auto;
-width: 0.9rem;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
-
-#top:hover {
-color: {color:Link Hover};
-}
-
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
@@ -1779,8 +1734,6 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 </div>
 
 </div>
-
-{block:IfBackToTop}<div id="top"><i class="ph-bold ph-arrow-line-up"></i></div>{/block:IfBackToTop}
 
 <!-- Start of Theme Credit -->
 
