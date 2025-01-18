@@ -608,6 +608,7 @@ width: 75px;
 font-weight: bold;
 text-transform: lowercase;
 text-align: right;
+margin-left: 20px;
 margin-right: 20px;
 color: {color:Post Background};
 }
