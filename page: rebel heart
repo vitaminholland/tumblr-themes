@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
+
+<!-- 
+
+page: rebel heart
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+.controls-button {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+top: 20px;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.controls-button:hover {
+color: #cfcfcf;
+}
+
+.tmblr-iframe-compact .tmblr-iframe {
+right: 10px;
+top: 59px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+background: #000000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+height: 1px;
+width: 1px;
+}
+
+::selection {
+background: #000000;
+color: white;
+}
+
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Poppins', sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+height: 550px;
+border: 1px solid #d2d2d2;
+top: calc(50% - 276px);
+left: calc(50% - 401px);
+position: absolute;
+width: 800px;
+}
+
+.images-wrapper {
+border-right: 1px solid #d2d2d2;
+height: 550px;
+position: absolute;
+width: 300px;
+}
+
+.main-image {
+height: 450px;
+width: 300px;
+}
+
+.icon-images {
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height: 100px;
+width: 300px;
+}
+
+.icon-image {
+height: 100px;
+width: 100px;
+}
+
+.icon-image img {
+height: 100px;
+width: 100px;
+}
+
+.header {
+height: 50px;
+border-bottom: 1px solid #d2d2d2;
+position: absolute;
+display: flex;
+margin-left: 301px;
+align-items: center;
+justify-content: space-between;
+width: 499px;
+}
+
+.page-title {
+margin-left: 20px;
+text-transform: lowercase;
+font-weight: bold;
+}
+
+.links {
+margin-right: 20px;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+text-transform: lowercase;
+}
+
+.links a {
+margin-left: 10px;
+}
+
+.about-wrapper {
+margin-top: 51px;
+height: 459px;
+margin-left: 301px;
+position: absolute;
+overflow-y: scroll;
+overflow-x: hidden;
+padding: 20px;
+width: 459px;
+}
+
+.about-quote {
+background: #f0f0f0;
+border: 1px solid #d2d2d2;
+font-weight: bold;
+font-family: 'Playfair Display', serif;
+padding: 20px;
+}
+
+.about {
+margin-top: 15px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #555555;
+border: 1px solid #d2d2d2;
+border-radius: 100px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
+
+<div id="container">
+
+<div class="images-wrapper">
+
+<div class="main-image"><img src="https://i.imgur.com/dscztgU.png"/></div>
+
+<div class="icon-images">
+
+<div class="icon-image"><img src="https://i.imgur.com/Y2lV3Rn.png"/></div>
+
+<div class="icon-image"><img src="https://i.imgur.com/c6jIgRz.png"/></div>
+
+<div class="icon-image"><img src="https://i.imgur.com/I4va5nN.png"/></div>
+
+</div>
+
+</div>
+
+<!-- Start of Header -->
+
+<div class="header">
+
+<div class="page-title">Rebel Heart</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Three</a>
+</div>
+
+</div>
+
+<!-- End of Header -->
+
+<div class="about-wrapper">
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna.
+</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://tanaka-drew.tumblr.com/terms"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//griddery.github.io/grid.js"></script>
+
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".tw-wrapper",
+columns: 3
+})
+})
+</script>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
