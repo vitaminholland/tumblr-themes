@@ -152,7 +152,7 @@ background: #f0f0f0;
 color: #555555;
 cursor: url(https://i.imgur.com/lhPqll6.png), progress;
 font-family: 'Poppins', sans-serif;
-font-size: 0.9rem;
+font-size: 0.8rem;
 font-style: normal;
 font-weight: 400;
 hyphens: auto;
@@ -181,7 +181,7 @@ font-weight: 700;
 
 h1 {
 font-family: 'Playfair Display', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -299,8 +299,33 @@ font-family: 'Playfair Display', serif;
 padding: 20px;
 }
 
+.about-title, .socials-title {
+font-family: 'Playfair Display', sans-serif;
+font-size: 1.2rem;
+margin-top: 15px;
+font-weight: bold;
+text-transform: lowercase;
+}
+
 .about {
 margin-top: 15px;
+}
+
+.socials {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.socials a {
+margin-bottom: 10px;
+border: 1px solid #d2d2d2;
+background: white;
+margin: 5px;
+padding: 10px;
 }
 
 #credit {
@@ -411,12 +436,23 @@ z-index: -1;
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna.
 </div>
 
+<div class="about-title">love me, hate me, you can never be me</div>
+
 <div class="about">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <br><br>
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 <br><br>
 Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<div class="socials-title">where you can find me</div>
+
+<div class="socials">
+<a href="/"><i class="ph-bold ph-facebook-logo" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/"><i class="ph-bold ph-twitter-logo" style="margin-right: 10px;"></i>Twitter</a>
+<a href="/"><i class="ph-bold ph-instagram-logo" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/"><i class="ph-bold ph-goodreads-logo" style="margin-right: 10px;"></i>Goodreads</a>
 </div>
 
 </div>
