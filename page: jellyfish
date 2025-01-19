@@ -452,7 +452,6 @@ opacity: 1;
 .credit-name {
 background: #555555;
 border: 1px solid #d2d2d2;
-border-radius: 100px;
 bottom: 20px;
 color: #ffffff;
 display: inline-block;
