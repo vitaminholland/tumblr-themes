@@ -322,12 +322,14 @@ margin: 20px;
 .name {
 font-size: 1rem;
 font-weight: bold;
+word-break: break-word;
 text-transform: lowercase;
 }
 
 .info {
 font-size: 0.8rem;
 font-style: italic;
+word-break: break-word;
 text-transform: uppercase;
 }
 
