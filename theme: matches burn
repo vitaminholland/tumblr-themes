@@ -418,7 +418,7 @@ background-image: url("{image:Sidebar Image}");
 background-position: center;
 background-repeat: no-repeat;
 display: flex;
-display: flex;
+position: fixed;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: flex-end;
