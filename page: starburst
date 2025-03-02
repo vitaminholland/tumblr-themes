@@ -353,6 +353,7 @@ padding-right: 10px;
 .tags {
 display: flex;
 font-size: 0.9rem;
+margin: -5px;
 margin-top: 15px;
 flex-direction: row;
 flex-wrap: wrap;
