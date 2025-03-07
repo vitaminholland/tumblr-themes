@@ -1234,6 +1234,118 @@ width: 0.9rem;
 color: {color:Link Hover};
 }
 
+@media only screen and (max-width: 1000px) {
+    
+.controls-button {
+display: none;
+}
+
+.modal-content {
+width: 400px;
+}
+
+.close-modal {
+margin-left: 420px;
+}
+
+.modal-wrapper {
+display: flex;
+align-items: none;
+flex-direction: column;
+flex-wrap: wrap;
+width: 400px;
+}
+
+.more-links-wrapper {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+padding: 20px;
+width: 358px;
+}
+
+.about-wrapper {
+margin-top: 50px;
+margin-left: 0px;
+width: 358px;
+}
+
+.ad-wrapper {
+margin: -5px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+.about-detail {
+border-bottom: 1px solid {color:Border};
+padding-bottom: 10px;
+display: flex;
+align-items: center;
+margin: 5px;
+max-width: 358px;
+}
+
+.us-wrapper {
+margin-top: 50px;
+margin-left: 0px;
+width: 358px;
+}
+
+#container {
+align-items: none;
+display: block;
+width: 444px;
+}
+
+#user-information {
+margin-bottom: 50px;
+position: relative;
+top: 0px;
+width: 402px;
+}
+
+#posts {
+margin-left: 0px;
+width: 444px;
+}
+ 
+.entries {
+width: 442px;
+}
+ 
+.entries-wrapper {
+width: 442px;
+}
+ 
+.entries img {
+max-width: 100%;
+}
+
+}
+ 
+@media only screen and (max-width: 500px) {
+ 
+#container {
+width: 352px;
+}
+
+#user-information {
+width: 310px;
+}
+
+#posts {
+width: 352px;
+}
+ 
+.entries {
+width: 350px;
+}
+ 
+.entries-wrapper {
+width: 350px;
+}
+ 
+}
+
 {CustomCSS}
     
 </style>
