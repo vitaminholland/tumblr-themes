@@ -1373,7 +1373,7 @@ CSS Ghost inspired by Louie Zong. Listen to <i>Ghost Choir</i> <a href="https://
 <div class="updates-content">{text:Update 1}</div>
 </div>
 </div>
-{block:ifUpdate1}
+{/block:ifUpdate1}
  
 {block:ifUpdate2}
 <div class="updates">
@@ -1383,7 +1383,7 @@ CSS Ghost inspired by Louie Zong. Listen to <i>Ghost Choir</i> <a href="https://
 <div class="updates-content">{text:Update 2}</div>
 </div>
 </div>
-{block:ifUpdate2}
+{/block:ifUpdate2}
  
 {block:ifUpdate3}
 <div class="updates">
@@ -1393,7 +1393,7 @@ CSS Ghost inspired by Louie Zong. Listen to <i>Ghost Choir</i> <a href="https://
 <div class="updates-content">{text:Update 3}</div>
 </div>
 </div>
-{block:ifUpdate3}
+{/block:ifUpdate3}
 
 </div>
 
