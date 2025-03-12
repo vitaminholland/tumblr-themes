@@ -948,21 +948,21 @@ color: {color:Link Hover};
 <div class="updates-date">{text:Update Date 1}</div>
 <div class="updates-content">{text:Update 1}</div>
 </div>
-{block:ifUpdate1}
+{/block:ifUpdate1}
  
 {block:ifUpdate2}
 <div class="updates">
 <div class="updates-date">{text:Update Date 2}</div>
 <div class="updates-content">{text:Update 2}</div>
 </div>
-{block:ifUpdate2}
+{/block:ifUpdate2}
  
 {block:ifUpdate3}
 <div class="updates">
 <div class="updates-date">{text:Update Date 3}</div>
 <div class="updates-content">{text:Update 3}</div>
 </div>
-{block:ifUpdate3}
+{/block:ifUpdate3}
 </div>
 
 </div>
