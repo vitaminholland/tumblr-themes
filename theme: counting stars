@@ -22,7 +22,7 @@
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#000000"/>
+<meta name="color:Main Color" content="#dfb8b2"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Pre Background" content="#f8f8f8"/>
@@ -50,7 +50,7 @@
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="image:Sidebar Image" content="https://i.imgur.com/eq1vd8B.jpg"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/PPcsMb8.jpeg"/>
 
 <meta name="text:Title" content="Counting Stars"/>
 
@@ -471,10 +471,10 @@ background: rgba(255, 255, 255, 0.9);
 border-radius: 5px;
 animation: fadeEffect 1s;
 display: none;
-margin-bottom: 50px;
-margin-left: 50px;
+margin-bottom: 20px;
+margin-left: 20px;
 padding: 20px;
-width: 160px;
+width: 220px;
 }
  
 @-webkit-keyframes fadeEffect {
