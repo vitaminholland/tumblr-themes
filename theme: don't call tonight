@@ -417,7 +417,7 @@ justify-content: space-between;
 position: fixed;
 top: 0px;
 width: 100%;
-z-index: 1;
+z-index: 999999999999999999999999999999999999;
 }
 
 .main-links {
