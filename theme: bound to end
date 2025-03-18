@@ -102,10 +102,6 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="text:Statistics Number 3 Name" content="Something Else"/>
 <meta name="text:Statistics Number 3 Content" content="9"/>
 
-<meta name="select:Post Width" content="500px" title="500px"/>
-<meta name="select:Post Width" content="450px" title="450px"/>
-<meta name="select:Post Width" content="540px" title="540px"/>
-
 <meta name="if:Submit Link" content="1"/>
 
 <meta name="if:Hide Tags" content="0"/>
