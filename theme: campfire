@@ -113,7 +113,7 @@ attribute:"title"
 
 <!-- Phosphor Icons Script -->
  
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
 
 <!-- Tumblr Controls Script --->
 
@@ -1172,8 +1172,8 @@ z-index: -1;
 </div>
 <div class="pslr-b">
 <div class="origins-icon">
-{block:RebloggedFrom}<a  href="{ReblogParentURL}" title="Reblogged Via {ReblogParentName}"><i class="ph ph-arrow-u-down-left"></i></a>{/block:RebloggedFrom}
-{block:RebloggedFrom}<a href="{ReblogRootURL}" title="Originally Posted By {ReblogRootName}"><i class="ph ph-tree-structure"></i></a>{/block:RebloggedFrom}
+{block:RebloggedFrom}<a  href="{ReblogParentURL}" title="Reblogged Via {ReblogParentName}"><i class="ph-bold ph-arrow-u-down-left"></i></a>{/block:RebloggedFrom}
+{block:RebloggedFrom}<a href="{ReblogRootURL}" title="Originally Posted By {ReblogRootName}"><i class="ph-bold ph-tree-structure"></i></a>{/block:RebloggedFrom}
 </div>
 </div>
 </div>
