@@ -59,6 +59,24 @@ $('body').toggleClass('controls-click');
 });
 </script>
 
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <style type="text/css">
 
 .tmblr-iframe--app-cta-button {
@@ -331,6 +349,31 @@ margin: 5px;
 padding: 10px;
 }
 
+#top {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+bottom: 66px; 
+color: #000000;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#top:hover {
+color: #cfcfcf;
+}
+
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
@@ -466,6 +509,8 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <!-- End of About -->
 
 </div>
+
+<div id="top"><i class="ph-bold ph-arrow-line-up"></i></div>
 
 <!-- Start of Theme Credit -->
 
