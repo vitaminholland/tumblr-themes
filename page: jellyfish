@@ -93,7 +93,7 @@ color: #cfcfcf;
 
 .tmblr-iframe-compact .tmblr-iframe {
 right: 10px;
-top: 79px;
+top: 59px;
 opacity: 0;
 visibility: hidden;
 -webkit-transition: all 0.5s;
