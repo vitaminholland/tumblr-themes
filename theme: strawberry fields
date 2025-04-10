@@ -450,6 +450,11 @@ padding: 20px;
 text-transform: lowercase;
 }
 
+.blog-title:first-letter {
+color: {color:Main Color};
+font-style: italic;
+}
+
 .sidebar-image {
 height: 150px;
 width: 300px;
