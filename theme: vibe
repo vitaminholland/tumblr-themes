@@ -1513,7 +1513,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 </div>
 
 <div class="links">
-<a class="open-modal"><i class="ph-bold ph-dots-three-circle"></i></a>
+<a class="open-modal" title="Explore"><i class="ph-bold ph-dots-three-circle"></i></a>
 </div>
 
 </div>
