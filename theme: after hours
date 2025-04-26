@@ -1313,7 +1313,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <a href="/" title="Home"><i class="ph-bold ph-house-line"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="ph-bold ph-chat-text"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit"><i class="ph-bold ph-tray-arrow-up"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
-<a class="open-modal"><i class="ph-bold ph-dots-three-circle"></i></a>
+<a class="open-modal" title="Explore"><i class="ph-bold ph-dots-three-circle"></i></a>
 {block:ifLink1URL}<a href="{text:Link 1 URL}" title="{text:Link 1 Name}"><i class="ph-bold ph-planet"></i></a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}" title="{text:Link 2 Name}"><i class="ph-bold ph-flower-tulip"></i></a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}" title="{text:Link 3 Name}"><i class="ph-bold ph-sparkle"></i></a>{/block:ifLink3URL}
