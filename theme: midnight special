@@ -480,7 +480,6 @@ color: {color:Link};
 background: {color:Post Background};
 border: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
-margin-left: 20px;
 margin-top: 20px;
 padding: 20px;
 text-transform: uppercase;
