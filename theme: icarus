@@ -1351,7 +1351,7 @@ color: {color:Link Hover};
 
 <div class="tab">
 <a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="ph-bold ph-pen-nib"></i></a>
-<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen" title="Site Updates"><i class="ph-bold ph-projector-screen-chart"></i></a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen" title="Events"><i class="ph-bold ph-projector-screen-chart"></i></a>
 <a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen" title="Admins"><i class="ph-bold ph-user-list"></i></a>
 </div>
 
