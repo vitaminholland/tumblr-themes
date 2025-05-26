@@ -551,6 +551,7 @@ color: {color:Link Hover};
 align-items: center;
 background: {color:Post Background};
 border: 1px solid {color:Border};
+height: 23.73px;
 display: flex;
 width: calc(100% - 2px);
 }
@@ -565,6 +566,10 @@ width: 100%;
 background: {color:Main Color};
 color: {color:Post Background};
 font-size: 0.9rem;
+height: 0.9rem;
+align-items: center;;
+justify-content: center;
+display: flex;
 margin-right: 10px;
 padding: 5px;
 width: 0.9rem;
