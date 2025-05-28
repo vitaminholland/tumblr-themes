@@ -213,7 +213,7 @@ background: #ffffff;
 background-attachment: fixed;
 background-image: url('https://i.imgur.com/JYaCY8U.jpg');
 background-repeat: repeat;
-border: 1px solid {color:Border};
+border: 1px solid #d2d2d2;
 height: 550px;
 position: fixed;
 top: calc(50% - 276px);
