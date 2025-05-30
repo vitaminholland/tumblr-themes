@@ -623,7 +623,7 @@ width: 640px;
 }
 
 .links {
-background: {color:Post Background};
+background: {color:Main Color};
 border-bottom: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
 display: flex;
