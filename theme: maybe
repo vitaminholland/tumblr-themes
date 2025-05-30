@@ -108,8 +108,6 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
 
-<meta name="if:Back To Top" content="1"/>
-
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Frank+Ruhl+Libre:wght@300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prata&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -249,24 +247,6 @@ $(document).ready(function(){
 $(".tags").hide();
 $(".tags-title").click(function(){
 $(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
@@ -1247,32 +1227,6 @@ line-height: 1;
 padding: 10px;
 }
 
-#top {
-background: {color:Post Background};
-border: 1px solid {color:Border};
-bottom: 66px; 
-border-radius: 5px;
-color: {color:Link};
-display: none;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 10px;
-position: fixed;
-right: 20px;
-text-rendering: auto;
-width: 0.9rem;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
-
-#top:hover {
-color: {color:Link Hover};
-}
-
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
@@ -1615,8 +1569,6 @@ color: {color:Link Hover};
 </div>
 
 </div>
-
-{block:IfBackToTop}<div id="top"><i class="ph-bold ph-caret-circle-up"></i></div>{/block:IfBackToTop}
 
 <!-- Start of Theme Credit -->
 
