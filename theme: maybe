@@ -603,7 +603,7 @@ width: 640px;
 }
 
 .links {
-background: {color:Main Color};
+background: {color:Post Background};
 border-bottom: 1px solid {color:Border};
 font-size: {select:Uppercase Font Size};
 display: flex;
@@ -617,11 +617,16 @@ z-index: 99999;
 }
 
 .links a {
-background: {color:Post Background};
+background: {color:Main Color};
 border: 1px solid {color:Border};
+color: white;
 border-radius: 5px;
 margin: 5px;
 padding: 5px 10px 5px 10px;
+}
+
+.links a:hover {
+color: {color:Link Hover};
 }
 
 #posts {
