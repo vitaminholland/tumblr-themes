@@ -654,7 +654,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="sideblog-image"><img src="https://i.imgur.com/IZXbhtF.png"/></div>
 
-<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="color: white;font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
 
 </div>
 
@@ -666,7 +666,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="sideblog-image"><img src="https://i.imgur.com/gL2f4ro.png"/></div>
 
-<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="color: white;font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
 
 </div>
 
@@ -678,7 +678,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="sideblog-image"><img src="https://i.imgur.com/CB8qG9D.png"/></div>
 
-<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;;text-transform: uppercase;">short blog description</font></div>
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="color: white;font-size: 0.8rem;;text-transform: uppercase;">short blog description</font></div>
 
 </div>
 
