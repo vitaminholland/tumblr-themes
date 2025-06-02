@@ -613,7 +613,7 @@ position: sticky;
 padding: 10px;
 top: 0px;
 text-transform: uppercase;
-z-index: 99999;
+z-index: 1;
 }
 
 .links a {
