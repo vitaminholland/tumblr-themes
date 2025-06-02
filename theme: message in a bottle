@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
+
+<!-- 
+
+page: message in a bottle
+designed and coded by franchesca @ tanaka-drew.tumblr.com
+see credits @ tanaka-drew.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<style type="text/css">
+
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+.controls-button {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+color: #000000;
+top: 20px;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+.controls-button:hover {
+color: #cfcfcf;
+}
+
+.tmblr-iframe-compact .tmblr-iframe {
+right: 10px;
+top: 59px;
+opacity: 0;
+visibility: hidden;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+background: #000000;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+height: 1px;
+width: 1px;
+}
+
+::selection {
+background: #d995af;
+color: white;
+}
+
+::-moz-selection {
+background: #d995af;
+color: white;
+}
+
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.8rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Atkinson Hyperlegible", sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+#container {
+background: #ffffff;
+background-attachment: fixed;
+background-image: url('https://i.imgur.com/JYaCY8U.jpg');
+background-repeat: repeat;
+border: 1px solid #d2d2d2;
+height: 550px;
+top: calc(50% - 276px);
+position: fixed;
+left: calc(50% - 451px);
+width: 900px;
+}
+
+.header {
+background :#ffffff;
+border-bottom: 1px solid #d2d2d2;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 50px;
+position: absolute;
+width: 900px;
+}
+
+.uipt-wrapper {
+align-items: center;
+margin-left: 20px;
+display: flex;
+}
+
+.user-icon {
+font-size: 1rem;
+}
+
+.page-title {
+margin-left: 20px;
+font-family: "DM Serif Display", serif;
+font-weight: bold;
+font-size: 1rem;
+}
+
+.page-title:first-letter {
+color: #d995af;
+font-style: italic;
+}
+
+.links {
+align-items: center;
+display: flex;
+margin-right: 20px;
+flex-direction: row;
+flex-wrap: wrap;
+text-transform: lowercase;
+}
+
+.links a {
+margin-left: 10px;
+}
+
+.wrapper {
+height: 499px;
+overflow-y: scroll;
+overflow-x: hidden;
+margin-top: 51px;
+width: 900px;
+}
+
+.panels-wrapper {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.panel-one {
+border-bottom: 1px solid #d2d2d2;
+width: 900px;
+}
+
+.faq-wrapper {
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+width: 500px;
+}
+
+.notebox {
+margin-top: 15px;
+border: 1px solid #d2d2d2;
+background: #f0f0f0;
+padding: 20px;
+}
+
+.question-wrapper {
+margin-top: 15px;
+}
+
+.question {
+background: #d995af;
+border: 1px solid #d2d2d2;
+color: #ffffff;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.question:hover {
+background: #f0f0f0;
+color: #555555;
+}
+
+.question-icon {
+font-size: 0.9rem;
+margin-left: 15px;
+}
+ 
+.answer {
+margin-top: 10px;
+}
+
+.panel-two {
+background: #000000;
+width: 900px;
+}
+
+.boxes-wrapper {
+align-items: flex-start;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+margin-top: 50px;
+width: 700px;
+}
+
+.box {
+margin-right: 20px;
+width: 220px;
+}
+
+.box:last-of-type {
+margin-right: 0px;
+}
+
+.box-title {
+color: #d995af;
+font-weight: bold;
+}
+
+.more-links {
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-size: 0.8rem;
+text-transform: uppercase;
+}
+
+.more-links a {
+margin-bottom: 10px;
+color: white;
+}
+
+.more-links a:hover {
+color: #cfcfcf;
+}
+
+.sideblogs-wrapper {
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.sideblog {
+align-items: center;
+display: flex;
+border-bottom: 1px solid #d2d2d2;
+padding-bottom: 10px;
+margin-bottom: 10px;
+max-width: 220px;
+}
+
+.sideblog a {
+color: #d995af;
+}
+
+.sideblog a:hover {
+color: #cfcfcf;
+}
+
+.sideblog:last-of-type {
+margin-bottom: 0px;
+}
+
+.sideblog-image {
+height: 35px;
+width: 35px;
+}
+
+.sideblog-image img {
+border-radius: 100px;
+height: 35px;
+width: 35px;
+}
+
+.sideblog-name {
+margin-left: 20px;
+text-transform: lowercase;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+color: #000000;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #555555;
+border: 1px solid #d2d2d2;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.8rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
+
+<div id="container">
+
+<!-- Start of Header -->
+
+<div class="header">
+
+<div class="uipt-wrapper">
+
+<div class="user-icon"><i class="ph-bold ph-chat-teardrop-text"></i></div>
+
+<div class="page-title">message in a bottle</div>
+
+</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+</div>
+
+</div>
+
+<!-- End of Header -->
+
+<div class="wrapper">
+
+<div class="panels-wrapper">
+
+<!-- Start of Panel One -->
+
+<div class="panel-one">
+
+<div class="faq-wrapper">
+
+<h1>my frequently asked questions</h1>
+
+<div class="notebox">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+<!-- Start of Question & Answer -->
+
+<div class="question-wrapper">
+
+<div class="question">Here's question no. 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div></div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="question-wrapper">
+
+<div class="question">An example question too. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div></div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="question-wrapper">
+
+<div class="question">Another question sample. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div></div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="question-wrapper">
+
+<div class="question">More questions...Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div></div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<!-- Start of Question & Answer -->
+
+<div class="question-wrapper">
+
+<div class="question">...And the last one. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<div class="question-icon"><i class="ph-bold ph-seal-question"></i></div></div>
+
+<div class="answer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+</div>
+
+</div>
+
+<!-- End of Question & Answer -->
+
+<p><iframe frameborder="0" height="200" id="ask_form" scrolling="no" src="https://www.tumblr.com/ask_form/{Name}.tumblr.com" width="100%"></iframe></p>
+
+</div>
+
+</div>
+
+<!-- End of Panel One -->
+
+
+<!-- Start of Panel Two -->
+
+<div class="panel-two">
+
+<div class="boxes-wrapper">
+
+<div class="box">
+
+<div class="box-title">navigation one</div>
+
+<div class="more-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+</div>
+
+</div>
+    
+<div class="box">
+
+<div class="box-title">navigation two</div>
+
+<div class="more-links">
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+</div>
+
+</div>
+
+<div class="box">
+
+<div class="box-title">sideblogs</div>
+
+<div class="sideblogs-wrapper">
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/IZXbhtF.png"/></div>
+
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
+
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/gL2f4ro.png"/></div>
+
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;text-transform: uppercase;">short blog description</font></div>
+
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="sideblog-image"><img src="https://i.imgur.com/CB8qG9D.png"/></div>
+
+<div class="sideblog-name"><b><a href="/">Sideblog URL</a></b><br><font style="font-size: 0.8rem;;text-transform: uppercase;">short blog description</font></div>
+
+</div>
+
+<!-- End of Sideblog -->
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Panel Two -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!-- Hide & Show Script -->
+ 
+<script>
+$(document).ready(function(){
+$(".answer").hide();
+$(".question").click(function(){
+$(this).next(".answer").slideToggle('fast');
+});
+});
+</script>
+
+</html>
