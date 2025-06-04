@@ -706,6 +706,7 @@ width: 0.9rem;
 align-items: center;
 display: flex;
 text-transform: lowercase;
+text-align: right;
 margin-left: 10px;
 }
 
