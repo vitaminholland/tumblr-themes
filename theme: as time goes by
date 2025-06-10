@@ -668,14 +668,12 @@ text-transform: lowercase;
 }
 
 .project-wrapper {
-border-bottom: 1px solid {color:Border};
 margin-bottom: 15px;
 width: 208px;
 }
 
 .project-wrapper:last-of-type {
 margin-bottom: 0px;
-border-bottom: none;
 }
 
 .project-image {
