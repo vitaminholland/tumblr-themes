@@ -20,7 +20,7 @@
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#ff99aa"/>
+<meta name="color:Main Color" content="#bb967d"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Question Background" content="#ffffff"/>
@@ -45,10 +45,10 @@
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="image:Header Image" content="https://i.imgur.com/cllV7Kc.png"/>
-<meta name="image:Sidebar Image" content="https://i.imgur.com/2ze7ZDH.png"/>
-<meta name="image:Icon Image" content="https://i.imgur.com/UoZ6kB6.png"/>
-<meta name="image:About Image" content="https://i.imgur.com/YR7kFrf.png"/>
+<meta name="image:Header Image" content="https://i.imgur.com/rNJzmfS.png"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/it1oK4N.png"/>
+<meta name="image:Icon Image" content="https://i.imgur.com/Db7JcUp.jpeg"/>
+<meta name="image:About Image" content="https://i.imgur.com/mMkkO94.jpeg"/>
 
 <meta name="text:Title" content="Superheroes"/>
 <meta name="text:Subtitle" content="Now She's Stronger Than You Know"/>
