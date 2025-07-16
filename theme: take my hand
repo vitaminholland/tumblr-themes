@@ -1356,8 +1356,6 @@ color: {color:Link Hover};
 
 <a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-wrench"></i></a>
 
-<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
-
 <div class="modal modal_multi">
  
 <div class="modal-content">
