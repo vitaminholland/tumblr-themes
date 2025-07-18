@@ -583,6 +583,7 @@ width: 500px;
 }
  
 .close-modal {
+background: {color:Post Background};
 border: 1px solid {color:Border};
 display: inline-block;
 font-size: 0.9rem;
