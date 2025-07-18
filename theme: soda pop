@@ -473,7 +473,8 @@ width: 70px;
 }
 
 .btd-wrapper {
-margin: 20px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .blog-title {
