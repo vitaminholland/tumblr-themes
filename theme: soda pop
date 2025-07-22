@@ -1248,7 +1248,7 @@ color: {color:Link Hover};
 {block:ifLink2URL}<a href="{text:Link 2 URL}" title="{text:Link 2 Name}"><i class="ph-bold ph-flower-tulip"></i></a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}" title="{text:Link 3 Name}"><i class="ph-bold ph-fish-simple"></i></a>{/block:ifLink3URL}
 {block:ifLink4URL}<a href="{text:Link 4 URL}" title="{text:Link 4 Name}"><i class="ph-bold ph-bowl-steam"></i></a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5URL}" title="{text:Link 5 Name}"><i class="ph-bold ph-butterfly"></i></a>{/block:ifLink5URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}" title="{text:Link 5 Name}"><i class="ph-bold ph-butterfly"></i></a>{/block:ifLink5URL}
 {block:ifLink6URL}<a href="{text:Link 6 URL}" title="{text:Link 6 Name}"><i class="ph-bold ph-planet"></i></a>{/block:ifLink6URL}
 {block:ifLink7URL}<a href="{text:Link 7 URL}" title="{text:Link 7 Name}"><i class="ph-bold ph-bird"></i></a>{/block:ifLink7URL}
 <a href="/archive" title="Archive"><i class="ph-bold ph-calendar-star"></i></a>
