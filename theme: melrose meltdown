@@ -137,7 +137,7 @@ attribute:"title"
 
 <script>
 $(document).ready(function(){
-$('.controls-button').click(function(){
+$('.controls-button, .alt-controls-button').click(function(){
 $('body').toggleClass('controls-click');
 });
 });
@@ -342,6 +342,16 @@ transition: all 0.5s;
 }
 
 .controls-click .tmblr-iframe {
+opacity: 1.0;
+visibility: visible;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.alt-controls-click .tmblr-iframe {
 opacity: 1.0;
 visibility: visible;
 -webkit-transition: all 0.5s;
@@ -722,7 +732,8 @@ width: 250px;
 }
 
 .project-image img {
-height: 150px;
+display: block;
+height: auto;
 width: 250px;
 }
 
