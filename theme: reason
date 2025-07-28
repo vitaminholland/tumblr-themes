@@ -720,6 +720,7 @@ width: 250px;
 
 .project-wrapper:last-of-type {
 margin-bottom: 0px;
+padding-bottom: 0px;
 border-bottom: none;
 }
 
