@@ -714,7 +714,7 @@ margin-bottom: 0px;
 border-bottom: 1px solid {color:Border};
 margin-top: 15px;
 margin-bottom: 15px;
-padding-bottom: 15px
+padding-bottom: 15px;
 width: 250px;
 }
 
