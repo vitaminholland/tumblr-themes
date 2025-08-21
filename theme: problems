@@ -465,7 +465,7 @@ width: calc({select:Post Width} + 352px);
 }
 
 #user-information {
-top: 70px;
+top: 121px;
 position: sticky;
 width: 250px;
 }
