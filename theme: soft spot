@@ -459,7 +459,6 @@ width: 250px;
 .sidebar-image {
 height: 250px;
 width: 250px;
-border-right: 1px solid {color:Border};
 background-image: url("{image:Sidebar Image}");
 background-position: center;
 background-repeat: no-repeat;
