@@ -542,7 +542,7 @@ margin-right: 15px;
 background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
-height: 203.5px;
+height: 203px;
 align-items: center;
 display: flex;
 margin-top: 15px;
@@ -550,7 +550,7 @@ width: 173.5px;
 }
 
 .sd-inner {
-max-height: 163.5px;
+max-height: 163px;
 padding: 20px;
 overflow-y: scroll;
 width: 143.5px;
