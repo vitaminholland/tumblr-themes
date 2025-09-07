@@ -1251,7 +1251,6 @@ color: {color:Link Hover};
 {block:ifLink5URL}<a href="{text:Link 5 URL}" title="{text:Link 5 Name}"><i class="ph-bold ph-butterfly"></i></a>{/block:ifLink5URL}
 {block:ifLink6URL}<a href="{text:Link 6 URL}" title="{text:Link 6 Name}"><i class="ph-bold ph-planet"></i></a>{/block:ifLink6URL}
 {block:ifLink7URL}<a href="{text:Link 7 URL}" title="{text:Link 7 Name}"><i class="ph-bold ph-bird"></i></a>{/block:ifLink7URL}
-<a href="/archive" title="Archive"><i class="ph-bold ph-calendar-star"></i></a>
 </div>
 
 </div>
