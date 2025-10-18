@@ -849,7 +849,7 @@ width: 0.9rem;
 }
 
 .about-quote {
-background: #f0f0f0;
+background: #000000;
 display: flex;
 margin-top: 15px;
 align-items: stretch;
@@ -870,6 +870,7 @@ width: 0.9rem;
 }
 
 .actual-quote {
+color: white;
 margin-left: 15px;
 font-family: "Geist Mono", monospace;
 }
