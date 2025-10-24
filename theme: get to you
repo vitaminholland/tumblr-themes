@@ -1337,7 +1337,7 @@ Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id mass
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
 {block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
 {block:ifLink5URL}<a href="{text:Link 5 URL}">{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink3URL}<a href="{text:Link 5 URL}">{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}">{text:Link 6 Name}</a>{/block:ifLink6URL}
 </div>
 
 </div>
