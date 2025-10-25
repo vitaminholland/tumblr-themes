@@ -95,8 +95,8 @@ see credits @ ghcstfaec.tumblr.com/credits
 <meta name="text:Subtitle" content="and you're like a warm autumn afternoon"/>
 
 <meta name="text:Close Text" content="close_something here"/>
-<meta name="text:Maixmize Text" content="maximize_something here"/>
-<meta name="text:Minimize Text" content="minimize_here"/>
+<meta name="text:Maximize Text" content="maximize_something here"/>
+<meta name="text:Minimize Text" content="minimize_something here"/>
 
 <meta name="text:Update Date 1" content="Month Day, Year"/>
 <meta name="text:Update Title 1" content="title of update here"/>
