@@ -618,6 +618,48 @@ height: 200px;
 width: 422px;
 }
 
+.about-quote {
+background: #f0f0f0;
+padding: 20px;
+margin-top: 15px;
+font-family: "SUSE Mono", sans-serif;
+}
+
+.details-wrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+margin-top: 15px;
+width: calc(100% + 10px);
+}
+
+.details-wrapper li {
+align-items: center;
+border-bottom: 1px solid {color:Border};
+display: flex;
+font-size: {select:Uppercase Font Size};
+list-style-type: none;
+padding-bottom: 10px;
+margin: 5px;
+text-transform: uppercase;
+width: calc(50% - 10px);
+}
+
+.details-icon {
+background: {color:Main Color};
+border-radius: 100px;
+color: {color:Post Background};
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
 .about {
 margin-top: 15px;
 }
@@ -1249,6 +1291,19 @@ color: {color:Link Hover};
 
 <div class="about-image"><img src="https://i.imgur.com/d9tqLJO.png"/></div>
 
+<div class="about-quote">
+Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="details-wrapper">
+<li><div class="details-icon"><i class="ph-bold ph-confetti"></i></div>Age + B-Day</li>
+<li><div class="details-icon"><i class="ph-bold ph-question"></i></i></div>Pronouns</li>
+<li><div class="details-icon"><i class="ph-bold ph-sparkle"></i></div>Star Sign</li>
+<li><div class="details-icon"><i class="ph-bold ph-globe-hemisphere-east"></i></div>Location</li>
+<li><div class="details-icon"><i class="ph-bold ph-ping-pong"></i></div>Status</li>
+<li><div class="details-icon"><i class="ph-bold ph-fish-simple"></i></div>Something</li>
+</div>
+
 <div class="about">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <br><br>
@@ -1276,8 +1331,8 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 {block:Description}<div class="description">{Description}</div>{/block:Description}
 
 <div class="links">
-<a href="/"><div class="links-icon"><i class="ph-bold ph-house-line"></i></div>Home</a>
-{block:AskEnabled}<a href="/ask"><div class="links-icon"><i class="ph-bold ph-at"></i></div>Ask</a>{/block:AskEnabled}
+<a href="/"><div class="links-icon"><i class="ph-bold ph-house-line"></i></div>Refresh</a>
+{block:AskEnabled}<a href="/ask"><div class="links-icon"><i class="ph-bold ph-at"></i></div>Message</a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit"><div class="links-icon"><i class="ph-bold ph-tray-arrow-up"></i></div>Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <a class="open-modal"><div class="links-icon"><i class="ph-bold ph-heart"></i></div>Explore</a>
 <a href="/archive"><div class="links-icon"><i class="ph-bold ph-calendar-dots"></i></div>Archive</a>
