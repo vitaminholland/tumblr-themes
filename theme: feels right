@@ -256,6 +256,7 @@ visibility: visible;
 visibility: hidden;
 opacity: 0;
 {/block:HomePage}
+z-index: 999999999999999999999999999999999999;
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -580,7 +581,7 @@ font-weight: bold;
 text-transform: lowercase;
 }
 
-.Item-description {
+.item-description {
 margin-top: 15px;
 text-transform: lowercase;
 }
