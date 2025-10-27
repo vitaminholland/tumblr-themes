@@ -1568,7 +1568,7 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <h1>saying thanks</h1>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <br><br>
-<i class="ph-bold ph-copyright"></i> {Year} {Name} All Rights Reserved. Powered by Tumblr.
+<i class="ph-bold ph-copyright"></i> {CopyrightYears} {Name} All Rights Reserved. Powered by Tumblr.
 </div>
 
 </div>
