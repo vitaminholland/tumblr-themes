@@ -250,8 +250,12 @@ color: {color:Link Hover};
 .tmblr-iframe-compact .tmblr-iframe {
 right: 10px;
 top: 0px;
-opacity: 0;
+opacity: 1;
+visibility: visible;
+{block:HomePage}
 visibility: hidden;
+opacity: 0;
+{/block:HomePage}
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -1754,7 +1758,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 <a href="{Permalink}">{DayOfMonth} {ShortMonth} {Year}</a>
 <font style="color: {color:Main Color};margin-left: 5px;margin-right: 5px;">•</font>
 {block:RebloggedFrom} <a href="{ReblogParentURL}">Via</a> / {/block:RebloggedFrom}  
-{block:ContentSource}{block:RebloggedFrom} <a href="{ReblogRootURL}">Source</a> / {/block:RebloggedFrom}{/block:ContentSource}
+{block:ContentSource} <a href="{ReblogRootURL}">Source</a> / {/block:ContentSource}
 <a class="like-b" href="#">{LikeButton}<div class="b">Like</div></a> Or <a href="{ReblogURL}" target="_blank">Reblog</a>
 {block:IfHideTags}
 {block:HasTags}
