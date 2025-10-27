@@ -99,9 +99,9 @@ attribute:"title"
 })(jQuery);
 </script>
  
-<!-- Font Awesome Script -->
+<!-- Phosphor Icons Script -->
  
-<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
  
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
@@ -1288,7 +1288,7 @@ color: {color:Link Hover};
 {block:ifBlogLinkURL}<a href="{text:Blog Link URL}">{text:Blog Link Name}</a>{/block:ifBlogLinkURL}
 </div>
 
-<a class="controls-button" title="Tumblr Controls"><i class="fa-solid fa-sliders"></i></a>
+<a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-sliders-horizontal"></i></a>
 
 </div>
 
@@ -1319,12 +1319,12 @@ color: {color:Link Hover};
 <div class="about">
 <h1>it's so nice to meet you</h1>
 <div class="details-wrapper">
-<li><div class="details-icon"><i class="fa-solid fa-cake-candles"></i></div>Age + B-Day</li>
-<li><div class="details-icon"><i class="fa-solid fa-question"></i></div>Pronouns</li>
-<li><div class="details-icon"><i class="fa-solid fa-star"></i></div>Star Sign</li>
-<li><div class="details-icon"><i class="fa-solid fa-earth-americas"></i></div>Location</li>
-<li><div class="details-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>Status</li>
-<li><div class="details-icon"><i class="fa-solid fa-fish"></i></div>Something</li>
+<li><div class="details-icon"><i class="ph-bold ph-cake"></i></div>Age + B-Day</li>
+<li><div class="details-icon"><i class="ph-bold ph-question"></i></div>Pronouns</li>
+<li><div class="details-icon"><i class="ph-bold ph-sparkle"></i></div>Star Sign</li>
+<li><div class="details-icon"><i class="ph-bold ph-globe-hemisphere-east"></i></div>Location</li>
+<li><div class="details-icon"><i class="ph-bold ph-martini"></i></div>Status</li>
+<li><div class="details-icon"><i class="ph-bold ph-fish"></i></div>Something</li>
 </div>
 {Description}</div>
 
@@ -1354,7 +1354,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="item-image"><img src="https://i.imgur.com/6X1jaMk.png"/></div>
 
-<div class="item-link"><a href="/"><i class="fa-solid fa-link"></i></a></div>
+<div class="item-link"><a href="/"><i class="ph-bold ph-eye"></i></a></div>
 
 <div class="item-details">
 
@@ -1374,7 +1374,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="item-image"><img src="https://i.imgur.com/6X1jaMk.png"/></div>
 
-<div class="item-link"><a href="/"><i class="fa-solid fa-link"></i></a></div>
+<div class="item-link"><a href="/"><i class="ph-bold ph-eye"></i></a></div>
 
 <div class="item-details">
 
@@ -1394,7 +1394,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="item-image"><img src="https://i.imgur.com/6X1jaMk.png"/></div>
 
-<div class="item-link"><a href="/"><i class="fa-solid fa-link"></i></a></div>
+<div class="item-link"><a href="/"><i class="ph-bold ph-eye"></i></a></div>
 
 <div class="item-details">
 
@@ -1414,7 +1414,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="item-image"><img src="https://i.imgur.com/6X1jaMk.png"/></div>
 
-<div class="item-link"><a href="/"><i class="fa-solid fa-link"></i></a></div>
+<div class="item-link"><a href="/"><i class="ph-bold ph-eye"></i></a></div>
 
 <div class="item-details">
 
@@ -1434,7 +1434,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="item-image"><img src="https://i.imgur.com/6X1jaMk.png"/></div>
 
-<div class="item-link"><a href="/"><i class="fa-solid fa-link"></i></a></div>
+<div class="item-link"><a href="/"><i class="ph-bold ph-eye"></i></a></div>
 
 <div class="item-details">
 
@@ -1568,7 +1568,7 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <h1>saying thanks</h1>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
 <br><br>
-<i class="far fa-copyright"></i> 2019 {Name} All Rights Reserved. Powered by Tumblr.
+<i class="ph-bold ph-copyright"></i> {Year} {Name} All Rights Reserved. Powered by Tumblr.
 </div>
 
 </div>
@@ -1588,9 +1588,9 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="links-wrapper">
 
 <div class="main-links">
-<a href="/" title="Home"><i class="fa-solid fa-house"></i></a>
-{block:AskEnabled}<a href="/ask" title="Ask"><i class="fa-solid fa-at"></i></a>{/block:AskEnabled}
-<a href="/archive" title="Archive"><i class="fa-solid fa-calendar-days"></i></a>
+<a href="/" title="Home"><i class="ph-bold ph-house-line"></i></a>
+{block:AskEnabled}<a href="/ask" title="Ask"><i class="ph-bold ph-at"></i></a>{/block:AskEnabled}
+<a href="/archive" title="Archive"><i class="ph-bold ph-calendar-heart"></i></a>
 </div>
 
 </div>
@@ -1608,19 +1608,19 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div id="two" class="tab-content">
 
 <div class="more-links">
-{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit"><div class="links-icon"><i class="fa-solid fa-upload"></i></div>Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><div class="links-icon"><i class="fa-solid fa-fan"></i></div>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><div class="links-icon"><i class="fa-solid fa-leaf"></i></div>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><div class="links-icon"><i class="fa-solid fa-cat"></i></div>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><div class="links-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><div class="links-icon"><i class="fa-solid fa-wind"></i></div>{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit"><div class="links-icon"><i class="ph-bold ph-tray-arrow-up"></i></div>Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><div class="links-icon"><i class="ph-bold ph-fan"></i></div>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><div class="links-icon"><i class="ph-bold ph-clover"></i></div>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><div class="links-icon"><i class="ph-bold ph-cat"></i></div>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><div class="links-icon"><i class="ph-bold ph-magic-wand"></i></div>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><div class="links-icon"><i class="ph-bold ph-wind"></i></div>{text:Link 5 Name}</a>{/block:ifLink5URL}
 </div>
 
 </div>
 
 <div class="tab">
-<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen"><i class="fa-solid fa-user-astronaut" style="font-size: 0.9rem;margin-right: 10px;"></i>Info</a>
-<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen"><i class="fa-solid fa-heart" style="font-size: 0.9rem;margin-right: 10px;"></i>Links</a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen"><i class="ph-bold ph-user-focus" style="font-size: 0.9rem;margin-right: 10px;"></i>Info</a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen"><i class="ph-bold ph-heart" style="font-size: 0.9rem;margin-right: 10px;"></i>Links</a>
 </div>
 
 </div>
@@ -1631,7 +1631,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="entries" id="{PostID}" post-type="{PostType}">
 
-{block:NoteCount}<div class="notes-wrapper"><i class="far fa-chart-bar" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{block:NoteCount}</div>{/block:NoteCount}
+{block:NoteCount}<div class="notes-wrapper"><i class="ph-bold ph-chart-line-up" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i><a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{block:NoteCount}</div>{/block:NoteCount}
  
 {block:Text}
 {block:NotReblog}
@@ -1658,7 +1658,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="ask-wrapper">
 <div class="asker">
 <div class="asker-url">
-<i class="far fa-question-circle" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
+<i class="ph-bold ph-envelope-open" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i>
 <br><br>
 A Message From <a href="{AskerURL}">{Asker}</a>
 </div>
@@ -1674,7 +1674,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
  
 {block:Quote}
 <div class="quote">
-<div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+<div class="quote-icon"><i class="ph-bold ph-quotes"></i></div>
 <div class="quote-wrapper">
 "{Quote}</i>" {block:Source}— {Source}{/block:Source}
 </div>
@@ -1685,7 +1685,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {block:Thumbnail}
 <img src="{Thumbnail}" style="margin-bottom: 10px;"/>
 {/block:Thumbnail}
-<div class="website"><i class="fas fa-external-link-alt" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
+<div class="website"><i class="ph-bold ph-arrow-square-out" style="margin-right: 10px;"></i><a href="{URL}" target="_blank">{Name}{block:Excerpt}<br><br>{Excerpt}{/block:Excerpt}
 </a></div>
 {block:Description}
 <div class="caption">
@@ -1745,14 +1745,14 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 
 {block:ContentSource}
 <div class="source">
-<i class="fas fa-paper-plane" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
+<i class="ph-bold ph-paper-plane-tilt" style="color: {color:Main Color};margin-right: 5px;"></i><a href="{SourceURL}" title="{SourceTitle}">Source</a>
 </div>
 {/block:ContentSource}
  
 {block:Date}
 <div class="entries-information">
 {block:PinnedPostLabel}
-<font style="color: {color:Pin};"><i class="fas fa-thumbtack" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
+<font style="color: {color:Pin};"><i class="ph-bold ph-bookmark-simple" style="margin-right: 5px;"></i>{PinnedPostLabel}</font>
 <font style="color: {color:Main Color};margin-left: 5px;margin-right: 5px;">•</font>
 {/block:PinnedPostLabel}
 <a href="{Permalink}">{DayOfMonth} {ShortMonth} {Year}</a>
