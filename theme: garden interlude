@@ -1420,15 +1420,15 @@ color: {color:Link Hover};
 
 <div class="gallery">
 
-<div class="muse-image" title="Name of Muse" href="/"><img src="https://i.imgur.com/qBwap9B.png"/></div>
+<div class="muse-image" title="Name of Muse"><a href="/"><img src="https://i.imgur.com/qBwap9B.png"/></a></div>
 
-<div class="muse-image" title="Name of Muse" href="/"><img src="https://i.imgur.com/DFZAfcH.png"/></div>
+<div class="muse-image" title="Name of Muse"><a href="/"><img src="https://i.imgur.com/DFZAfcH.png"/></a></div>
 
-<div class="muse-image" title="Name of Muse" href="/"><img src="https://i.imgur.com/mhbuhdJ.png"/></div>
+<div class="muse-image" title="Name of Muse"><a href="/"><img src="https://i.imgur.com/mhbuhdJ.png"/></a></div>
 
-<div class="muse-image" title="Name of Muse" href="/"><img src="https://i.imgur.com/gGKcOp5.png"/></div>
+<div class="muse-image" title="Name of Muse"><a href="/"><img src="https://i.imgur.com/gGKcOp5.png"/></a></div>
 
-<div class="muse-image" title="Name of Muse" href="/"><img src="https://i.imgur.com/6JYVEsd.png"/></div>
+<div class="muse-image" title="Name of Muse"><a href="/"><img src="https://i.imgur.com/6JYVEsd.png"/></a></div>
 
 </div>
 
