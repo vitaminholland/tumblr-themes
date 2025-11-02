@@ -577,7 +577,6 @@ flex-wrap: wrap;
 -webkit-transform: rotate(180deg);
 transform: rotate(180deg);
 white-space: nowrap;
-margin-top: 10px;
 -webkit-writing-mode: vertical-rl;
 writing-mode: vertical-rl;
 text-align: center;
