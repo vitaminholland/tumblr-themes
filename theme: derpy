@@ -81,6 +81,7 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <meta name="image:Left Image" content="https://i.imgur.com/nm3kZAP.png"/>
 <meta name="image:Right Image" content="https://i.imgur.com/4Ym0rTG.jpeg"/>
+<meta name="image:About Image" content="https://i.imgur.com/bOlLNvZ.png"/>
 
 <meta name="text:Title" content="Derpy"/>
 
@@ -96,7 +97,8 @@ see credits @ tanaka-drew.tumblr.com/credits
 <meta name="text:Link 5 Name" content="Link Five"/>
 <meta name="text:Link 6 URL" content="/"/>
 <meta name="text:Link 6 Name" content="Link Six"/>
-
+<meta name="text:Link 7 URL" content="/"/>
+<meta name="text:Link 7 Name" content="Link Seven"/>
 
 <meta name="select:Post Width" content="500px" title="500px"/>
 <meta name="select:Post Width" content="450px" title="450px"/>
@@ -110,6 +112,8 @@ see credits @ tanaka-drew.tumblr.com/credits
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Frank+Ruhl+Libre:wght@300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prata&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 <!-- Styled Tooltips Script -->
 
@@ -411,6 +415,170 @@ white-space: pre-wrap;
 margin-left: auto;
 margin-right: auto;
 width: calc({select:Post Width} + 265.5px);
+}
+
+.modal {
+animation-duration: 0.5s;
+animation-name: animatetop;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+height: 100%;
+left: 0px;
+overflow: auto;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 999999999999999999999999999999999999;
+}
+
+.modal-content {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 70px;
+margin-top: 70px;
+width: 650px;
+}
+ 
+.close-modal {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 672px;
+margin-top: 0px;
+padding: 10px;
+position: absolute;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.close-modal:hover {
+color: {color:Link Hover};
+}
+ 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+top: 0px;
+opacity: 1;
+}
+ 
+}
+
+.wrapper {
+margin: 20px;
+}
+
+.about-image {
+background-image: url("{image:About Image}");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 610px;
+}
+
+.even-more-links {
+margin: -5px;
+border-bottom: 1px solid {color:Border};
+padding-bottom: 15px;
+margin-top: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+text-transform: lowercase;
+}
+
+.even-more-links a {
+background: {color:Main Color};
+color: white;
+margin: 5px;
+border-radius: 5px;
+padding: 5px 10px 5px 10px;
+}
+
+.even-more-links a:hover {
+color: {color:Link Hover};
+}
+
+.about-title {
+margin-top: 15px;
+font-size: {select:Heading Font Size};
+font-family: {select:Heading Font}, serif;
+text-transform: lowercase;
+}
+
+.about-wrapper {
+display: flex;
+align-items: flex-start;
+margin-top: 15px;
+}
+
+.about-quote {
+padding: 20px;
+background: #f0f0f0;
+font-family: "Source Code Pro", monospace;
+width: 200px;
+}
+
+.about {
+margin-left: 15px;
+width: 355px;
+}
+
+.elsewhere-wrapper {
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-top: 1px solid {color:Border};
+margin-top: 15px;
+padding-top: 15px;
+}
+
+.elsewhere {
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.elsewhere a {
+background: {color:Main Color};
+color: white;
+display: inline-block;
+border-radius: 100px;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 10px;
+width: 0.9rem;
+}
+
+.elsewhere a:hover {
+color: {color:Link Hover};
+}
+
+.elsewhere-title {
+font-size: {select:Heading Font Size};
+font-family: {select:Heading Font}, serif;
+text-transform: lowercase;
 }
 
 #left {
@@ -1069,6 +1237,64 @@ color: {color:Link Hover};
 
 <a class="controls-button" title="Tumblr Controls"><i class="ph-bold ph-wrench"></i></a>
 
+<div class="modal modal_multi">
+ 
+<div class="modal-content">
+ 
+<div class="close-modal close_modal"><i class="ph-bold ph-x-circle"></i></div>
+
+<div class="wrapper">
+
+<div class="about-image"></div>
+
+<div class="even-more-links">
+<a href="/">extra link one</a>
+<a href="/">extra link two</a>
+<a href="/">extra link three</a>
+<a href="/">extra link four</a>
+<a href="/">extra link five</a>
+<a href="/">extra link six</a>
+<a href="/">extra link seven</a>
+</div>
+
+<div class="about-title">but here with you, i can finally breathe</div>
+
+<div class="about-wrapper">
+
+<div class="about-quote">
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+<div class="elsewhere-wrapper">
+
+<div class="elsewhere">
+<a href="/" title="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+<a href="/" title="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+<a href="/" title="Twitter"><i class="ph-bold ph-twitter-logo"></i></a>
+<a href="/" title="Discord"><i class="ph-bold ph-discord-logo"></i></a>
+<a href="/" title="Goodreads"><i class="ph-bold ph-goodreads-logo"></i></a>
+</div>
+
+<div class="elsewhere-title">Find Me Here</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 <div id="container">
 
 <div id="left">
@@ -1077,6 +1303,7 @@ color: {color:Link Hover};
 <a href="/" title="Home"><i class="ph-bold ph-house-line"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="ph-bold ph-chat-centered-text"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit"><i class="ph-bold ph-tray-arrow-up"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
+<a class="open-modal" title="About"><i class="ph-bold ph-heart"></i></a>
 {block:ifLink1URL}<a href="{text:Link 1 URL}" title="{text:Link 1 Name}"><i class="ph-bold ph-acorn"></i></a>{/block:ifLink1URL}
 <a href="/archive" title="Archive"><i class="ph-bold ph-calendar-star"></i></a>
 </div>
@@ -1095,6 +1322,7 @@ color: {color:Link Hover};
 {block:ifLink4URL}<a href="{text:Link 4 URL}" title="{text:Link 4 Name}"><i class="ph-bold ph-bowl-steam"></i></a>{/block:ifLink4URL}
 {block:ifLink5URL}<a href="{text:Link 5 URL}" title="{text:Link 5 Name}"><i class="ph-bold ph-butterfly"></i></a>{/block:ifLink5URL}
 {block:ifLink6URL}<a href="{text:Link 6 URL}" title="{text:Link 6 Name}"><i class="ph-bold ph-tree"></i></a>{/block:ifLink6URL}
+{block:ifLink7URL}<a href="{text:Link 7 URL}" title="{text:Link 7 Name}"><i class="ph-bold ph-coffee"></i></a>{/block:ifLink7URL}
 </div>
 
 </div>
@@ -1337,5 +1565,52 @@ color: {color:Link Hover};
 <!-- End of Theme Credit --> 
 
 </body>
+
+<!-- Modal Script -->
+ 
+<script>
+var modalparent = document.getElementsByClassName("modal_multi");
+var modal_btn_multi = document.getElementsByClassName("open-modal");
+var span_close_multi = document.getElementsByClassName("close_modal");
+function setDataIndex() {
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].setAttribute('data-index', i);
+modalparent[i].setAttribute('data-index', i);
+span_close_multi[i].setAttribute('data-index', i);
+}
+}
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "block";
+};
+span_close_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "none";
+};
+}
+window.onload = function() {
+setDataIndex();
+};
+window.onclick = function(event) {
+if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+modalparent[event.target.getAttribute('data-index')].style.display = "none";
+}
+if (event.target === modal) {
+modal.style.display = "none";
+}
+};
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("open-modal");
+var span = modal.getElementsByClassName("close-modal")[0]; 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+span.onclick = function() {
+modal.style.display = "none";
+}
+</script>
 
 </html>
