@@ -1174,7 +1174,7 @@ color: {color:Link Hover};
 <div class="links">
 <a href="/" titlte="Home"><i class="ph-bold ph-house-line"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="ph-bold ph-at"></i></a>{/block:AskEnabled}
-<a class="show-links"><i class="ph-bold ph-list"></i></a>
+<a class="show-links" title="Links><i class="ph-bold ph-list"></i></a>
 </div>
 
 </div>
