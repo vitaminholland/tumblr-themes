@@ -246,11 +246,12 @@ flexibleFrames($(".video"));
 </script>
 
 <!-- Hide & Show Script -->
-
-<script> 
+ 
+<script>
 $(document).ready(function(){
-$(".show-tags").click(function(){
-$(".show-tags-content").slideToggle("slow");
+$(".tags").hide();
+$(".tags-title").click(function(){
+$(this).next(".tags").slideToggle('fast');
 });
 });
 </script>
@@ -1080,28 +1081,49 @@ color: {color:Link Hover};
 }
 
 .tags-title {
-color: {color:Post Background};
+font-size: {select:Uppercase Font Size};
+text-transform: uppercase;
 display: inline-block;
-text-transform: lowercase;
-}
-
-.tags-title a {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-radius: 5px;
+padding: 5px 10px 5px 10px;
+align-items: center;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
 -webkit-transition: all 0.5s ease;
 -moz-transition: all 0.5s ease;
 -o-transition: all 0.5s ease;
 }
  
-.tags-title:hover {
-color: {color:Link Hover};
-}
- 
 .tags {
+margin: -5px;
+margin-top: 5px;
 text-transform: lowercase;
 }
 
 .tags-alternate {
-display: inline-block;
+margin: -5px;
 text-transform: lowercase;
+}
+
+.tags-alternate {
+margin: -5px;
+text-transform: lowercase;
+}
+
+.tags a, .tags-alternate a {
+background: {color:Main Color};
+display: inline-block;
+margin: 5px;
+color: white;
+border-radius: 5px;
+padding: 5px;
+}
+
+.tags a:hover, .tags-alternate a:hover {
+color: {color:Link Hover};
 }
 
 .permalink-info {
@@ -1508,10 +1530,10 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 {block:IfHideTags}
 {block:HasTags}
 <div class="vsdt-wrapper">
-<a class="tags-title"><span>Show Tags</span></a>
+<a class="tags-title"><i class="ph-bold ph-tag-chevron" style="color: {color:Main Color};margin-right: 5px;"></i>Show Tags</a>
 <div class="tags">
 {block:Tags}
-<span><a href="{TagURL}">#{Tag}</a></span>
+<a href="{TagURL}"><font style="display: flex;align-items: center;"><i class="ph-bold ph-heart-straight" style="margin-right: 5px;"></i>{Tag}</font></a>
 {/block:Tags}
 </div>
 </div>
@@ -1522,7 +1544,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <div class="vsdt-wrapper">
 <div class="tags-alternate">
 {block:Tags}
-<span><a href="{TagURL}">#{Tag}</a></span>
+<a href="{TagURL}"><font style="display: flex;align-items: center;"><i class="ph-bold ph-heart-straight" style="margin-right: 5px;"></i>{Tag}</font></a>
 {/block:Tags}
 </div>
 </div>
