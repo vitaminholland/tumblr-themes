@@ -1442,6 +1442,7 @@ color: {color:Link Hover};
 <div class="links-title">explore the blog</div>
 
 <div class="more-links">
+{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit"><div class="link-icon"><i class="ph-bold ph-tray-arrow-up"></i></div>Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink1URL}<a href="{text:Link 1 URL}"><div class="link-icon"><i class="ph-bold ph-flower-tulip"></i></div>{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}"><div class="link-icon"><i class="ph-bold ph-airplane-tilt"></i></div>{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}"><div class="link-icon"><i class="ph-bold ph-magic-wand"></i></div>{text:Link 3 Name}</a>{/block:ifLink3URL}
