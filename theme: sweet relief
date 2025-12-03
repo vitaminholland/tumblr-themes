@@ -688,7 +688,7 @@ margin: 5px;
 padding: 5px 10px 5px 10px;
 }
 
-.main-links a:hover {
+.more-links a:hover {
 color: {color:Link Hover};
 }
 
