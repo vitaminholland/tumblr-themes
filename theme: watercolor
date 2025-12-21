@@ -510,14 +510,14 @@ width: calc({select:Post Width} + 642px);
 
 #user-information-left {
 position: sticky;
-top: 70px;
+top: 130px;
 width: 250px;
 }
 
 #user-information-right {
 position: sticky;
 margin-left: 70px;
-top: 70px;
+top: 130px;
 width: 250px;
 }
 
