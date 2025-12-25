@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: cotton candy
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+ 
+<!-- Font Awesome Script -->
+ 
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #86a089;
+color: white;
+}
+ 
+::-moz-selection {
+background: #86a089;
+color: white;
+}
+
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 650px;
+}
+
+.header {
+align-items: flex-start;
+display: flex;
+width: 650px;
+}
+
+.laq-wrapper {
+width: 450px;
+}
+
+.links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: uppercase;
+font-style: italic;
+margin: -5px;
+width: 460px;
+}
+
+.links a {
+background: #000000;
+color: white;
+margin: 5px;
+padding: 5px 10px 5px 10px;
+width: calc(25% - 30px);
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+.about-info {
+margin-top: 15px;
+}
+
+.about-info li {
+align-items: center;
+display: flex;
+list-style-type: none;
+margin-bottom: 10px;
+justify-content: space-between;
+}
+
+.about-info li:last-of-type {
+margin-bottom: 0px;
+}
+
+.ai-left {
+align-items: center;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 0.8rem;
+display: flex;
+}
+
+.about-icon {
+background: #86a089;
+border-radius: 5px;
+color: white;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 5px;
+margin-right: 5px;
+width: 0.9rem;
+}
+
+.ai-right {
+align-items: center;
+display: flex;
+text-transform: lowercase;
+margin-left: 10px;
+}
+
+.about-quote {
+margin-top: 15px;
+}
+
+.about-image {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+height: 250px;
+margin-left: 15px;
+width: 163px;
+padding: 10px;
+}
+
+.about-image img {
+height: 250px;
+width: 163px;
+}
+
+.about-wrapper {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+padding: 20px;
+margin-top: 15px;
+width: 608px;
+}
+
+.about-title {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.about-title:first-letter {
+color: #86a089;
+font-style: italic;
+}
+
+.about {
+margin-top: 15px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header">
+
+<div class="laq-wrapper">
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Ask</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+</div>
+
+<!-- Start of About Information -->
+
+<div class="about-info">
+<li><div class="ai-left"><div class="about-icon"><i class="fa-solid fa-gift"></i></div>Age</div><div class="ai-right">Actual Age</div></li>
+<li><div class="ai-left"><div class="about-icon"><i class="fa-regular fa-circle-question"></i></div>Pronouns</div><div class="ai-right">Pronouns You Use</div></li>
+<li><div class="ai-left"><div class="about-icon"><i class="fa-regular fa-building"></i></div>Location</div><div class="ai-right">Where You Are</div></li>
+<li><div class="ai-left"><div class="about-icon"><i class="fa-solid fa-star"></i></div>Star Sign</div><div class="ai-right">Horoscope Sign</div></li>
+<li><div class="ai-left"><div class="about-icon"><i class="fa-solid fa-seedling"></i></div>Something</div><div class="ai-right">Something Else</div></li>
+</div>
+
+<!-- End of About Information -->
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+</div>
+
+<div class="about-image"><img src="https://i.imgur.com/42Rlz2n.png"/></div>
+
+</div>
+
+<div class="about-wrapper">
+
+<div class="about-title">cotton candy</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fa-regular fa-heart"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
