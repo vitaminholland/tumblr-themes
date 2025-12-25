@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: butterfly effect
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+ 
+<!-- Font Awesome Script -->
+ 
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #000000;
+color: white;
+}
+ 
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+body {
+background: #970a77;
+color: #ffffff;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 450px;
+}
+
+.page-title-wrapper {
+flex-direction: row;
+flex-wrap: wrap;
+display: flex;
+width: 100%;
+}
+
+.page-title {
+border: 3px solid #ffffff;
+padding: 5px 10px 5px 10px;
+color: white;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.main-links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.main-links a {
+margin: 5px;
+color: white;
+}
+
+.main-links a:hover {
+color: #cfcfcf;
+}
+
+.tags-wrapper {
+margin-top: 15px;
+}
+
+.tags-title {
+font-weight: bold;
+text-transform: lowercase;
+color: white;
+}
+
+.tags {
+border-left: 1px solid #cfcfcf;
+margin: -5px;
+margin-top: 15px;
+margin-left: 15px;
+padding-left: 15px;
+text-transform: lowercase;
+}
+
+.tags a {
+color: white;
+margin: 5px;
+}
+
+.tags a:hover {
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="page-title-wrapper">
+
+<div class="page-title">butterfly effect</div>
+
+</div>
+
+<div class="main-links">
+<a href="/">Refresh</a>
+<a href="/">Inbox</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+<!-- Start of Tags Section -->
+
+<div class="tags-wrapper">
+
+<div class="tags-title">your tags category title here</div>
+
+<div class="tags">
+<a href="/">Link One</a>  
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
+<a href="/">Link Four</a>
+<a href="/">Link Five</a>
+<a href="/">Link Six</a>
+<a href="/">Link Seven</a>
+<a href="/">Link Eight</a>
+<a href="/">Link Nine</a>
+</div>
+
+</div>
+
+<!-- End of Tags Section -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fa-regular fa-heart"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
