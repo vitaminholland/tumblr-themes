@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: ride or die
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+ 
+<!-- Font Awesome Script -->
+ 
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #FFB6C1;
+color: white;
+}
+ 
+::-moz-selection {
+background: #FFB6C1;
+color: white;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+
+#container {
+display: flex;
+align-items: stretch;
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 1100px;
+}
+
+#sidebar {
+background: #ffffff;
+border-right: 1px solid #d2d2d2;
+width: 350px;
+}
+
+.name-of-faceclaim {
+background: #000000;
+color: white;
+height: 10px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 310px;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.notes-wrapper {
+margin: 20px;
+}
+
+.divider {
+background: #d2d2d2;
+height: 1px;
+margin-top: 15px;
+margin-bottom: 15px;
+width: 100%;
+}
+
+#gifs-container {
+background: #ffffff;
+width: 750px;
+}
+
+.header {
+background: #000000;
+color: white;
+height: 10px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: calc(100% - 40px);
+}
+
+.gif-count {
+background: #FFB6C1;
+padding: 5px 10px 5px 10px;
+font-size: 0.9rem;
+text-transform: uppercase;
+border-radius: 100px;
+}
+
+.links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.links a {
+color: #ffffff;
+margin-left: 10px;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+.gifs-wrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 15px;
+width: 720px;
+}
+
+.gif {
+height: 180px;
+margin: 5px;
+width: 230px;
+}
+
+.gif img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="sidebar">
+
+<div class="name-of-faceclaim">Lena Lalina</div>
+
+<div class="notes-wrapper">
+Original gifs by <a href="https://bynattys.tumblr.com/">@bynattys</a>. Thank you so much, Natty! For allowing me to use your gifs for this project.
+<div class="divider"></div>
+<b>Write Your Rules Here</b>
+<br><br>
+<i class="fa-regular fa-heart" style="margin-right: 5px;"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+<br>
+<i class="fa-regular fa-heart" style="margin-right: 5px;"></i>Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris.
+<br>
+<i class="fa-regular fa-heart" style="margin-right: 5px;"></i>Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<div class="divider"></div>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+</div>
+
+</div>
+
+<div id="gifs-container">
+
+<div class="header">
+
+<div class="gif-count">Gif Count: #12345</div>
+
+<div class="links">
+<a href="/">Go Back</a>
+<a href="/">Inbox</a>
+<a href="https://bynattys.tumblr.com/post/802853772701433856/%F0%9D%90%9F%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9E-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD-an">Gif Post</a>
+</div>
+
+</div>
+
+<!-- Start of Gifs -->
+
+<div class="gifs-wrapper">
+
+<div class="gif"><img src="https://64.media.tumblr.com/b928b11d0284eb7b791c49826dd0d7ad/df9ec2cc2033c4b9-fc/s540x810/98cd5a2aa1d1e2ba64ff99898bd4e3f8c058c5f5.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/75de129cc34d142673d28db763c83a80/df9ec2cc2033c4b9-e3/s540x810/69362f3863810e2b8acb6d125945ec18c3e2f7c7.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/6c4d6273aaf0bc68159f886ff998a92e/df9ec2cc2033c4b9-12/s540x810/4db648595e6512ce92776bd0613342300bf7a0d9.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/97d45c01f84f00ff1e5bfce885684180/df9ec2cc2033c4b9-00/s540x810/85384091673b626561e31a9223f7acd59fec4436.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/e19cf2c8770555d39c2569ca8e8bb3da/df9ec2cc2033c4b9-39/s540x810/70f60ed2ab2426c6a1a5d911703863a9f3b75a48.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/6911526ce65ee9b1f324b73c5bea3134/df9ec2cc2033c4b9-4f/s540x810/bec57b42e92b31b3a0b4c9cd0987d5dfee83a80d.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/d3fdf149a713537f0726643856425214/df9ec2cc2033c4b9-77/s540x810/aab6ca0d239661d245403684a819fdc351b8b591.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/d3d9a321a62c0a1bc89bbbfa035502fb/df9ec2cc2033c4b9-f8/s540x810/3ab014f31e12506c9c7ef9aba718acd313da8dd6.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/959b099b014ad483d708e549cbcc81c1/df9ec2cc2033c4b9-6c/s540x810/7f47452af7b52b6139618895b2a15f5d88384947.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/595977d11ee0acdf82db88f8f7065cab/df9ec2cc2033c4b9-c1/s540x810/9eebed98d82076c0a1a33f905072b82a08034b21.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/76b1b5e8abd03f10e5b6e28665c08b16/df9ec2cc2033c4b9-b0/s540x810/18a71e7904462573b6e0db58cecb94b5f67d03dd.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/b59216458f452af5df89148875e5a5b8/df9ec2cc2033c4b9-96/s540x810/b8261f5a3933b88e9632c04f182bd578bc463e04.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/b6218a6490ad577904452588c9770ba0/df9ec2cc2033c4b9-00/s540x810/7d25488013bdd2b2e9adbdf8fe9a92c2b8c1c5f4.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/0adb7780fada41c4f8bc4ae0e093088d/df9ec2cc2033c4b9-8e/s540x810/33152194092e301407178871afb9e3145c4155f0.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/bf26992ebb73ed6d40ea4a9ee803a033/df9ec2cc2033c4b9-91/s540x810/c9a95c901e33f603ea1f088c16eaca0ec2a47311.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/414d16a661d25471b0bf947f1daa87f7/df9ec2cc2033c4b9-2e/s540x810/2f689bbd8101d022da3b2a9822500a155169e34b.gif"/></div>
+
+<div class="gif"><img src="https://64.media.tumblr.com/b15fe699f026c3a20ef0a6ff24f84d08/df9ec2cc2033c4b9-35/s540x810/861a4fbd8617a6452d11d5a68ecbed64b043a986.gif"/></div>
+
+</div>
+
+<!-- End of Gifs -->
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fa-regular fa-heart"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
