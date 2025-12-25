@@ -53,7 +53,7 @@ color: white;
 }
 
 body {
-background: #ffffff;
+background: #f8f8f8;
 color: #555555;
 cursor: url(https://i.imgur.com/lhPqll6.png), progress;
 font-family: 'Karla', sans-serif;
