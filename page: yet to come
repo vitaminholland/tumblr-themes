@@ -314,9 +314,9 @@ z-index: -1;
 <div class="links">
 <a href="/">home<br>refresh the page</a>
 <a href="/ask">ask<br>send a snail mail</a>
-<a href="/">link one<br>link description</a>
-<a href="/">link two<br>link description</a>
-<a href="/">link three<br>link description</a>
+<a href="/">link one<br>link one description</a>
+<a href="/">link two<br>link two description</a>
+<a href="/">link three<br>link three description</a>
 <a href="/archive">archive<br>grid view</a>
 </div>
 
