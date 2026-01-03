@@ -827,6 +827,8 @@ font-size: 0.9rem;
 height: 0.9rem;
 padding: 10px;
 margin: -10px;
+font-variant: normal;
+line-height: 1;
 margin-right: 10px;
 width: 0.9rem;
 -webkit-transition: all 0.9s ease;
