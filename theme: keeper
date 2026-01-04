@@ -504,7 +504,7 @@ border-radius: 5px;
 .png-icon-one {
 position: absolute;
 margin-top: -35px;
-margin-left: 90px;
+margin-left: 75px;
 height: 70px;
 width: 70px;
 }
