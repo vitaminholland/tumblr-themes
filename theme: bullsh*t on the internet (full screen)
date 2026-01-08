@@ -462,7 +462,7 @@ align-items: flex-start;
 
 #user-information {
 top: 70px;
-position: sticky
+position: sticky;
 width: 300px;
 }
 
