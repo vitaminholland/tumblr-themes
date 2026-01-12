@@ -571,6 +571,7 @@ text-transform: uppercase;
 }
  
 .asker-url a {
+border: none;
 background: none;
 padding: 0px;
 }
