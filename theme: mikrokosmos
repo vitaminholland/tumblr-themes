@@ -11,16 +11,16 @@
 <link rel="shortcut icon" href="{Favicon}">
  
 <!-- 
- 
+
 theme: mikrokosmos
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
- 
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
 -->
  
 <!-- Metadata -->
  
-<meta name="color:Asker Background" content="#d2d2d2"/>
+<meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#f0f0f0"/>
 <meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
@@ -75,16 +75,18 @@ see credits @ tanaka-drew.tumblr.com/credits
  
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
  
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
- 
+
 <script>
 (function($){
 $(document).ready(function(){
-$("a[title]").style_my_tooltips({
+$("a[title],div[title]").style_my_tooltips({
 tip_follows_cursor:true,
 tip_delay_time:90,
 tip_fade_speed:600,
@@ -93,33 +95,150 @@ attribute:"title"
 });
 })(jQuery);
 </script>
- 
+
 <!-- Phosphor Icons Script -->
  
 <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
 
-<!-- Masonry Script -->
+<!-- Tumblr Controls Script --->
 
-{block:IndexPage}
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script type="text/javascript" charset="utf-8">$(document).ready(function(){
-var $grid = $("#posts").masonry({
-itemSelector: "#user-information, .entries, .pagination",
-initLayout: 1
-});
-$grid.on("layoutComplete", function(o, r) {
-console.log(r.length)
-}), $grid.masonry({
-horizontalOrder: true
-}), $grid.imagesLoaded().progress(function() {
-$grid.masonry("layout")
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
 });
 });
 </script>
-{/block:IndexPage}
+
+<!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
+
+<link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+
+<script>
+tumblr_npf_audio({
+emptyTitleText: "",
+emptyArtistText: "",
+emptyAlbumText: "",
+titleLabel: "",    
+artistLabel: "",
+albumLabel: "",
+});
+</script>
+
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
+<!-- Unnest Captions Script -->
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+
+<script> 
+$(function(){  $('.entries').unnest({
+yourCaption: ".text, .caption", 
+wrapName: ".tumblr_parent", 
+newCaptionUsername: false, 
+originalPostCaptionUsername: false,
+tumblrAvatars: true, 
+tumblrAvatarClass: ".tumblr_avatar", 
+usernameColon: false
+}); 
+}); 
+</script>
+
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
+
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
+
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
+:root {
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
+}
+</style>
+
+<!-- Inline Images Resizing Script -->
+
+<script>
+$(".tmblr-full, figure").each(function(){
+var imgWidth = $(this).attr("data-orig-width"),
+img = $(this).find("img"),
+imgSrc = img.attr("src");
+$('figure').css({'margin-left':'0','margin-right':'0','display':'inline-block'});
+if (imgWidth >= 500){
+img.attr("src",imgSrc.replace("_500.","_1280."));
+$('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-align':'middle'});
+}
+});  
+</script>
+
+<!-- PXU Script -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.photo-slideshow').pxuPhotoset({
+lightbox: true,
+rounded: false,
+gutter: '1px',
+borderRadius: '0px',
+photoset: '.photo-slideshow',
+photoWrap: '.photo-data',
+photo: '.pxu-photo'
+});
+});
+</script>
+
+<!-- Responsive Tumblr Videos Script -->
+
+<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+ 
+<script>
+$(document).ready(function() {
+flexibleFrames($(".video"));  
+});
+</script>
 
 <style type="text/css">
 
@@ -254,11 +373,8 @@ width: 980px;
 }
 
 #user-information {
-{block:IndexPage}
-float: left;
-margin: 25px;
-{/block:IndexPage}
-width: 440px;
+margin: -20px;
+max-width: 400px;
 }
 
 .title-description-links-wrapper {
@@ -306,11 +422,11 @@ width: 440px;
 margin-top: 50px;
 background: {color:Post Background};
 {block:IndexPage}
-float: left;
+position: relative;
 margin: 25px;
 {/block:IndexPage}
 padding: 20px;
-width: 400px;
+max-width: 400px;
 }
 
 .entries img {
@@ -465,6 +581,14 @@ border: 1px solid {color:Border};
 border-top: none;
 padding: 20px;
 text-align: center;
+}
+
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
 }
  
 .quote {
@@ -679,13 +803,13 @@ text-align: center;
 }
  
 .pagination {
-background: {color:Post Background};
-float: left;
+{block:IndexPage}
+margin: -20px;
+{/block:IndexPage}
+max-width: 400px;
 font-size: {select:Uppercase Font Size};
-margin: 25px;
-padding: 20px;
 text-transform: uppercase;
-width: 400px;
+padding: 20px;
 }
  
 #top {
@@ -753,6 +877,8 @@ color: {color:Link Hover};
 
 <div id="posts">
 
+<div class="entries">
+
 <div id="user-information">
 
 <div class="title-description-links-wrapper">
@@ -774,6 +900,8 @@ color: {color:Link Hover};
 </div>
 
 <div class="image"><img src="{image:Image}"/></div>
+
+</div>
 
 </div>
 
@@ -941,6 +1069,7 @@ A Message From <a href="{AskerURL}">{Asker}</a>
 {/block:Posts}
  
 {block:Pagination}
+<div class="entries">
 <div class="pagination">
 {CurrentPage} Out Of {TotalPages}
 <font style="float:right;">
@@ -952,6 +1081,7 @@ Or <a href="{NextPage}">Next</a>
 {/block:NextPage}
 </font>
 </div>
+</div>
 {/block:Pagination}
 
 </div>
@@ -960,132 +1090,29 @@ Or <a href="{NextPage}">Next</a>
 
 <!-- Start of Theme Credit -->
 
-<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
 
 <!-- End of Theme Credit --> 
 
 </body>
 
-<!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
+<!-- Masonry Script -->
 
-<script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
+{block:IndexPage}
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
 
-<link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+<script src="//griddery.github.io/grid.js"></script>
 
-<script>
-tumblr_npf_audio({
-emptyTitleText: "",
-emptyArtistText: "",
-emptyAlbumText: "",
-titleLabel: "",    
-artistLabel: "",
-albumLabel: "",
-});
-</script>
-
-<!-- Unnest Captions Script -->
-
-<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
- 
-<script>
-$(function(){  $('.entries').unnest({
-yourCaption: ".text, .caption",
-wrapName: ".tumblr_parent",
-newCaptionUsername: false,
-originalPostCaptionUsername: false,
-tumblrAvatars: true,
-tumblrAvatarClass: ".tumblr_avatar",
-usernameColon: false
-});
-});
-</script>
-
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
-
-<script src="//npf-images-v3.github.io/script.js"></script>
-
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
-:root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
-}
-</style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
-
-<!-- Inline Images Resizing Script -->
- 
-<script>
-$(".tmblr-full, figure").each(function(){
-var imgWidth = $(this).attr("data-orig-width"),
-img = $(this).find("img"),
-imgSrc = img.attr("src");
-$('figure').css({'margin-left':'0','margin-right':'0','display':'inline-block'});
-if (imgWidth >= 500){
-img.attr("src",imgSrc.replace("_500.","_1280."));
-$('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-align':'middle'});
-}
-});  
-</script>
-
-<!-- PXU Script -->
-
-<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
-
-<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
 
 <script>
-$(document).ready(function(){
-$('.photo-slideshow').pxuPhotoset({
-lightbox: true,
-rounded: false,
-gutter: '1px',
-borderRadius: '0px',
-photoset: '.photo-slideshow',
-photoWrap: '.photo-data',
-photo: '.pxu-photo'
-});
-});
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".entries",
+columns: 2
+})
+})
 </script>
-
-<!-- Responsive Tumblr Videos Script -->
- 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
- 
-<script>
-$(document).ready(function() {
-flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
-});
-</script>
+{/block:IndexPage}
 
 </html>
