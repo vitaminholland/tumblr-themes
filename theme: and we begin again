@@ -10,13 +10,19 @@
  
 <link rel="shortcut icon" href="{Favicon}">
  
-<!-- And We Begin Again by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: and we begin again
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
  
 <!-- Metadata -->
  
 <meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#f5f5f5"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
@@ -67,11 +73,13 @@
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
  
 <script>
@@ -108,12 +116,30 @@ albumLabel: "",
 });
 </script>
 
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
- 
+
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
- 
+
 <script> 
 $(function(){  $('.entries').unnest({
 yourCaption: ".text, .caption", 
@@ -127,19 +153,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
  
 <!-- Inline Images Resizing Script -->
  
@@ -183,17 +213,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
- 
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
 });
 </script>
  
@@ -575,6 +594,14 @@ padding: 20px;
 text-align: center;
 }
  
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
+}
+
 .quote {
 background: {color:Asker Background};
 font-size: {select:Uppercase Font Size};
@@ -798,7 +825,7 @@ text-transform: uppercase;
  
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -836,7 +863,7 @@ color: {color:Link Hover};
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="color: {color:Link};margin-right: 20px;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="color: {color:Link};margin-right: 20px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
 <a href="/archive"><i class="far fa-calendar-plus" style="color: {color:Link};margin-right: 20px;"></i>Archive</a>
-<a href="http://extasisthemes.tumblr.com/"><i class="far fa-heart" style="color: {color:Link};margin-right: 20px;"></i>Theme</a>
+<a href="http://ghcstfaec.tumblr.com/"><i class="far fa-heart" style="color: {color:Link};margin-right: 20px;"></i>Theme</a>
 </div>
 
 </div>
@@ -1048,7 +1075,7 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
