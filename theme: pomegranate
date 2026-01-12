@@ -15,14 +15,14 @@
 <!-- 
 
 theme: pomegranate
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
 <!-- Metadata -->
 
-<meta name="color:Asker Background" content="#d2d2d2"/>
+<meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#f5f5f5"/>
 <meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
@@ -79,16 +79,18 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<!-- Styled Tooltips Script -->
+<!-- jQuery Script -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Styled Tooltips Script -->
 
 <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
 
 <script>
 (function($){
 $(document).ready(function(){
-$("a[title]").style_my_tooltips({
+$("a[title],div[title]").style_my_tooltips({
 tip_follows_cursor:true,
 tip_delay_time:90,
 tip_fade_speed:600,
@@ -119,12 +121,43 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.sub-links').hide();
+$('.sub-links-title').click(function() {
+$(this).closest('#left').find('.sub-links').slideToggle(500);
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
- 
+
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
- 
+
 <script> 
 $(function(){  $('.entries').unnest({
 yourCaption: ".text, .caption", 
@@ -138,19 +171,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
  
@@ -194,35 +231,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".sub-links, .tags").hide();
-$(".sub-links-title, .tags-title").click(function(){
-$(this).next(".sub-links, .tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
 });
 </script>
 
@@ -628,7 +636,7 @@ width: 30px;
 a.tumblr_blog {
 font-size: {select:Body Font Size};
 font-weight: bold;
-margin-top: calc((30px - {select:Body Font Size}) / 4);
+margin-top: calc((30px - {select:Body Font Size}) / 3);
 display: inline-block;
 position: absolute;
 margin-left: 10px;
@@ -663,6 +671,14 @@ border: 1px solid {color:Border};
 border-top: none;
 padding: 20px;
 text-align: center;
+}
+
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
 }
  
 .quote {
