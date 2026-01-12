@@ -10,13 +10,19 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Bitter Day by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: bitter day
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#ffffff"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Header Background" content="#ffffff"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
@@ -113,18 +119,22 @@
 
 <!-- Google Fonts Script -->
  
-<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
- 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
- 
+
 <script>
 (function($){
 $(document).ready(function(){
-$("a[title]").style_my_tooltips({
+$("a[title],div[title]").style_my_tooltips({
 tip_follows_cursor:true,
 tip_delay_time:90,
 tip_fade_speed:600,
@@ -136,35 +146,24 @@ attribute:"title"
  
 <!-- Font Awesome Script -->
  
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 
-<!-- Masonry Script -->
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- Tumblr Controls Script --->
  
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
- 
-<script type="text/javascript" charset="utf-8">$(document).ready(function(){
-var $grid = $(".box1-wrapper").masonry({
-itemSelector: ".box1",
-initLayout: 1
-});
-$grid.on("layoutComplete", function(o, r) {
-console.log(r.length)
-}), $grid.masonry({
-horizontalOrder: true
-}), $grid.imagesLoaded().progress(function() {
-$grid.masonry("layout")
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
 });
 });
 </script>
-
+ 
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
-
+ 
 <script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
-
+ 
 <link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
-
+ 
 <script>
 tumblr_npf_audio({
 emptyTitleText: "",
@@ -173,6 +172,101 @@ emptyAlbumText: "",
 titleLabel: "",    
 artistLabel: "",
 albumLabel: "",
+});
+</script>
+ 
+<!-- Hide & Show Script -->
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+ 
+<!-- Unnest Captions Script -->
+ 
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+ 
+<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+ 
+<script> 
+$(function(){  $('.entries').unnest({
+yourCaption: ".text, .caption", 
+wrapName: ".tumblr_parent", 
+newCaptionUsername: false, 
+originalPostCaptionUsername: false,
+tumblrAvatars: true, 
+tumblrAvatarClass: ".tumblr_avatar", 
+usernameColon: false
+}); 
+}); 
+</script>
+ 
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
+ 
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
+ 
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
+:root {
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
+}
+</style>
+ 
+<!-- Inline Images Resizing Script -->
+ 
+<script>
+$(".tmblr-full, figure").each(function(){
+var imgWidth = $(this).attr("data-orig-width"),
+img = $(this).find("img"),
+imgSrc = img.attr("src");
+$('figure').css({'margin-left':'0','margin-right':'0','display':'inline-block'});
+if (imgWidth >= 500){
+img.attr("src",imgSrc.replace("_500.","_1280."));
+$('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-align':'middle'});
+}
+});  
+</script>
+ 
+<!-- PXU Script -->
+ 
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+ 
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+ 
+<script>
+$(document).ready(function(){
+$('.photo-slideshow').pxuPhotoset({
+lightbox: true,
+rounded: false,
+gutter: '1px',
+borderRadius: '0px',
+photoset: '.photo-slideshow',
+photoWrap: '.photo-data',
+photo: '.pxu-photo'
+});
+});
+</script>
+ 
+<!-- Responsive Tumblr Videos Script -->
+ 
+<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+ 
+<script>
+$(document).ready(function() {
+flexibleFrames($(".video"));  
 });
 </script>
 
@@ -348,10 +442,10 @@ width: 981.99px;
 }
 
 .box1 {
-float: left;
+position: relative;
 font-size: {select:Uppercase Font Size};
 margin: 20px;
-width: 287.33px;
+max-width: 287.33px;
 }
 
 .box1-icon {
@@ -405,6 +499,7 @@ border: 1px solid {color:Main Color};
 color: {color:Post Background};
 padding: 3px;
 outline: none;
+height: 24px;
 text-align: center;
 text-transform: uppercase;
 width: 24px;
@@ -689,6 +784,14 @@ border-top: none;
 padding: 20px;
 text-align: center;
 }
+
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
+}
  
 .quote {
 background: {color:Asker Background};
@@ -908,7 +1011,7 @@ text-transform: uppercase;
  
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -1036,11 +1139,11 @@ color: {color:Link Hover};
 <div class="box2-content">
 
 <div class="box2-links">
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
-{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
+{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
 </div>
 
 </div>
@@ -1315,7 +1418,7 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
@@ -1347,75 +1450,19 @@ dots[slideIndex-1].className += " w3-red";
 }
 </script>
 
-<!-- Unnest Captions Script -->
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
  
-<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+<script src="//griddery.github.io/grid.js"></script>
  
-<script> 
-$(function(){  $('.entries').unnest({
-yourCaption: ".text, .caption", 
-wrapName: ".tumblr_parent", 
-newCaptionUsername: false, 
-originalPostCaptionUsername: false,
-tumblrAvatars: true, 
-tumblrAvatarClass: ".tumblr_avatar", 
-usernameColon: false
-}); 
-}); 
-</script>
-
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
-
-<script src="//npf-images-v3.github.io/script.js"></script>
-
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
-:root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
-}
-</style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
- 
-<!-- Inline Images Resizing Script -->
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
  
 <script>
-$(".tmblr-full, figure").each(function(){
-var imgWidth = $(this).attr("data-orig-width"),
-img = $(this).find("img"),
-imgSrc = img.attr("src");
-$('figure').css({'margin-left':'0','margin-right':'0','display':'inline-block'});
-if (imgWidth >= 500){
-img.attr("src",imgSrc.replace("_500.","_1280."));
-$('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-align':'middle'});
-}
-});  
-</script>
- 
-<!-- Photosets CSS Script -->
- 
-<link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet">
-
-<!-- Responsive Tumblr Videos Script -->
- 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
- 
-<script>
-$(document).ready(function() {
-flexibleFrames($(".video"));  
-});
-</script>
- 
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
-});
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".box1",
+columns: 3
+})
+})
 </script>
 
 </html>
