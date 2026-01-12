@@ -134,6 +134,15 @@ $(this).closest('#left').find('.sub-links').slideToggle(500);
 });
 </script>
 
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
 <!-- Scroll To Top Script -->
 
 <script type="text/javascript">
@@ -1196,7 +1205,7 @@ Or <a href="{NextPage}">Next</a>
 
 <!-- Start of Theme Credit -->
 
-<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
 
 <!-- End of Theme Credit --> 
 
