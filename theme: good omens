@@ -10,18 +10,24 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Good Omens by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: good omens
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#ffffff"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Header Background" content="#f5f5f5"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#eebb88"/>
+<meta name="color:Main Color" content="#be8751"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Question Background" content="#ffffff"/>
@@ -90,16 +96,20 @@
  
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
  
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
- 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- 
+
 <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
- 
+
 <script>
 (function($){
 $(document).ready(function(){
-$("a[title], p[title]").style_my_tooltips({
+$("a[title],div[title],p[title]").style_my_tooltips({
 tip_follows_cursor:true,
 tip_delay_time:90,
 tip_fade_speed:600,
@@ -130,6 +140,28 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$('.mobile-updates').hide();
+$('.mobile-updates-title').click(function() {
+$(this).closest('.muahi-wrapper').find('.mobile-updates').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -149,19 +181,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
  
@@ -205,17 +241,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
- 
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".mobile-updates, .tags").hide();
-$(".mobile-updates-title, .tags-title").click(function(){
-$(this).next(".mobile-updates, .tags").slideToggle('fast');
-});
 });
 </script>
 
@@ -544,15 +569,14 @@ margin-top: 20px;
 
 .mobile-header-links {
 font-size: 0.9em;
-margin-bottom: -10px;
+margin: -5px;
 margin-top: 15px;
 text-transform: uppercase;
 }
 
 .mobile-header-links a {
 display: inline-block;
-margin-bottom: 10px;
-margin-right: 15px;
+margin: 5px;
 }
 
 #container {
@@ -730,6 +754,7 @@ text-transform: uppercase;
 }
  
 .asker-url a {
+border: none;
 background: none;
 padding: 0px;
 }
@@ -740,6 +765,14 @@ border: 1px solid {color:Border};
 border-top: none;
 padding: 20px;
 text-align: center;
+}
+
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
 }
  
 .quote {
@@ -812,7 +845,14 @@ padding: 10px;
  
 .audio iframe {
 height: 85px;
-width: 640px;
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
 }
 
 figure {
@@ -821,7 +861,7 @@ width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-width: 640px;
+width: 100%;
 }
 
 .npf-audio-wrapper {
@@ -961,7 +1001,7 @@ width: 682px;
  
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -1143,7 +1183,7 @@ width: 250px;
 <a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen" title="{text:Tab 1 Title}"><i class="far fa-user-circle"></i></a>
 {block:AskEnabled}<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen" title="{text:Tab 2 Title}"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit" title="Submit"><i class="fas fa-file-import"></i></a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen" title="{text:Tab 3 Title}"><i class="fas fa-link"></i></a>
+<a class="tab-links" onclick="openPanel(event, 'three')" id="defaultOpen" title="{text:Tab 3 Title}"><i class="fa-solid fa-list"></i></a>
 <a class="tab-links" onclick="openPanel(event, 'four')" id="defaultOpen" title="{text:Tab 4 Title}"><i class="fas fa-ellipsis-h"></i></a>
 <a href="/archive" title="Archive"><i class="far fa-calendar-plus"></i></a>
 </center>
@@ -1168,13 +1208,13 @@ width: 250px;
 <div id="three" class="tab-content">
 
 <div class="links">
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
-{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 20px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
+{block:ifLink7URL}<a href="{text:Link 7 URL}"><i class="far fa-circle" style="color: {color:Main Color};margin-right: 10px;"></i>{text:Link 7 Name}</a>{/block:ifLink7URL}
 </div>
 
 </div>
@@ -1473,7 +1513,7 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
  
 </body>
 
