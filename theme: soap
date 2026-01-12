@@ -1091,10 +1091,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="subtitle">{text:Subtitle}</div>
 
 <div class="main-links">
-<a href="/"><i class="far fa-arrow-alt-circle-left" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 5px;padding: 10px;width: 0.9rem;"></i>Home</a>
-{block:AskEnabled}<a href="/ask"><i class="far fa-envelope" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 5px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
-{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 5px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-<a href="/archive"><i class="far fa-calendar-plus" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 5px;padding: 10px;width: 0.9rem;"></i>Archive</a>
+<a href="/"><i class="far fa-arrow-alt-circle-left" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Home</a>
+{block:AskEnabled}<a href="/ask"><i class="far fa-envelope" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Ask</a>{/block:AskEnabled}
+{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fas fa-file-import" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
+<a href="/archive"><i class="far fa-calendar-plus" style="border: 1px solid {color:Border};border-bottom: none;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Archive</a>
 </div>
 
 </div>
