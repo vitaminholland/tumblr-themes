@@ -798,15 +798,17 @@ background: {color:Asker Background};
 color: {color:Main Color};
 padding: 10px;
 }
- 
+
 .audio iframe {
 height: 85px;
-{block:if400pxTextPost}
-width: 400px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-width: 500px;
-{/block:if500pxTextPost}
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
 }
 
 figure {
@@ -815,12 +817,7 @@ width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-{block:if400pxTextPost}
-width: 400px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-width: 500px;
-{/block:if500pxTextPost}
+width: 100%;
 }
 
 .npf-audio-wrapper {
