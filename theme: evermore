@@ -485,7 +485,7 @@ position: sticky;
 position: -webkit-sticky; 
 top: 0px;
 width: calc(100% - 40px);
-z-index: 999999999999999999999999999999999999;
+z-index: 1;
 }
 
 .avatar {
@@ -624,12 +624,12 @@ margin-bottom: 100px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 100px;
+display: flex;
+algin-items: flex-start;
 width: calc({select:Post Width} + 442px);
 }
 
 #user-information {
-margin-bottom: 100px;
-position: absolute;
 width: 300px;
 }
 
@@ -659,7 +659,6 @@ margin: 5px;
 }
 
 .search-wrapper {
-margin-bottom: 100px;
 margin-top: 20px;
 width: 100%;
 }
@@ -701,7 +700,7 @@ display: none!important;
 }
 
 #posts {
-margin-left: 400px;
+margin-left: 100px;
 width: calc({select:Post Width} + 42px);
 }
 
@@ -1270,12 +1269,14 @@ width: 100%;
 }
     
 #container {
+flex-direction: column;
+flex-wrap: wrap;
+align-items: none;
 width: 444px;
 }
    
 #user-information {
 margin-bottom: 75px;
-position: relative;
 width: 100%;
 } 
 
