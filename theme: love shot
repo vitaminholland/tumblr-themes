@@ -1178,7 +1178,7 @@ margin-top: 10px;
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
 <a class="tablinks" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="fas fa-edit"></i></a>
 <a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Blog Menu"><i class="fas fa-list-ul"></i></a>
-<a href="https://ghcstfaec.tumblr.com/" target="_blank" title="EXT"><i class="far fa-heart"></i></a>
+<a href="https://ghcstfaec.tumblr.com/" target="_blank" title="GHCST"><i class="far fa-heart"></i></a>
 </div>
 
 </div>
