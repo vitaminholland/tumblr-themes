@@ -655,7 +655,7 @@ width: 64px;
 background: {color:Asker Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
-margin-left: 101px;
+margin-left: 84px;
 padding: 20px;
 }
 
@@ -694,7 +694,7 @@ background: {color:Main Color};
 border: 1px solid {color:Border};
 border-radius: 5px;
 color: {color:Quote Icon Color};
-margin-right: 101px;
+margin-right: 84px;
 padding: 20px;
 }
  
