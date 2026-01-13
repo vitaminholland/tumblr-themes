@@ -10,7 +10,13 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Love Shot by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: love shot
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
@@ -77,6 +83,10 @@
  
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -130,6 +140,19 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -149,19 +172,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
  
@@ -205,17 +232,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
 });
 </script>
 
@@ -730,8 +746,15 @@ padding: 10px;
 
 .audio iframe {
 height: 85px;
-width: 400px;
-} 
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
+}
 
 figure {
 display: flex;
@@ -964,6 +987,9 @@ text-transform: lowercase;
 font-size: {select:Uppercase Font Size};
 margin: -5px;
 text-transform: uppercase;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 width: calc(100% + 10px);
 }
  
@@ -971,7 +997,6 @@ width: calc(100% + 10px);
 background: {color:Main Color};
 border-radius: 5px;
 color: {color:Post Background};
-display: inline-block;
 margin: 5px;
 padding: 5px;
 }
@@ -1153,7 +1178,7 @@ margin-top: 10px;
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
 <a class="tablinks" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="fas fa-edit"></i></a>
 <a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Blog Menu"><i class="fas fa-list-ul"></i></a>
-<a href="https://extasisthemes.tumblr.com/" target="_blank" title="EXT"><i class="far fa-heart"></i></a>
+<a href="https://ghcstfaec.tumblr.com/" target="_blank" title="EXT"><i class="far fa-heart"></i></a>
 </div>
 
 </div>
