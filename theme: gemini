@@ -74,6 +74,8 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="text:Link 8 Name" content="Link Eight"/>
 <meta name="text:Link 9 URL" content="/"/>
 <meta name="text:Link 9 Name" content="Link Nine"/>
+<meta name="text:Link 10 URL" content="/"/>
+<meta name="text:Link 10 Name" content="Link Ten"/>
 
 <meta name="if:Submit Link" content="1"/>
 
@@ -938,12 +940,12 @@ color: {color:Link Hover};
 <div class="modal-title">Explore</div>
  
 <div class="navigation">
-{block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
 {block:ifLink5URL}<a href="{text:Link 5 URL}">{text:Link 5 Name}</a>{/block:ifLink5URL}
 {block:ifLink6URL}<a href="{text:Link 6 URL}">{text:Link 6 Name}</a>{/block:ifLink6URL}
 {block:ifLink7URL}<a href="{text:Link 7 URL}">{text:Link 7 Name}</a>{/block:ifLink7URL}
 {block:ifLink8URL}<a href="{text:Link 8 URL}">{text:Link 8 Name}</a>{/block:ifLink8URL}
 {block:ifLink9URL}<a href="{text:Link 9 URL}">{text:Link 9 Name}</a>{/block:ifLink9URL}
+{block:ifLink10URL}<a href="{text:Link 10 URL}">{text:Link 10 Name}</a>{/block:ifLink10URL}
 </div>
  
 </div>
@@ -1150,6 +1152,7 @@ Or <a href="{NextPage}">Next</a>
 {block:ifLink1URL}<a href="{text:Link 1 URL}">{text:Link 1 Name}</a>{/block:ifLink1URL}
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
 <a href="/archive">Archive</a>
 </div>
 
