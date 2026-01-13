@@ -387,7 +387,10 @@ z-index: 1;
 }
 
 .main-links {
-display: inline-block;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
 }
  
 .main-links a {
@@ -400,7 +403,7 @@ font-size: 0.9rem;
 font-variant: normal;
 height: 0.9rem;
 line-height: 1;
-margin-right: 10px;
+margin: 5px;
 padding: 10px;
 text-rendering: auto;
 width: 0.9rem;
@@ -660,13 +663,15 @@ font-size: {select:Uppercase Font Size};
 margin: -5px;
 margin-bottom: 50px;
 text-transform: uppercase;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 #links a {
 background: {color:Main Color};
 border-radius: 100px;
 color: {color:Post Background};
-display: inline-block;
 margin: 5px;
 padding: 10px;
 }
