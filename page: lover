@@ -10,11 +10,40 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Lover by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: lover
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title],div[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
 
 <!-- Font Awesome Script -->
 
@@ -102,7 +131,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -191,7 +220,7 @@ width: 30px;
 
 .skill {
 align-items: center;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: flex;
 margin-bottom: 20px;
 padding-bottom: 20px;
@@ -218,6 +247,9 @@ height: 3px;
 .links {
 font-size: 0.9rem;
 margin: -5px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 text-transform: uppercase;
 }
 
@@ -305,24 +337,20 @@ width: 250px;
 
 <center>
 <i class="far fa-user-circle" style="margin-right: 10px;"></i>Franchesca
-<font style="margin-left: 10px;margin-right: 10px;">|</font>
+<font style="color: #d2d2d2;margin-left: 10px;margin-right: 10px;">|</font>
 <i class="fas fa-birthday-cake" style="margin-right: 10px;"></i>Twenty-Two 
-<font style="margin-left: 10px;margin-right: 10px;">|</font>
+<font style="color: #d2d2d2;margin-left: 10px;margin-right: 10px;">|</font>
 <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>Philippines
 </center>
 
 <br>
 
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis. 
+Write your about here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
 <p>
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu. 
-</p>
-
-<p>
-Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
 </p>
 
 </div>
@@ -387,7 +415,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 <a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Three</a>
 <a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Four</a>
 <a href="/"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Link Five</a>
-<a href="https://extasisthemes.tumblr.com/" title="extasisthemes"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Theme</a>
+<a href="https://ghcstfaec.tumblr.com/" title="extasisthemes"><font style="color: #ecc0bd;margin-right: 5px;">•</font>Theme</a>
 </div>
 
 </div>
