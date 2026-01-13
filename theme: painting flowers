@@ -69,6 +69,8 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="text:Link 4 Name" content="Link Four"/>
 <meta name="text:Link 5 URL" content="/"/>
 <meta name="text:Link 5 Name" content="Link Five"/>
+<meta name="text:Link 6 URL" content="/"/>
+<meta name="text:Link 6 Name" content="Link Six"/>
 
 <meta name="if:Submit Link" content="1"/>
 
@@ -402,7 +404,7 @@ margin-left: 200px;
 overflow: auto;
 position: fixed;
 margin-left: 0px;
-width: 100%;
+width: 701px;
 z-index: 999999999999999999999999999999999999;
 }
  
