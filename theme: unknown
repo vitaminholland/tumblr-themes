@@ -537,14 +537,13 @@ width: 400px;
 .close-modal {
 background: {color:Post Background};
 border: 1px solid {color:Border};
-border-top: none;
-border-left: none;
+border-radius: 5px;
 display: inline-block;
 font-size: 0.9rem;
 font-variant: normal;
 height: 0.9rem;
 line-height: 1;
-margin-left: 351px;
+margin-left: 422px;
 margin-top: 0px;
 padding: 10px;
 position: absolute;
