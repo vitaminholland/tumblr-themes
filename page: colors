@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Colors by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: colors
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -124,13 +134,13 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -141,7 +151,7 @@ max-width: 300px;
 }
  
 blockquote blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 padding-left: 5px;
 }
 
@@ -154,6 +164,10 @@ padding-top: 13px;
 position: fixed;
 text-transform: uppercase;
 top: 0px;
+algin-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 width: 100%;
 z-index: 1;
 }
@@ -162,19 +176,21 @@ z-index: 1;
 background: #ffffff;
 border-radius: 100px;
 color: #000000;
-display: inline-block;
-margin-left: 10px;
-margin-right: 20px;
+height: 32.79px;
+margin-left: 20px;
+margin-right: 10px;
 padding-right: 10px;
 text-align: center;
 }
 
 .ln-wrapper {
-display: inline-block;
+display: flex;
+align-items: center;
 }
 
 .navigation {
-display: inline-block;
+algin-items: center;
+display: flex;
 -webkit-transition: all 0.5s ease;
 -moz-transition: all 0.5s ease;
 -o-transition: all 0.5s ease;
@@ -184,11 +200,11 @@ display: inline-block;
 background: none;
 color: #ffffff;
 border: none;
-display: inline-block;
+display: flex;
 font-family: 'Karla', sans-serif;
 font-size: 0.9rem;
 letter-spacing: 1px;
-margin-right: 10px;
+margin-right: 5px;
 padding: 0px;
 text-align: center;
 text-transform: uppercase;
@@ -206,6 +222,7 @@ color: #cfcfcf;
 }
  
 .navigation-content {
+background: #ffffff;
 display: none;
 position: absolute;
 width: 170px;
@@ -213,9 +230,7 @@ z-index: 1;
 }
  
 .navigation-content a {
-background: #ffffff;
 color: #000000!important;
-display: block;
 padding: 10px;
 width: 150px;
 -webkit-transition: all 0.5s ease;
@@ -229,6 +244,7 @@ color: #cfcfcf!important;
 
 #links a {
 color: #ffffff;
+display: flex;
 margin-right: 10px;
 }
 
@@ -244,7 +260,7 @@ width: 100%;
 
 #panel {
 background: rgb(255, 255, 255, 0.7);
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 float: left;
 height: auto;
 top: 0px;
@@ -351,7 +367,7 @@ width: 840px;
 }
 
 .commission-status {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 float: left;
 margin: 10px;
 padding-bottom: 10px;
@@ -360,13 +376,16 @@ width: 400px;
 }
 
 .more-links {
+margin: -5px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 font-size: 0.9em;
 text-transform: uppercase;
 }
  
 .more-links a {
-display: inline-block;
-margin-right: 10px;
+margin: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -726,7 +745,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <a href="/">Link Three</a>
 <a href="/">Link Four</a>
 <a href="/">Link Five</a>
-<a href="https://extasisthemes.tumblr.com">Theme</a>
+<a href="https://ghcstfaec.tumblr.com">Theme</a>
 </div>
 
 </div>
