@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Champagne by Franchesca (extasisthemes) -->
+<!-- 
+
+page: champagne
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -138,7 +148,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -154,7 +164,7 @@ width: 600px;
 
 .title {
 color: #ffffff;
-font-family: 'Arial', sans-serif;
+font-family: 'Karla', sans-serif;
 font-size: 25px;
 font-weight: 900;
 margin-bottom: 10px;
@@ -204,7 +214,7 @@ width: 790px;
 }
 
 .close {
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-right: none;
 display: inline-block;
 float: right;
@@ -235,17 +245,17 @@ padding-top: 0px;
 }
  
 .links {
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 font-size: 0.9rem;
-padding: 20px;
-padding-bottom: 10px;
+padding: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 text-transform: uppercase;
 }
 
 .links a {
-display: inline-block;
-margin-bottom: 10px;
-margin-right: 10px;
+margin: 5px;
 }
 
 #projects {
@@ -334,7 +344,7 @@ color: #cfcfcf;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -481,7 +491,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
