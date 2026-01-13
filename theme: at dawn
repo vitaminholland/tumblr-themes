@@ -132,6 +132,19 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -149,19 +162,6 @@ tumblrAvatarClass: ".tumblr_avatar",
 usernameColon: false
 }); 
 }); 
-</script>
-
-<!-- Hide & Show Script -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-$(document).ready(function(){
-$('.tags').hide();
-$('.tags-title').click(function() {
-$(this).closest('.entries').find('.tags').slideToggle(500);
-});
-});
 </script>
 
 <!--
