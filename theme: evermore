@@ -353,7 +353,7 @@ font-weight: 600;
  
 h1 {
 font-family: '{select:Heading Font}', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
