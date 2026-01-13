@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Mirage by Franchesca (extasisthemes) -->
+<!-- 
+
+page: mirage
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -125,14 +135,14 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
 
 #container {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 margin-bottom: 70px;
 margin-left: auto;
 margin-right: auto;
@@ -142,7 +152,7 @@ width: 500px;
 }
 
 #header {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 margin-left: -50px;
 margin-right: -50px;
 margin-top: -50px;
@@ -202,7 +212,7 @@ width: 500px;
 
 .note {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 padding: 20px;
 }
@@ -213,12 +223,13 @@ width: 100%;
 }
 
 .question-wrapper {
+display: flex;
+align-items: flex-start;
 width: 100%;
 }
 
 .question-avatar {
 height: 64px;
-position: absolute;
 width: 64px;
 }
 
@@ -230,20 +241,22 @@ width: 64px;
 
 .q {
 background: #f8f8f8;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
-margin-left: 101px;
+margin-left: 30px;
 padding: 20px;
+width: calc(100% - 106px);
 }
 
 .answer-wrapper {
+display: flex;
+align-items: flex-start;
 margin-bottom: 30px;
 margin-top: 20px;
 width: 100%;
 }
 
 .answer-avatar {
-float: right;
 height: 64px;
 width: 64px;
 }
@@ -257,10 +270,10 @@ z-index: -1;
 
 .a {
 background: #ccaacc;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 color: #ffffff;
-margin-right: 101px;
+margin-right: 30px;
 padding: 20px;
 }
 
@@ -274,7 +287,7 @@ color: #cfcfcf;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -330,7 +343,7 @@ color: #cfcfcf;
 
 <div class="question-avatar">
 <img src="https://i.imgur.com/yWztKyf.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
 </div>
 
 <div class="q">
@@ -341,13 +354,13 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit?
 
 <div class="answer-wrapper">
 
-<div class="answer-avatar">
-<img src="https://i.imgur.com/n72BoIy.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
-</div>
-
 <div class="a">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-avatar">
+<img src="https://i.imgur.com/n72BoIy.png"/>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
 </div>
 
 </div>
@@ -360,7 +373,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="question-avatar">
 <img src="https://i.imgur.com/yWztKyf.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
 </div>
 
 <div class="q">
@@ -371,13 +384,13 @@ Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris?
 
 <div class="answer-wrapper">
 
-<div class="answer-avatar">
-<img src="https://i.imgur.com/n72BoIy.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
-</div>
-
 <div class="a">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-avatar">
+<img src="https://i.imgur.com/n72BoIy.png"/>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
 </div>
 
 </div>
@@ -390,7 +403,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <div class="question-avatar">
 <img src="https://i.imgur.com/yWztKyf.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: 48px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">?</div>
 </div>
 
 <div class="q">
@@ -401,13 +414,13 @@ Aliquam mattis porta urna?
 
 <div class="answer-wrapper">
 
-<div class="answer-avatar">
-<img src="https://i.imgur.com/n72BoIy.png"/>
-<div style="background: #ffffff;border: 1px solid #eeeeee;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
-</div>
-
 <div class="a">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+</div>
+
+<div class="answer-avatar">
+<img src="https://i.imgur.com/n72BoIy.png"/>
+<div style="background: #ffffff;border: 1px solid #d2d2d2;border-radius: 100px;height: 21px;margin-left: -16px;margin-top: -47.4px;padding: 5px;position: relative;text-align: center; width: 21px;">!</div>
 </div>
 
 </div>
@@ -422,7 +435,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
