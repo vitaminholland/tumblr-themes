@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Soda by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: soda
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -40,14 +50,14 @@ attribute:"title"
 <link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 
 <!-- Hide & Show Script -->
- 
-<script type="text/javascript" src="https://pastebin.com/raw/0QibYDaZ"></script>
- 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
-$(".answerb").hide();
-$(".questionb").click(function(){
-$(this).next(".answerb").slideToggle('fast');
+$('.answerb').hide();
+$('.questionb').click(function() {
+$(this).closest('.question-wrapper').find('.answerb').slideToggle(500);
 });
 });
 </script>
@@ -137,7 +147,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -153,7 +163,7 @@ width: 700px;
 
 .tab {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 font-size: 0.9rem;
 padding: 25px;
 text-transform: uppercase;
@@ -181,7 +191,7 @@ color: #ffffff;
 
 .tab-content {
 animation: fadeEffect 1s; 
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-top: none;
 display: none;
 padding: 25px;
@@ -246,7 +256,7 @@ width: 33.33%;
 }
 
 .social {
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 margin-top: 25px;
 padding-top: 25px;
 text-transform: uppercase;
@@ -306,7 +316,7 @@ margin-top: 10px;
 }
 
 .navigation-wrapper {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 margin-top: 25px;
 padding-bottom: 25px;
 }
@@ -331,18 +341,20 @@ margin: 5px;
 #blogroll {
 margin: -10px;
 overflow: hidden;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 width: 670px;
 }
 
 .following-wrapper {
 align-items: center;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 display: flex;
-float: left;
 height: 48px;
 margin: 10px;
 padding: 10px;
-width: 293px;
+width: calc(50% - 42px);
 }
 
 .following-image {
@@ -367,7 +379,7 @@ white-space: nowrap;
 
 #credit {
 bottom: 15px;
-font-size: 0.9em;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -429,11 +441,11 @@ color: #cfcfcf;
 
 </div>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+Write your about here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 <br><br>
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
-<br><br>
-Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
 
 <div class="social">
 <a href="/" title="username"><i class="fab fa-facebook-square" style="margin-right: 10px;"></i>Facebook</a>
@@ -607,7 +619,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
