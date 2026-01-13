@@ -10,11 +10,21 @@
  
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Cherry Hearts by Franchesca (extasisthemes) -->
+<!-- 
+
+page: cherry hearts
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
  
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
  
@@ -131,7 +141,7 @@ width: 650px;
 
 #icon-image {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 height: 64px;
 margin-left: auto;
 margin-right: auto;
@@ -145,7 +155,7 @@ width: 64px;
 }
 
 #blogroll-title {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 color: #99bbcc;
 font-size: 15px;
 margin-top: 20px;
@@ -173,7 +183,7 @@ width: 670px;
  
 .following-wrapper {
 align-items: center;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 display: flex;
 float: left;
 height: 48px;
@@ -204,7 +214,7 @@ white-space: nowrap;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -259,7 +269,7 @@ color: #cfcfcf;
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
  
 </body>
 
