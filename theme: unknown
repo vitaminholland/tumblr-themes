@@ -10,13 +10,19 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Unknown by Franchesca (extasisthemes) -->
+<!-- 
+
+theme: unknown
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Asker Background" content="#f0f0f0"/>
 <meta name="color:Background" content="#f8f8f8"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
@@ -84,6 +90,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Muli:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -124,6 +134,19 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
  
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -143,19 +166,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
  
@@ -199,17 +226,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
 });
 </script>
 
@@ -496,25 +512,65 @@ z-index: 1;
 animation-duration: 0.5s;
 animation-name: animatetop;
 display: none;
-height: 100%;
-left: 0px;
+height: 550px;
+margin-left: 0px;
 overflow: auto;
 position: fixed;
-top: 0px;
-width: 100%;
-z-index: 999999999999999999999999999999999999;
+margin-top: 0px;
+width: 850px;
+z-index: 1;
 }
- 
+
 .modal-content {
 background: {color:Post Background};
 border: 1px solid {color:Border};
-border-radius: 5px;
+overflow-y: scroll;
+overflow-x: hidden;
 height: 400px;
-left: calc(50% - -98px);
-padding-right: 10px;
-position: fixed;
-top: calc(50% - 173px);
+margin-left: auto;
+margin-right: auto;
+margin-top: 77.17px;
+border-radius: 5px;
 width: 400px;
+}
+ 
+.close-modal {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-top: none;
+border-left: none;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 351px;
+margin-top: 0px;
+padding: 10px;
+position: absolute;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.close-modal:hover {
+color: {color:Link Hover};
+}
+ 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+margin-top: 0px;
+opacity: 1;
+}
+ 
 }
 
 .modal-content-holder {
@@ -562,14 +618,14 @@ text-transform: uppercase;
 }
 
 .muses-gallery {
-float: left;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 margin: -5px;
-overflow: hidden;
 width: 370px;
 }
  
 .muses-image {
-float: left;
 height: 82.5px;
 margin: 5px;
 width: 82.5px;
@@ -578,19 +634,6 @@ width: 82.5px;
 .muses-image img {
 height: 82.5px;
 width: 82.5px;
-}
-
-@keyframes animatetop {
- 
-from {
-opacity: 0;
-}
- 
-to {
-top: 0px;
-opacity: 1;
-}
- 
 }
 
 #posts-wrapper {
@@ -759,6 +802,7 @@ text-transform: uppercase;
 }
  
 .asker-url a {
+border: none;
 background: none;
 padding: 0px;
 }
@@ -769,6 +813,14 @@ border: 1px solid {color:Border};
 border-top: none;
 padding: 20px;
 text-align: center;
+}
+
+.question p {
+margin-block-start: 0em;
+}
+
+.question p:last-of-type {
+margin-block-end: 0em;
 }
 
 .quote {
@@ -841,7 +893,14 @@ padding: 10px;
 
 .audio iframe {
 height: 85px;
-width: 350px;
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
 }
 
 figure {
@@ -987,7 +1046,7 @@ text-transform: uppercase;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -1012,11 +1071,13 @@ color: {color:Link Hover};
 <div id="container">
 
 {block:IfPopUp}
-<button id="navigation" title="Blog Menu"><i class="fas fa-list-ul" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i></button>
+<button id="navigation" title="Blog Menu" class="open-modal"><i class="fas fa-list-ul" style="background: {color:Main Color};border-radius: 100px;color: {color:Quote Icon Color};font-size: 0.9rem;padding: 10px;width: 0.9rem;"></i></button>
 
-<div id="modal-popup" class="modal">
-
+<div class="modal modal_multi">
+ 
 <div class="modal-content">
+ 
+<div class="close-modal close_modal"><i class="fa-regular fa-circle-xmark"></i></div>
 
 <div class="tabs-icons-wrapper" style="width: 370px;">
 <div style="background: #e58a9e;border-radius: 100%;display: inline-block;height: 15px;position: absolute;width:15px;"></div>
@@ -1319,22 +1380,54 @@ Or <a href="{NextPage}">Next</a>
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
 <!-- Modal Script -->
  
 <script>
-var modal = document.getElementById("modal-popup");
-var btn = document.getElementById("navigation");
+var modalparent = document.getElementsByClassName("modal_multi");
+var modal_btn_multi = document.getElementsByClassName("open-modal");
+var span_close_multi = document.getElementsByClassName("close_modal");
+function setDataIndex() {
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].setAttribute('data-index', i);
+modalparent[i].setAttribute('data-index', i);
+span_close_multi[i].setAttribute('data-index', i);
+}
+}
+for (i = 0; i < modal_btn_multi.length; i++)
+{
+modal_btn_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "block";
+};
+span_close_multi[i].onclick = function() {
+var ElementIndex = this.getAttribute('data-index');
+modalparent[ElementIndex].style.display = "none";
+};
+}
+window.onload = function() {
+setDataIndex();
+};
+window.onclick = function(event) {
+if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+modalparent[event.target.getAttribute('data-index')].style.display = "none";
+}
+if (event.target === modal) {
+modal.style.display = "none";
+}
+};
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("open-modal");
+var span = modal.getElementsByClassName("close-modal")[0]; 
 btn.onclick = function() {
 modal.style.display = "block";
 }
-window.onclick = function(event) {
-if (event.target == modal) {
+span.onclick = function() {
 modal.style.display = "none";
-}
 }
 </script>
 
