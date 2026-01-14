@@ -12,7 +12,7 @@
 
 <!-- 
 
-theme: love yourself
+theme: love shot
 designed and coded by ghcstfaec
 see credits @ https://ghcstfaec.tumblr.com/credits
 
@@ -20,13 +20,13 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <!-- Metadata -->
 
-<meta name="color:Background" content="#f8f8f8"/>
-<meta name="color:Border" content="#d2d2d2"/>
+<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Border" content="#eeeeee"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#ccbbcc"/>
+<meta name="color:Main Color" content="#ff99bb"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Scrollbar" content="#000000"/>
@@ -49,10 +49,11 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 
-<meta name="image:Icon Image" content="https://i.imgur.com/vrIrtc9.png"/>
-<meta name="image:Sidebar Image" content="https://i.imgur.com/HWOEGj4.png"/>
+<meta name="image:Background Image" content="https://i.imgur.com/oMJS4bB.png"/>
+<meta name="image:Icon Image" content="https://i.imgur.com/ggQcgE6.png"/>
+<meta name="image:About Image" content="https://i.imgur.com/ROjmguF.png"/>
 
-<meta name="text:Title" content="Love Yourself"/>
+<meta name="text:Title" content="Love Shot"/>
 
 <meta name="text:Link 1 URL" content="/"/>
 <meta name="text:Link 1 Name" content="Link One"/>
@@ -66,11 +67,12 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="text:Link 5 Name" content="Link Five"/>
 <meta name="text:Link 6 URL" content="/"/>
 <meta name="text:Link 6 Name" content="Link Six"/>
+<meta name="text:Link 7 URL" content="/"/>
+<meta name="text:Link 7 Name" content="Link Seven"/>
+
+<meta name="text:About" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis."/>
 
 <meta name="if:Submit Link" content="1"/>
-
-<meta name="if:400px Text Post" content="0"/>
-<meta name="if:500px Text Post" content="1"/>
 
 <meta name="if:Hide Tags" content="0"/>
 <meta name="if:Show Tags" content="1"/>
@@ -83,7 +85,7 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <!-- jQuery Script -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -271,6 +273,9 @@ z-index: 999999999999999999999999999999999999;
 
 body {
 background: {color:Background};
+background-attachment: fixed;
+background-image: url('{image:Background Image}');
+background-repeat: repeat;
 color: {color:Text};
 cursor: url(https://i.imgur.com/lhPqll6.png), progress;
 font-family: '{select:Body Font}', sans-serif;
@@ -340,47 +345,23 @@ word-wrap: break-all;
 white-space: pre-wrap;
 }
 
-#il-wrapper {
+#footer {
+align-items: center;
 background: {color:Post Background};
-border-right: 1px solid {color:Border};
-height: 100%;
+border-top: 1px solid {color:Border};
+bottom: 0px;
+display: flex;
+height: 34.8px;
+justify-content: center;
+padding: 20px;
 position: fixed;
-top: 0px;
-width: 80px;
-z-index: 1;
-}
-
-.icon-image {
-height: 50px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 15px;
-width: 50px;
-}
-
-.icon-image img {
-border-radius: 5px;
-height: 50px;
-width: 50px;
-}
-
-.line-vertical {
-background: {color:Border};
-height: 70px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 15px;
-width: 1px;
+width: calc(100% - 40px);
+z-index: 999999999999999999999999999999999999;
 }
 
 .tab {
-margin-left: 40px;
 overflow: hidden;
-margin-left: auto;
-margin-right: auto;
-margin-top: 15px;
-width: 36.39px;
-z-index: 1;
+text-align: center;
 }
  
 .tab a {
@@ -393,7 +374,8 @@ font-size: 0.9rem;
 font-variant: normal;
 height: 0.9rem;
 line-height: 1;
-margin-bottom: 10px;
+margin-left: 5px;
+margin-right: 5px;
 padding: 10px;
 text-rendering: auto;
 transition: 0.3s;
@@ -412,16 +394,9 @@ color: {color:Main Color};
  
 .tabcontent {
 animation: fadeEffect 1s;
-background: {color:Post Background};
-border-right: 1px solid {color:Border};
 display: none;
-height: calc(100% - 40px);
-margin-left: 81px;
-padding: 20px;
-position: fixed;
-top: 0px;
-width: 210px;
-z-index: 1;
+height: auto;
+margin-left: 300px;
 }
  
 @-webkit-keyframes fadeEffect {
@@ -444,132 +419,86 @@ opacity: 1;
 }
 }
 
-#user-information {
+#container-background {
+background: {color:Post Background};
+border-left: 1px solid {color:Border};
+border-right: 1px solid {color:Border};
+border-top: 3px solid {color:Main Color};
+height: calc(100% - 78.8px);
+left: calc(50% - 411px);
+top: 0px;
+position: fixed;
+width: 822px;
+z-index: -1;
+}
+
+#container {
+margin-bottom: 125.8px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 53px;
+width: 722px;
+}
+
+#user-information-wrapper {
 align-items: center;
 display: flex;
 flex-direction: column;
-height: 100%;
+height: calc(100% - 78.8px);
 justify-content: center;
+position: fixed;
+top: 3px;
+width: 250px;
 }
 
-.sidebar-image {
-height: 100px;
-width: 100px;
+#user-information {
+width: 250px;
+}
+
+.icon-image {
+height: 120px;
+margin-left: auto;
+margin-right: auto;
+width: 120px;
 }
  
-.sidebar-image img {
+.icon-image img {
 border-radius: 100px;
-height: 100px;
-width: 100px;
+height: 120px;
+width: 120px;
+}
+
+.td-wrapper {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-radius: 5px;
+margin-top: -60px;
+padding: 20px;
+padding-top: 80px;
 }
  
 .title {
 color: {color:Main Color};
 font-family: 'Rubik', sans-serif;
-font-size: {select:Uppercase Font Size};
 font-weight: bold;
-margin-top: 20px;
 text-align: center;
-text-transform: uppercase;
-}
-
-.line-horizontal {
-background: {color:Border};
-height: 1px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 10px;
-width: 70px;
+text-transform: lowercase;
 }
 
 .description {
-margin-top: 10px;
+font-size: {select:Uppercase Font Size};
+margin-top: 15px;
 text-align: center;
-}
-
-.search-wrapper {
-align-items: center;
-background: {color:Post Background};
-border: 1px solid {color:Border};
-border-radius: 100px;
-display: flex;
-margin-top: 10px;
-width: 100%;
-}
- 
-.search  {
-border: none;
-display: inline-block;
-margin-bottom: 0px;
-padding: 0px;
-position: relative;
-width: calc(100% - 54.39px);
-}
- 
-.query {
-background: none;
-border: none;
-color: {color:Text};
-font-family: '{select:Body Font}', sans-serif;
-font-size: {select:Uppercase Font Size};
-letter-spacing: 1px;
-padding: 0px;
-text-align: left;
-text-transform: uppercase;
-outline: 0;
-width: 100%;
-}
-
-.links {
-align-items: center;
-display: flex;
-flex-direction: column;
-font-size: {select:Uppercase Font Size};
-height: calc(100% - 40px);
-justify-content: center;
 text-transform: uppercase;
 }
-
-.links a {
-border-bottom: 1px solid {color:Border};
-display: block;
-margin-bottom: 10px;
-padding-bottom: 10px;
-width: 100%;
-}
-
-.links a:last-child {
-border-bottom: 0px;
-margin-bottom: 0px;
-padding-bottom: 0px;
-}
-
-#container {
-margin-bottom: 100px;
-margin-left: 332px;
-margin-top: 100px;
-width: clac(100% - 332px);
-}
-
+ 
 #posts {
-margin-left: auto;
-margin-right: auto;
-{block:if400pxTextPost}
 width: 422px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-width: 522px;
-{/block:if500pxTextPost}
 }
  
 .entries {
 margin-bottom: 50px;
-{block:if400pxTextPost}
 width: 422px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-width: 522px;
-{/block:if500pxTextPost}
 }
  
 .entries-wrapper {
@@ -577,12 +506,7 @@ background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 5px;
 padding: 10px;
-{block:if400pxTextPost}
 width: 400px;
-{/block:if400pxTextPost}
-{block:if500pxTextPost}
-width: 500px;
-{/block:if500pxTextPost}
 }
 
 .entries img {
@@ -613,7 +537,7 @@ display: flex;
 .text-wrapper {
 margin: 0px;
 }
-
+ 
 .read_more {
 background: {color:Main Color};
 border: 1px solid {color:Border};
@@ -732,7 +656,7 @@ text-transform: uppercase;
 margin-block-start: 0em;
 }
 
-.akser-question p:last-of-type {
+.asker-question p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -750,6 +674,17 @@ text-transform: uppercase;
 
 .quote-wrapper {
 width: 100%;
+}
+
+.quote a.tumblr_blog {
+font-size: {select:Uppercase Font Size};
+font-weight: normal;
+margin-top: 0px;
+margin-left: 0px;
+display: inline-block;
+position: relative;
+text-align: center;
+text-transform: uppercase;
 }
 
 .quote-icon {
@@ -774,17 +709,6 @@ font-weight: bold;
 padding: 10px;
 padding-bottom: 26.4px;
 text-align: center;
-}
-
-.quote a.tumblr_blog {
-font-size: {select:Uppercase Font Size};
-font-weight: normal;
-margin-top: 0px;
-margin-left: 0px;
-display: inline-block;
-position: relative;
-text-align: center;
-text-transform: uppercase;
 }
 
 .website {
@@ -1035,20 +959,212 @@ display: flex;
 padding: 5px;
 }
 
-#credit {
-bottom: 15px;
-font-size: 0.7rem;
-position: fixed;
-right: 15px;
+#las-wrapper {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-radius: 5px;
+width: 420px;
+}
+
+#las-wrapper li {
+border-bottom: 1px solid {color:Border};
+list-style-type: none;
+padding: 10px;
+}
+
+#las-wrapper li:last-child {
+border-bottom: 0px;
+}
+
+.category-title {
+border-bottom: 1px solid {color:Border};
+display: inline-block;
+font-family: 'Rubik', sans-serif;
+font-weight: bold;
+margin-bottom: 10px;
+padding-bottom: 10px;
+text-align: center;
+text-transform: lowercase;
+}
+
+.links {
+font-size: {select:Uppercase Font Size};
+margin: -5px;
+text-transform: uppercase;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: calc(100% + 10px);
+}
+ 
+.links a {
+background: {color:Main Color};
+border-radius: 5px;
+color: {color:Post Background};
+margin: 5px;
+padding: 5px;
+}
+ 
+.links a:hover {
+color: {color:Link Hover};
+}
+
+.about-wrapper {
+align-items: flex-start;
+display: flex;
+width: 100%;
+}
+
+.about-image {
+height: 100px;
+width: 100px;
+}
+
+.about-image img {
+border-radius: 5px;
+height: 100px;
+width: 100px;
+}
+
+.about {
+font-size: {select:Uppercase Font Size};
+margin-left: 10px;
 text-transform: uppercase;
 }
 
-#credit a {
-color: {color:Link};
+.search-wrapper {
+align-items: center;
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-radius: 5px;
+display: flex;
+width: 100%;
+}
+ 
+.search  {
+border: none;
+display: inline-block;
+margin-bottom: 0px;
+padding: 0px;
+position: relative;
+width: calc(100% - 54.39px);
+}
+ 
+.query {
+background: none;
+border: none;
+color: {color:Text};
+font-family: '{select:Body Font}', sans-serif;
+font-size: {select:Uppercase Font Size};
+letter-spacing: 1px;
+padding: 0px;
+text-align: left;
+text-transform: uppercase;
+outline: 0;
+width: 100%;
 }
 
-#credit a:hover {
-color: {color:Link Hover};
+@media only screen and (max-width: 1000px) {
+
+.tabcontent {
+margin-left: 0px;
+}
+
+#container-background {
+border-left: none;
+border-right: none;
+border-top: 3px solid {color:Main Color};
+height: calc(100% - 78.8px);
+left: 0px;
+width: 100%;
+}
+
+#container {
+width: 422px;
+}
+
+#user-information-wrapper {
+display: inline-block;
+height: auto;
+margin-bottom: 50px;
+position: relative;
+top: 0px;
+width: 422px;
+}
+
+#user-information {
+width: 422px;
+}
+
+#posts {
+width: 422px;
+}
+ 
+.entries {
+width: 422px;
+}
+ 
+.entries-wrapper {
+width: 400px;
+}
+ 
+.entries img {
+max-width: 100%;
+}
+ 
+.audio iframe {
+width: 400px;
+}
+ 
+}
+ 
+@media only screen and (max-width: 500px) {
+    
+#container {
+width: 272px;
+}
+
+#user-information-wrapper {
+width: 272px;
+}
+ 
+#user-information {
+width: 272px;
+}
+
+#posts {
+width: 272px;
+}
+ 
+.entries {
+width: 272px;
+}
+
+.entries-wrapper {
+width: 250px;
+}
+ 
+.entries img {
+max-width: 100%;
+}
+ 
+.audio iframe {
+width: 250px;
+}
+
+#las-wrapper {
+width: 270px;
+}
+
+.about-wrapper {
+display: block;
+}
+
+.about {
+margin-left: 0px;
+margin-top: 10px;
+}
+ 
 }
 
 {CustomCSS}
@@ -1059,18 +1175,36 @@ color: {color:Link Hover};
 
 <body>
 
-<div id="il-wrapper">
-
-<div class="icon-image"><img src="{image:Icon Image}"/></div>
-
-<div class="line-vertical"></div>
+<div id="footer">
 
 <div class="tab">
 <a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
-<a class="tablinks" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="fas fa-user-circle"></i></a>
-<a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Navigation"><i class="fas fa-list-ul"></i></a>
-<a href="/archive" title="Archive"><i class="far fa-calendar-plus"></i></a>
+<a class="tablinks" onclick="openPanel(event, 'one')" id="defaultOpen" title="About"><i class="fas fa-edit"></i></a>
+<a class="tablinks" onclick="openPanel(event, 'two')" id="defaultOpen" title="Blog Menu"><i class="fas fa-list-ul"></i></a>
+<a href="https://ghcstfaec.tumblr.com/" target="_blank" title="GHCST"><i class="far fa-heart"></i></a>
+</div>
+
+</div>
+
+<div id="container-background"></div>
+
+<div id="container">
+
+<div id="user-information-wrapper">
+
+<div id="user-information">
+
+<div class="icon-image"><img src="{image:Icon Image}"/></div>
+
+<div class="td-wrapper">
+    
+<div class="title">{text:Title}</div>
+
+{block:Description}<div class="description">{Description}</div>{/block:Description}
+
+</div>
+
 </div>
 
 </div>
@@ -1078,49 +1212,6 @@ color: {color:Link Hover};
 <!-- Start of Tab -->
 
 <div id="one" class="tabcontent">
-
-<div id="user-information">
-
-<div class="sidebar-image"><img src="{image:Sidebar Image}"/></div>
-
-<div class="title">{text:Title}</div>
-
-<div class="line-horizontal"></div>
-
-{block:Description}<div class="description">{Description}</div>{/block:Description}
-
-<div class="search-wrapper">
-<i class="fas fa-search" style="background: {color:Main Color};border-radius: 100px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>
-<form class="search" action="javascript:return false">
-<input type="text" class="query" placeholder="Search This Blog">
-</form>
-</div>
-
-</div>
-
-</div>
-
-<!-- End of Tab -->
-
-<!-- Start of Tab -->
-
-<div id="two" class="tabcontent">
-
-<div class="links">
-{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit"><i class="fa fa-file-import" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
-{block:ifLink4URL}<a href="{text:Link 4 URL}"><i class="fa-regular fa-heart" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 4 Name}</a>{/block:ifLink4URL}
-{block:ifLink5URL}<a href="{text:Link 5 URL}"><i class="fa-solid fa-fan" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 5 Name}</a>{/block:ifLink5URL}
-{block:ifLink6URL}<a href="{text:Link 6 URL}"><i class="fa-solid fa-paw" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 6 Name}</a>{/block:ifLink6URL}
-</div>
-
-</div>
-
-<!-- End of Tab -->
-
-<div id="container">
 
 <div id="posts">
 
@@ -1331,7 +1422,75 @@ color: {color:Link Hover};
 
 </div>
 
-<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
+<!-- End of Tab -->
+
+<!-- Start of Tab -->
+
+<div id="two" class="tabcontent">
+
+<!-- Please do not delete the li tag (<li>) or it will mess up this part. -->
+
+<div id="las-wrapper">
+
+<!-- Start of Links -->
+
+<li>
+<div class="category-title">Links</div>
+
+<div class="links">
+{block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit">Submit</a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
+{block:ifLink1URL}<a href="{text:Link 1 URL}">{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
+{block:ifLink5URL}<a href="{text:Link 5 URL}">{text:Link 5 Name}</a>{/block:ifLink5URL}
+{block:ifLink6URL}<a href="{text:Link 6 URL}">{text:Link 6 Name}</a>{/block:ifLink6URL}
+{block:ifLink7URL}<a href="{text:Link 7 URL}">{text:Link 7 Name}</a>{/block:ifLink7URL}
+<a href="/archive">Archive</a>
+</div>
+</li>
+
+<!-- End of Links -->
+
+<!-- Start of About -->
+
+<li>
+<div class="category-title">About The Blogger</div>
+
+<div class="about-wrapper">
+
+<div class="about-image"><img src="{image:About Image}"/></div>
+
+<div class="about">{text:About}</div>
+
+</div>
+
+</li>
+
+<!-- End of About -->
+
+<!-- Start of Search -->
+
+<li>
+<div class="category-title">Search</div>
+
+<div class="search-wrapper">
+<i class="fas fa-search" style="background: {color:Main Color};border-bottom-left-radius: 5px;border-top-left-radius: 5px;color: {color:Post Background};font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>
+<form class="search" action="javascript:return false">
+<input type="text" class="query" placeholder="Search This Blog">
+</form>
+</div>
+</li>
+
+<!-- End of Search -->
+
+</div>
+
+</div>
+
+<!-- End of Tab -->
+
+</div>
 
 </body>
 
