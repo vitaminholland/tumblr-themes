@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Timelapse by Franchesca (extasisthemes) -->
+<!-- 
+
+page: timelapse 
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,800;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -40,12 +50,14 @@ attribute:"title"
 <link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 
 <!-- Hide & Show Script -->
- 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
-$(".faq-answer").hide();
-$(".faq-question").click(function(){
-$(this).next(".faq-answer").slideToggle('fast');
+$('.faq-answer').hide();
+$('.faq-question').click(function() {
+$(this).closest('.faq li').find('.faq-answer').slideToggle(500);
 });
 });
 </script>
@@ -133,13 +145,13 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
  
 #container {
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 height: 500px;
 left: calc(50% - 417.5px);
@@ -172,7 +184,7 @@ width: 80px;
 }
 
 .links-wrapper {
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 height: 399px;
 margin-top: 10px;
 width: 100px;
@@ -232,10 +244,14 @@ width: 220px;
 }
 
 .info li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 padding-bottom: 10px;
 padding-top: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 
 .info li:first-child {
@@ -295,7 +311,7 @@ color: #ffffff;
 
 .tab-content {
 animation: fadeEffect 1s; 
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 display: none;
 margin-top: 20px;
 padding-top: 20px;
@@ -344,7 +360,7 @@ margin-top: 10px;
 }
 
 .faq li:last-child {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 margin-bottom: 20px;
 padding-bottom: 20px;
 }
@@ -378,7 +394,7 @@ width: 100%;
 }
 
 .navigation li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 margin-bottom: 0px;
 margin-top: 20px;
@@ -394,17 +410,18 @@ padding-bottom: 0px;
 .navigation-links {
 font-size: 0.9rem;
 margin: -5px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 text-transform: uppercase;
 }
  
 .navigation-links a {
-display: inline-block;
 margin: 5px;
 }
  
 .navigation-title {
 font-weight: bold;
-display: inline-block;
 margin: 5px;
 }
 
@@ -417,7 +434,7 @@ width: 415px;
 .following-wrapper {
 align-items: center;
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 display: flex;
 float: left;
@@ -448,7 +465,7 @@ white-space: nowrap;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -493,10 +510,10 @@ color: #cfcfcf;
 <div class="sidebar">
 
 <div class="info">
-<li><i class="far fa-smile"></i><font style="float: right;">Name</font></li>
-<li><i class="fas fa-check"></i><font style="float: right;">Pronouns</font></li>
-<li><i class="fas fa-birthday-cake"></i><font style="float: right;">Age</font></li>
-<li><i class="fas fa-globe-americas"></i><font style="float: right;">Location</font></li>
+<li><i class="far fa-smile" style="margin-right: 10px;"></i>Name</li>
+<li><i class="fas fa-check" style="margin-right: 10px;"></i>Pronouns</li>
+<li><i class="fas fa-birthday-cake" style="margin-right: 10px;"></i>Age</li>
+<li><i class="fas fa-globe-americas" style="margin-right: 10px;"></i>Location</li>
 </div>
 
 </div>
@@ -707,7 +724,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
