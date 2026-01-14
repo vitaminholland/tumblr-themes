@@ -10,12 +10,18 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Dreamscape' by vitaminholland -->
+<!-- 
+
+theme: dreamscape
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Background" content="#eff2f7"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
 <meta name="color:Container Background" content="#ffffff"/>
 <meta name="color:Link" content="#000000"/>
@@ -79,6 +85,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -100,7 +110,7 @@ attribute:"title"
 
 <!-- Font Awesome Script -->
  
-<link href="//use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 
@@ -116,6 +126,19 @@ emptyAlbumText: "",
 titleLabel: "",    
 artistLabel: "",
 albumLabel: "",
+});
+</script>
+
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
 });
 </script>
 
@@ -138,19 +161,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -194,17 +221,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
 });
 </script>
 
@@ -283,7 +299,7 @@ font-weight: 700;
 
 h1 {
 font-family: '{select:Heading Font}', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -902,7 +918,11 @@ text-transform: uppercase;
 }
  
 .asker-question p {
-margin: 0px;
+margin-block-start: 0em;
+}
+
+.akser-question p:last-of-type {
+margin-block-end: 0em;
 }
  
 .asker-icon {
@@ -949,7 +969,6 @@ text-align: center;
 font-size: {select:Uppercase Font Size};
 font-weight: normal;
 margin-top: 0px;
-margin-left: 0px;
 display: inline-block;
 position: relative;
 text-align: center;
@@ -996,7 +1015,14 @@ padding: 10px;
 
 .audio iframe {
 height: 85px;
-width: 450px;
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
 }
 
 figure {
@@ -1005,7 +1031,7 @@ width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-width: 450px;
+width: 100%;
 }
 
 .npf-audio-wrapper {
@@ -1300,9 +1326,9 @@ z-index: -1;
 <div class="links-ribbon">Navigation</div>
 
 <div class="links">
-{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fa-solid fa-wand-magic-sparkles" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fa-solid fa-cookie-bite" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
-{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fa-solid fa-dove" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
+{block:ifLink1URL}<a href="{text:Link 1 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 1 Name}</a>{/block:ifLink1URL}
+{block:ifLink2URL}<a href="{text:Link 2 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 2 Name}</a>{/block:ifLink2URL}
+{block:ifLink3URL}<a href="{text:Link 3 URL}"><i class="fas fa-link" style="border: 1px solid {color:Border};border-radius: 5px;font-size: 0.9rem;margin-right: 10px;padding: 10px;width: 0.9rem;"></i>{text:Link 3 Name}</a>{/block:ifLink3URL}
 </div>
 
 </div>
@@ -1675,7 +1701,7 @@ Lorem ipsum dolor sit amet.
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
 
 <!-- End of Theme Credit --> 
 
