@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Flames On My Skin by Franchesca (extasisthemes) -->
+<!-- 
+
+page: flames on my skin
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -563,7 +573,7 @@ width: calc(100% - 20px);
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://extasisthemes.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">EXT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
 
 <!-- End of Theme Credit --> 
 
