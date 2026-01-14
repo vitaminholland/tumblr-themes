@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- Can't Let You Go by Franchesca (extasisthemes) -->
+<!-- 
+
+page: can't let you go
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -121,14 +131,14 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
  
 #container {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 height: 500px;
 left: calc(50% - 351px);
@@ -149,7 +159,7 @@ width: calc(100% - 80px);
 }
 
 .line {
-background: #eeeeee;
+background: #d2d2d2;
 height: 1px;
 position: absolute;
 width: 100%;
@@ -183,7 +193,7 @@ text-transform: uppercase;
  
 .links a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #000000;
 display: inline-block;
@@ -269,7 +279,7 @@ width: 350px;
  
 .tab-content {
 animation: fadeEffect 1s; 
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: none;
 margin-bottom: 20px;
 padding-bottom: 20px;
@@ -299,7 +309,7 @@ opacity: 1;
 }
 
 .qa-wrapper {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 margin-bottom: 20px;
 padding-bottom: 20px;
 }
@@ -328,7 +338,7 @@ width: 70px;
 
 .question {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 font-size: 0.9rem;
 margin-left: 10px;
@@ -345,7 +355,7 @@ margin-top: 10px;
 
 .answer {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 font-size: 0.9rem;
 padding: 10px;
@@ -367,7 +377,7 @@ width: 70px;
 
 #credit {
 bottom: 15px;
-font-size: 0.9rem;
+font-size: 0.7rem;
 position: fixed;
 right: 15px;
 text-transform: uppercase;
@@ -816,7 +826,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 </div>
 
-<div id="credit"><a href="http://extasisthemes.tumblr.com/" title="extasisthemes" target="_blank">EXT</a></div>
+<div id="credit"><a href="http://ghcstfaec.tumblr.com/" title="ghcstfaec" target="_blank">GHCST</a></div>
 
 </body>
 
