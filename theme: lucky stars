@@ -1181,7 +1181,7 @@ z-index: -1;
 <a href="/" title="Home"><i class="far fa-arrow-alt-circle-left"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="far fa-envelope"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:IfSubmitLink}<a href="/submit" title="Submit"><i class="fas fa-file-import"></i></a>{/block:IfSubmitLink}{/block:SubmissionsEnabled}
-<a onclick="openNav()" title="Site Map"><i class="fas fa-link"></i></a>
+<a onclick="openNav()" title="Site Map"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
 <a href="/archive" title="Archive"><i class="fas fa-server"></i></a>
 </div>
 
