@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Honey' by vitaminholland -->
+<!-- 
+
+page: honey
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
  
@@ -108,7 +118,7 @@ font-weight: 700;
 }
 
 h1 {
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -121,7 +131,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -141,7 +151,7 @@ width: 871px;
 
 #links-wrapper {
 background: #ffffff;
-border-right: 1px solid #eeeeee;
+border-right: 1px solid #d2d2d2;
 align-items: baseline;
 display: flex;
 flex-direction: column;
@@ -236,7 +246,7 @@ text-transform: lowercase;
 
 .likes-dislikes-wrapper {
 align-items: stretch;
-border-top: 1px solid #eeeeee;
+border-top: 1px solid #d2d2d2;
 display: flex;
 margin-top: 15px;
 padding-top: 15px;
@@ -276,10 +286,14 @@ width: 320px;
 }
  
 .info li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 padding-bottom: 10px;
 padding-top: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
 }
  
 .info li:first-child {
@@ -304,7 +318,7 @@ width: auto;
  
 #credit a {
 background: #bb9966;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #ffffff;
 display: inline-block;
@@ -328,7 +342,7 @@ opacity: 1;
  
 .credit-name {
 background: #333333;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 20px;
 color: #ffffff;
@@ -429,10 +443,10 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <div class="about-image">
 
 <div class="info">
-<li><i class="far fa-smile"></i><font style="float: right;">Name</font></li>
-<li><i class="fas fa-check"></i><font style="float: right;">Pronouns</font></li>
-<li><i class="fas fa-birthday-cake"></i><font style="float: right;">Age</font></li>
-<li><i class="fas fa-globe-americas"></i><font style="float: right;">Location</font></li>
+<li><i class="far fa-smile"></i>Name</li>
+<li><i class="fas fa-check"></i>Pronouns</li>
+<li><i class="fas fa-birthday-cake"></i>Age</li>
+<li><i class="fas fa-globe-americas"></i>Location</li>
 </div>
 
 </div>
@@ -445,7 +459,7 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 
 <!-- Start of Theme Credit -->
  
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
  
 <!-- End of Theme Credit --> 
 
