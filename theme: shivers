@@ -850,6 +850,15 @@ width: 100%;
 --NPF-Audio-Image-Spacing: 0px; 
 }
 
+span.npf-audio-title {
+font-weight: bold;
+}
+
+.npf-audio-background {
+background-color: #f2f2f2; 
+padding: 1.5rem;
+}
+
 video {
 height: auto;
 width: 100%;
