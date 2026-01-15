@@ -443,10 +443,10 @@ Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auct
 <div class="about-image">
 
 <div class="info">
-<li><i class="far fa-smile"></i>Name</li>
-<li><i class="fas fa-check"></i>Pronouns</li>
-<li><i class="fas fa-birthday-cake"></i>Age</li>
-<li><i class="fas fa-globe-americas"></i>Location</li>
+<li><i class="far fa-smile" style="margin-right: 10px;"></i>Name</li>
+<li><i class="fas fa-check" style="margin-right: 10px;"></i>Pronouns</li>
+<li><i class="fas fa-birthday-cake" style="margin-right: 10px;"></i>Age</li>
+<li><i class="fas fa-globe-americas" style="margin-right: 10px;"></i>Location</li>
 </div>
 
 </div>
