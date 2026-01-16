@@ -10,12 +10,18 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Lotto' by vitaminholland -->
+<!-- 
+
+theme: lotto
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Background" content="#ffffff"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
@@ -69,6 +75,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -109,6 +119,19 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -128,19 +151,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -184,17 +211,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
 });
 </script>
 
@@ -277,7 +293,7 @@ font-weight: 700;
 
 h1 {
 font-family: '{select:Heading Font}', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -711,6 +727,9 @@ padding: 20px;
 
 .message p {
 margin-block-start: 0em;
+}
+
+.message p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -793,7 +812,14 @@ padding: 10px;
 
 .audio iframe {
 height: 85px;
-width: 500px;
+width: 100%;
+}
+
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
 }
 
 figure {
@@ -1039,6 +1065,9 @@ margin: 0px;
 margin-bottom: 10px;
 padding-bottom: 10px;
 text-transform: uppercase;
+display: flex;
+aling-items: center;
+justify-content: space-between;
 width: 250px;
 }
 
@@ -1387,25 +1416,21 @@ z-index: -1;
 <div class="about-image"><img src="https://i.imgur.com/B5IhI75.png"/></div>
 
 <div class="about-info">
-<li><i class="far fa-user-circle"></i><font style="float: right">Name of Blogger</font></li>
-<li><i class="far fa-calendar-alt"></i><font style="float: right">Age</font></li>
-<li><i class="fas fa-question-circle"></i><font style="float: right">Sexuality</font></li>
-<li><i class="far fa-star"></i><font style="float: right">Star Sign</font></li>
-<li><i class="fas fa-globe-americas"></i><font style="float: right">Location</font></li>
+<li><i class="far fa-user-circle" style="margin-right: 10px;"></i>Name of Blogger</li>
+<li><i class="far fa-calendar-alt" style="margin-right: 10px;"></i>Age</font></li>
+<li><i class="fas fa-question-circle" style="margin-right: 10px;"></i>Sexuality</li>
+<li><i class="far fa-star" style="margin-right: 10px;"></i>Star Sign</li>
+<li><i class="fas fa-globe-americas" style="margin-right: 10px;"></i>Location</li>
 </div>
 
 </div>
 
 <div class="about">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in sapien sed lacus viverra accumsan. Curabitur facilisis tortor mi, quis aliquet nisl convallis in. Mauris bibendum feugiat euismod. Sed faucibus vulputate eros at condimentum. Vivamus molestie, justo consectetur pretium egestas, arcu augue mollis diam, ut mollis dolor risus sed lacus. Morbi nec purus vel arcu accumsan suscipit imperdiet in arcu. Nulla venenatis lorem est, interdum efficitur nisi pretium ac. Phasellus sit amet tincidunt neque. In vehicula eu ligula sit amet dapibus. Praesent vel ipsum et libero malesuada vulputate. Sed nibh neque, laoreet et ornare at, molestie nec odio. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 <br><br>
-Lorem ipsum dolor sit amet. Consectetuer adipiscing elit. Nam at tortor quis ipsum tempor aliquet.
+Mauris iaculis vitae eros ut blandit. Donec et quam nunc. Nunc felis dolor, auctor sit amet convallis vitae, egestas in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer mi ipsum, maximus vitae sodales non, venenatis et ipsum. Donec quis nisi eleifend, pharetra massa et, scelerisque orci. Integer et orci sit amet nisl facilisis elementum. Nulla volutpat tincidunt magna, vitae lobortis nisl pharetra sit amet. Donec vulputate sodales neque, rutrum malesuada odio laoreet in. Vivamus eleifend ultrices est, vel vestibulum magna molestie tincidunt. Praesent nec turpis eu lectus consequat posuere. Suspendisse quis massa a lacus pharetra porta. Mauris odio nisl, tempus in sollicitudin at, ultrices volutpat tellus. Praesent vitae porta nunc. In sit amet gravida eros, quis molestie justo. Pellentesque quis ipsum vel massa mattis dignissim eget imperdiet lorem.
 <br><br>
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
-<br><br>
-Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.
-<br><br>
-Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+Sed mi elit, sollicitudin vitae lorem ut, molestie egestas ante. Vestibulum in ornare erat. Fusce facilisis, metus ut auctor euismod, nulla elit pulvinar nibh, at pretium quam tortor vel massa. Etiam lobortis purus velit, euismod laoreet tellus ultrices vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse ultricies posuere dignissim. Aenean in pharetra urna, id iaculis turpis. Proin vel diam nec ligula cursus condimentum. Ut pretium, ligula sit amet pulvinar venenatis, ligula purus interdum risus, at blandit lacus tellus vitae nibh. In nec varius magna. Quisque nec neque et ligula consectetur placerat eget id augue. Duis vestibulum dignissim pretium. Cras ac ante felis. Ut leo felis, euismod a suscipit dignissim, sollicitudin eget ante. Cras vestibulum nec felis nec mattis. Nam pellentesque sapien id lobortis lacinia.
 </div>
 
 </div>
@@ -1416,7 +1441,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
 
 <!-- End of Theme Credit --> 
 
