@@ -503,6 +503,9 @@ font-size: {select:Uppercase Font Size};
 margin: -5px;
 padding: 20px;
 text-transform: uppercase;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 width: 410px;
 }
 
@@ -510,7 +513,6 @@ width: 410px;
 background: {color:Post Background};
 border: 1px solid {color:Border};
 border-radius: 100px;
-display: inline-block;
 margin: 5px;
 padding-right: 10px;
 }
