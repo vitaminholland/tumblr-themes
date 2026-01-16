@@ -520,13 +520,16 @@ font-size: {select:Uppercase Font Size};
 margin: -5px;
 margin-top: 15px;
 text-transform: uppercase;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .links a {
 background: {color:Main Color};
 border-radius: 5px;
 color: {color:Post Background};
-display: inline-block;
 margin: 5px;
 padding: 7px;
 }
