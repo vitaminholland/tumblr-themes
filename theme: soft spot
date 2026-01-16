@@ -67,9 +67,8 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <!-- Body Font Sizes -->
 
+<meta name="select:Heading Font Size" content="1.2rem" title="1.2rem"/>
 <meta name="select:Heading Font Size" content="1rem" title="1rem"/>
-<meta name="select:Heading Font Size" content="0.9rem" title="0.9rem"/>
-<meta name="select:Heading Font Size" content="0.8rem" title="0.8rem"/>
 
 <meta name="select:Body Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Body Font Size" content="1rem" title="1rem"/>
