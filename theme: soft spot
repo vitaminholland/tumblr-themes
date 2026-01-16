@@ -15,8 +15,8 @@
 <!-- 
 
 theme: soft spot
-designed and coded by tanaka-drew
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
@@ -126,6 +126,10 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -176,6 +180,37 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -195,19 +230,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -251,35 +290,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
 });
 </script>
 
@@ -583,6 +593,218 @@ justify-content: center;
 margin: 5px;
 }
 
+.modal {
+animation-duration: 0.5s;
+animation-name: animatetop;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+height: 100%;
+left: 0px;
+overflow: auto;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 999999999999999999999999999999999999;
+}
+
+.modal-content {
+background: {color:Post Background};
+border-right: 1px solid {color:Border};
+top: 0px;
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+position: fixed;
+width: 300px;
+}
+ 
+.close-modal {
+background: {color:Post Background};
+border-left: 1px solid {color:Border};
+border-bottom: 1px solid {color:Border};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 265.27px;
+margin-top: 0px;
+padding: 10px;
+position: fixed;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.close-modal:hover {
+color: {color:Link Hover};
+}
+ 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+top: 0px;
+opacity: 1;
+}
+ 
+}
+
+.popup-wrapper {
+margin: 20px;
+}
+
+.section-title {
+font-family: '{select:Heading Font}', sans-serif;
+font-size: {select:Heading Font Size};
+font-weight: bold;
+text-transform: lowercase;
+margin-top: 15px;
+}
+
+.section-title:first-of-type {
+margin-top: 0px;
+}
+
+.more-links {
+margin-top: 15px;
+font-size: {select:Uppercase Font Size};
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+text-transform: uppercase;
+}
+
+.more-links a {
+margin-bottom: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.more-links a:last-of-type {
+margin-bottom: 0px;
+}
+
+.links-icon {
+background: {color:Main Color};
+color: {color:Post Background};
+font-size: 0.9rem;
+border-radius: 100px;
+margin-right: 10px;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 5px;
+width: 0.9rem;
+}
+
+.short-updates {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin-top: 15px;
+padding-bottom: 0px;
+text-transform: lowercase;
+}
+
+.short-updates li {
+font-size: {select:Uppercase Font Size};
+list-style-type: none;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.short-updates li:last-of-type {
+margin-bottom: 0px;
+}
+
+.updates {
+border-bottom: 1px solid {color:Border};
+align-items: center;
+display: flex;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+ 
+.updates-icon {
+background: {color:Main Color};
+color: white;
+padding: 7px;
+margin-right: 10px;
+font-size: 0.9rem;
+}
+ 
+.uduc-wrapper {
+margin-left: 10px;
+}
+ 
+.updates-date {
+font-weight: bold;
+text-transform: lowercase;
+}
+ 
+.updates-content {
+text-transform: lowercase;
+}
+
+.sideblogs {
+margin-top: 15px;
+}
+
+.sideblog {
+align-items: center;
+border-bottom: 1px solid {color:Border};
+display: flex;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+.sideblog:firs-of-top {
+margin-top: 0px;
+}
+
+.sideblog:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.sideblog-image {
+height: 50px;
+width: 50px;
+}
+
+.sideblog-image img {
+border-radius: 5px;
+height: 50px;
+width: 50px;
+}
+
+.sideblog-name {
+font-size: {select:Uppercase Font Size};
+font-weight: bold;
+margin-left: 20px;
+text-transform: uppercase;
+}
+
+.sideblog-name a {
+border: none;
+padding: 0px;
+}
+
+.sideblog-name a:hover {
+background: none;
+color: {color:Link Hover};
+}
+
 #posts {
 margin-left: 100px;
 width: calc({select:Post Width} + 2px);
@@ -771,6 +993,9 @@ padding: 20px;
 
 .message p {
 margin-block-start: 0em;
+}
+
+.message p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -1040,6 +1265,16 @@ display: inline-block;
 text-transform: lowercase;
 }
 
+.tags, .tags-alternate {
+span a {
+background: linear-gradient(to right, {color:Main Color} 0 0);
+background-repeat: no-repeat;
+background-size: 100% 1px;
+line-height: 150%;
+background-position: bottom;
+}
+}
+
 .permalink-info {
 border-top: 1px solid {color:Border};
 margin: -20px;
@@ -1178,218 +1413,6 @@ width: 0.9rem;
 }
 
 #credit a:hover  {
-color: {color:Link Hover};
-}
-
-.modal {
-animation-duration: 0.5s;
-animation-name: animatetop;
-background: rgba(255, 255, 255, 0.5);
-display: none;
-height: 100%;
-left: 0px;
-overflow: auto;
-position: fixed;
-top: 0px;
-width: 100%;
-z-index: 999999999999999999999999999999999999;
-}
-
-.modal-content {
-background: {color:Post Background};
-border-right: 1px solid {color:Border};
-top: 0px;
-height: 100%;
-overflow-y: scroll;
-overflow-x: hidden;
-position: fixed;
-width: 300px;
-}
- 
-.close-modal {
-background: {color:Post Background};
-border-left: 1px solid {color:Border};
-border-bottom: 1px solid {color:Border};
-display: inline-block;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-margin-left: 265.27px;
-margin-top: 0px;
-padding: 10px;
-position: fixed;
-text-rendering: auto;
-width: 0.9rem;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
- 
-.close-modal:hover {
-color: {color:Link Hover};
-}
- 
-@keyframes animatetop {
- 
-from {
-opacity: 0;
-}
- 
-to {
-top: 0px;
-opacity: 1;
-}
- 
-}
-
-.popup-wrapper {
-margin: 20px;
-}
-
-.section-title {
-font-family: '{select:Heading Font}', sans-serif;
-font-size: {select:Heading Font Size};
-font-weight: bold;
-text-transform: lowercase;
-margin-top: 15px;
-}
-
-.section-title:first-of-type {
-margin-top: 0px;
-}
-
-.more-links {
-margin-top: 15px;
-font-size: {select:Uppercase Font Size};
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-text-transform: uppercase;
-}
-
-.more-links a {
-margin-bottom: 15px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.more-links a:last-of-type {
-margin-bottom: 0px;
-}
-
-.links-icon {
-background: {color:Main Color};
-color: {color:Post Background};
-font-size: 0.9rem;
-border-radius: 100px;
-margin-right: 10px;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 5px;
-width: 0.9rem;
-}
-
-.short-updates {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-margin-top: 15px;
-padding-bottom: 0px;
-text-transform: lowercase;
-}
-
-.short-updates li {
-font-size: {select:Uppercase Font Size};
-list-style-type: none;
-margin-bottom: 10px;
-text-transform: uppercase;
-}
-
-.short-updates li:last-of-type {
-margin-bottom: 0px;
-}
-
-.updates {
-border-bottom: 1px solid {color:Border};
-align-items: center;
-display: flex;
-padding-top: 15px;
-padding-bottom: 15px;
-}
- 
-.updates-icon {
-background: {color:Main Color};
-color: white;
-padding: 7px;
-margin-right: 10px;
-font-size: 0.9rem;
-}
- 
-.uduc-wrapper {
-margin-left: 10px;
-}
- 
-.updates-date {
-font-weight: bold;
-text-transform: lowercase;
-}
- 
-.updates-content {
-text-transform: lowercase;
-}
-
-.sideblogs {
-margin-top: 15px;
-}
-
-.sideblog {
-align-items: center;
-border-bottom: 1px solid {color:Border};
-display: flex;
-margin-top: 10px;
-margin-bottom: 10px;
-padding-bottom: 10px;
-}
-
-.sideblog:firs-of-top {
-margin-top: 0px;
-}
-
-.sideblog:last-of-type {
-border-bottom: none;
-margin-bottom: 0px;
-padding-bottom: 0px;
-}
-
-.sideblog-image {
-height: 50px;
-width: 50px;
-}
-
-.sideblog-image img {
-border-radius: 5px;
-height: 50px;
-width: 50px;
-}
-
-.sideblog-name {
-font-size: {select:Uppercase Font Size};
-font-weight: bold;
-margin-left: 20px;
-text-transform: uppercase;
-}
-
-.sideblog-name a {
-border: none;
-padding: 0px;
-}
-
-.sideblog-name a:hover {
-background: none;
 color: {color:Link Hover};
 }
 
@@ -1712,7 +1735,7 @@ color: {color:Link Hover};
 <a class="tags-title"><span>Show Tags</span></a>
 <div class="tags">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1723,7 +1746,7 @@ color: {color:Link Hover};
 <div class="vsdt-wrapper">
 <div class="tags-alternate">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1778,7 +1801,7 @@ color: {color:Link Hover};
 
 <!-- Start of Theme Credit -->
 
-<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/credits"><i class="ph-bold ph-clover"></i></a></div>
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ph-bold ph-clover"></i></a></div>
 
 <!-- End of Theme Credit -->  
 
