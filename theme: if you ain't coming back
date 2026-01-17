@@ -182,25 +182,6 @@ albumLabel: "",
 });
 </script>
 
-<!-- Unnest Captions Script -->
-
-<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-
-<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
-
-<script> 
-$(function(){  $('.entries').unnest({
-yourCaption: ".text, .caption", 
-wrapName: ".tumblr_parent", 
-newCaptionUsername: false, 
-originalPostCaptionUsername: false,
-tumblrAvatars: true, 
-tumblrAvatarClass: ".tumblr_avatar", 
-usernameColon: false
-}); 
-}); 
-</script>
-
 <!-- Hide & Show Script -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -238,6 +219,25 @@ $('#top').click(function() {
 $('body,html').animate({scrollTop:0},600);
 });
 });
+</script>
+
+<!-- Unnest Captions Script -->
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+
+<script> 
+$(function(){  $('.entries').unnest({
+yourCaption: ".text, .caption", 
+wrapName: ".tumblr_parent", 
+newCaptionUsername: false, 
+originalPostCaptionUsername: false,
+tumblrAvatars: true, 
+tumblrAvatarClass: ".tumblr_avatar", 
+usernameColon: false
+}); 
+}); 
 </script>
 
 <!--
