@@ -1084,11 +1084,12 @@ margin-top: 10px;
 
 .vsdt-wrapper span {
 display: inline-block;
-margin: 3px;
+margin: 5px;
 }
 
 .tags-title {
 text-transform: lowercase;
+margin: -5px;
 }
 
 .tags-title a {
