@@ -77,6 +77,9 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <!-- Body Font Sizes -->
 
+<meta name="select:Heading Font Size" content="1.2rem" title="1.2rem"/>
+<meta name="select:Heading Font Size" content="1rem" title="1rem"/>
+
 <meta name="select:Body Font Size" content="0.9rem" title="0.9rem"/>
 <meta name="select:Body Font Size" content="1rem" title="1rem"/>
 <meta name="select:Body Font Size" content="0.8rem" title="0.8rem"/>
@@ -124,6 +127,10 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Frank+Ruhl+Libre:wght@300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -175,6 +182,45 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.show-tags-content').hide();
+$('.show-tags').click(function() {
+$(this).closest('.entries').find('.show-tags-content').slideToggle(500);
+});
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+$(".show-about").click(function(){
+$(".about-content").slideToggle("slow");
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -194,19 +240,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -250,42 +300,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
-
-<script> 
-$(document).ready(function(){
-$(".show-tags").click(function(){
-$(".show-tags-content").slideToggle("slow");
-});
-});
-</script>
-
-<script> 
-$(document).ready(function(){
-$(".show-about").click(function(){
-$(".about-content").slideToggle("slow");
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
 });
 </script>
 
@@ -974,7 +988,7 @@ width: 30px;
  
 a.tumblr_blog {
 font-weight: bold;
-margin-top: calc((30px - {select:Uppercase Font Size}) / 3);
+margin-top: calc((30px - {select:Uppercase Font Size}) / 4);
 display: inline-block;
 position: absolute;
 margin-left: 10px;
@@ -1008,6 +1022,9 @@ padding: 20px;
 
 .message p {
 margin-block-start: 0em;
+}
+
+.message p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -1330,6 +1347,16 @@ display: inline-block;
 text-transform: lowercase;
 }
 
+.tags, .tags-alternate {
+span a {
+background: linear-gradient(to right, {color:Main Color} 0 0);
+background-repeat: no-repeat;
+background-size: 100% 1px;
+line-height: 150%;
+background-position: bottom;
+}
+}
+
 .permalink-info {
 border-top: 1px solid {color:Border};
 margin: -20px;
@@ -1420,26 +1447,23 @@ padding: 10px;
 text-transform: uppercase;
 }
 
-.npt-wrapper {
-display: flex;
-align-items: center;
-flex-direction: row;
-flex-wrap: wrap;
-}
-
 #top {
-background: {color:Main Color};
+background: {color:Post Background};
 border: 1px solid {color:Border};
-color: {color:Post Background};
-display: flex;
-align-items: center;
-justify-content: center;
-height: 10px;
+bottom: 66px; 
+border-radius: 5px;
+color: {color:Link};
+display: none;
 font-size: 0.9rem;
-width: 10px;
 font-variant: normal;
+height: 0.9rem;
+line-height: 1;
 padding: 10px;
-margin-left: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
 -webkit-transition: all 0.5s ease;
 -moz-transition: all 0.5s ease;
 -o-transition: all 0.5s ease;
@@ -1827,7 +1851,7 @@ Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id mass
 <div class="vsdt-wrapper">
 <div class="tags">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1839,7 +1863,7 @@ Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id mass
 <div class="vsdt-wrapper">
 <div class="tags-alternate">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1879,14 +1903,11 @@ Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id mass
 <div class="pages">
 {CurrentPage} / {TotalPages} Pages
 </div>
-<div class="navigation">
-<div class="npt-wrapper">
 {block:NextPage}
+<div class="navigation">
 <a href="{NextPage}">Next<i class="ri-contract-right-line" style="margin-left: 5px;"></i></a> 
+</div>
 {/block:NextPage}
-{block:IfBackToTop}<div id="top"><i class="ri-skip-up-line"></i></div>{/block:IfBackToTop}
-</div>
-</div>
 </div>
 {/block:Pagination}
 
@@ -1895,6 +1916,8 @@ Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id mass
 </div>
 
 </div>
+
+{block:IfBackToTop}<div id="top"><i class="ri-skip-up-line"></i></div>{/block:IfBackToTop}
 
 <!-- Start of Theme Credit -->
 
