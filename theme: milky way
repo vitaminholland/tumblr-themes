@@ -982,6 +982,8 @@ width: 100%;
 .pslr-a, .pslr-b {
 font-size: {select:Uppercase Font Size};
 text-transform: uppercase;
+display: flex;
+align-items: center;
 }
 
 .pinned-post {
