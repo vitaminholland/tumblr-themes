@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'At My Worst' by vitaminholland -->
+<!-- 
+
+theme: at my worst
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
  
@@ -126,7 +136,7 @@ font-weight: 700;
 }
 
 h1 {
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -139,14 +149,14 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
 
 #container {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 margin-bottom: 70px;
 margin-left: auto;
 margin-right: auto;
@@ -161,7 +171,7 @@ width: 772px;
 
 .iitn-wrapper {
 align-items: center;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: flex;
 margin-bottom: 20px;
 padding-bottom: 20px;
@@ -170,7 +180,7 @@ width: 100%;
  
 .icon-image {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 height: 70px;
 padding: 10px;
@@ -199,14 +209,18 @@ font-style: italic;
 font-size: 0.9rem;
 margin: -5px;
 text-transform: uppercase;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
 }
  
 .tab a {
 background: #000000;
 border-radius: 6px;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 color: #ffffff;
-display: inline-block;
+display: flex;
 margin: 5px;
 padding: 10px;
 }
@@ -284,7 +298,7 @@ width: 0.9rem;
 .section-title {
 align-items: center;
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 display: flex;
 height: 34.39px;
@@ -296,14 +310,14 @@ width: 100%;
 
 .information-a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 padding: 20px;
 width: 334px;
 }
 
 .about-info li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 font-size: 0.9rem;
 list-style-type: none;
 padding-bottom: 20px;
@@ -322,7 +336,7 @@ padding-bottom: 0px;
 
 .information-b {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 margin-left: 20px;
 padding: 20px;
@@ -331,7 +345,7 @@ width: 334px;
 
 .skill {
 align-items: center;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: flex;
 margin-bottom: 20px;
 padding-bottom: 20px;
@@ -369,7 +383,7 @@ margin-top: 20px;
 
 .about {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 padding: 20px;
 width: 400px;
@@ -377,7 +391,7 @@ width: 400px;
 
 .sideblogs {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 margin-left: 20px;
 padding: 20px;
@@ -428,7 +442,7 @@ width: 792px;
 
 .item {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 margin: 10px;
 padding: 20px;
@@ -474,7 +488,7 @@ z-index: 1;
  
 .item-link a {
 background: #000000;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #ffffff;
 display: inline-block;
@@ -497,7 +511,7 @@ opacity: 1;
 
 .item-description {
 background: #ffffff;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 height: 201px;
@@ -1019,7 +1033,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <!-- Start of Theme Credit -->
  
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
  
 <!-- End of Theme Credit --> 
 
