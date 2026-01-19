@@ -452,9 +452,6 @@ margin-right: 10px;
 
 .main-links {
 display: flex;
-align-items: center;
-flex-wrap: wrap;
-flex-direction: row;
 }
 
 .main-links a {
@@ -639,12 +636,16 @@ text-transform: uppercase;
 font-size: {select:Uppercase Font Size};
 margin: -5px;
 text-transform: uppercase;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .links a {
 border: 1px solid {color:Border};
 border-radius: 5px;
-display: inline-block;
+display: flex;
 margin: 5px;
 padding: 10px;
 }
