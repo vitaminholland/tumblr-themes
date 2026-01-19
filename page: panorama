@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Panorama' by vitaminholland -->
+<!-- 
+
+page: panorama
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -139,7 +149,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -165,7 +175,7 @@ width: 250px;
 
 #sidebar {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 width: 250px;
 }
@@ -182,7 +192,7 @@ width: 250px;
 }
 
 .border {
-background: #eeeeee;
+background: #d2d2d2;
 height: 1px;
 position: absolute;
 width: 250px;
@@ -209,7 +219,7 @@ text-transform: uppercase;
 }
 
 .links a {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: block;
 padding: 20px;
 }
@@ -225,7 +235,7 @@ width: 600px;
 
 #navigation {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 margin-bottom: 50px;
 padding: 20px;
@@ -237,7 +247,7 @@ margin-bottom: 0px!important;
 }
 
 .nint-wrapper {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 align-items: center;
 display: flex;
 margin: -20px;
@@ -247,7 +257,7 @@ width: 100%;
 }
 
 .navigation-icon {
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 height: 60px;
 margin-right: 20px;
@@ -273,7 +283,7 @@ width: 600px;
 }
 
 .tags li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 font-size: 0.9rem;
 list-style-type: none;
 margin: 10px;
@@ -308,7 +318,7 @@ color: #cfcfcf;
 
 .dropdown-content {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 display: none;
 position: absolute;
 width: 177.97px;
@@ -316,7 +326,7 @@ z-index: 1;
 }
 
 .dropdown-content a {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: block;
 padding: 10px;
 }
@@ -335,7 +345,7 @@ display: block;
 
 #top {
 background: #000000;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 bottom: 66px; 
 color: #ffffff;
@@ -373,7 +383,7 @@ width: auto;
 
 #credit a {
 background: #000000;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 color: #ffffff;
 display: inline-block;
@@ -397,7 +407,7 @@ opacity: 1;
 
 .credit-name {
 background: #333333;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 bottom: 20px;
 color: #ffffff;
@@ -597,7 +607,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
 
 <!-- End of Theme Credit --> 
 
