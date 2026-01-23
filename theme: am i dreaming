@@ -12,12 +12,18 @@
 
 <link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
 
-<!-- Am I Dreaming by vitaminholland -->
+<!-- 
+
+theme: am i dreaming
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Metadata -->
 
 <meta name="color:Background" content="#f8f8f8"/>
-<meta name="color:Border" content="#eeeeee"/>
+<meta name="color:Border" content="#d2d2d2"/>
 <meta name="color:Chat Even Background" content="#f0f0f0"/>
 <meta name="color:Gradient Color One" content="#bf2a30"/>
 <meta name="color:Gradient Color Two" content="#f7c188"/>
@@ -89,6 +95,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -139,6 +149,37 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -158,19 +199,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -214,35 +259,6 @@ photo: '.pxu-photo'
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
 });
 </script>
 
@@ -369,7 +385,7 @@ font-weight: 700;
 
 h1 {
 font-family: '{select:Heading Font}', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -667,6 +683,10 @@ margin-left: 20px;
 .more-links {
 font-size: {select:Uppercase Font Size};
 margin: -5px;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
 text-transform: uppercase;
 }
 
@@ -675,7 +695,7 @@ background: {color:Main Color};
 border: 1px solid {color:Main Color};
 border-radius: 5px;
 color: {color:Post Background};
-display: inline-block;
+display: flex;
 margin: 5px;
 padding: 5px;
 }
@@ -870,6 +890,9 @@ padding: 20px;
 
 .message p {
 margin-block-start: 0em;
+}
+
+.message p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -955,13 +978,20 @@ height: 85px;
 width: 100%;
 }
 
+/** spotify fix by glenthemes **/
+
+iframe[src*='open.spotify.com'][src*='track'], figure[data-npf*='open.spotify.com'][data-npf*='track']{
+height: 85px!important;
+margin-bottom: 0px;
+}
+
 figure {
 display: flex;
 width: 100%;
 }
 
 figcaption.npf-audio-wrapper {
-width: {select:Post Width};
+width: 100%;
 }
 
 .npf-audio-wrapper {
@@ -1045,13 +1075,11 @@ margin-left: 10px;
 }
 
 .vsdt-wrapper {
-margin: -3px;
 margin-top: 10px;
 }
 
 .vsdt-wrapper span {
 display: inline-block;
-margin: 3px;
 }
 
 .tags-title {
@@ -1076,6 +1104,16 @@ text-transform: lowercase;
 .tags-alternate {
 display: inline-block;
 text-transform: lowercase;
+}
+
+.tags, .tags-alternate {
+span a {
+background: linear-gradient(to right, {color:Main Color} 0 0);
+background-repeat: no-repeat;
+background-size: 100% 1px;
+line-height: 150%;
+background-position: bottom;
+}
 }
 
 .permalink-info {
@@ -1526,7 +1564,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <a class="tags-title"><span>Show Tags</span></a>
 <div class="tags">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1537,7 +1575,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="vsdt-wrapper">
 <div class="tags-alternate">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1592,7 +1630,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
 
 <!-- End of Theme Credit --> 
 
