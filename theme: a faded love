@@ -232,8 +232,8 @@ photo: '.pxu-photo'
 
 <!-- Responsive Tumblr Videos Script -->
 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
- 
+<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script> 
+
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
