@@ -144,7 +144,7 @@ albumLabel: "",
 
 <!-- Hide & Show Script -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/robinpx/tumblr@master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
 
 <script>
 $(document).ready(function(){
