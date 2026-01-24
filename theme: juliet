@@ -295,7 +295,7 @@ photo: '.pxu-photo'
 
 <!-- Responsive Tumblr Videos Script -->
 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/robinpx/tumblr@master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
  
 <script>
 $(document).ready(function() {
