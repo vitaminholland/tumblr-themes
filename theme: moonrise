@@ -1176,7 +1176,7 @@ z-index: -1;
 <div class="text-wrapper">
 <div class="message-wrapper">
 <div class="message-info-wrapper">
-<div class="asker"><img src="{AskerPortraitURL-48}"/></div><div class="asker-question"><i class="fa-solid fa-envelope-circle-check"></i> {Asker} <br> sent a message:</div>
+<div class="asker"><img src="{AskerPortraitURL-48}"/></div><div class="asker-question"><i class="far fa-envelope-open"></i> {Asker} <br> sent a message:</div>
 </div>
 <div class="message">{Question}</div>
 </div>
