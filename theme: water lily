@@ -495,6 +495,7 @@ padding: 20px;
 
 .description a {
 border-bottom: 1px solid {color:Main Color};
+color: {color:Description Color};
 }
 
 .description a:hover {
