@@ -1136,7 +1136,7 @@ z-index: -1;
 
 <div class="main-links">
 <a href="/" title="Home"><i class="ph-bold ph-house"></i></a>
-{block:AskEnabled}<a href="/contact" title="Inbox"><i class="ph-bold ph-chat-text"></i></a>{/block:AskEnabled}
+{block:AskEnabled}<a href="/ask" title="Inbox"><i class="ph-bold ph-chat-text"></i></a>{/block:AskEnabled}
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit"><i class="ph-bold ph-cloud-arrow-up"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink1URL}<a href="{text:Link 1 URL}" title="{text:Link 1 Name}"><i class="ph-bold ph-airplane-tilt"></i></a>{/block:ifLink1URL}
 <a href="/archive" title="Archive"><i class="ph-bold ph-clock-clockwise"></i></a>
