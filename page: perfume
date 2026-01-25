@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Starburst' by Franchesca (extasisthemes) -->
+<!-- 
+
+page: perfume
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -75,7 +85,7 @@ display: none!important;
 
 .controls-button {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #000000;
 font-size: 0.9rem;
@@ -198,7 +208,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -214,7 +224,7 @@ width: 800px;
 .title {
 background: #c23f68;
 font-weight: bold;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 color: #ffffff;
 padding: 12px;
 margin-right: 10px;
@@ -230,7 +240,7 @@ text-transform: uppercase;
  
 .links a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 color: #000000;
 padding: 12px;
 margin-right: 10px;
@@ -252,7 +262,7 @@ width: 800px;
 
 .a-side, .b-side, .c-side {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 width: 250px;
 }
 
@@ -268,7 +278,7 @@ width: 250px;
 }
 
 .box {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 }
 
 .box:last-of-type {
@@ -276,7 +286,7 @@ border-bottom: none;
 }
 
 .box-title {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 font-weight: bold;
 font-size: 0.9rem;
 padding: 12px;
@@ -304,7 +314,7 @@ font-size: 0.9rem;
 }
 
 .info li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -320,7 +330,7 @@ padding-bottom: 0px;
 }
  
 .task li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -336,7 +346,7 @@ padding-bottom: 0px;
 }
  
 .watchlist li {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 list-style-type: none;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -374,7 +384,7 @@ text-transform: lowercase;
 
 .sideblog {
 align-items: center;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: flex;
 margin-bottom: 10px;
 padding-bottom: 10px;
@@ -419,7 +429,7 @@ color: #cfcfcf;
 
 #top {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 66px; 
 color: #000000;
@@ -456,7 +466,7 @@ width: auto;
 
 #credit a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #000000;
 display: inline-block;
@@ -479,7 +489,7 @@ opacity: 1;
 
 .credit-name {
 background: #000000;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 20px;
 color: #ffffff;
@@ -707,7 +717,7 @@ The Princess Switch Series
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="fas fa-heart"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-heart"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
