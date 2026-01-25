@@ -10,7 +10,17 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Starburst' by Franchesca (extasisthemes) -->
+<!-- 
+
+page: starburst 
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Google Fonts Script -->
  
@@ -75,7 +85,7 @@ display: none!important;
 
 .controls-button {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #000000;
 font-size: 0.9rem;
@@ -198,7 +208,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -222,7 +232,7 @@ width: 40.39px;
  
 .tab a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 color: #000000;
 display: inline-block;
 font-size: 0.9rem;
@@ -248,7 +258,7 @@ color: #ffffff;
 
 .content-wrapper {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 padding: 20px;
 margin-left: 20px;
 width: 400px;
@@ -265,7 +275,7 @@ font-size: 0.8rem;
 }
 
 .border {
-background: #eeeeee;
+background: #d2d2d2;
 height: 1px;
 margin-top: 15px;
 width: 100%;
@@ -302,7 +312,7 @@ margin-top: 15px;
 }
 
 .about-image {
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 float: left;    
 margin: 0 15px 0 0;
 padding: 3px;
@@ -325,7 +335,7 @@ margin-bottom: 0px;
 }
 
 .nt-wrapper {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 align-items: center;
 display: flex;
 padding-bottom: 15px;
@@ -361,14 +371,14 @@ text-transform: uppercase;
 }
 
 .tags a {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: inline-block;
 margin: 5px;
 }
 
 #top {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 66px; 
 color: #000000;
@@ -405,7 +415,7 @@ width: auto;
 
 #credit a {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #000000;
 display: inline-block;
@@ -428,7 +438,7 @@ opacity: 1;
 
 .credit-name {
 background: #000000;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 20px;
 color: #ffffff;
@@ -603,7 +613,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="fas fa-heart"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-heart"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
