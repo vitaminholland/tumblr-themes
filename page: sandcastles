@@ -15,14 +15,18 @@
 <!-- 
 
 page: sandcastles 
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -53,6 +57,24 @@ attribute:"title"
 $(document).ready(function(){
 $('.controls-button').click(function(){
 $('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
 });
 });
 </script>
@@ -571,6 +593,32 @@ margin-top: 25px;
 width: 100%;
 }
 
+#top {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+bottom: 66px; 
+border-radius: 5px;
+color: #000000;
+display: none;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+position: fixed;
+right: 20px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+
+#top:hover {
+color: #cfcfcf;
+}
+
 #credit {
 bottom: 20px;
 font-size: 0.9rem;
@@ -907,9 +955,11 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 </div>
 
+<div id="top"><i class="ph-bold ph-arrow-line-up"></i>
+
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
