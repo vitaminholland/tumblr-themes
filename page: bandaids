@@ -15,14 +15,18 @@
 <!-- 
 
 page: bandaids
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -651,7 +655,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/terms"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/terms"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
