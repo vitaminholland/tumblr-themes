@@ -15,8 +15,8 @@
 <!-- 
 
 theme: hear the sea
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
@@ -93,6 +93,10 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -143,6 +147,37 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.tags').hide();
+$('.tags-title').click(function() {
+$(this).closest('.entries').find('.tags').slideToggle(500);
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -162,19 +197,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -213,40 +252,11 @@ photo: '.pxu-photo'
 
 <!-- Responsive Tumblr Videos Script -->
 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/robinpx/tumblr@master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
  
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
- 
-<script>
-$(document).ready(function(){
-$(".tags").hide();
-$(".tags-title").click(function(){
-$(this).next(".tags").slideToggle('fast');
-});
-});
-</script>
-
-<!-- Scroll To Top Script -->
-
-<script type="text/javascript">
-$(function() {      
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-$('#top').fadeIn();         
-} 
-else {
-$('#top').fadeOut();      
-}
-});
-$('#top').click(function() {
-$('body,html').animate({scrollTop:0},600);
-});
 });
 </script>
 
@@ -372,7 +382,7 @@ font-weight: 700;
 
 h1 {
 font-family: '{select:Heading Font}', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -694,6 +704,9 @@ padding: 20px;
 
 .message p {
 margin-block-start: 0em;
+}
+
+.message p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -940,6 +953,16 @@ display: inline-block;
 text-transform: lowercase;
 }
 
+.tags, .tags-alternate {
+span a {
+background: linear-gradient(to right, {color:Main Color} 0 0);
+background-repeat: no-repeat;
+background-size: 100% 1px;
+line-height: 150%;
+background-position: bottom;
+}
+}
+
 .permalink-info {
 border-top: 1px solid {color:Border};
 margin: -20px;
@@ -1136,7 +1159,7 @@ z-index: -1;
 <div class="main-links">
 <a href="/" title="Home"><i class="ph-bold ph-house"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="ph-bold ph-paper-plane-tilt"></i>{/block:AskEnabled}
-{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submit><i class="ph-bold ph-cloud-arrow-up"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
+{block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit" title="Submi"><i class="ph-bold ph-cloud-arrow-up"></i></a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 <a href="/archive" title="Archive"><i class="ph-bold ph-archive"></i></a>
 </div>
 
@@ -1323,7 +1346,7 @@ z-index: -1;
 <a class="tags-title"><span>Show Tags</span></a>
 <div class="tags">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1334,7 +1357,7 @@ z-index: -1;
 <div class="vsdt-wrapper">
 <div class="tags-alternate">
 {block:Tags}
-<span style="border-bottom: 1px solid {color:Main Color};"><a href="{TagURL}">{Tag}</a></span>
+<span><a href="{TagURL}">{Tag}</a></span>
 {/block:Tags}
 </div>
 </div>
@@ -1389,7 +1412,7 @@ z-index: -1;
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
