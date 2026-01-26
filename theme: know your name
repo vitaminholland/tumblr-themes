@@ -610,6 +610,7 @@ width: 70px;
 }
 
 .more-links a {
+display: flex;
 color: white;
 margin: 5px;
 }
