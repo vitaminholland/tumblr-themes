@@ -465,9 +465,7 @@ text-transform: lowercase;
 background: rgba(255, 255, 255, 0.9);
 border-radius: 5px;
 padding: 20px;
-display: flex;
 margin-top: 20px;
-align-items: center;
 margin-left: 20px;
 width: 220px;
 }
