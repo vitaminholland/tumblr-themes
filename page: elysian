@@ -15,8 +15,8 @@
 <!-- 
 
 page: elysian
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
@@ -25,6 +25,10 @@ see credits @ tanaka-drew.tumblr.com/credits
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -198,7 +202,7 @@ font-weight: 700;
 
 h1 {
 font-family: 'Playfair Display', sans-serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -514,7 +518,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://bevvitching.tumblr.com/credits"><i class="ph-bold ph-magic-wand"></i></a><div class="credit-name">bevvitching</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ph-bold ph-magic-wand"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
