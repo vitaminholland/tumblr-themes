@@ -15,8 +15,8 @@
 <!-- 
 
 theme: ice queen
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
@@ -93,6 +93,10 @@ see credits @ tanaka-drew.tumblr.com/credits
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Styled Tooltips Script -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -143,6 +147,19 @@ albumLabel: "",
 });
 </script>
 
+<!-- Hide & Show Script -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.show-tags-content').hide();
+$('.show-tags').click(function() {
+$(this).closest('.entries').find('.show-tags-content').slideToggle(500);
+});
+});
+</script>
+
 <!-- Unnest Captions Script -->
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -162,19 +179,23 @@ usernameColon: false
 }); 
 </script>
 
-<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+<!--
+        NPF images fix v4.0 by @glenthemes [2023]
+        💌 gitlab.com/glen-npf/v4-beta
+--->
 
-<script src="//npf-images-v3.github.io/script.js"></script>
+<link href="//glen-npf.gitlab.io/v4-beta/main.css" rel="stylesheet">
 
-<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
-<style tmblr-npf>
+<script src="//glen-npf.gitlab.io/v4-beta/use.js"></script>
+<style>
 :root {
---NPF-Caption-Spacing: 1em;
---NPF-Image-Spacing: 1px;
+--NPF-Images-Spacing:1px;
+--NPF-Caption-Spacing:1em;
+--NPF-Move-1st-Photoset:"no";
+--Text-Container-Selector:".caption";
+--Text-Reblogs-Selector:".tumblr_parent";
 }
 </style>
-
-<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
 
 <!-- Inline Images Resizing Script -->
 
@@ -213,21 +234,11 @@ photo: '.pxu-photo'
 
 <!-- Responsive Tumblr Videos Script -->
 
-<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/robinpx/tumblr@master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
  
 <script>
 $(document).ready(function() {
 flexibleFrames($(".video"));  
-});
-</script>
-
-<!-- Hide & Show Script -->
-
-<script> 
-$(document).ready(function(){
-$(".show-tags").click(function(){
-$(".show-tags-content").slideToggle("slow");
-});
 });
 </script>
 
@@ -352,7 +363,7 @@ font-weight: 700;
 
 h1 {
 font-family: '{select:Heading Font}', serif;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -994,6 +1005,9 @@ text-transform: uppercase;
 
 .question p {
 margin-block-start: 0em;
+}
+
+.question p:last-of-type {
 margin-block-end: 0em;
 }
 
@@ -1783,7 +1797,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
 <!-- Start of Theme Credit -->
 
-<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
 
 <!-- End of Theme Credit --> 
 
