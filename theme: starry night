@@ -782,7 +782,7 @@ text-transform: lowercase;
 }
 
 .short-updates li {
-font-size: 0.9rem;
+font-size: {select:Uppercase Font Size};
 list-style-type: none;
 margin-bottom: 10px;
 text-transform: uppercase;
