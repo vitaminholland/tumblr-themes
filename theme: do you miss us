@@ -622,6 +622,10 @@ display: flex;
 padding-top: 15px;
 padding-bottom: 15px;
 }
+
+.updates:first-of-type {
+padding-top: 0px;
+}
  
 .updates-icon {
 width: 34.39px;
