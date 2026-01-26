@@ -14,15 +14,19 @@
 
 <!-- 
 
-page: after hours 
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+page: after hours
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
 <!-- Google Fonts Script -->
 
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
 
@@ -364,7 +368,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <!-- Start of Theme Credit -->
 
-<div id="credit"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">tanaka-drew</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-moon-stars"></i></a><div class="credit-name">ghcstfaec</div></div>
 
 <!-- End of Theme Credit --> 
 
