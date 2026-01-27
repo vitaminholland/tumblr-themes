@@ -487,6 +487,7 @@ width: 30px;
 .links a {
 color: {color:Post Background};
 margin: 5px;
+display: flex;
 }
 
 .links a:hover {
