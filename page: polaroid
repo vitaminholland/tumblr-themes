@@ -10,11 +10,21 @@
 
 <link rel="shortcut icon" href="{Favicon}">
 
-<!-- 'Polaroid' by vitaminholland -->
+<!-- 
+
+page: polaroid 
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- Styled Tooltips Script -->
  
@@ -126,7 +136,7 @@ font-weight: 700;
 }
 
 h1 {
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: bold;
 margin-block-start: 0em;
 text-transform: lowercase;
@@ -139,7 +149,7 @@ margin-block-start: 0em;
 }
  
 blockquote {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 margin: 5px;
 padding-left: 5px;
 }
@@ -162,19 +172,19 @@ width: 882px;
 
 .links {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 width: 250px;
 }
 
 .links {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 text-transform: lowercase;
 }
 
 .links a {
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #d2d2d2;
 display: block;
 padding: 20px;
 }
@@ -190,7 +200,7 @@ width: 600px;
 
 .about {
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 display: flex;
 flex-direction: row;
@@ -214,7 +224,7 @@ width: 400px;
 .itn-wrapper {
 align-items: center;
 background: #ffffff;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 5px;
 display: flex;
 margin: 20px;
@@ -257,7 +267,7 @@ text-transform: uppercase;
 }
 
 .about-left {
-border-left: 1px solid #eeeeee;
+border-left: 1px solid #d2d2d2;
 align-items: center;
 display: flex;
 flex-direction: column;
@@ -316,7 +326,7 @@ text-transform: uppercase;
 
 #top {
 background: #77aabb;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 66px; 
 color: #ffffff;
@@ -354,7 +364,7 @@ width: auto;
  
 #credit a {
 background: #77aabb;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 color: #ffffff;
 display: inline-block;
@@ -378,7 +388,7 @@ opacity: 1;
  
 .credit-name {
 background: #333333;
-border: 1px solid #eeeeee;
+border: 1px solid #d2d2d2;
 border-radius: 100px;
 bottom: 20px;
 color: #ffffff;
@@ -529,7 +539,7 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 <!-- Start of Theme Credit -->
  
-<div id="credit"><a href="https://vitaminholland.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">VIT</div></div>
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/"><i class="fas fa-feather-alt"></i></a><div class="credit-name">GHCST</div></div>
  
 <!-- End of Theme Credit --> 
 
