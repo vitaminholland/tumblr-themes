@@ -10,17 +10,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
+<!-- 
 
 page: (your) sweetheart
-designed and coded by franchesca @ tanaka-drew.tumblr.com
-see credits @ tanaka-drew.tumblr.com/credits
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
 
 -->
 
 <!-- Google Fonts Script -->
  
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+
+<!-- jQuery Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  
 <!-- Styled Tooltips Script -->
  
@@ -396,7 +400,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 <!-- Start of Theme Credit -->
 
-<div id="credit" title="tanaka-drew"><a href="https://tanaka-drew.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ph-bold ph-clover"></i></a></div>
 
 <!-- End of Theme Credit --> 
 
