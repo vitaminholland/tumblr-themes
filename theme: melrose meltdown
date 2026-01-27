@@ -524,7 +524,6 @@ flex-direction: row;
 flex-wrap: wrap;
 display: flex;
 margin-right: 20px;
-height: 35/73px;
 }
 
 .search-bar {
