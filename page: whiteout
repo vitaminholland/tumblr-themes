@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: whiteout
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #c28f8f;
+color: white;
+}
+ 
+::-moz-selection {
+background: #c28f8f;
+color: white;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#header {
+background: #c28f8f;
+height: 54px;
+display: flex;
+align-items: center;
+top: 0px;
+position: fixed;
+width: 100%;
+z-index: 1;
+}
+
+.page-title {
+font-size: 1.2rem;
+font-family: "DM Serif Display", serif;
+font-weight: bold;
+text-transform: lowercase;
+color: white;
+margin-left: 20px;
+}
+
+.links {
+display: flex;
+align-items: center;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.links a {
+display: flex;
+color: white;
+margin-right: 10px;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+#container {
+border: 1px solid #d2d2d2;
+margin-top: 124px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+background: #ffffff;
+padding: 30px;
+width: 790px;
+}
+
+.user-information {
+display: flex;
+align-items: center;
+width: 790px;
+}
+
+.icon-image {
+height: 180px;
+width: 180px;
+}
+
+.icon-image img {
+border-radius: 5px;
+height: 180px;
+width: 180px;
+}
+
+.about-info {
+margin-left: 30px;
+}
+
+.user-name {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+word-break: break-word;
+}
+
+.about-info li {
+list-style-type: none;
+display: flex;
+align-items: center;
+margin-top: 10px;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.about-info-icon {
+background: #c28f8f;
+border-radius: 5px;
+color: white;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 7px;
+margin-right: 10px;
+width: 0.9rem;
+}
+
+.about-container {
+margin-top: 30px;
+width: 790px;
+}
+
+.section-title {
+font-family: "DM Serif Display", serif;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+width: 790px;
+}
+
+.section-title-icon {
+color: #c28f8f;
+margin-right: 10px;
+font-size: 1.2rem;
+}
+
+.about-wrapper {
+align-items: stretch;
+display: flex;
+margin-top: 15px;
+}
+
+.about {
+margin-right: 15px;   
+width: calc(100% - 50.21px);
+}
+
+.about-border {
+background: #d2d2d2;
+width: 1px;
+height: auto;
+margin-left: 15px;
+}
+
+.about-icon {
+color: #c28f8f;
+font-size: 1.2rem;
+margin-left: 15px;
+}
+
+.experiences-container {
+margin-top: 30px;
+width: 790px;
+}
+
+.paragraph-wrapper {
+margin-top: 15px;
+}
+
+.paragraph-title-wrapper {
+margin: -5px;
+align-items: center;
+display: flex;
+}
+
+.paragraph-icon {
+background: #c28f8f;
+border-radius: 5px;
+color: white;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+margin: 5px;
+width: 0.9rem;
+}
+
+.paragraph-title {
+font-family: "DM Serif Display", serif;
+font-size: 1rem;
+font-weight: bold;
+margin: 5px;
+display: flex;
+text-transform: lowercase;
+word-break: break-word;
+}
+
+.paragraph {
+border-left: 1px solid #d2d2d2;
+margin-top: 17.2px;
+margin-left: 17.2px;
+padding-left: 17.2px;
+}
+
+.connections-container {
+margin-top: 30px;
+width: 790px;
+}
+
+.connection-wrapper {
+display: flex;
+align-items: flex-start;
+margin-top: 15px;
+}
+
+.connection-image-wrapper {
+display: flex;
+height: 80px;
+width: 80px;
+}
+
+.connection-image {
+height: 80px;
+width: 80px;
+}
+
+.connection-image img {
+border-radius: 5px;
+height: 80px;
+width: 80px;
+}
+
+.connection-icon {
+background: #c28f8f;
+border-radius: 100px;
+color: white;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+margin-top: 55.61px;
+margin-left: -25.39px;
+width: 0.9rem;
+}
+
+.connection-information {
+margin-left: 30px;
+}
+
+.gallery-container {
+border-top: 1px solid #d2d2d2;
+margin-top: 30px;
+padding-top: 30px;
+width: 790px;
+}
+
+.gallery-wrapper {
+margin: -5px;
+margin-top: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 800px;
+}
+
+.gallery-image {
+height: 150px;
+margin: 5px;
+width: 150px;
+}
+
+.gallery-image img {
+height: 150px;
+width: 150px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<!-- Start of Header -->
+
+<div id="header">
+
+<div class="page-title">whiteout</div>
+
+<i class="ri-separator" style="margin-left: 10px;margin-right: 10px;color: white;"></i>
+
+<div class="links">
+<a href="/">Index</a>
+<a href="/ask">Message</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/archive">History</a>
+</div>
+
+</div>
+
+<!-- End of Header -->
+
+<div id="container">
+
+<!--- Start of User Information -->
+
+<div class="user-information">
+
+<div class="icon-image"><img src="https://i.imgur.com/u5vX4Q3.png"/></div>
+
+<div class="about-info">
+
+<div class="user-name">name of blogger</div>
+
+<li><div class="about-info-icon"><i class="ri-calendar-todo-line"></i></div>Age & Birthday</li>
+<li><div class="about-info-icon"><i class="ri-user-location-line"></i></div>Location</li>
+<li><div class="about-info-icon"><i class="ri-mail-send-line"></i></div>E-mail Address</li>
+
+</div>
+
+</div>
+
+<!-- End of User Information -->
+
+<!-- Start of About Container -->
+
+<div class="about-container">
+
+<div class="section-title"><div class="section-title-icon"><i class="ri-information-2-line"></i></div>about the blogger</s></div>
+
+<!-- Start of About -->
+
+<div class="about-wrapper">
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper at elit id egestas. Nullam fringilla vitae nibh a malesuada. Suspendisse potenti. Sed pulvinar mauris vel sodales dapibus. Duis non luctus nibh, mattis placerat sem. Sed at egestas eros. Proin at arcu augue. In quis est sit amet erat maximus consequat ut in odio.
+<br><br>
+Curabitur aliquam felis ex, et malesuada massa pellentesque nec. Phasellus sollicitudin, ipsum vel aliquam facilisis, odio neque ultrices nisi, quis ultrices felis eros id tellus. Nullam at malesuada urna. Mauris efficitur vel quam eu efficitur. Sed ut luctus lorem. Aenean ornare risus nec justo euismod consectetur. Cras efficitur dolor nec pretium scelerisque.
+</div>
+
+<div class="about-border"></div>
+
+<div class="about-icon"><i class="ri-double-quotes-r"></i></div>
+
+</div>
+
+<!-- End of About -->
+
+</div>
+
+<!-- End of About Container -->
+
+<!-- Start of Experiences Container -->
+
+<div class="experiences-container">
+
+<div class="section-title"><div class="section-title-icon"><i class="ri-quill-pen-line"></i></div>thinks i'm good at</s></div>
+
+<!-- Start of Paragraph -->
+
+<div class="paragraph-wrapper">
+
+<div class="paragraph-title-wrapper"><div class="paragraph-icon"><i class="ri-drinks-line"></i></div><div class="paragraph-title">on the edge of a deadly razor-sharp blade</div></div>
+
+<div class="paragraph">
+Sed egestas varius eros et dignissim. Duis nec ornare eros, nec gravida justo. Nullam ut lectus nec magna vehicula consequat sit amet eu metus. Praesent lobortis sem sed maximus maximus. Maecenas vulputate libero in laoreet malesuada. Phasellus et augue magna. Ut eget dolor quis dolor accumsan lobortis. Sed vel tincidunt nulla.
+</div>
+
+</div>
+
+<!-- End of Paragraph -->
+
+<!-- Start of Paragraph -->
+
+<div class="paragraph-wrapper">
+
+<div class="paragraph-title-wrapper"><div class="paragraph-icon"><i class="ri-bowl-fill"></i></div><div class="paragraph-title">chase us, we're miles above like a satellite</div></div>
+
+<div class="paragraph">
+Nullam blandit, mauris vel faucibus condimentum, sem leo viverra enim, a sagittis diam eros at elit. Suspendisse hendrerit interdum arcu, vitae iaculis mauris pharetra vitae. Phasellus condimentum aliquam purus vel venenatis. Suspendisse in feugiat sem. Nunc est felis, vulputate in sem in, blandit posuere sapien. Vestibulum ut lobortis sem.
+</div>
+
+</div>
+
+<!-- End of Paragraph -->
+
+<!-- Start of Paragraph -->
+
+<div class="paragraph-wrapper">
+
+<div class="paragraph-title-wrapper"><div class="paragraph-icon"><i class="ri-knife-line"></i></div><div class="paragraph-title">we're dancing like we're in a movie</div></div>
+
+<div class="paragraph">
+Suspendisse at nibh id velit rutrum fringilla sed sit amet mi. Nunc dapibus erat vitae tortor porttitor, eu imperdiet quam aliquam. Phasellus ut lacus non elit tempor vehicula ut in augue. Suspendisse viverra lacus in pretium auctor. Ut vehicula iaculis condimentum. Curabitur sit amet metus suscipit, bibendum orci non, pharetra elit.
+</div>
+
+</div>
+
+<!-- End of Paragraph -->
+
+</div>
+
+<!-- End of Experiences Container -->
+
+<!-- Start of Connections Container -->
+
+<div class="connections-container">
+
+<div class="section-title"><div class="section-title-icon"><i class="ri-group-2-line"></i></div>people i either love <s>or hate</s></div>
+
+<!-- Start of Connection -->
+
+<div class="connection-wrapper">
+
+<!-- Start of Connection Image -->
+
+<div class="connection-image-wrapper">
+
+<div class="connection-image"><img src="https://i.imgur.com/N063arC.png"/></div>
+
+<div class="connection-icon"><i class="ri-heart-line"></i></div>
+
+</div>
+
+<!-- End of Connection Image -->
+
+<!-- Start of Connection Information -->
+
+<div class="connection-information">
+
+<b>Name of Connection</b> <i class="ri-separator"></i> why is the user and this person connected
+<blockquote>
+The las thing they said. Aenean ut varius sapien, condimentum dapibus nunc. Nullam eu gravida felis, in sollicitudin lectus. Aliquam ut ante auctor, elementum lacus aliquet, bibendum nibh.
+</blockquote>
+<p></p>
+Vivamus facilisis odio magna, non aliquam tortor euismod nec. Sed gravida, nisi vel efficitur bibendum, arcu elit molestie leo, et pretium magna justo at erat. Integer ut pretium urna, pharetra sollicitudin leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus in arcu vitae lorem rutrum maximus.
+</p>
+</div>
+
+<!-- End of Connection Information -->
+
+</div>
+
+<!-- End of Connection -->
+
+<!-- Start of Connection -->
+
+<div class="connection-wrapper">
+
+<!-- Start of Connection Image -->
+
+<div class="connection-image-wrapper">
+
+<div class="connection-image"><img src="https://i.imgur.com/fXKKtIX.png"/></div>
+
+<div class="connection-icon"><i class="ri-dislike-line"></i></div>
+
+</div>
+
+<!-- End of Connection Image -->
+
+<!-- Start of Connection Information -->
+
+<div class="connection-information">
+
+<b>Name of Connection</b> <i class="ri-separator"></i> why is the user and this person connected
+<blockquote>
+The las thing they said. Aenean ut varius sapien, condimentum dapibus nunc. Nullam eu gravida felis, in sollicitudin lectus. Aliquam ut ante auctor, elementum lacus aliquet, bibendum nibh.
+</blockquote>
+<p></p>
+Vivamus facilisis odio magna, non aliquam tortor euismod nec. Sed gravida, nisi vel efficitur bibendum, arcu elit molestie leo, et pretium magna justo at erat. Integer ut pretium urna, pharetra sollicitudin leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus in arcu vitae lorem rutrum maximus.
+</div>
+
+<!-- End of Connection Information -->
+
+</div>
+
+<!-- End of Connection -->
+
+<!-- Start of Connection -->
+
+<div class="connection-wrapper">
+
+<!-- Start of Connection Image -->
+
+<div class="connection-image-wrapper">
+
+<div class="connection-image"><img src="https://i.imgur.com/RKESncA.png"/></div>
+
+<div class="connection-icon"><i class="ri-heart-line"></i></div>
+
+</div>
+
+<!-- End of Connection Image -->
+
+<!-- Start of Connection Information -->
+
+<div class="connection-information">
+
+<b>Name of Connection</b> <i class="ri-separator"></i> why is the user and this person connected
+<blockquote>
+The las thing they said. Aenean ut varius sapien, condimentum dapibus nunc. Nullam eu gravida felis, in sollicitudin lectus. Aliquam ut ante auctor, elementum lacus aliquet, bibendum nibh.
+</blockquote>
+<p></p>
+Vivamus facilisis odio magna, non aliquam tortor euismod nec. Sed gravida, nisi vel efficitur bibendum, arcu elit molestie leo, et pretium magna justo at erat. Integer ut pretium urna, pharetra sollicitudin leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus in arcu vitae lorem rutrum maximus.
+</div>
+
+<!-- End of Connection Information -->
+
+</div>
+
+<!-- End of Connection -->
+
+</div>
+
+<!-- End of Connections Container -->
+
+<!-- Start of Gallery Container -->
+
+<div class="gallery-container">
+
+<div class="section-title"><div class="section-title-icon"><i class="ri-gallery-fill"></i></div>view the gallery</div>
+
+<!-- Start of Gallery -->
+
+<div class="gallery-wrapper">
+
+<div class="gallery-image"><img src="https://i.imgur.com/VsWLaDD.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/JQwQirQ.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/JR2FUET.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/xOUoLqn.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/vNxPeap.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/tAE8vXE.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/qVpQSiq.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/cC0QMjC.png"/></div>
+
+<div class="gallery-image"><img src="https://i.imgur.com/mcvZiIG.png"/></div>
+
+</div>
+
+<!-- End of Gallery -->
+
+</div>
+
+<!-- End of Gallery Container -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ri-code-s-slash-line"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
