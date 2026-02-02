@@ -624,6 +624,245 @@ font-weight: bold;
 margin-top: 15px;
 }
 
+.modal {
+animation-duration: 0.5s;
+animation-name: animatetop;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+height: 100%;
+left: 0px;
+overflow: auto;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 999999999999999999999999999999999999;
+}
+
+.modal-content {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 70px;
+margin-top: 70px;
+width: 550px;
+}
+
+.ltc-wrapper {
+height: 35.73px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 550px;
+}
+
+.links-title {
+background: {color:Main Color};
+color: white;
+border: 1px solid {color:Border};
+display: inline-block;
+font-size: {select:Uppercase Font Size};
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 20px;
+padding: 10px;
+text-transform: uppercase;
+text-rendering: auto;
+}
+ 
+.close-modal {
+background: {color:Main Color};
+color: white;
+border: 1px solid {color:Border};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+margin-right: 20px;
+z-index: 1;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+.close-modal:hover {
+color: {color:Link Hover};
+}
+ 
+@keyframes animatetop {
+ 
+from {
+opacity: 0;
+}
+ 
+to {
+top: 0px;
+opacity: 1;
+}
+ 
+}
+
+.explore-wrapper {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+padding: 20px;
+width: 508.5px;
+margin-top: -17.865px;
+}
+
+.aq-wrapper {
+align-items: stretch;
+margin-top: 28.9325px;
+display: flex;
+}
+
+.aqi-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+width: 24.4px;
+z-index: 1;
+}
+
+.aq-icon {
+background: {color:Main Color};
+border-radius: 5px;
+color: {color:Post Background};
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.about-quote {
+background: {color:Pre Background};
+margin-left: -12.2px;
+padding: 20px;
+padding-left: 32.2px;
+width: calc(100% - 40px);
+}
+
+.aqa-wrapper {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 15px;
+width: 100%;
+}
+
+.aq-author {
+background: {color:Main Color};
+border-radius: 5px;
+padding: 5px;
+color: white;
+}
+
+.search-bar {
+align-items: center;
+background: #f0f0f0;
+border-radius: 5px;
+display: flex;
+height: 34.39px;
+margin-top: 15px;
+width: 100%;
+}
+
+.sis-wrapper {
+align-items: center;
+display: flex;
+width: 100%;
+}
+
+.search-icon {
+background: {color:Main Color};
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+color: {color:Post Background};
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.search-wrapper {
+width: 100%;
+}
+ 
+form {
+display: flex;
+margin-top: 0em;
+margin-block-end: 0em;
+}
+ 
+input {
+appearance: textfield;
+background: transparent;
+border-image: initial;
+border-radius: 0px;
+border-style: none;
+border-width: 0px;
+color: {color:Text};
+cursor: text;
+font-family: '{select:Body Font}', sans-serif;
+font-size: {select:Uppercase Font Size};
+letter-spacing: 1px;
+margin: 0px;
+outline: 0;
+padding: 0px;
+text-align: left;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-transform: uppercase;
+width: 100%;
+-webkit-rtl-ordering: logical;
+-webkit-writing-mode: horizontal-tb !important;
+}
+
+.more-links {
+font-size: {select:Uppercase Font Size};
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+margin: -5px;
+margin-top: 15px;
+text-transform: uppercase;
+}
+
+.more-links a {
+background: {color:Post Background};
+border: 1px solid {color:Border};
+border-radius: 5px;
+padding: 5px 10px 5px 10px;
+display: flex;
+align-items: center;
+margin: 5px;
+}
+
+.ml-icon {
+font-size: 0.9rem;
+color: {color:Main Color};
+margin-right: 10px;
+}
+
 #container {
 margin-left: 301px;
 width: calc(100% - 301px);
@@ -1288,245 +1527,6 @@ width: 0.9rem;
 
 #credit a:hover  {
 color: {color:Link Hover};
-}
-
-.modal {
-animation-duration: 0.5s;
-animation-name: animatetop;
-background: rgba(255, 255, 255, 0.5);
-display: none;
-height: 100%;
-left: 0px;
-overflow: auto;
-position: fixed;
-top: 0px;
-width: 100%;
-z-index: 999999999999999999999999999999999999;
-}
-
-.modal-content {
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 70px;
-margin-top: 70px;
-width: 550px;
-}
-
-.ltc-wrapper {
-height: 35.73px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 550px;
-}
-
-.links-title {
-background: {color:Main Color};
-color: white;
-border: 1px solid {color:Border};
-display: inline-block;
-font-size: {select:Uppercase Font Size};
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-margin-left: 20px;
-padding: 10px;
-text-transform: uppercase;
-text-rendering: auto;
-}
- 
-.close-modal {
-background: {color:Main Color};
-color: white;
-border: 1px solid {color:Border};
-display: inline-block;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-padding: 10px;
-text-rendering: auto;
-width: 0.9rem;
-margin-right: 20px;
-z-index: 1;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-}
- 
-.close-modal:hover {
-color: {color:Link Hover};
-}
- 
-@keyframes animatetop {
- 
-from {
-opacity: 0;
-}
- 
-to {
-top: 0px;
-opacity: 1;
-}
- 
-}
-
-.explore-wrapper {
-background: {color:Post Background};
-border: 1px solid {color:Border};
-padding: 20px;
-width: 508.5px;
-margin-top: -17.865px;
-}
-
-.aq-wrapper {
-align-items: stretch;
-margin-top: 28.9325px;
-display: flex;
-}
-
-.aqi-wrapper {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-flex-wrap: wrap;
-width: 24.4px;
-z-index: 1;
-}
-
-.aq-icon {
-background: {color:Main Color};
-border-radius: 5px;
-color: {color:Post Background};
-display: flex;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-margin-left: auto;
-margin-right: auto;
-padding: 5px;
-text-rendering: auto;
-width: 0.9rem;
-}
-
-.about-quote {
-background: {color:Pre Background};
-margin-left: -12.2px;
-padding: 20px;
-padding-left: 32.2px;
-width: calc(100% - 40px);
-}
-
-.aqa-wrapper {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-flex-direction: row;
-flex-wrap: wrap;
-margin-top: 15px;
-width: 100%;
-}
-
-.aq-author {
-background: {color:Main Color};
-border-radius: 5px;
-padding: 5px;
-color: white;
-}
-
-.search-bar {
-align-items: center;
-background: #f0f0f0;
-border-radius: 5px;
-display: flex;
-height: 34.39px;
-margin-top: 15px;
-width: 100%;
-}
-
-.sis-wrapper {
-align-items: center;
-display: flex;
-width: 100%;
-}
-
-.search-icon {
-background: {color:Main Color};
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
-color: {color:Post Background};
-display: inline-block;
-font-size: 0.9rem;
-font-variant: normal;
-height: 0.9rem;
-line-height: 1;
-margin-right: 10px;
-padding: 10px;
-text-rendering: auto;
-width: 0.9rem;
-}
-
-.search-wrapper {
-width: 100%;
-}
- 
-form {
-display: flex;
-margin-top: 0em;
-margin-block-end: 0em;
-}
- 
-input {
-appearance: textfield;
-background: transparent;
-border-image: initial;
-border-radius: 0px;
-border-style: none;
-border-width: 0px;
-color: {color:Text};
-cursor: text;
-font-family: '{select:Body Font}', sans-serif;
-font-size: {select:Uppercase Font Size};
-letter-spacing: 1px;
-margin: 0px;
-outline: 0;
-padding: 0px;
-text-align: left;
-text-indent: 0px;
-text-rendering: auto;
-text-shadow: none;
-text-transform: uppercase;
-width: 100%;
--webkit-rtl-ordering: logical;
--webkit-writing-mode: horizontal-tb !important;
-}
-
-.more-links {
-font-size: {select:Uppercase Font Size};
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-margin: -5px;
-margin-top: 15px;
-text-transform: uppercase;
-}
-
-.more-links a {
-background: {color:Post Background};
-border: 1px solid {color:Border};
-border-radius: 5px;
-padding: 5px 10px 5px 10px;
-display: flex;
-align-items: center;
-margin: 5px;
-}
-
-.ml-icon {
-font-size: 0.9rem;
-color: {color:Main Color};
-margin-right: 10px;
 }
 
 {CustomCSS}
