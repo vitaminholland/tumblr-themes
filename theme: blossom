@@ -835,6 +835,9 @@ text-transform: uppercase;
 width: 100%;
 -webkit-rtl-ordering: logical;
 -webkit-writing-mode: horizontal-tb !important;
+text-overflow: ellipsis;
+text-transform: uppercase;
+white-space: nowrap;
 }
 
 .more-links {
