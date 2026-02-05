@@ -33,7 +33,7 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#121212"/>
 <meta name="color:Pre Background" content="#303030"/>
-<meta name="color:Scrollbar" content="#000000"/>
+<meta name="color:Scrollbar" content="#b9938c"/>
 <meta name="color:Text" content="#ffffff"/>
 <meta name="color:Tooltip Background" content="#b9938c"/>
 <meta name="color:Tooltip Color" content="#ffffff"/>
@@ -537,6 +537,9 @@ background: {color:Post Background};
 border: 1px solid {color:Border};
 padding: 15px;
 margin-left: 15px;
+max-height: 350px;
+overflow-y: scroll;
+overflow-x: hidden;
 width: 200px;
 }
 
