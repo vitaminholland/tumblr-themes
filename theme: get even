@@ -1305,8 +1305,6 @@ color: {color:Link Hover};
 
 <div class="blog-title">{text:Title}</div>
 
-<div class="sidebar-border"></div>
-
 {block:Description}<div class="description">{Description}</div>{/block:Description}
 
 <div class="aq-wrapper">
