@@ -548,7 +548,7 @@ text-transform: uppercase;
 .blog-title:first-letter {
 font-family: '{select:Heading Font}', serif;
 color: {color:Main Color};
-text-transform: lowercase;
+font-style: italic;
 }
 
 .blog-subtitle {
