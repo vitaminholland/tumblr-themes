@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: no way back
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #b1786f;
+color: white;
+}
+ 
+::-moz-selection {
+background: #b1786f;
+color: white;
+}
+
+body {
+background: #f0f0f0;
+background-attachment: fixed;
+background-image: url('https://i.imgur.com/aD2oyjw.png');
+background-repeat: repeat;
+background-size: 25px;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#container {
+background: #ffffff;
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+border: 1px solid #d2d2d2;
+width: 650px;
+}
+
+.header-image {
+border-bottom: 1px solid #d2d2d2;
+height: 250px;
+width: 650px;
+}
+
+.header-image img {
+height: 250px;
+width: 650px;
+}
+
+.inner-wrapper {
+padding: 20px;
+}
+
+.icon-image {
+height: 100px;
+margin-top: -70px;
+width: 100%;
+}
+
+.icon-image img {
+border-radius: 100px;
+height: 100px;
+width: 100px;
+}
+
+.page-title {
+margin-top: 15px;
+width: 100%;
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.page-title:first-letter {
+color: #b1786f;
+font-style: italic;
+}
+
+.links {
+text-transform: uppercase;
+font-size: 0.9rem;
+margin: -5px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.links a {
+margin: 5px;
+}
+
+.dots {
+display: flex;
+align-items: center;
+font-size: 0.9rem;
+margin-top: 15px;
+}
+
+.aq-wrapper {
+display: flex;
+align-items: stretch;
+margin-top: 15px;
+}
+
+.aqi-wrapper {
+background: #f0f0f0;
+width: 40px;
+}
+
+.aq-icon {
+background: #b1786f;
+border-radius: 5px;
+color: #ffffff;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.about-quote {
+background: #f0f0f0;
+margin-left: 15px;
+padding: 20px;
+width: calc(100% - 95px);
+}
+
+.aqa-wrapper {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 15px;
+width: 100%;
+}
+
+.aq-author {
+background: #b1786f;
+border-radius: 5px;
+padding: 5px;
+color: white;
+}
+
+.about-wrapper {
+display: flex;
+align-items: center;
+margin-top: 15px;
+}
+
+.about-icon {
+background: #b1786f;
+border-radius: 5px;
+color: #ffffff;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+z-index: 1;
+}
+
+.about {
+background: #f0f0f0;
+margin-left: -12.2px;
+padding: 20px;
+padding-left: 22.2px;
+width: calc(100% - 42.2px);
+}
+
+.about-title {
+font-family: "DM Serif Display", serif;
+font-size: 1rem;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.about-info {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+margin-top: 15px;
+width: calc(100% + 10px);
+}
+ 
+.about-info li {
+border-bottom: 1px solid #d2d2d2;
+list-style-type: none;
+margin: 5px;
+text-transform: uppercase;
+padding-bottom: 10px;
+font-size: 0.9rem;
+width: calc(50% - 10px);
+}
+
+.about-info li i {
+color: #b1786f;
+}
+
+.about-content {
+margin-top: 15px;
+}
+
+.socials-wrapper {
+margin-top: 15px;
+}
+
+.socials-title {
+font-family: "DM Serif Display", serif;
+font-size: 1rem;
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.socials {
+margin: -5px;
+margin-top: 15px;
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.socials a {
+background: #ffffff;
+display: flex;
+align-items: center;
+border: 1px solid #d2d2d2;
+padding: 5px 10px 5px 10px;
+border-radius: 5px;
+margin: 5px;
+}
+
+.footer {
+background: #b1786f;
+color: #ffffff;
+border-top: 1px solid #d2d2d2;
+text-align: center;
+text-transform: uppercase;
+font-size: 0.9rem;
+padding: 20px;
+width: calc(100% - 40px);
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header-image"><img src="https://i.imgur.com/lCY4KF3.png"/></div>
+
+<div class="inner-wrapper">
+
+<div class="icon-image"><img src="https://i.imgur.com/CrpY0vN.png"/></div>
+
+<div class="page-title">no way back</div>
+
+<div class="links">
+<a href="/">Go Back</a>
+<a href="/ask">Inbox</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+<div class="dots"><i class="ri-checkbox-blank-circle-line" style="color: #aa8e96;margin-right: 5px;"></i><i class="ri-checkbox-blank-circle-line" style="color: #1b1f1c;margin-right: 5px;"></i><i class="ri-checkbox-blank-circle-line" style="color: #a14e3c;"></i></div>
+
+<!-- Start of About Quote -->
+
+<div class="aq-wrapper">
+
+<div class="aqi-wrapper">
+
+<div class="aq-icon"><i class="ri-double-quotes-l"></i></div>
+
+</div>
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi.
+<div class="aqa-wrapper">
+<div class="aq-author">
+as said by someone
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- End of About Quote -->
+
+<!-- Start of About -->
+
+<div class="about-wrapper">
+
+<div class="about-icon"><i class="ri-information-2-line"></i></div>
+
+<div class="about">
+
+<div class="about-title">*insert something witty here*</div>
+
+<!-- Start of About Info -->
+
+<div class="about-info">
+<li><i class="ri-user-5-line" style="margin-right: 10px;"></i>Nickname</li>
+<li><i class="ri-cake-line" style="margin-right: 10px;"></i>Age</li>
+<li><i class="ri-question-line" style="margin-right: 10px;"></i>Pronouns</li>
+<li><i class="ri-earth-line" style="margin-right: 10px;"></i>Location</li>
+</div>
+
+<!-- End of About Info -->
+
+<!-- Start of About -->
+
+<div class="about-content">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+<br><br>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+<br><br>
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
+</div>
+
+<!-- End of About -->
+
+<!-- Start of Socials Wrapper -->
+
+<div class="socials-wrapper">
+
+<div class="socials-title">Find Me Elswhere</div>
+
+<div class="socials">
+<a href="/"><i class="ri-facebook-circle-line" style="margin-right: 10px;"></i>Facebook</a>
+<a href="/"><i class="ri-instagram-line" style="margin-right: 10px;"></i>Instagram</a>
+<a href="/"><i class="ri-bluesky-line" style="margin-right: 10px;"></i>Bluesky</a>
+</div>
+
+</div>
+
+<!-- End of Socials Wrapper -->
+
+</div>
+
+</div>
+
+<!-- End of About -->
+
+</div>
+
+<div class="footer">
+Now, brace yourself. I've chosen you as my destiny. Whatever the outcome may be.
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ri-code-s-slash-line"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
