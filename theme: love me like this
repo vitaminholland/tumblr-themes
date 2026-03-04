@@ -1302,7 +1302,9 @@ padding: 10px;
 }
 
 .ss-wrapper {
+{block:IndexPage}
 margin-bottom: 50px;
+{/block:IndexPage}
 }
 
 .tab {
