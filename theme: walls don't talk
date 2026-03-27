@@ -565,21 +565,27 @@ padding-bottom: 0px;
 border-bottom: none;
 }
 
+.section-title {
+font-weight: bold;
+text-transform: lowercase;
+}
+
 .main-info {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;
+margin: -5px;
+margin-top: 15px;
+justify-content: flex-start;
 font-size: {select:Uppercase Font Size};
 text-transform: uppercase;
 }
 
 .main-info li {
 list-style-type: none;
-margin-left: 5px;
+margin: 5px;
 display: flex;
 align-items: center;
-margin-right: 5px;
 }
 
 .mi-icon {
@@ -1404,7 +1410,7 @@ color: {color:Link Hover};
 
 <div class="box">
 
-<h1>a quick about me</h1>
+<div class="section-title">know more about @{Name}</div>
 
 <div class="main-info">
 <li><div class="mi-icon"><i class="ph-bold ph-signature"></i></div>Name/Nicknames</li>
@@ -1425,7 +1431,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pu
 <div class="box">
 
 <div class="more-links">
-<h1>more links to explore</h1>
+<div class="section-title">&more links</div>
 <a href="/"><div class="ml-icon"><i class="ph-bold ph-dots-three-outline"></i></div>extra link one</a>
 <a href="/"><div class="ml-icon"><i class="ph-bold ph-dots-three-outline"></i></div>extra link two</a>
 <a href="/"><div class="ml-icon"><i class="ph-bold ph-dots-three-outline"></i></div>extra link three</a>
