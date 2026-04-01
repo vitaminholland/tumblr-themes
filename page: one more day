@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: one more day
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #b8907f;
+color: white;
+}
+ 
+::-moz-selection {
+background: #b8907f;
+color: white;
+}
+
+body {
+background: #ffffff;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#container {
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+width: 700px;
+}
+
+.icon-image {
+height: 70px;
+width: 70px;
+}
+
+.icon-image img {
+border-radius: 100px;
+height: 70px;
+width: 70px;
+}
+
+.header {
+margin-top: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+border-bottom: 1px solid #d2d2d2;
+}
+
+.aiat-wrapper {
+display: flex;
+align-items: center;
+}
+
+.about-icon {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-bottom: none;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+margin-right: 10px;
+width: 0.9rem;
+}
+
+.about-title {
+font-weight: bold;
+text-transform: lowercase;
+font-family: "Azeret Mono", monospace;
+}
+
+.links {
+display: flex;
+align-items: center;
+text-transform: lowercase;
+margin-left: 10px;
+}
+
+.links a {
+margin-left: 10px;
+}
+
+.about-wrapper {
+border: 1px solid #d2d2d2;
+height: 450px;
+display: flex;
+margin-top: 20px;
+width: 698px;
+}
+
+.about-image {
+background-image: url("https://i.imgur.com/FNSPmQw.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: flex-end;
+height: 450px;
+width: 300px;
+}
+
+.about-quote {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+padding: 20px;
+margin: 20px;
+width: 218px;
+}
+
+.aqa-wrapper {
+background: #58918e;
+margin-top: 15px;
+border-radius: 5px;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.aq-icon {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+text-align: left;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.aq-author {
+text-align: right;
+font-weight: bold;
+text-transform: lowercase;
+color: white;
+}
+
+.about-content {
+overflow-y: scroll;
+overflow-x: hidden;
+height: 410px;
+padding: 20px;
+width: 358px;
+}
+
+.navigation-wrapper {
+margin-top: 20px;
+width: 100%;
+}
+
+.navigation-title {
+font-weight: bold;
+text-transform: lowercase;
+font-family: "Azeret Mono", monospace;
+width: 100%;
+}
+
+.navigation-links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -5px;
+text-transform: lowercase;
+margin-top: 15px;
+}
+
+.navigation-links a {
+background: #413b4a;
+border-radius: 5px;
+list-style-type: none;
+display: flex;
+align-items: center;
+color: white;
+margin: 5px;
+padding: 5px 10px 5px 10px;
+font-family: "Azeret Mono", monospace;
+}
+
+.navigation-links a:hover {
+color: #cfcfcf;
+}
+
+.socials-wrapper {
+width: 100%;
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+
+.socials-title {
+font-weight: bold;
+text-transform: lowercase;
+font-family: "Azeret Mono", monospace;
+}
+
+.socials {
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 10px;
+}
+
+.socials a {
+background: #c6b7be;
+color: white;
+display: inline-block;
+border-radius: 5px;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 5px;
+margin-right: 10px;
+width: 0.9rem;
+}
+
+.socials a:hover {
+color: #cfcfcf;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- Start of Header -->
+
+<div class="icon-image"><img src="https://i.imgur.com/ld4Au9p.png"/></div>
+
+<div class="header">
+
+<div class="aiat-wrapper">
+
+<div class="about-icon"><i class="ri-double-quotes-l"></i></div>
+
+<div class="about-title">one more day</div>
+    
+</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Inbox</a>
+<a href="/">Kink One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+<!-- End of Header -->
+
+<!-- Start of About Wrapper -->
+
+<div class="about-wrapper">
+
+<!-- Start of About Image & Info -->
+
+<div class="about-image">
+
+<!-- Start of About Quote -->
+
+<div class="about-quote">
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+<div class="aqa-wrapper">
+
+<div class="aq-icon"><i class="ri-double-quotes-l"></i></div>
+
+<div class="aq-author">as said by someone</div>
+
+</div>
+
+</div>
+    
+<!-- End of About Quote -->
+
+</div>
+
+<!-- End of About Image & Info -->
+
+<!-- Start of About Content -->
+
+<div class="about-content">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia ante id tellus iaculis, eu ornare nisl facilisis. Vestibulum lectus mauris, malesuada eu elementum dignissim, placerat ut sapien. Nam in mi ut metus malesuada euismod sed ultrices lorem. Vivamus eros leo, convallis id fermentum et, dapibus et sem. Ut vulputate, augue sed posuere vulputate, eros sem blandit ex, eget mattis purus purus at dolor. Vivamus ac sem rutrum, convallis sem vel, luctus mauris. Donec mollis, est sed tempor varius, ex ipsum dapibus justo, a ultricies erat nisi in mi. Sed at iaculis felis. In quis ex ac lorem rutrum blandit. Integer sagittis dictum sapien, quis venenatis libero elementum nec.
+<br><br>
+Vivamus a nisl commodo, lobortis elit eu, imperdiet diam. Fusce blandit id quam vel porta. Donec ac luctus lorem, ac suscipit libero. Mauris id commodo lorem, sit amet viverra diam. Vestibulum sit amet scelerisque leo. Cras vehicula, justo at venenatis fringilla, lectus nisl egestas dui, a condimentum elit felis in odio. Morbi congue a dolor vel dapibus. In mattis est vitae tincidunt scelerisque. Nam quis magna tincidunt, tempor nisi ut, ultricies justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<br><br>
+Maecenas quis urna faucibus, tincidunt velit quis, dapibus enim. Ut ullamcorper libero ac urna malesuada tristique. Cras venenatis mi a placerat vestibulum. Donec viverra dolor et nunc posuere vulputate. Cras commodo lacinia metus eget viverra. Cras vehicula ipsum vel odio luctus aliquam. Aenean nunc nunc, lacinia vitae sodales vitae, commodo nec est.
+</div>
+
+<!-- End of About Content -->
+
+</div>
+
+<!-- End of About Wrapper -->
+
+<!-- Start of Navigation -->
+
+<div class="navigation-wrapper">
+
+<div class="navigation-title">&more links</div>
+
+<div class="navigation-links">
+<a href="/">i'll be cryin' for a while</a>
+<a href="/">what already saddens me</a>
+<a href="/">twenty-four hours in the tub</a>
+<a href="/">you're my fantasy</a>
+<a href="/">mood up there all day like cloud nine</a>
+<a href="/">a morning together with you</a>
+<a href="/">just stay right here next to me</a>
+</div>
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Socials -->
+
+<div class="socials-wrapper">
+
+<div class="socials-title">Elsewhere</div>
+
+<div class="socials">
+<a href="/" title="Facebook"><i class="ri-facebook-box-line"></i></a>
+<a href="/" title="BlueSky"><i class="ri-bluesky-line"></i></a>
+<a href="/" title="Instagram"><i class="ri-instagram-fill"></i></a>
+<a href="/" title="Discord"><i class="ri-discord-line"></i></a>
+<a href="/" title="Weibo"><i class="ri-weibo-line"></i></a>
+</div>
+
+</div>
+
+<!-- End of Socials -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ri-code-s-slash-line"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
