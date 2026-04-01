@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: bon voyage
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #000000;
+color: white;
+}
+ 
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+
+h1 {
+font-family: "DM Serif Display", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+margin-top: 70px;
+margin-bottom: 70px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+width: 550px;
+}
+
+.header-image {
+background-image: url("https://i.imgur.com/SukO86E.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 550px;
+}
+
+.header {
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+.about-title {
+font-weight: bold;
+text-transform: lowercase;
+font-family: "Azeret Mono", monospace;
+}
+
+.links {
+display: flex;
+align-items: center;
+text-transform: lowercase;
+margin-left: 10px;
+}
+
+.links a {
+margin-left: 10px;
+}
+
+.about-wrapper {
+display: flex;
+align-items: flex-start;
+margin-top: 20px;
+}
+
+.about-sidebar {
+width: 200px;
+}
+
+.about-image {
+height: 200px;
+width: 200px;
+}
+
+.about-image img {
+height: 200px;
+width: 200px;
+}
+
+.about-info {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+padding: 20px;
+margin-top: 20px;
+width: 158px;
+}
+
+.about-info li {
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: right;
+font-size: 0.9rem;
+text-transform: uppercase;
+margin-bottom: 10px;
+border-bottom: 1px solid #d2d2d2;
+padding-bottom: 10px;
+}
+
+.about-info li:last-of-type {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.ai-icon {
+background: #0a96ab;
+border-radius: 5px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+text-align: left;
+height: 0.9rem;
+line-height: 1;
+margin-right: 10px;
+padding: 5px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.about {
+border-left: 1px solid #d2d2d2;
+width: 330px;
+margin-left: 10px;
+padding-left: 10px;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="header-image"></div>
+
+<div class="header">
+
+<div class="about-title">bon voyage</div>
+
+<div class="links">
+<a href="/">Home</a>
+<a href="/ask">Inbox</a>
+<a href="/">Kink One</a>
+<a href="/">Link Two</a>
+<a href="/archive">Archive</a>
+</div>
+
+</div>
+
+<div class="about-wrapper">
+
+<div class="about-sidebar">
+
+<div class="about-image"><img src="https://i.imgur.com/W217pTj.png"/></div>
+
+<!-- Start of About Info Section -->
+
+<div class="about-info">
+<li><div class="ai-icon"><i class="ri-cake-line"></i></div>Birthday</li>
+<li><div class="ai-icon"><i class="ri-map-pin-5-line"></i></div>City, Country</li>
+<li><div class="ai-icon"><i class="ri-bubble-chart-line"></i></div>User Status</li>
+</div>
+
+<!-- End of About Info Section -->
+
+</div>
+
+<div class="about">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut lacus et nulla fermentum lobortis eget non nisl. Nullam sed fermentum nibh. Vivamus scelerisque consectetur nulla vitae tempus. Quisque nec mauris felis. Maecenas hendrerit elementum lacus. Nunc vel viverra est. Curabitur quis semper justo. Phasellus porta egestas augue a vestibulum. Maecenas dapibus vel massa ac fermentum. Vivamus tempor magna sed dolor vehicula, sit amet ultricies metus pellentesque. Ut commodo faucibus lobortis. Proin eget bibendum purus.
+<br><br>
+Cras in lacus nec turpis gravida ultricies. Duis sed mollis velit, vitae finibus libero. Praesent faucibus faucibus neque. Nulla aliquet justo libero, ut viverra ipsum blandit interdum. Aenean eu nibh sapien. Phasellus sodales augue vitae quam convallis sodales. Praesent facilisis feugiat sem, vel blandit nibh mattis nec. Donec lobortis ante ac semper volutpat. Suspendisse potenti. Nullam tempus felis sed sapien mattis, sit amet gravida dui tempor.
+<br><br>
+Mauris pellentesque eleifend tellus non vestibulum. Phasellus aliquam varius leo. Etiam risus erat, sollicitudin id massa at, tristique pharetra ex. Quisque pretium ipsum mi, ornare consequat tellus tristique et. Phasellus et pulvinar lectus, consectetur egestas nulla. Integer condimentum et mauris ut commodo. Cras quis imperdiet purus, quis tincidunt felis. Quisque dui orci, maximus quis tempus sit amet, blandit eget elit. Duis imperdiet magna dolor, id fringilla lectus condimentum at. Fusce eleifend sodales laoreet.
+</div>
+
+</div>
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit"><a href="https://ghcstfaec.tumblr.com/credits"><i class="ri-code-s-slash-line"></i></a><div class="credit-name">ghcstfaec</div></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+</html>
