@@ -1,31 +1,9 @@
-Hello, thank you so much for dropping by my GitHub. Here, you will find the codes of ALL of my active themes.
-
-Here are my Terms of Use in using my themes:
-
-By using my themes, you agree to the following:
-
-✖️ What you can’t do:
-
-<blockquote>
-✨ alter, move or delete the credit from the theme or page that you’re using.
-✨ copy my designs or use my code as a base for your own works. redistribute my works and claim it as yours.
-✨ edit the theme to the point where it’s unrecognizable.
-✨ mix my themes or page together and make a version of it.
-</blockquote>
-
-☑️ What you can do:
-
-<blockquote>
-✨ customize the theme or page that you’re using to your heart’s content.
-✨ ask questions especially when it comes to bugs that you encounter.
-✨ look at my codes if you want to learn how a feature was coded as long as you don’t copy code by code.
-</blockquote>
-
-Thank you for reading. If you want to say thank you, you can tip me here: https://ko-fi.com/extasisthemes
-
-P.S. I also have :
-
-<blockquote>
-✨ patreon: https://www.patreon.com/cw/themesbydrew
-✨ payhip storefront: https://payhip.com/vitaminholland
-<blockquote>
+<b>BY USING MY LAYOUTS, YOU AGREE TO THE FOLLOWING:</b>
+<ul>
+<li>Reblog if using any of what I made.</li>
+<li>Under no circumstances can you move or delete the credit link found on the bottom right of the page that leads back to my blog.</li>
+<li>Don’t copy my designs.</li>
+<li>You can customize my themes but editing to an extreme point is not allowed.</li>
+<li>Mixing my layouts is not allowed as well.</li>
+<li>Let me know if you found a bug (aka something does not work).</li>
+</ul>
