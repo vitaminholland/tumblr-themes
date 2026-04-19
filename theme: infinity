@@ -551,7 +551,7 @@ background: {color:Post Background};
 border: 1px solid {color:Border};
 align-items: center;
 display: flex;
-height: 98px;
+height: 99px;
 margin-left: 20px;
 width: 178px;
 }
