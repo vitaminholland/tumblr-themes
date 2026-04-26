@@ -751,6 +751,7 @@ width: 0.9rem;
 font-size: {select:Uppercase Font Size};
 text-transform: uppercase;
 color: white;
+text-align: right;
 }
 
 .short-updates {
