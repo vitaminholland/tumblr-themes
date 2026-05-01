@@ -113,10 +113,6 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <meta name="if:Bold Color" content="1"/>
 
-<meta name="select:Post Width" content="500px" title="500px"/>
-<meta name="select:Post Width" content="450px" title="450px"/>
-<meta name="select:Post Width" content="540px" title="540px"/>
-
 <meta name="if:Submit Link" content="1"/>
 
 <meta name="if:Hide Tags" content="0"/>
