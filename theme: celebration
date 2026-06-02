@@ -1638,7 +1638,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin veli
 
 <div class="main-links">
 <a href="/" title="Home"><i class="ri-home-4-line"></i></a>
-{block:AskEnabled}<a href="/contact" title="Ask @{Name}"><i class="ri-mail-add-line"></i></a>{/block:AskEnabled}
+{block:AskEnabled}<a href="/ask" title="Ask @{Name}"><i class="ri-mail-add-line"></i></a>{/block:AskEnabled}
 <a href="/archive" title="Archive"><i class="ri-calendar-todo-line"></i></a>
 </div>
 
