@@ -608,7 +608,7 @@ margin-bottom: 70px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 70px;
-width: calc({text:Post Width} + 22px);
+width: calc({text:Post Width} + 2px);
 {block:IndexPage}
 width: 944px;
 {/block:IndexPage}
