@@ -1595,8 +1595,6 @@ color: {color:Link Hover};
 <div class="main-links">
 <a href="/" title="Home"><i class="ri-home-4-line"></i></a>
 {block:AskEnabled}<a href="/ask" title="Ask"><i class="ri-mail-unread-line"></i></a>{/block:AskEnabled}
-{block:ifLink1URL}<a href="{text:Link 1 URL}" title="{text:Link 1 Name}"><i class="ph-bold ph-rabbit"></i></a>{/block:ifLink1URL}
-{block:ifLink2URL}<a href="{text:Link 2 URL}" title="{text:Link 2 Name}"><i class="ph-bold ph-planet"></i></a>{/block:ifLink2URL}
 <a href="/archive" title="Archive"><i class="ph-bold ph-archive"></i></a>
 </div>
     
