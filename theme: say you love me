@@ -635,7 +635,6 @@ background: #ffffff;
 border: 1px solid {color:Border};
 border-radius: 5px;
 display: flex;
-margin-top: 10px;
 width: 100%;
 }
 
@@ -1963,7 +1962,7 @@ color: {color:Link Hover};
 <div class="box">
 
 <div class="about-quote">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed.
 </div>
 
 <div class="aqa-wrapper">
