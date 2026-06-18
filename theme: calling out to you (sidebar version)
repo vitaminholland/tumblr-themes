@@ -1646,7 +1646,7 @@ color: {color:Link Hover};
  
 <div class="modal-content">
  
-<div class="close-modal close_modal"><i class="ri-folder-close-line"></i></div>
+<div class="close-modal close_modal" title="Close This Tab"><i class="ri-folder-close-line"></i></div>
 
 <div class="modal-wrapper">
 
