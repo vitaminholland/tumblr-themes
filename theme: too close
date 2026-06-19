@@ -1636,7 +1636,7 @@ color: {color:Link Hover};
 
 </div>
 
-{block:IfBackToTop}<div id="top"><i class="ri-skip-up-line"></i></div>{/block:IfBackToTop}
+{block:IfBackToTop}<div id="top" title="Back To Top"><i class="ri-skip-up-line"></i></div>{/block:IfBackToTop}
 
 <!-- Start of Theme Credit -->
 
