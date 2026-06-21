@@ -30,13 +30,13 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="color:Link" content="#000000"/>
 <meta name="color:Link Hover" content="#cfcfcf"/>
 <meta name="color:Like" content="#ec6363"/>
-<meta name="color:Main Color" content="#733D56"/>
+<meta name="color:Main Color" content="#D996A2"/>
 <meta name="color:Pin" content="#31a49d"/>
 <meta name="color:Post Background" content="#ffffff"/>
 <meta name="color:Pre Background" content="#f0f0f0"/>
 <meta name="color:Scrollbar" content="#000000"/>
 <meta name="color:Text" content="#555555"/>
-<meta name="color:Tooltip Background" content="#BF3636"/>
+<meta name="color:Tooltip Background" content="#D9BBA0"/>
 <meta name="color:Tooltip Color" content="#ffffff"/>
 <meta name="color:Bold Text" content="#4169E1"/>
 <meta name="color:Underline Text" content="#d81159"/>
@@ -89,7 +89,7 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 
 <!-- Default Features -->
 
-<meta name="image:Icon Image" content="https://i.imgur.com/pFwgpme.png"/>
+<meta name="image:Icon Image" content="https://i.imgur.com/DEgfAsy.png"/>
 
 <meta name="text:Title" content="fantasy"/>
 <meta name="text:Subtitle" content="close your eyes, tell me what you see "/>
