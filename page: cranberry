@@ -471,9 +471,9 @@ z-index: -1;
 
 <div class="links">
 <a href="/ask">Ask</a>
-<a href="/">Link</a>
-<a href="/">Link</a>
-<a href="/">Link</a>
+<a href="/">Link One</a>
+<a href="/">Link Two</a>
+<a href="/">Link Three</a>
 <a href="/archive">Archive</a>
 </div>
     
