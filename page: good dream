@@ -234,9 +234,9 @@ width: 350px;
 }
 
 #about-content {
-height: 510px;
-width: 440px;
-padding: 20px;
+height: 500px;
+width: 430px;
+padding: 25px;
 overflow-y: scroll;
 overflow-x: hidden;
 }
