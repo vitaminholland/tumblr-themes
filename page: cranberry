@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: cranberry
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title],div[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #000000;
+color: white;
+}
+ 
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+#s-m-t-tooltip {
+background: #BF793B;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Be Vietnam Pro", sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+a b {
+color: #555555;
+}
+
+b {
+color: #4169E1;
+font-weight: 700;
+}
+
+i {
+font-style: italic;
+}
+
+u {
+text-decoration-line: underline;
+text-decoration-style: wavy;
+text-decoration-color: #d81159;
+text-decoration-thickness: 2px;
+}
+
+h1 {
+font-family: "Inria", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+height: 550px;
+width: 750px;
+top: calc(50% - 276px);
+left: calc(50% - 376px);
+position: fixed;
+display: flex;
+}
+
+#sidebar {
+background: #000000;
+border-right: 1px solid #d2d2d2;
+height: 550px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+width: 80px;
+}
+
+.home-icon {
+background: #A66382;
+height: 80px;
+width: 80px;
+}
+
+.home-icon a {
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 80px;
+width: 80px;
+}
+
+.home-icon a:hover {
+color: #cfcfcf;
+}
+
+.ptl-wrapper {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+white-space: nowrap;
+-webkit-writing-mode: vertical-rl;
+writing-mode: vertical-rl;
+margin-top: 15px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 0.9rem;
+}
+
+.page-title {
+color: #ffffff;
+text-transform: lowercase;
+font-size: 0.9rem;
+font-weight: bold;
+}
+
+.links {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: lowercase;
+}
+
+.links a {
+color: #ffffff;
+margin-top: 10px;
+}
+
+.links a:hover {
+color: #cfcfcf;
+}
+
+#about-container {
+height: 510px;
+width: 670px;
+padding: 20px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.about-quote {
+width: 100%;
+}
+
+.aqa-wrapper {
+display: flex;
+align-items: center;
+}
+
+.aq-icon {
+background: #A66382;
+border-radius: 100px;
+color: white;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+.aq-author {
+margin-left: 10px;
+font-size: 0.9rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.actual-quote {
+font-family: "Inria", serif;
+text-transform: lowercase;
+margin-top: 15px;
+font-style: italic;
+}
+
+.ad-wrapper {
+margin: -5px;
+margin-top: 15px;
+width: 630px;
+}
+
+.about-detail {
+border-bottom: 1px solid #d2d2d2;
+padding-bottom: 10px;
+margin: 5px;
+max-width: 320px;
+}
+
+.detail-title {
+display: flex;
+align-items: center;
+flex-direction: row;
+font-size: 0.9rem;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.dt-icon {
+background: #A66382;
+border-radius: 100px;
+color: #ffffff;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin: 0px;
+margin-right: 10px;
+padding: 10px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.detail {
+margin-top: 10px;
+text-transform: lowercase;
+}
+
+.gallery {
+display: flex;
+margin-top: 15px;
+width: 630px;
+}
+
+.image-one {
+height: 380px;
+width: 380px;
+}
+
+.image-one img {
+border-radius: 5px;
+height: 380px;
+width: 380px;
+}
+
+.itit-wrapper {
+margin-left: 15px;
+width: 235px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.image-two {
+height: 182.5px;
+margin-bottom: 15px;
+width: 235px;
+}
+
+.image-two img {
+border-radius: 5px;
+height: 182.5px;
+width: 235px;
+object-fit: cover; 
+}
+
+.image-three {
+height: 182.5px;
+width: 235px;
+}
+
+.image-three img {
+border-radius: 5px;
+height: 182.5px;
+width: 235px;
+object-fit: cover; 
+}
+
+.about {
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- Start of Home Link, Title and Links -->
+
+<div id="sidebar">
+
+<div class="home-icon"><a href="/" title="Go Back Home"><i class="ri-home-4-line"></i></a></div>
+
+<div class="ptl-wrapper">
+
+<div class="page-title">cranberry</div>
+
+<div class="links">
+<a href="/ask">Ask</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/">Link</a>
+<a href="/archive">Archive</a>
+</div>
+    
+</div>
+    
+</div>
+
+<!-- End of Home Link, Title and Links -->
+
+<!-- Start of About Content -->
+
+<div id="about-container">
+
+<!-- Start of About Quote -->
+
+<div class="about-quote">
+
+<div class="aqa-wrapper">
+
+<div class="aq-icon"><i class="ph-bold ph-quotes"></i></div>
+
+<div class="aq-author">as said by someone</div>
+
+</div>
+
+<div class="actual-quote">
+Ut et sem ut ligula viverra faucibus. Donec facilisis ipsum ut vulputate vulputate. Curabitur porta scelerisque est, a ultricies est elementum sed. In egestas interdum accumsan. Pellentesque scelerisque fringilla justo, in consectetur est tincidunt non. Integer aliquet non lacus a mattis. In et fringilla nisi, quis auctor purus. In quis leo purus. Curabitur malesuada mi ut suscipit rutrum. 
+</div>
+    
+</div>
+
+<!-- End of About Quote -->
+
+<!-- Start of User Details -->
+
+<div class="ad-wrapper">
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-signature"></i></div>Name</div>
+
+<div class="detail">Name of Blogger</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-cake"></i></div>Age</div>
+
+<div class="detail">Current Age</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-calendar-heart"></i></div>Birthday</div>
+
+<div class="detail">Date of Birth</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-seal-question"></i></div>Pronouns</div>
+
+<div class="detail">what pronouns do you use</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-globe-hemisphere-east"></i></div>Location</div>
+
+<div class="detail">Where Are You From</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-thumbs-up"></i></div>Likes</div>
+
+<div class="detail">list your likes or the things that makes you happy</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+<!-- Start of About Detail -->
+
+<div class="about-detail">
+
+<div class="detail-title"><div class="dt-icon"><i class="ph-bold ph-thumbs-down"></i></div>Dislikes</div>
+
+<div class="detail">what are the things that annoys you</div>
+
+</div>
+
+<!-- End of About Detail -->
+
+</div>
+
+<!-- End of User Details -->
+
+<!-- Start of Gallery -->
+
+<div class="gallery">
+
+<div class="image-one"><img src="https://i.imgur.com/k5z6Kij.png"/></div>
+
+<div class="itit-wrapper">
+
+<div class="image-two"><img src="https://i.imgur.com/8GHDd2m.png"/></div>
+
+<div class="image-three"><img src="https://i.imgur.com/darhCOH.png"/></div>
+    
+</div>
+    
+</div>
+
+<!-- End of Gallery -->
+
+<!-- Start of About -->
+
+<div class="about">
+Phasellus nisl nulla, mollis non auctor non, consectetur eget lorem. In hac habitasse platea dictumst. Sed ultrices sit amet dolor eu sodales. Sed porttitor sapien velit, sed ultrices elit rutrum mollis. Phasellus non ex vitae felis faucibus cursus. Duis a nisi congue, sodales nisi non, accumsan nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin lobortis erat ac tristique. Nulla arcu purus, fringilla eget ullamcorper id, auctor dictum nulla. Sed id consequat metus. Mauris faucibus nisl hendrerit, tristique eros non, auctor nulla. Duis est turpis, congue in orci vel, sollicitudin ultrices dui. Mauris fermentum, tellus eu venenatis imperdiet, orci sem dapibus ex, a egestas nisi urna vitae velit.
+<br><br>
+Aenean ex purus, gravida egestas augue nec, luctus volutpat massa. Praesent porttitor porta tortor pharetra suscipit. Nam ultricies varius facilisis. Fusce vel sodales lacus, sit amet iaculis nisi. Nullam sagittis lobortis est, vitae semper nisi laoreet sed. Aenean sed fermentum magna, pretium dapibus odio. Fusce quam nisi, pretium sed ullamcorper et, feugiat vel ex. Phasellus pulvinar volutpat est euismod maximus. Cras tortor purus, pretium eu sodales sit amet, eleifend ultricies turpis. Nulla efficitur in augue quis molestie. Fusce quis consequat orci, et vestibulum tortor. Nunc id arcu sit amet mauris mollis congue. Proin congue hendrerit lorem nec vulputate. Nam ac dui et quam tincidunt aliquam. Nunc volutpat justo a est consectetur, sit amet placerat magna euismod.
+</div>
+
+<!-- End of About -->
+
+</div>
+
+<!-- End of About Content -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ri-moon-clear-line"></i></a></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//griddery.github.io/grid.js"></script>
+
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".about-detail",
+columns: 2
+})
+})
+</script>
+
+</html>
