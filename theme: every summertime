@@ -103,6 +103,8 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="text:Link 2 Name" content="Link Two"/>
 <meta name="text:Link 3 URL" content="/"/>
 <meta name="text:Link 3 Name" content="Link Three"/>
+<meta name="text:Link 4 URL" content="/"/>
+<meta name="text:Link 4 Name" content="Link Four"/>
 
 <meta name="text:Post Width" content="540px"/>
 
@@ -1393,7 +1395,7 @@ color: {color:Link Hover};
 {block:SubmissionsEnabled}{block:ifSubmitLink}<a href="/submit">Submit</a>{/block:ifSubmitLink}{/block:SubmissionsEnabled}
 {block:ifLink2URL}<a href="{text:Link 2 URL}">{text:Link 2 Name}</a>{/block:ifLink2URL}
 {block:ifLink3URL}<a href="{text:Link 3 URL}">{text:Link 3 Name}</a>{/block:ifLink3URL}
-<a href="/archive">Archive</a>
+{block:ifLink4URL}<a href="{text:Link 4 URL}">{text:Link 4 Name}</a>{/block:ifLink4URL}
 </div>
 
 </div>
