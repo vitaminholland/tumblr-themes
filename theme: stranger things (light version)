@@ -583,7 +583,7 @@ margin-left: 10px;
 
 #sidebar-wrapper {
 background: {color:Post Background};
-border-right: 1px solid #d2d2d2;
+border-right: 1px solid {color:Border};
 height: 100%;
 width: 400px;
 top: 0px;
