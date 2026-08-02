@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<!-- 
+
+page: porcelain
+designed and coded by ghcstfaec
+see credits @ https://ghcstfaec.tumblr.com/credits
+
+-->
+
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+ 
+<!-- Remix Icons Script -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+
+<!-- Phosphor Icons Script -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1"></script>
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title],div[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #000000;
+color: white;
+}
+ 
+::-moz-selection {
+background: #000000;
+color: white;
+}
+
+#s-m-t-tooltip {
+background: #77688C;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+
+body {
+background: #f0f0f0;
+color: #555555;
+cursor: url(https://i.imgur.com/lhPqll6.png), progress;
+font-family: "Be Vietnam Pro", sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+a b {
+color: #555555;
+}
+
+b {
+color: #4169E1;
+font-weight: 700;
+}
+
+i {
+font-style: italic;
+}
+
+u {
+text-decoration-line: underline;
+text-decoration-style: wavy;
+text-decoration-color: #d81159;
+text-decoration-thickness: 2px;
+}
+
+h1 {
+font-family: "Inria", serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+
+h2 {
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #d2d2d2;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+blockquote img {
+height: auto;
+max-width: 100%;
+}
+ 
+blockquote blockquote {
+border-left: 1px solid #d2d2d2;
+padding-left: 5px;
+}
+
+pre {
+background: #f0f0f0;
+border-radius: 5px;
+padding: 10px;
+white-space: pre-wrap;
+}
+
+#container {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 10px;
+height: 550px;
+top: calc(50% - 276px);
+left: calc(50% - 476px);
+position: fixed;
+width: 950px;
+}
+
+.sidebar {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 10px;
+height: 510px;
+width: 300px;
+position: absolute;
+margin-left: 20px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.sidebar-image {
+height: 220px;
+width: 300px;
+}
+
+.sidebar-image img {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+height: 220px;
+width: 300px;
+}
+
+.links-wrapper-outer {
+align-items: center;
+display: flex;
+height: 290px;
+width: 300px;
+}
+
+.links-wrapper {
+max-height: 250px;
+padding: 20px;
+width: 260px;
+overflow-y: scroll;
+}
+
+.tab {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+.tab a {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: #00000;
+}
+
+.tab a:hover {
+color: #cfcfcf;
+}
+
+.tab a.active {
+color: #D99066;
+}
+
+.tab a:last-of-type {
+margin-bottom: 0px;
+}
+
+.link-name {
+text-transform: lowercase;
+text-align: left;
+}
+
+.link-icon {
+background: #9DABD9;
+border-radius: 10px;
+color: #ffffff;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+margin-left: 10px;
+text-align: right;
+padding: 7px;
+text-rendering: auto;
+width: 0.9rem;
+}
+
+.tab-content {
+animation: fadeEffect 1s;
+display: none;
+margin-left: 321px;
+height: 510px;
+width: 589px;
+padding: 20px;
+position: absolute;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+@-webkit-keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+@keyframes fadeEffect {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+.aqai-wrapper {
+display: flex;
+align-items: flex-start;
+width: 589px;
+}
+
+.about-quote-wrapper {
+display: flex;
+align-items: stretch;
+width: 200px;
+}
+
+.about-quote {
+font-style: italic;
+font-family: "Inria", serif;
+text-transform: lowercase;
+font-weight: bold;
+margin-right: 15px;
+width: 156.6px;
+}
+
+.aq-wrapper {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 38.4px;
+}
+
+.aq-icon {
+background: #FF7984;
+border-radius: 10px;
+color: white;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 12px;
+width: 0.9rem;
+}
+
+.aq-line {
+background: #d2d2d2;
+height: auto;
+display: flex;
+flex-grow: 2;
+width: 1px;
+}
+
+.about-image {
+height: 200px;
+width: 374px;
+margin-left: 15px;
+}
+
+.about-image img {
+border-radius: 10px;
+height: 200px;
+width: 374px;
+}
+
+.page-title {
+color: #D99066;
+font-size: 1.2rem;
+text-transform: lowercase;
+margin-top: 15px;
+font-weight: bold;
+}
+
+.page-title:first-letter {
+color: #555555;
+}
+
+.about-content {
+margin-top: 15px;
+}
+
+.socials-wrapper {
+width: 100%;
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+
+.socials-title {
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.socials {
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 10px;
+}
+
+.socials a {
+background: #FF7984;
+color: white;
+display: inline-block;
+border-radius: 10px;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 7px;
+margin-right: 10px;
+width: 0.9rem;
+}
+
+.socials a:hover {
+color: #cfcfcf;
+}
+
+.all-navigation-title {
+color: #D99066;
+font-size: 1.2rem;
+text-transform: lowercase;
+font-weight: bold;
+}
+
+.all-navigation-title:first-letter {
+color: #555555;
+}
+
+#navigation {
+width: 589px;
+margin-top: 15px;
+}
+
+.nint-wrapper {
+align-items: center;
+border-bottom: 1px solid #d2d2d2;
+display: flex;
+padding-bottom: 20px;
+width: 100%;
+margin-top: 15px;
+}
+
+.navigation-icon {
+height: 55px;
+margin-right: 20px;
+width: 55px;
+}
+
+.navigation-icon img {
+border-radius: 10px;
+height: 55px;
+width: 55px;
+}
+
+.navigation-title {
+font-weight: bold;
+text-transform: lowercase;
+}
+
+.tags {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: -10px;
+margin-top: 10px;
+width: 609px;
+}
+
+.tags li {
+border-bottom: 1px solid #d2d2d2;
+list-style-type: none;
+margin: 10px;
+padding-bottom: 10px;
+text-transform: lowercase;
+width: calc(33.33% - 20px);
+}
+
+.tags li b {
+color: #9DABD9;
+}
+
+.sideblogs-title {
+color: #D99066;
+font-size: 1.2rem;
+text-transform: lowercase;
+font-weight: bold;
+margin-top: 15px;
+}
+
+.sideblogs-title:first-letter {
+color: #555555;
+}
+
+.sideblogs-wrapper {
+margin: -10px;
+margin-top: 15px;
+width: 609px;
+}
+
+.sideblog {
+border-bottom: 1px solid #d2d2d2;
+margin: 10px;
+max-width: 186.33px;
+display: flex;
+align-items: center;
+padding-bottom: 10px;
+}
+
+.s-icon {
+height: 45px;
+width: 45px;
+}
+
+.s-icon img {
+border-radius: 10px;
+height: 45px;
+width: 45px;
+}
+
+.sideblog-name {
+margin-left: 10px;
+text-transform: lowercase;
+}
+
+#credit {
+bottom: 20px;
+font-size: 0.9rem;
+height: 36px;
+position: fixed;
+right: 20px;
+text-transform: uppercase;
+z-index: 1;
+width: auto;
+}
+
+#credit a {
+background: #ffffff;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+color: #000000;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+padding: 10px;
+width: 0.9rem;
+}
+
+#credit a:hover  {
+color: #cfcfcf;
+}
+
+#credit:hover .credit-name {
+right: 20px;
+opacity: 1;
+}
+
+.credit-name {
+background: #000000;
+border: 1px solid #d2d2d2;
+border-radius: 5px;
+bottom: 20px;
+color: #ffffff;
+display: inline-block;
+font-size: 0.9rem;
+font-variant: normal;
+height: 0.9rem;
+line-height: 1;
+opacity: 0;
+padding: 10px;
+padding-right: 46.8px;
+position: fixed;
+right: -20px;
+text-align: center;
+z-index: -1;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+-o-transition: all 0.9s ease;
+}
+
+{CustomCSS}
+    
+</style>
+    
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- Start of Sidebar -->
+
+<div class="sidebar">
+
+<div class="sidebar-image"><img src="https://i.imgur.com/oHAlAFF.png"/></div>
+
+<div class="links-wrapper-outer">
+
+<div class="links-wrapper">
+
+<div class="tab">
+<a href="/"><div class="link-name">Back Home</div><div class="link-icon"><i class="ph-bold ph-house-line"></i></div></a>
+<a href="/ask"><div class="link-name">Message</div><div class="link-icon"><i class="ph-bold ph-mailbox"></i></div></a>
+<a class="tab-links" onclick="openPanel(event, 'one')" id="defaultOpen"><div class="link-name">About @{Name}</div><div class="link-icon"><i class="ri-user-smile-line"></i></div></a>
+<a class="tab-links" onclick="openPanel(event, 'two')" id="defaultOpen"><div class="link-name">Elsehwere</div><div class="link-icon"><i class="ri-planet-line"></i></div></a>
+<a href="/archive"><div class="link-name">Archive</div><div class="link-icon"><i class="ph-bold ph-calendar-heart"></i></div></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- End of Sidebar -->
+
+<!-- Start of Tabs -->
+
+<!-- Start of About Tab -->
+
+<div id="one" class="tab-content">
+
+<div class="aqai-wrapper">
+
+<!-- Start of About Quote -->
+
+<div class="about-quote-wrapper">
+
+<div class="about-quote">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+</div>
+
+<div class="aq-wrapper">
+
+<div class="aq-icon"><i class="ph-bold ph-quotes"></i></div>
+
+<div class="aq-line"></div>
+    
+</div>
+
+</div>
+
+<!-- End of About Quote -->
+
+<div class="about-image"><img src="https://i.imgur.com/7LlbYSj.png"/></div>
+
+</div>
+
+<div class="page-title">porcelain, my fingers are bleeding from picking up pieces you made of me</div>
+
+<div class="about-content">
+Nullam dignissim metus sed tellus posuere, ac congue urna aliquam. Cras vitae lobortis justo. Aliquam mollis ut elit vel fringilla. Nam cursus nisl vitae velit interdum ornare a nec augue. Cras dapibus risus nec ex facilisis, eget varius dolor maximus. Aenean eu nunc sodales, auctor ex nec, imperdiet ipsum. Praesent vehicula tortor eget ipsum cursus porta. Pellentesque eget consectetur augue. Maecenas venenatis tincidunt sapien, vitae auctor metus condimentum quis. Mauris placerat dolor in magna vestibulum euismod. Suspendisse nec leo hendrerit leo tristique aliquet vitae non mi. Integer porttitor eleifend risus, nec pharetra tellus sodales id. Morbi gravida, magna sit amet dignissim maximus, urna nisl sollicitudin nibh, in porttitor ex sem varius nibh. In dignissim justo sed dapibus hendrerit. Proin congue diam quam, dapibus ultrices massa pretium eu.
+</div>
+
+<!-- Start of Socials -->
+
+<div class="socials-wrapper">
+
+<div class="socials-title">Elsewhere</div>
+
+<div class="socials">
+<a href="/" title="Facebook"><i class="ri-facebook-box-line"></i></a>
+<a href="/" title="BlueSky"><i class="ri-bluesky-line"></i></a>
+<a href="/" title="Instagram"><i class="ri-instagram-fill"></i></a>
+<a href="/" title="Discord"><i class="ri-discord-line"></i></a>
+<a href="/" title="Weibo"><i class="ri-weibo-line"></i></a>
+</div>
+
+</div>
+
+<!-- End of Socials -->
+
+</div>
+
+<!-- End of About Tab -->
+
+<!-- Start of Elsewhere Tab -->
+
+<div id="two" class="tab-content">
+
+<div class="all-navigation-title">#tagged posts</div>
+
+<!-- Start of Navigation -->
+
+<div id="navigation">
+
+<!-- Start of Navigation Icon and Navigation Title -->
+
+<div class="nint-wrapper">
+
+<div class="navigation-icon"><img src="https://i.imgur.com/vJNeCon.png"/></div>
+
+<div class="navigation-title">Navigation Title</div>
+
+</div>
+
+<!-- End of Navigation Icon and Main Navigation Title -->
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div id="navigation">
+
+<!-- Start of Navigation Icon and Navigation Title -->
+
+<div class="nint-wrapper">
+
+<div class="navigation-icon"><img src="https://i.imgur.com/jPeezqe.png"/></div>
+
+<div class="navigation-title">Navigation Title</div>
+
+</div>
+
+<!-- End of Navigation Icon and Main Navigation Title -->
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+</div>
+
+<!-- End of Navigation -->
+
+<!-- Start of Navigation -->
+
+<div id="navigation">
+
+<!-- Start of Navigation Icon and Navigation Title -->
+
+<div class="nint-wrapper">
+
+<div class="navigation-title">Navigation Title</div>
+
+</div>
+
+<!-- End of Navigation Icon and Main Navigation Title -->
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+<!-- Start of Cateogry Title and Tags --> 
+
+<div class="tags">
+<li><b>Links Title</b></li>
+<li><a href="/">Link One</a></li>
+<li><a href="/">Link Two</a></li>
+<li><a href="/">Link Three</a></li>
+<li><a href="/">Link Four</a></li>
+<li><a href="/">Link Five</a></li>
+<li><a href="/">Link Six</a></li>
+<li><a href="/">Link Seven</a></li>
+</div>
+
+<!-- End of Cateogry Title and Tags --> 
+
+</div>
+
+<!-- End of Navigation -->
+
+<div class="sideblogs-title">Find Me Here</div>
+
+<!-- Start of Sideblogs -->
+
+<div class="sideblogs-wrapper">
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="s-icon"><img src="https://i.imgur.com/okNU19L.png"/></div>
+
+<div class="sideblog-name"><a href="/">sideblog url</a></div>
+    
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="s-icon"><img src="https://i.imgur.com/pVItb2r.png"/></div>
+
+<div class="sideblog-name"><a href="/">sideblog url</a></div>
+    
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="s-icon"><img src="https://i.imgur.com/8OquIne.png"/></div>
+
+<div class="sideblog-name"><a href="/">sideblog url</a></div>
+    
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="s-icon"><img src="https://i.imgur.com/ZihDUIM.png"/></div>
+
+<div class="sideblog-name"><a href="/">sideblog url</a></div>
+    
+</div>
+
+<!-- End of Sideblog -->
+
+<!-- Start of Sideblog -->
+
+<div class="sideblog">
+
+<div class="s-icon"><img src="https://i.imgur.com/aJ9C2Bj.png"/></div>
+
+<div class="sideblog-name"><a href="/">sideblog url</a></div>
+    
+</div>
+
+<!-- End of Sideblog -->
+
+</div>
+
+<!-- End of Sideblogs -->
+
+</div>
+
+<!-- End of Elsewhere Tab -->
+
+<!-- End of Tabs -->
+
+</div>
+
+<!-- Start of Theme Credit -->
+
+<div id="credit" title="ghcstfaec" title="ghcstfaec"><a href="https://ghcstfaec.tumblr.com/"><i class="ri-moon-clear-line"></i></a></div>
+
+<!-- End of Theme Credit --> 
+
+</body>
+
+<!--✻✻✻✻✻✻  griddery by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//griddery.github.io/grid.js"></script>
+
+<link href="//griddery.github.io/basics.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+gridderyV3({
+items: ".sideblog",
+columns: 3
+})
+})
+</script>
+
+<!-- Tabs Script -->
+ 
+<script>
+function openPanel(evt, number) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab-content");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tab-links");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(number).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
