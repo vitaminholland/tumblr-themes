@@ -74,7 +74,7 @@ color: white;
 }
 
 #s-m-t-tooltip {
-background: #000000;
+background: #99cccc;
 border-radius: 5px;
 color: #ffffff;
 font-size: 0.9rem;
