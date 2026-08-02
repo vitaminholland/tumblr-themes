@@ -248,6 +248,10 @@ width: 300px;
 border-bottom-right-radius: 10px;
 }
 
+.aq-wrapper {
+margin: 20px;
+}
+
 .qi-wrapper {
 width: 100%;
 }
@@ -389,10 +393,6 @@ width: 45px;
 .sideblog-name {
 margin-left: 10px;
 text-transform: lowercase;
-}
-
-.aq-wrapper {
-margin: 20px;
 }
 
 #credit {
