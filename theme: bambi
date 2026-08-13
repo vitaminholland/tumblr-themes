@@ -637,7 +637,6 @@ text-transform: uppercase;
 white-space: nowrap;
 }
 
-
 #posts {
 margin-left: 70px;
 width: calc({select:Post Width} + 2px);
