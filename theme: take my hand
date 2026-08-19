@@ -75,8 +75,8 @@ see credits @ https://ghcstfaec.tumblr.com/credits
 <meta name="select:Uppercase Font Size" content="0.8rem" title="0.8rem"/>
 <meta name="select:Uppercase Font Size" content="0.9rem" title="0.9rem"/>
 
-<meta name="image:Sidebar Image" content="https://i.imgur.com/q1quckg.png"/>
-<meta name="image:Icon Image" content="https://i.imgur.com/Hwy64os.jpeg"/>
+<meta name="image:Sidebar Image" content="https://i.imgur.com/VwOI3yP.png"/>
+<meta name="image:Icon Image" content="https://i.imgur.com/IAf43tM.png"/>
 
 <meta name="text:Title" content="take my hand"/>
 
@@ -1385,7 +1385,7 @@ color: {color:Link Hover};
 {block:ifLink6URL}<a href="{text:Link 6 URL}">{text:Link 6 Name}</a>{/block:ifLink6URL}
 </div>
 
-<div class="about-image"><img src="https://i.imgur.com/fjZMhNw.png"/></div>
+<div class="about-image"><img src="https://i.imgur.com/VxsIas7.png"/></div>
 
 <div class="about-wrapper">
 
